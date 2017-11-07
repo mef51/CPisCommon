@@ -66,7 +66,7 @@
 \paragraph_separation indent
 \paragraph_indentation default
 \quotes_language english
-\papercolumns 1
+\papercolumns 2
 \papersides 1
 \paperpagestyle default
 \tracking_changes false
@@ -84,17 +84,18 @@ Non-Zeeman Circular Polarization in Molecular Spectral Lines Present in
 \end_layout
 
 \begin_layout Abstract
-Understanding the magnetic field in star-forming regions will allow us to
- test ideas about free-fall collapse and support mechanisms in molecular
- clouds.
- These magnetic fields are usually probed through linear polarization studies
- and analysed by the Goldreich-Kylafis effect and Davis-Chandrasekhar-Fermi
- method.
- We looked in some archival data of the SMA and found several examples of
- circular polarization in these molecular tracers.
+Understanding the magnetic field in star-forming regions allows us to test
+ ideas about free-fall collapse and support mechanisms in molecular clouds.
+ These magnetic fields are usually probed through linear polarization observatio
+ns of molecular spectral transitions and analysed by the Goldreich-Kylafis
+ effect and Davis-Chandrasekhar-Fermi method, but circular polarization
+ of these lines is usually ignored, largely because of its difficulty in
+ measuring and because of its assumed irrelevance.
+ We find in archival data of the SMA and several examples of circular polarizati
+on in common molecular tracers, most notable CO.
  This circular polarization possibly arises from the anisotropic resonant
- scattering model implying that some of the linearly polarized flux is being
- converted and lost to so far unmeasured circular polarization flux.
+ scattering implying that some of the linearly polarized flux is being converted
+ and lost to so far unmeasured circular polarization flux.
  We find circular polarization in NGC7538, IRC+10216, Orion KL to sufficient
  degrees that we believe the presence of circular polarization in these
  spectral lines is common to all such objects, implying an important piece
@@ -110,6 +111,68 @@ Understanding the magnetic field in star-forming regions will allow us to
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section*
+Observations
+\end_layout
+
+\begin_layout Standard
+We collected radio interferometric archival observations from the Submillimeter
+ Array archive that had been measured using the circular feeds, a similar
+ setup to that used by Munoz et al.
+ 2011 to measure circular polarization in Sgr A*.
+ Because the archival observations were not taken with measurements of circular
+ polarization in mind the SNR is often very low, and we average velocity
+ channels to increase the SNR at the cost of resolution.
+ This works because white noise will average out leaving larger peaks.
+ 
+\end_layout
+
+\begin_layout Standard
+The four objects we present here are Orion KL, NGC7538, NGC1333 and IRC+10216.
+ All are star-forming regions with the exception of IRC+10216 which is a
+ carbon star.
+ The visibility data is corrected for squint, an instrumental artifact that
+ gives rise to spurious Stokes V.
+ Squint gives rise to distinct pairs of positive and negative peaks of Stokes
+ V.
+ Maps are then made of the continuum and lines for each object.
+ The squint correction is confirmed visually by inspecting the Stokes V
+ maps, where we see the pairs of peaks largely disappear.
+\end_layout
+
+\begin_layout Standard
+Figure ?? shows Stokes I and Stokes V spectra obtained from the maps and
+ taken through the peak of Stokes V.
+ Both corrected and uncorrected spectra are shown.
+ Notice in most cases the Stokes V signal decreases after squint correction
+ except for the case of CO in NGC7538, while in many other lines the Stokes
+ V signal disappears completely.
+ Stokes V can be found in the average of all the visibility data, though
+ the significance is 3-5
+\begin_inset Formula $\sigma$
+\end_inset
+
+ in that case compared to a significance of around 6-10
+\begin_inset Formula $\sigma$
+\end_inset
+
+ when the spectra is taken from the inverted maps.
+ 
+\end_layout
+
+\begin_layout Standard
+In the case of Orion KL the lines of CO (345.8GHz) and SiO (347.2GHz) have
+ similar intensities but the CO line has a strong Stokes V signal while
+ the SiO has very little.
+ This reassures us that the measurement of Stokes I is not leaking into
+ Stokes V.
+ 
+\end_layout
+
+\begin_layout Standard
+Table ?? shows a summary of the objects presented and related information.
 \end_layout
 
 \end_body
