@@ -120,8 +120,14 @@ Observations
 \begin_layout Standard
 We collected radio interferometric archival observations from the Submillimeter
  Array archive that had been measured using the circular feeds, a similar
- setup to that used by Munoz et al.
- 2011 to measure circular polarization in Sgr A*.
+ setup to that used by 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-1"
+
+\end_inset
+
+ to measure circular polarization in Sgr A*.
  Because the archival observations were not taken with measurements of circular
  polarization in mind the SNR is often very low, and we average velocity
  channels to increase the SNR at the cost of resolution.
@@ -173,6 +179,128 @@ In the case of Orion KL the lines of CO (345.8GHz) and SiO (347.2GHz) have
 
 \begin_layout Standard
 Table ?? shows a summary of the objects presented and related information.
+\end_layout
+
+\begin_layout Section*
+Squint Correction
+\end_layout
+
+\begin_layout Standard
+Here we describe a source of spurious Stokes V when using the SMA and our
+ scheme for correcting it.
+ 
+\end_layout
+
+\begin_layout Standard
+The archival data used was in all cases observed with the goal of measuring
+ linear polarization (Stokes Q and Stokes U).
+ On the SMA this is done with a quarter-waveplate placed infront of the
+ linear receivers to convert incident linear polarization to circular polarizati
+on (CP).
+ This is done because the measurement with interferometry is more easily
+ made with circularly-polarized feeds 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-2,key-3"
+
+\end_inset
+
+.
+ While it is preferred to use linear feeds for measuing circular polarization
+ (Stokes V) it is possible to get Stokes V from the visibilities measured
+ with circular feeds.
+ Given antennae 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+, the Stokes V visibility in the circular feed case is found through
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-1"
+
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\mathcal{V}_{V}\simeq\frac{1}{2}\Big\{\mathcal{V}_{RR}/(g_{Ra}g_{Rb}^{*})-\mathcal{V}_{LL}/(g_{La}g_{Lb}^{*})\Big\}
+\]
+
+\end_inset
+
+Here the right-handed CP and left-handed CP visibilities are 
+\begin_inset Formula $\mathcal{V}_{RR}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathcal{V}_{LL}$
+\end_inset
+
+ and are measured by orienting the quarter-waveplate that is placed in the
+ beam of the antennae.
+ The complex gain factors for each polarization for each antennae are 
+\begin_inset Formula $g_{Ra}$
+\end_inset
+
+, 
+\begin_inset Formula $g_{Rb}$
+\end_inset
+
+, 
+\begin_inset Formula $g_{La}$
+\end_inset
+
+ and 
+\begin_inset Formula $g_{Lb}$
+\end_inset
+
+.
+ Because the Stokes V visibility is found by taking the difference of two
+ beams a slight offset gives rise to pairs of positive and negative peaks
+ of Stokes V, as shown in Figure ??.
+ This offset likely arises because of slight differences in the index of
+ refraction of the quarter-waveplate when it is rotated.
+ 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "1"
+key "key-1"
+
+\end_inset
+
+Munoz et al.
+ 2012
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "2"
+key "key-2"
+
+\end_inset
+
+Marrone et al.
+ 2008
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "3"
+key "key-3"
+
+\end_inset
+
+Sault et al.
+ 1996
 \end_layout
 
 \end_body
