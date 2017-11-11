@@ -79,8 +79,31 @@
 \begin_body
 
 \begin_layout Title
-Non-Zeeman Circular Polarization in Molecular Spectral Lines Present in
+Non-Zeeman Circular Polarization of Molecular Spectral Lines Present in
  Several Star-Forming Regions
+\end_layout
+
+\begin_layout Author
+M.
+ A.
+ Chamma
+\begin_inset Formula $^{1}$
+\end_inset
+
+ and M.
+ Houde
+\begin_inset Formula $^{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Affiliation
+\begin_inset Formula $^{1}$
+\end_inset
+
+Department of Physics and Astronomy, The University of Western Ontario,
+ London, ON, N6A 3K7, Canada
 \end_layout
 
 \begin_layout Abstract
@@ -91,11 +114,11 @@ ns of molecular spectral transitions and analysed by the Goldreich-Kylafis
  effect and Davis-Chandrasekhar-Fermi method, but circular polarization
  of these lines is usually ignored, largely because of its difficulty in
  measuring and because of its assumed irrelevance.
- We find in archival data of the SMA and several examples of circular polarizati
-on in common molecular tracers, most notable CO.
- This circular polarization possibly arises from the anisotropic resonant
- scattering implying that some of the linearly polarized flux is being converted
- and lost to so far unmeasured circular polarization flux.
+ We find in archival data of the Submillimeter Array several examples of
+ circular polarization in common molecular tracers, most notably CO.
+ This circular polarization possibly arises from anisotropic resonant scattering
+ implying that some of the linearly polarized flux is being converted and
+ lost to so far unmeasured circular polarization flux.
  We find circular polarization in NGC7538, IRC+10216, Orion KL to sufficient
  degrees that we believe the presence of circular polarization in these
  spectral lines is common to all such objects, implying an important piece
@@ -178,7 +201,477 @@ In the case of Orion KL the lines of CO (345.8GHz) and SiO (347.2GHz) have
 \end_layout
 
 \begin_layout Standard
-Table ?? shows a summary of the objects presented and related information.
+Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Summary-of-Archival"
+
+\end_inset
+
+ shows a summary of the objects presented and related information.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide true
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="4">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="right" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Object
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Coordinates (J2000)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Array Configuration
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Date Observed
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+IRC+10216
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+RA 09
+\begin_inset Formula $^{\text{h}}$
+\end_inset
+
+47
+\begin_inset Formula $^{\text{m}}$
+\end_inset
+
+57.381
+\begin_inset Formula $^{\text{s}}$
+\end_inset
+
+ Dec +13
+\begin_inset Formula $^{\circ}$
+\end_inset
+
+16'43.70''
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Compact
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+2009-11-24
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+NGC7538
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+RA 23
+\begin_inset Formula $^{\text{h}}$
+\end_inset
+
+13
+\begin_inset Formula $^{\text{m}}$
+\end_inset
+
+44.771
+\begin_inset Formula $^{\text{s}}$
+\end_inset
+
+ Dec +61
+\begin_inset Formula $^{\circ}$
+\end_inset
+
+26'48.85''
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Compact
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+2014-10-28
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Orion KL
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+RA 05
+\begin_inset Formula $^{\text{h}}$
+\end_inset
+
+35
+\begin_inset Formula $^{\text{m}}$
+\end_inset
+
+14.501
+\begin_inset Formula $^{\text{s}}$
+\end_inset
+
+ Dec -05
+\begin_inset Formula $^{\circ}$
+\end_inset
+
+22'30.40''
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Compact
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+2008-01-06
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+NGC1333
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+RA 03
+\begin_inset Formula $^{\text{h}}$
+\end_inset
+
+28
+\begin_inset Formula $^{\text{m}}$
+\end_inset
+
+55.580
+\begin_inset Formula $^{\text{s}}$
+\end_inset
+
+ Dec +31
+\begin_inset Formula $^{\circ}$
+\end_inset
+
+14'37.10''
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Compact
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+2010-10-14
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Summary-of-Archival"
+
+\end_inset
+
+Summary of Archival Observations Used
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section*
@@ -186,9 +679,10 @@ Squint Correction
 \end_layout
 
 \begin_layout Standard
-Here we describe a source of spurious Stokes V when using the SMA and our
+Here we describe spurious Stokes V that arises when using the SMA and our
  scheme for correcting it.
- 
+ This instrumental Stokes V comes from a slight pointing offset between
+ the left- and right-handed CP beams.
 \end_layout
 
 \begin_layout Standard
@@ -267,10 +761,206 @@ Here the right-handed CP and left-handed CP visibilities are
  
 \end_layout
 
+\begin_layout Standard
+Because the visibilities are the Fourier transform of the intensity image,
+ an offset in image space is a complex coefficient in visibility space that
+ can be absorbed into the complex gain coefficients (see Appendix).
+ Thus it is easiest to correct for the offset in image-space by using 
+\emph on
+Miriad
+\emph default
+ to solve for the gain coefficients on each beam.
+ Specifically the process is:
+\end_layout
+
+\begin_layout Enumerate
+Observations are calibrated for gain and phase in the usual way using calibratio
+n observations of 'good' sources (usually quasars like 3C84, 3C454, etc.)
+ (See Miriad User Guide
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-4"
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+Visibilities are split into line-free continuum data and just line data.
+ These are then mapped and used to obtain CLEAN models
+\end_layout
+
+\begin_layout Enumerate
+The split continuum and line data are split further into 
+\emph on
+LL
+\emph default
+ and 
+\emph on
+RR
+\emph default
+ visibilities.
+ 
+\emph on
+Miriad'
+\emph default
+s 
+\family typewriter
+selfcal
+\family default
+ is used on the continuum data to solve for the gain coefficients of each
+ antenna and each polarization (L or R).
+ This is done by minimizing the difference between measured visibilities
+ 
+\begin_inset Formula $\mathcal{V}_{ij}$
+\end_inset
+
+ of antennae 
+\begin_inset Formula $i$
+\end_inset
+
+ and 
+\begin_inset Formula $j$
+\end_inset
+
+ and model visibilities 
+\begin_inset Formula $\hat{\mathcal{V}}_{ij}$
+\end_inset
+
+ according to 
+\begin_inset Formula $\epsilon^{2}=\sum|\mathcal{V}_{ij}-g_{i}g_{j}^{*}\hat{\mathcal{V}}_{ij}|^{2}$
+\end_inset
+
+ for each of the correlations 
+\emph on
+LL
+\emph default
+ and 
+\emph on
+RR
+\emph default
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-4,key-5"
+
+\end_inset
+
+.
+ The model visibilities used are those found earlier.
+\end_layout
+
+\begin_layout Enumerate
+The gains found from the continuum 
+\emph on
+LL
+\emph default
+ data is then applied to the line 
+\emph on
+LL
+\emph default
+ data.
+ The gains found from the continuum RR data is applied to the line RR data.
+\end_layout
+
+\begin_layout Enumerate
+The different polarizations (
+\emph on
+LL
+\emph default
+, 
+\emph on
+RR
+\emph default
+, 
+\emph on
+RL
+\emph default
+, 
+\emph on
+LR
+\emph default
+) are recombined and inverted to produce corrected maps.
+ Spectra can be obtained either from the corrected visibilities or the maps.
+ 
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:beforeafter"
+
+\end_inset
+
+ shows maps before and after this correction is applied.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /home/mohammed/Documents/Masters/Research/Proposal_SMA2017B/continuumcorrectionvertical.png
+	lyxscale 20
+	scale 65
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:beforeafter"
+
+\end_inset
+
+(placeholder) Map of the continuum around 345GHz in Orion KL before (top)
+ and after (bottom) squint correction.
+ Red contours are Stokes I, orange (green?) contours are Stokes V.
+ Dashed lines denote negative values, solid lines denote positive values.
+ Note the multiple pairs of positive and negative Stokes V peaks.
+ These largely disappear after correction.
+ The contour scales on both maps are identical.
+ Red Stokes I contours are at 15%, 35%, 55%, 75% and 95% of the peak intensity.
+ Orange (green?) Stokes V contours are at -8, -7, -6, -5, -4, -3, -2, 2,
+ 3, 4, 5, 6, 7 and 8
+\begin_inset Formula $\sigma$
+\end_inset
+
+ levels.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Bibliography
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-label "1"
 key "key-1"
 
 \end_inset
@@ -282,7 +972,6 @@ Munoz et al.
 \begin_layout Bibliography
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-label "2"
 key "key-2"
 
 \end_inset
@@ -294,13 +983,36 @@ Marrone et al.
 \begin_layout Bibliography
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-label "3"
 key "key-3"
 
 \end_inset
 
 Sault et al.
  1996
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-4"
+
+\end_inset
+
+ Sault, B., Killeen, N.: 2008, 
+\emph on
+Miriad 
+\emph default
+Users Guide, Australia Telescope National Facility
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-5"
+
+\end_inset
+
+Schwab 1980
 \end_layout
 
 \end_body
