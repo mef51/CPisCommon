@@ -4,13 +4,11 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass revtex4
+\textclass aastex6
 \begin_preamble
-\usepackage{graphicx}
-\usepackage{pdflscape}
-\usepackage[cm]{fullpage}
+
 \end_preamble
-\use_default_options false
+\use_default_options true
 \maintain_unincluded_children false
 \language english
 \language_package default
@@ -35,7 +33,7 @@
 \spacing single
 \use_hyperref false
 \papersize letterpaper
-\use_geometry true
+\use_geometry false
 \use_package amsmath 1
 \use_package amssymb 1
 \use_package cancel 1
@@ -46,9 +44,9 @@
 \use_package stackrel 1
 \use_package stmaryrd 1
 \use_package undertilde 1
-\cite_engine basic
-\cite_engine_type default
-\biblio_style plain
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plainnat
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
@@ -61,8 +59,8 @@
 \end_index
 \topmargin 12.7cm
 \bottommargin 2.54cm
-\secnumdepth 4
-\tocdepth 3
+\secnumdepth 3
+\tocdepth 0
 \paragraph_separation indent
 \paragraph_indentation default
 \quotes_language english
@@ -90,9 +88,20 @@ M.
 \begin_inset Formula $^{1}$
 \end_inset
 
- and M.
+, M.
  Houde
 \begin_inset Formula $^{1}$
+\end_inset
+
+, J.
+ M.
+ Girart
+\begin_inset Formula $^{2}$
+\end_inset
+
+ and R.
+ Rao
+\begin_inset Formula $^{3}$
 \end_inset
 
 
@@ -106,6 +115,23 @@ Department of Physics and Astronomy, The University of Western Ontario,
  London, ON, N6A 3K7, Canada
 \end_layout
 
+\begin_layout Affiliation
+\begin_inset Formula $^{2}$
+\end_inset
+
+Institut de Ciències de l'Espai (IEEC-CSIC), Can Magrans, S/N, E-08193 Cerdanyol
+a del Vallès, Catalonia, Spain
+\end_layout
+
+\begin_layout Affiliation
+\begin_inset Formula $^{3}$
+\end_inset
+
+Submillimeter Array, Academia Sinica Institute of Astronomy and Astrophysics,
+ 645 N.
+ Aohoku Place, Hilo, HI 96720, USA
+\end_layout
+
 \begin_layout Abstract
 Understanding the magnetic field in star-forming regions allows us to test
  ideas about free-fall collapse and support mechanisms in molecular clouds.
@@ -113,7 +139,7 @@ Understanding the magnetic field in star-forming regions allows us to test
 ns of molecular spectral transitions and analysed by the Goldreich-Kylafis
  effect and Davis-Chandrasekhar-Fermi method, but circular polarization
  of these lines is usually ignored, largely because of its difficulty in
- measuring and because of its assumed irrelevance.
+ meadsuring and because of its assumed irrelevance.
  We find in archival data of the Submillimeter Array several examples of
  circular polarization in common molecular tracers, most notably CO.
  This circular polarization possibly arises from anisotropic resonant scattering
@@ -136,7 +162,7 @@ ns of molecular spectral transitions and analysed by the Goldreich-Kylafis
 
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 Observations
 \end_layout
 
@@ -145,8 +171,8 @@ We collected radio interferometric archival observations from the Submillimeter
  Array archive that had been measured using the circular feeds, a similar
  setup to that used by 
 \begin_inset CommandInset citation
-LatexCommand cite
-key "key-1"
+LatexCommand citet
+key "Munoz2012"
 
 \end_inset
 
@@ -674,7 +700,7 @@ Summary of Archival Observations Used
 
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 Squint Correction
 \end_layout
 
@@ -694,8 +720,8 @@ on (CP).
  This is done because the measurement with interferometry is more easily
  made with circularly-polarized feeds 
 \begin_inset CommandInset citation
-LatexCommand cite
-key "key-2,key-3"
+LatexCommand citep
+key "Marrone2008,Sault1996"
 
 \end_inset
 
@@ -711,10 +737,10 @@ key "key-2,key-3"
 \begin_inset Formula $b$
 \end_inset
 
-, the Stokes V visibility in the circular feed case is found through
+, the Stokes V visibility in the circular feed case is found through 
 \begin_inset CommandInset citation
-LatexCommand cite
-key "key-1"
+LatexCommand citep
+key "Munoz2012"
 
 \end_inset
 
@@ -765,7 +791,8 @@ Here the right-handed CP and left-handed CP visibilities are
 Because the visibilities are the Fourier transform of the intensity image,
  an offset in image space is a complex coefficient in visibility space that
  can be absorbed into the complex gain coefficients (see Appendix).
- Thus it is easiest to correct for the offset in image-space by using 
+ Thus it is easiest to correct for the offset in visibility-space by using
+ 
 \emph on
 Miriad
 \emph default
@@ -776,10 +803,10 @@ Miriad
 \begin_layout Enumerate
 Observations are calibrated for gain and phase in the usual way using calibratio
 n observations of 'good' sources (usually quasars like 3C84, 3C454, etc.)
- (See Miriad User Guide
+ (See Miriad User Guide 
 \begin_inset CommandInset citation
-LatexCommand cite
-key "key-4"
+LatexCommand citet
+key "Sault2008"
 
 \end_inset
 
@@ -842,8 +869,8 @@ RR
 \emph default
  
 \begin_inset CommandInset citation
-LatexCommand cite
-key "key-4,key-5"
+LatexCommand citep
+key "Sault2008,Schwab1980"
 
 \end_inset
 
@@ -958,21 +985,50 @@ name "fig:beforeafter"
 
 \end_layout
 
-\begin_layout Bibliography
+\begin_layout References
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-key "key-1"
+label "Mu\\~{n}oz et al.(2012)"
+key "Munoz2012"
 
 \end_inset
 
-Munoz et al.
- 2012
+Mu
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+~{n}
 \end_layout
 
-\begin_layout Bibliography
+\end_inset
+
+oz, D.
+ J., et al.
+ 2012 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+apj
+\end_layout
+
+\end_inset
+
+, 745, 115
+\end_layout
+
+\begin_layout References
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-key "key-2"
+label "Marrone et al.(2008)"
+key "Marrone2008"
 
 \end_inset
 
@@ -980,10 +1036,11 @@ Marrone et al.
  2008
 \end_layout
 
-\begin_layout Bibliography
+\begin_layout References
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-key "key-3"
+label "Sault et al.(1996)"
+key "Sault1996"
 
 \end_inset
 
@@ -991,24 +1048,23 @@ Sault et al.
  1996
 \end_layout
 
-\begin_layout Bibliography
+\begin_layout References
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-key "key-4"
+label "Sault et al.(2008)"
+key "Sault2008"
 
 \end_inset
 
- Sault, B., Killeen, N.: 2008, 
-\emph on
-Miriad 
-\emph default
-Users Guide, Australia Telescope National Facility
+Sault, B., Killeen, N., 2008, Miriad Users Guide, Australia Telescope National
+ Facility
 \end_layout
 
-\begin_layout Bibliography
+\begin_layout References
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-key "key-5"
+label "Schwab(1980)"
+key "Schwab1980"
 
 \end_inset
 
