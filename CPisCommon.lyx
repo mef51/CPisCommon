@@ -134,25 +134,23 @@ Submillimeter Array, Academia Sinica Institute of Astronomy and Astrophysics,
 
 \begin_layout Abstract
 Understanding the magnetic field in star-forming regions allows us to test
- ideas about free-fall collapse and support mechanisms in molecular clouds.
+ ideas about free-fall collapse and support mechanisms in molecular clouds,
+ filling in details about the star formation process.
  These magnetic fields are usually probed through linear polarization observatio
-ns of molecular spectral transitions and analysed by the Goldreich-Kylafis
- effect and Davis-Chandrasekhar-Fermi method, but circular polarization
- of these lines is usually ignored, largely because of its difficulty in
- meadsuring and because of its assumed irrelevance.
+ns from dust continuum and molecular spectral transitions and analysed through
+ the Davis-Chandrasekhar-Fermi method.
+ For molecular lines circular polarization is usually ignored, largely because
+ of difficulty in measurement and its assumed irrelevance.
  We find in archival data of the Submillimeter Array several examples of
  circular polarization in common molecular tracers, most notably CO.
  This circular polarization possibly arises from anisotropic resonant scattering
- implying that some of the linearly polarized flux is being converted and
- lost to so far unmeasured circular polarization flux.
- We find circular polarization in NGC7538, IRC+10216, Orion KL to sufficient
+ implying that some background linearly polarized flux is being converted
+ and lost to circular polarization.
+ We find circular polarization in NGC7538, IRC+10216 and Orion KL to sufficient
  degrees that we believe the presence of circular polarization in these
- spectral lines is common to all such objects, implying an important piece
- of information has been missed when measuring the 
-\begin_inset Formula $\boldsymbol{B}$
-\end_inset
-
- field and its direction in star-forming regions.
+ spectral lines is widespread for such objects, implying that an important
+ piece of information has been missed when studying magnetic fields through
+ linear polarization from molecular spectral lines in star-forming regions.
 \end_layout
 
 \begin_layout Standard
@@ -167,9 +165,9 @@ Observations
 \end_layout
 
 \begin_layout Standard
-We collected radio interferometric archival observations from the Submillimeter
- Array archive that had been measured using the circular feeds, a similar
- setup to that used by 
+We collected radio interferometric archival polarimetry observations from
+ the Submillimeter Array (SMA) archive that had been measured using the
+ circular feeds, a similar setup to that used by 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Munoz2012"
@@ -178,38 +176,39 @@ key "Munoz2012"
 
  to measure circular polarization in Sgr A*.
  Because the archival observations were not taken with measurements of circular
- polarization in mind the SNR is often very low, and we average velocity
- channels to increase the SNR at the cost of resolution.
- This works because white noise will average out leaving larger peaks.
+ polarization in mind the SNR is often very low, and we had to average velocity
+ channels to increase the SNR at the cost of spectral resolution.
+ This generally increases the SNR from 3-4 to 6-10.
  
 \end_layout
 
 \begin_layout Standard
 The four objects we present here are Orion KL, NGC7538, NGC1333 and IRC+10216.
- All are star-forming regions with the exception of IRC+10216 which is a
- carbon star.
- The visibility data is corrected for squint, an instrumental artifact that
- gives rise to spurious Stokes V.
+ The first three are well-known star-formation regions while IRC+10216 is
+ an evolved carbon star.
+ The visibility data are corrected for beam squint, an instrumental artifact
+ that gives rise to spurious Stokes V signals.
  Squint gives rise to distinct pairs of positive and negative peaks of Stokes
- V.
+ V throughout the image.
  Maps are then made of the continuum and lines for each object.
  The squint correction is confirmed visually by inspecting the Stokes V
  maps, where we see the pairs of peaks largely disappear.
+ More details on the squint correction will be given in the next section.
 \end_layout
 
 \begin_layout Standard
-Figure ?? shows Stokes I and Stokes V spectra obtained from the maps and
- taken through the peak of Stokes V.
+Figure ?? shows Stokes I and Stokes V spectra obtained at the peak of Stokes
+ V on the corresponding maps.
  Both corrected and uncorrected spectra are shown.
  Notice in most cases the Stokes V signal decreases after squint correction
- except for the case of CO in NGC7538, while in many other lines the Stokes
+ except for the case of CO in NGC7538, while for many other lines the Stokes
  V signal disappears completely.
- Stokes V can be found in the average of all the visibility data, though
- the significance is 3-5
+ Stokes V can be found in the average of all the visibility data as well,
+ though the significance is 3-5
 \begin_inset Formula $\sigma$
 \end_inset
 
- in that case compared to a significance of around 6-10
+ in that case compared to approximately 6-10
 \begin_inset Formula $\sigma$
 \end_inset
 
@@ -221,8 +220,8 @@ Figure ?? shows Stokes I and Stokes V spectra obtained from the maps and
 In the case of Orion KL the lines of CO (345.8GHz) and SiO (347.2GHz) have
  similar intensities but the CO line has a strong Stokes V signal while
  the SiO has very little.
- This reassures us that the measurement of Stokes I is not leaking into
- Stokes V.
+ This reassures us that the measurement of Stokes I is not significantly
+ leaking into Stokes V.
  
 \end_layout
 
@@ -713,22 +712,22 @@ Here we describe spurious Stokes V that arises when using the SMA and our
 
 \begin_layout Standard
 The archival data used was in all cases observed with the goal of measuring
- linear polarization (Stokes Q and Stokes U).
- On the SMA this is done with a quarter-waveplate placed infront of the
- linear receivers to convert incident linear polarization to circular polarizati
-on (CP).
- This is done because the measurement with interferometry is more easily
- made with circularly-polarized feeds 
+ linear polarization (i.e., the Stokes Q and Stokes U parameters).
+ On the SMA this is done with a quarter-waveplate placed in front of the
+ linear receivers to convert incident circular polarization (CP) to linear
+ polarization.
+ While this method is relatively imprecise, it avoids having to solve for
+ the linear polarization terms of calibration objects when obtaining Stokes
+ V 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Marrone2008,Sault1996"
 
 \end_inset
 
-.
- While it is preferred to use linear feeds for measuing circular polarization
- (Stokes V) it is possible to get Stokes V from the visibilities measured
- with circular feeds.
+ (cite the textbook).
+ Obtaining Stokes V from the visibilities measured with circular feeds is
+ done as follows.
  Given antennae 
 \begin_inset Formula $a$
 \end_inset
@@ -747,7 +746,7 @@ key "Munoz2012"
 :
 \begin_inset Formula 
 \[
-\mathcal{V}_{V}\simeq\frac{1}{2}\Big\{\mathcal{V}_{RR}/(g_{Ra}g_{Rb}^{*})-\mathcal{V}_{LL}/(g_{La}g_{Lb}^{*})\Big\}
+\mathcal{V}_{\text{V}}\simeq\frac{1}{2}\Big\{\mathcal{V}_{RR}/(g_{Ra}g_{Rb}^{*})-\mathcal{V}_{LL}/(g_{La}g_{Lb}^{*})\Big\}
 \]
 
 \end_inset
@@ -778,25 +777,40 @@ Here the right-handed CP and left-handed CP visibilities are
 \begin_inset Formula $g_{Lb}$
 \end_inset
 
-.
+ with '
+\begin_inset Formula $R$
+\end_inset
+
+' and '
+\begin_inset Formula $L$
+\end_inset
+
+' for right- and left-CP, respectively.
  Because the Stokes V visibility is found by taking the difference of two
  beams a slight offset gives rise to pairs of positive and negative peaks
- of Stokes V, as shown in Figure ??.
+ of Stokes V, as shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:beforeafter"
+
+\end_inset
+
+.
  This offset likely arises because of slight differences in the index of
- refraction of the quarter-waveplate when it is rotated.
- 
+ refraction of the quarter-waveplate when it is rotated, but hasn't been
+ studied with the SMA as far as we know.
 \end_layout
 
 \begin_layout Standard
-Because the visibilities are the Fourier transform of the intensity image,
- an offset in image space is a complex coefficient in visibility space that
- can be absorbed into the complex gain coefficients (see Appendix).
+Because the visibilities are the Fourier transform of the intensity map,
+ an offset in image space is equivalent to a complex exponential term in
+ visibility space that can be absorbed into the gain coefficients (see Appendix).
  Thus it is easiest to correct for the offset in visibility-space by using
  
 \emph on
-Miriad
+Miriad 
 \emph default
- to solve for the gain coefficients on each beam.
+(citation) to solve for the gain coefficients on each beam.
  Specifically the process is:
 \end_layout
 
@@ -814,12 +828,12 @@ key "Sault2008"
 \end_layout
 
 \begin_layout Enumerate
-Visibilities are split into line-free continuum data and just line data.
+Visibilities are split into line-free continuum data and line data.
  These are then mapped and used to obtain CLEAN models
 \end_layout
 
 \begin_layout Enumerate
-The split continuum and line data are split further into 
+The separate continuum and line data are further split into 
 \emph on
 LL
 \emph default
@@ -837,7 +851,15 @@ s
 selfcal
 \family default
  is used on the continuum data to solve for the gain coefficients of each
- antenna and each polarization (L or R).
+ antenna and each polarization (
+\emph on
+L
+\emph default
+ or 
+\emph on
+R
+\emph default
+).
  This is done by minimizing the difference between measured visibilities
  
 \begin_inset Formula $\mathcal{V}_{ij}$
@@ -887,8 +909,11 @@ LL
 \emph on
 LL
 \emph default
- data.
- The gains found from the continuum RR data is applied to the line RR data.
+ data, similarly for the 
+\emph on
+RR
+\emph default
+ continuum and line data.
 \end_layout
 
 \begin_layout Enumerate
@@ -935,7 +960,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename /home/mohammed/Documents/Masters/Research/Proposal_SMA2017B/continuumcorrectionvertical.png
+	filename figures/Orion KL.map.spec.co3-2peakv.pdf
 	lyxscale 20
 	scale 65
 
