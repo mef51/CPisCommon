@@ -197,9 +197,24 @@ The four objects we present here are Orion KL, NGC7538, NGC1333 and IRC+10216.
 \end_layout
 
 \begin_layout Standard
-Figure ?? shows Stokes I and Stokes V spectra obtained at the peak of Stokes
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:results"
+
+\end_inset
+
+ shows corrected Stokes I and Stokes V spectra obtained at the peak of Stokes
  V on the corresponding maps.
- Both corrected and uncorrected spectra are shown.
+ A comparison of Stokes V spectra before and after correction are shown
+ in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:beforeafterspec"
+
+\end_inset
+
+.
  Notice in most cases the Stokes V signal decreases after squint correction
  except for the case of CO in NGC7538, while for many other lines the Stokes
  V signal disappears completely.
@@ -699,6 +714,215 @@ Summary of Archival Observations Used
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+wide true
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-1cm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Orion KL.map.spec.co3-2peakv.pdf
+	lyxscale 70
+	width 35page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/NGC7538.map.spec.co3-2peakv.pdf
+	lyxscale 70
+	width 35page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/IRC+10216.map.spec.co3-2peakv.pdf
+	lyxscale 70
+	width 35page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/IRAS2a.map.spec.co3-2peakv.pdf
+	lyxscale 70
+	width 35page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:results"
+
+\end_inset
+
+Maps of the CO 
+\begin_inset Formula $J=3\rightarrow2$
+\end_inset
+
+ line (345.8GHz) and Spectra of Orion KL, NGC7538, IRC+10216 and NGC1333
+ (IRAS2a).
+ 
+\series bold
+Maps:
+\series default
+ Blue contours are Stokes V and are shown at the -8, -7, -6, -5, -4, -3,
+ -2, 2, 3, 4, 5, 6, 7, 8
+\begin_inset Formula $\sigma$
+\end_inset
+
+ levels.
+ The RMS error for each Stokes V map is found using 
+\emph on
+Miriad'
+\emph default
+s 
+\family typewriter
+imstat
+\family default
+ command.
+ Dark red contours are Stokes I and the levels are 20%, 40%, 60%, 80% and
+ 95% of the maximum.
+ 
+\series bold
+Spectra:
+\series default
+ 
+\emph on
+Miriad
+\emph default
+'s 
+\family typewriter
+maxfit
+\family default
+ is used on the CO map to obtain the location in the image where the Stokes
+ V signal at 345.8GHz is maximum, and a spectra is obtained through that
+ point.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide true
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-0.5cm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/stokesv.map.spec.co3-2peakv.pdf
+	width 80page%
+	BoundingBox 20bp 40bp 565bp 780bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:beforeafterspec"
+
+\end_inset
+
+Stokes V spectra of all objects before and after squint correction.
+
+\emph on
+ Miriad
+\emph default
+'s 
+\family typewriter
+maxfit
+\family default
+ is used on the CO map for each respective object to obtain the location
+ in the image where the Stokes V signal at 345.8GHz is maximum, and a spectra
+ is obtained through that point.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Squint Correction
 \end_layout
@@ -960,7 +1184,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename figures/Orion KL.map.spec.co3-2peakv.pdf
+	filename figures/Orion KL.map.spec.co3-2peaki.pdf
 	lyxscale 20
 	scale 65
 
