@@ -328,18 +328,6 @@ IRC+10216
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 RA 09
 \begin_inset Formula $^{\text{h}}$
 \end_inset
@@ -365,18 +353,6 @@ RA 09
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 Compact
 \end_layout
 
@@ -386,18 +362,6 @@ Compact
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 2009-11-24
 \end_layout
 
@@ -420,18 +384,6 @@ NGC7538
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 RA 23
 \begin_inset Formula $^{\text{h}}$
 \end_inset
@@ -457,18 +409,6 @@ RA 23
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 Compact
 \end_layout
 
@@ -478,18 +418,6 @@ Compact
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 2014-10-28
 \end_layout
 
@@ -512,18 +440,6 @@ Orion KL
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 RA 05
 \begin_inset Formula $^{\text{h}}$
 \end_inset
@@ -549,18 +465,6 @@ RA 05
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 Compact
 \end_layout
 
@@ -570,18 +474,6 @@ Compact
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 2008-01-06
 \end_layout
 
@@ -604,18 +496,6 @@ NGC1333
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 RA 03
 \begin_inset Formula $^{\text{h}}$
 \end_inset
@@ -641,18 +521,6 @@ RA 03
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 Compact
 \end_layout
 
@@ -662,18 +530,6 @@ Compact
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 2010-10-14
 \end_layout
 
@@ -741,7 +597,17 @@ vspace{-1cm}
 \begin_inset Graphics
 	filename figures/Orion KL.map.spec.co3-2peakv.pdf
 	lyxscale 70
-	width 35page%
+	scale 35
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename maps/orkl_080106.co3-2.full.plane3.ps
+	scale 37
+	scaleBeforeRotation
+	rotateAngle 270
+	rotateOrigin center
 
 \end_inset
 
@@ -751,9 +617,19 @@ vspace{-1cm}
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename figures/NGC7538.map.spec.co3-2peakv.pdf
+	filename figures/NGC7538.map.spec.co3-2peakv.notfull.pdf
 	lyxscale 70
-	width 35page%
+	scale 35
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename maps/NGC7538S-s4.co3-2.full.plane38.ps
+	scale 37
+	scaleBeforeRotation
+	rotateAngle 270
+	rotateOrigin center
 
 \end_inset
 
@@ -765,19 +641,16 @@ vspace{-1cm}
 \begin_inset Graphics
 	filename figures/IRC+10216.map.spec.co3-2peakv.pdf
 	lyxscale 70
-	width 35page%
+	scale 35
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
-\align center
 \begin_inset Graphics
-	filename figures/IRAS2a.map.spec.co3-2peakv.pdf
-	lyxscale 70
-	width 35page%
+	filename maps/irc+10216.co3-2.full.plane7.ps
+	scale 37
+	rotateAngle 270
+	rotateOrigin center
 
 \end_inset
 
@@ -794,18 +667,19 @@ name "fig:results"
 
 \end_inset
 
-Maps of the CO 
+Corrected maps of the CO 
 \begin_inset Formula $J=3\rightarrow2$
 \end_inset
 
- line (345.8GHz) and Spectra of Orion KL, NGC7538, IRC+10216 and NGC1333
- (IRAS2a).
+ line (345.8GHz) and corrected spectra for Orion KL, NGC7538, IRC+10216.
  
 \series bold
-Maps:
+\emph on
+Maps
+\emph default
+:
 \series default
- Blue contours are Stokes V and are shown at the -8, -7, -6, -5, -4, -3,
- -2, 2, 3, 4, 5, 6, 7, 8
+ Blue contours are Stokes V and are shown at the -4, -3, -2, 2, 3, 4
 \begin_inset Formula $\sigma$
 \end_inset
 
@@ -819,11 +693,17 @@ s
 imstat
 \family default
  command.
- Dark red contours are Stokes I and the levels are 20%, 40%, 60%, 80% and
- 95% of the maximum.
+ Dark red contours are Stokes I and the levels are 15%, 30%, 45%, 60%, 85%
+ and 95% of the maximum.
+ The value in the top left is the frequency of the mapped signal.
+ Each map has a narrow bandwidth of ~2 MHz around the frequency given in
+ the top left corner.
  
 \series bold
-Spectra:
+\emph on
+Spectra
+\emph default
+:
 \series default
  
 \emph on
@@ -833,10 +713,68 @@ Miriad
 \family typewriter
 maxfit
 \family default
- is used on the CO map to obtain the location in the image where the Stokes
+ is used on the CO map to obtain the location on the image where the Stokes
  V signal at 345.8GHz is maximum, and a spectra is obtained through that
  point.
- 
+ The cross on the map denotes the location of that peak.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide true
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/IRAS2a.map.spec.co3-2peakv.pdf
+	lyxscale 70
+	scale 35
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename maps/iras2a.aver.co3-2.ps
+	scale 37
+	rotateAngle 270
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Corrected maps of the CO 
+\begin_inset Formula $J=3\rightarrow2$
+\end_inset
+
+ line and corrected spectrum for NGC1333 (IRAS2a).
+ No significant Stokes V signal is detected here, probably because the object
+ is too dim.
+ Contours are the same levels as in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:results"
+
+\end_inset
+
+ and the spectrum is obtained the same way.
 \end_layout
 
 \end_inset
@@ -1184,9 +1122,23 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename figures/Orion KL.map.spec.co3-2peaki.pdf
-	lyxscale 20
-	scale 65
+	filename maps/orkl.cnt.uncorr.ps
+	lyxscale 80
+	scale 45
+	rotateAngle 270
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename maps/orkl.cnt.corr.ps
+	lyxscale 80
+	scale 45
+	rotateAngle 270
 
 \end_inset
 
@@ -1203,16 +1155,16 @@ name "fig:beforeafter"
 
 \end_inset
 
-(placeholder) Map of the continuum around 345GHz in Orion KL before (top)
- and after (bottom) squint correction.
- Red contours are Stokes I, orange (green?) contours are Stokes V.
+Map of the continuum around 345GHz in Orion KL before (top) and after (bottom)
+ squint correction.
+ Red contours are Stokes I, blue contours are Stokes V.
  Dashed lines denote negative values, solid lines denote positive values.
  Note the multiple pairs of positive and negative Stokes V peaks.
  These largely disappear after correction.
  The contour scales on both maps are identical.
  Red Stokes I contours are at 15%, 35%, 55%, 75% and 95% of the peak intensity.
- Orange (green?) Stokes V contours are at -8, -7, -6, -5, -4, -3, -2, 2,
- 3, 4, 5, 6, 7 and 8
+ Blue Stokes V contours are at -8, -7, -6, -5, -4, -3, -2, 2, 3, 4, 5, 6,
+ 7 and 8
 \begin_inset Formula $\sigma$
 \end_inset
 
