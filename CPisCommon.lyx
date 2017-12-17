@@ -186,10 +186,11 @@ key "Munoz2012"
 The four objects we present here are Orion KL, NGC7538, NGC1333 and IRC+10216.
  The first three are well-known star-formation regions while IRC+10216 is
  an evolved carbon star.
+ We find significant Stokes V signals in all objects except for NGC1333.
  The visibility data are corrected for beam squint, an instrumental artifact
  that gives rise to spurious Stokes V signals.
  Squint gives rise to distinct pairs of positive and negative peaks of Stokes
- V throughout the image.
+ V throughout the inverted image.
  Maps are then made of the continuum and lines for each object.
  The squint correction is confirmed visually by inspecting the Stokes V
  maps, where we see the pairs of peaks largely disappear.
@@ -215,9 +216,7 @@ reference "fig:beforeafterspec"
 \end_inset
 
 .
- Notice in most cases the Stokes V signal decreases after squint correction
- except for the case of CO in NGC7538, while for many other lines the Stokes
- V signal disappears completely.
+ Notice in all cases the Stokes V signal decreases after squint correction.
  Stokes V can be found in the average of all the visibility data as well,
  though the significance is 3-5
 \begin_inset Formula $\sigma$
@@ -228,16 +227,115 @@ reference "fig:beforeafterspec"
 \end_inset
 
  when the spectra is taken from the inverted maps.
+ We present here only the map spectra.
+ In general the peaks of Stokes I and Stokes V do not align in the maps.
+\end_layout
+
+\begin_layout Standard
+In Orion KL the lines of CO (
+\begin_inset Formula $J=3\rightarrow2$
+\end_inset
+
+ at 345.8GHz) and SiO (
+\begin_inset Formula $J=8\rightarrow7$
+\end_inset
+
+ at 347.3GHz) are both bright (peak Stokes I of ~20 Jy/beam and ~55 Jy/beam
+ respectively; not shown) and both show Stokes V signals.
+ The CO Stokes V signal has an antisymmetric structure while the SiO Stokes
+ V signal is purely negative.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:SiO"
+
+\end_inset
+
+ shows the peak Stokes V signal of the SiO line.
+ We checked the average of all the visibilities (average over all antennae
+ baselines and all time intervals) and found that the CO Stokes V signal
+ is more intense than the SiO Stokes V signal, and the Stokes I intensities
+ after averaging the visibilities were approximately 50 Jy and 75 Jy for
+ CO and SiO respectively.
+ If the Stokes V signal were purely leakage from Stokes I than we would
+ expect to see an SiO Stokes V signal that is stronger than the CO Stokes
+ V signal, but we do not.
  
 \end_layout
 
 \begin_layout Standard
-In the case of Orion KL the lines of CO (345.8GHz) and SiO (347.2GHz) have
- similar intensities but the CO line has a strong Stokes V signal while
- the SiO has very little.
- This reassures us that the measurement of Stokes I is not significantly
- leaking into Stokes V.
- 
+In IRC+10216 we again see Stokes V in the CO transition at 345.8 GHz but
+ also several signals in CS, SiS, and H
+\begin_inset Formula $^{13}$
+\end_inset
+
+CN.
+ These lines and their frequencies are listed in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:sumresults"
+
+\end_inset
+
+.
+ We again note that the Stokes I intensity is not proportional to the Stokes
+ V intensity.
+ The detection in CS at 342.8 GHz is huge compared to it's I intensity.
+\end_layout
+
+\begin_layout Standard
+In NGC7538 there was a strong Stokes V detection in CH
+\begin_inset Formula $_{2}$
+\end_inset
+
+CO at 346.6 GHz that completely disappeared after correction.
+ The Stokes V signal in CO at 345.8 GHz decreased in intensity but is still
+ extremely prominent.
+\end_layout
+
+\begin_layout Standard
+Finally Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:iras2a"
+
+\end_inset
+
+ shows no detection in NGC1333, with only a weak detection of CO in Stokes
+ I.
+\end_layout
+
+\begin_layout Standard
+When assessing the Stokes V detection we consult the map for obvious pairs
+ of positive/negative peaks that would indicate beam offset and therefore
+ a false Stokes V signal.
+ The maps are taken around a very narrow frequency band of around 2 MHz
+ so any peaks that exist shouldn't be washed out by noise in adjacent channels.
+ In the maps for Orion KL and IRC+10216 shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:results"
+
+\end_inset
+
+ there are no negative peaks around the peak of Stokes V.
+ However in NGC7538 there is quite a large negative Stokes V peak near our
+ chosen peak that may indicate squint.
+ The top panel of Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:beforeafter"
+
+\end_inset
+
+ shows what 'squint peaks' look like (we know these peaks are from squint
+ because they disappear after correction) and the pairs tend to resemble
+ each other in shape.
+ The pair of peaks around our chosen peak in NGC7538 however have distinct
+ shapes.
+ The worst case here is that the signal is entirely squint but on the other
+ hand the signal may be a mixture of real and heavily affected by squint.
+ The detections in Orion KL and IRC+10216 are more reliable.
 \end_layout
 
 \begin_layout Standard
@@ -253,7 +351,7 @@ reference "tab:Summary-of-Archival"
 
 \begin_layout Standard
 \begin_inset Float table
-wide true
+wide false
 sideways false
 status open
 
@@ -262,12 +360,12 @@ status open
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="4">
 <features booktabs="true" tabularvalignment="middle">
-<column alignment="left" valignment="top">
-<column alignment="left" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="right" valignment="top">
+<column alignment="left" valignment="top" width="19col%">
+<column alignment="left" valignment="top" width="33col%">
+<column alignment="right" valignment="top" width="20col%">
+<column alignment="right" valignment="top" width="18col%">
 <row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -278,7 +376,7 @@ Object
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -289,7 +387,7 @@ Coordinates (J2000)
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -300,125 +398,13 @@ Array Configuration
 
 \end_inset
 </cell>
-<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
 \series bold
 Date Observed
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-IRC+10216
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-RA 09
-\begin_inset Formula $^{\text{h}}$
-\end_inset
-
-47
-\begin_inset Formula $^{\text{m}}$
-\end_inset
-
-57.381
-\begin_inset Formula $^{\text{s}}$
-\end_inset
-
- Dec +13
-\begin_inset Formula $^{\circ}$
-\end_inset
-
-16'43.70''
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Compact
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-2009-11-24
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-NGC7538
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-RA 23
-\begin_inset Formula $^{\text{h}}$
-\end_inset
-
-13
-\begin_inset Formula $^{\text{m}}$
-\end_inset
-
-44.771
-\begin_inset Formula $^{\text{s}}$
-\end_inset
-
- Dec +61
-\begin_inset Formula $^{\circ}$
-\end_inset
-
-26'48.85''
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Compact
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-2014-10-28
 \end_layout
 
 \end_inset
@@ -452,7 +438,11 @@ RA 05
 \begin_inset Formula $^{\text{s}}$
 \end_inset
 
- Dec -05
+
+\begin_inset Newline newline
+\end_inset
+
+Dec -05
 \begin_inset Formula $^{\circ}$
 \end_inset
 
@@ -461,7 +451,7 @@ RA 05
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -475,6 +465,126 @@ Compact
 
 \begin_layout Plain Layout
 2008-01-06
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+NGC7538
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+RA 23
+\begin_inset Formula $^{\text{h}}$
+\end_inset
+
+13
+\begin_inset Formula $^{\text{m}}$
+\end_inset
+
+44.771
+\begin_inset Formula $^{\text{s}}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Dec +61
+\begin_inset Formula $^{\circ}$
+\end_inset
+
+26'48.85''
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Compact
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2014-10-28
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+IRC+10216
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+RA: 09
+\begin_inset Formula $^{\text{h}}$
+\end_inset
+
+47
+\begin_inset Formula $^{\text{m}}$
+\end_inset
+
+57.381
+\begin_inset Formula $^{\text{s}}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Dec +13
+\begin_inset Formula $^{\circ}$
+\end_inset
+
+16'43.70''
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Compact
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2009-11-24
 \end_layout
 
 \end_inset
@@ -508,7 +618,11 @@ RA 03
 \begin_inset Formula $^{\text{s}}$
 \end_inset
 
- Dec +31
+
+\begin_inset Newline newline
+\end_inset
+
+Dec +31
 \begin_inset Formula $^{\circ}$
 \end_inset
 
@@ -517,7 +631,7 @@ RA 03
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -717,6 +831,7 @@ maxfit
  V signal at 345.8GHz is maximum, and a spectra is obtained through that
  point.
  The cross on the map denotes the location of that peak.
+ The spectrum for NGC7538 is Hanning smoothed by a length of 15.
 \end_layout
 
 \end_inset
@@ -760,6 +875,12 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:iras2a"
+
+\end_inset
+
 Corrected maps of the CO 
 \begin_inset Formula $J=3\rightarrow2$
 \end_inset
@@ -775,6 +896,530 @@ reference "fig:results"
 \end_inset
 
  and the spectrum is obtained the same way.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/Orion KL.map.spec.sio8-7peakv.pdf
+	lyxscale 70
+	scale 37
+	BoundingBox 50bp 0bp 740bp 612bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:SiO"
+
+\end_inset
+
+Peak Stokes V signal for the SiO (
+\begin_inset Formula $J=7\rightarrow8$
+\end_inset
+
+ at 347.3 GHz) transition in Orion KL.
+ Note there is also a strong Stokes V signal in the CO 
+\begin_inset Formula $(J=3\rightarrow2$
+\end_inset
+
+ at 345.8 GHz) transition here.
+ The SiO signal is purely negative but the CO signal is antisymmetric.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="4">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="left" valignment="top" width="20col%">
+<column alignment="left" valignment="top" width="27col%">
+<column alignment="right" valignment="top" width="10col%">
+<column alignment="right" valignment="top" width="20col%">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Object
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Line
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+(GHz)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Stokes V (Jy/beam)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Orion KL
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CO 
+\begin_inset Formula $J=$
+\end_inset
+
+3
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+345.78
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.65
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SiO 
+\begin_inset Formula $J=$
+\end_inset
+
+8
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+347.3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.65
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+NGC7538
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CO 
+\begin_inset Formula $J=3\rightarrow2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+345.8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.85
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+IRC+10216
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CS 
+\begin_inset Formula $J=$
+\end_inset
+
+7
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+342.88
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.6
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SiS 
+\begin_inset Formula $J=$
+\end_inset
+
+19
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+18
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+344.78
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+H
+\begin_inset Formula $^{13}$
+\end_inset
+
+CN 
+\begin_inset Formula $J=$
+\end_inset
+
+4
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+345.34
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.8
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CO 
+\begin_inset Formula $J=$
+\end_inset
+
+3
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+345.8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+NGC1333 (IRAS2a)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CO 
+\begin_inset Formula $J=3\rightarrow2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+345.8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+None
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:sumresults"
+
+\end_inset
+
+Summary of corrected Stokes V signals found.
+ The beam size is determined by the configuration of the antennae array.
+ An intensity for the Stokes V signal is only given if the peak is noticeably
+ higher than the noise level.
+ The intensity quoted for CO in NGC7538 is before smoothing is applied.
 \end_layout
 
 \end_inset
