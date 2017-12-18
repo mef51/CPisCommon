@@ -77,8 +77,8 @@
 \begin_body
 
 \begin_layout Title
-Non-Zeeman Circular Polarization of Molecular Spectral Lines Present in
- Several Star-Forming Regions
+Non-Zeeman Circular Polarization of Molecular Spectral Lines is Common in
+ Star-Forming Regions
 \end_layout
 
 \begin_layout Author
@@ -141,8 +141,8 @@ ns from dust continuum and molecular spectral transitions and analysed through
  the Davis-Chandrasekhar-Fermi method.
  For molecular lines circular polarization is usually ignored, largely because
  of difficulty in measurement and its assumed irrelevance.
- We find in archival data of the Submillimeter Array several examples of
- circular polarization in common molecular tracers, most notably CO.
+ We find in archival data of the Submillimeter Array (SMA) several examples
+ of circular polarization in common molecular tracers, most notably CO.
  This circular polarization possibly arises from anisotropic resonant scattering
  implying that some background linearly polarized flux is being converted
  and lost to circular polarization.
@@ -161,10 +161,186 @@ ns from dust continuum and molecular spectral transitions and analysed through
 \end_layout
 
 \begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Introduction"
+
+\end_inset
+
+This section will lay the context and background of measuring the magnetic
+ field in star-forming regions using the techniques of polarimetry and radio
+ interferometry focusing specifically on circular polarization (CP).
+ Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Observations"
+
+\end_inset
+
+ presents archival observations of four objects taken with the Submillimeter
+ Array (SMA) on Mauna Kea and makes the case that these circular polarization
+ detections are real and physical.
+ Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Squint-Correction"
+
+\end_inset
+
+ will give in detail our scheme for correcting a spurious source of CP that
+ arises with the SMA.
+ Finally in Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Discussion"
+
+\end_inset
+
+ we'll highlight the significance of these CP detections and discuss relevant
+ research.
+\end_layout
+
+\begin_layout Standard
+Measuring the magnetic field in star-forming regions probably tells us why
+ clouds don't collapse as quickly or as often as we think they should.
+ But also the shape of the magnetic field probably tells you something about
+ the morphology of molecular clouds.
+ Since we can only measure the light we receive from such regions astronomers
+ use polarimetry to infer properties like the direction and magnitude of
+ the magnetic field.
+ The Davis-Chandrasekhar-Fermi method uses the dispersion of polarization
+ angles (or something) to figure out the magnitude and direction of the
+ plane-of-the-sky component of the magnetic field.
+\end_layout
+
+\begin_layout Standard
+The presence of a magnetic field leads to linear polarization because dust
+ grains made of polar molecules will align themselves the field.
+ This alignment of dust creates a polarizing grid and so background light
+ can become linearly polarized.
+ Thus measuring the amount of linear polarization tells us about the degree
+ to which the dust is aligned with the magnetic field which tells us about
+ the strength of the magnetic field, probably.
+\end_layout
+
+\begin_layout Standard
+Now Houde et al.
+ in 2014 or something discovered significant circular polarization a transition
+ of CO, a common tracer of linearly polarized light.
+ Circular polarization usually comes from Zeeman splitting, but the lines
+ of CO only split at magnetic fields of several thousand gauss.
+ In addition, the observed Stokes V profile was positive and symmetric,
+ which is also unexpected since Zeeman splitting gives rise to an antisymmetric
+ Stokes V profile.
+ To explain this Houde et al.
+ 2014 proposed a model whereby linearly polarized light is converted to
+ circularly polarized light through anisotropic resonant scattering (ARS).
+ This was tested by Hezareh et al.
+ 2016 in IC443 whereby the measured circularly polarized flux of a CO line
+ was 're-added' into the measured linearly polarized flux to correct the
+ polarization angles.
+ They found that the polarization angles obtained from the CO tracer only
+ agreed with those obtained from dust polarimetry after the circularly polarized
+ flux was accounted for.
+ If ARS is common to other objects then using CO as a tracer of the magnetic
+ field will have a systematic error unless the circular polarization of
+ CO's lines are also measured.
+\end_layout
+
+\begin_layout Standard
+The measurement of circular polarization in the radio has many challenges,
+ especially when using radio interferometers like the SMA or ALMA for studies
+ that require higher resolution.
+ The SMA polarimeter uses a quarter-waveplate to convert linearly polarized
+ light to circular to measure linear polarization.
+ ALMA on the other hand uses linear feeds and measures the linearly polarized
+ light directly.
+ While both systems can be used to measure circular polarization in principle,
+ the SMA's quarter-waveplate enables the measurement of circular polarization.
+ ALMA has had plenty of troubles getting their system to produce reliable
+ circular polarization measurements.
+ 
+\end_layout
+
+\begin_layout Standard
+The difference between the two systems and the difficulties arise because
+ of the basis used to measure the Stokes parameters of the light.
+ The SMA when using the quarter-waveplate measures in the circular basis,
+ so Stokes V is defined by 
+\begin_inset Formula $V=\langle E_{l}^{2}\rangle-\langle E_{r}^{2}\rangle$
+\end_inset
+
+ [Note: check the convention], where 
+\begin_inset Formula $E$
+\end_inset
+
+ is the electric field vector and 
+\begin_inset Formula $l$
+\end_inset
+
+ and 
+\begin_inset Formula $r$
+\end_inset
+
+ correspond to the left-CP and right-CP bases.
+ With ALMA's linear feeds Stokes V is defined by 
+\begin_inset Formula $V=-2\text{Im}(E_{x}E_{y}^{*})$
+\end_inset
+
+ where here 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ are the linear bases.
+ So in the circular feed case we take the difference of two measured intensities
+ while the linear feed case requires us to measure the phase of the electromagne
+tic wave.
+ 
+\end_layout
+
+\begin_layout Standard
+The analysis is further complicated when the measurement is made with interferom
+etry: the correlated waveforms between antennae (the visibilities) can be
+ coupled to the visibilities of the other Stokes parameters.
+ In the circular case the Stokes V visibility is roughly 
+\begin_inset Formula $\mathcal{V}_{\text{V}}\propto\text{\mathcal{V}}_{RR}-\text{\mathcal{V}}_{LL}$
+\end_inset
+
+ where 
+\begin_inset Formula $RR$
+\end_inset
+
+ indicates the correlation of the 
+\begin_inset Formula $R$
+\end_inset
+
+ visibility from each antenna in a pair.
+ The linear case is something like 
+\begin_inset Formula $\mathcal{V}_{\text{V}}\propto Q+U-iV$
+\end_inset
+
+ (not actually like that)
+\end_layout
+
+\begin_layout Section
 Observations
 \end_layout
 
 \begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Observations"
+
+\end_inset
+
 We collected radio interferometric archival polarimetry observations from
  the Submillimeter Array (SMA) archive that had been measured using the
  circular feeds, a similar setup to that used by 
@@ -1511,6 +1687,12 @@ Squint Correction
 \end_layout
 
 \begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Squint-Correction"
+
+\end_inset
+
 Here we describe spurious Stokes V that arises when using the SMA and our
  scheme for correcting it.
  This instrumental Stokes V comes from a slight pointing offset between
@@ -1829,6 +2011,34 @@ Map of the continuum around 345GHz in Orion KL before (top) and after (bottom)
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Discussion
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Discussion"
+
+\end_inset
+
+Hello
+\end_layout
+
+\begin_layout Section
+Conclusion
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Conclusion"
+
+\end_inset
+
+Sup
 \end_layout
 
 \begin_layout References
