@@ -173,7 +173,7 @@ name "sec:Introduction"
 
 This section will lay the context and background of measuring the magnetic
  field in star-forming regions using the techniques of polarimetry and radio
- interferometry focusing specifically on circular polarization (CP).
+ interferometry, focusing specifically on circular polarization (CP).
  Section 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -205,44 +205,70 @@ reference "sec:Discussion"
 \end_layout
 
 \begin_layout Standard
-Measuring the magnetic field in star-forming regions probably tells us why
- clouds don't collapse as quickly or as often as we think they should.
- But also the shape of the magnetic field probably tells you something about
- the morphology of molecular clouds.
- Since we can only measure the light we receive from such regions astronomers
+Since we can only measure the light from star-forming regions astronomers
  use polarimetry to infer properties like the direction and magnitude of
  the magnetic field.
  The Davis-Chandrasekhar-Fermi method uses the dispersion of polarization
- angles (or something) to figure out the magnitude and direction of the
- plane-of-the-sky component of the magnetic field.
+ angles in dust (?) to figure out the magnitude and direction of the plane-of-th
+e-sky component (?) of the magnetic field.
 \end_layout
 
 \begin_layout Standard
-The presence of a magnetic field leads to linear polarization because dust
- grains made of polar molecules will align themselves the field.
- This alignment of dust creates a polarizing grid and so background light
- can become linearly polarized.
+The presence of a magnetic field leads to linearly polarized radiation.
+ Dust grains made will align themselves to the field (how?).
+ This aligned dust emits thermal radiation in the continuum that is linearly
+ polarized 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Vallee2011"
+
+\end_inset
+
+.
+ Aligned dust will also absorb radiation whose polarization is aligned with
+ its long axis, acting as a sort of polarizing grid.
  Thus measuring the amount of linear polarization tells us about the degree
  to which the dust is aligned with the magnetic field which tells us about
- the strength of the magnetic field, probably.
+ the strength of the magnetic field.
+ Further, the interaction between certain molecules and the ambient magnetic
+ field can cause that molecules transitions to be linearly polarized by
+ a few percent through the Goldreich-Kylafis effect.
 \end_layout
 
 \begin_layout Standard
-Now Houde et al.
- in 2014 or something discovered significant circular polarization a transition
- of CO, a common tracer of linearly polarized light.
+Significant circular polarization was reported by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Houde2013"
+
+\end_inset
+
+ in a rotational transition of CO using the Caltech Submillimeter Observatory
+ (CSO), a common tracer of the magnetic field.
  Circular polarization usually comes from Zeeman splitting, but the lines
  of CO only split at magnetic fields of several thousand gauss.
  In addition, the observed Stokes V profile was positive and symmetric,
  which is also unexpected since Zeeman splitting gives rise to an antisymmetric
  Stokes V profile.
- To explain this Houde et al.
- 2014 proposed a model whereby linearly polarized light is converted to
- circularly polarized light through anisotropic resonant scattering (ARS).
- This was tested by Hezareh et al.
- 2016 in IC443 whereby the measured circularly polarized flux of a CO line
- was 're-added' into the measured linearly polarized flux to correct the
- polarization angles.
+ To explain this a model was proposed whereby linearly polarized light is
+ converted to circularly polarized light through anisotropic resonant scattering
+ (ARS) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Houde2013,Houde2014"
+
+\end_inset
+
+.
+ This was tested in IC443 by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Hezareh2013"
+
+\end_inset
+
+ whereby the measured circularly polarized flux of a CO line was 're-added'
+ into the measured linearly polarized flux to correct the polarization angles.
  They found that the polarization angles obtained from the CO tracer only
  agreed with those obtained from dust polarimetry after the circularly polarized
  flux was accounted for.
@@ -323,11 +349,12 @@ etry: the correlated waveforms between antennae (the visibilities) can be
 \end_inset
 
  visibility from each antenna in a pair.
- The linear case is something like 
-\begin_inset Formula $\mathcal{V}_{\text{V}}\propto Q+U-iV$
-\end_inset
-
- (not actually like that)
+ The linear feed case depends has Stokes V coupled with Stokes Q and U.
+ This means when calibrating for gain using a calibration object like a
+ quasar the Stokes Q and U of that object must be measured as well.
+ This is not possible with the SMA setup.
+ ALMA has problems getting consistent results due to this calibration problem.
+ [I hate this whole paragraph]
 \end_layout
 
 \begin_layout Section
@@ -2024,7 +2051,15 @@ name "sec:Discussion"
 
 \end_inset
 
-Hello
+Are these detections of CP in CO real and are they as common as we these
+ archival observations lead us to believe? Probably.
+ Houde 2014 saw some, Hezareh saw some CP.
+ 
+\end_layout
+
+\begin_layout Standard
+Houde proposed the ARS model to explain it, but also a side effect of the
+ formalism in Lazarin 2007 is conversion of linear to circular polarization.
 \end_layout
 
 \begin_layout Section
@@ -2125,6 +2160,52 @@ key "Schwab1980"
 \end_inset
 
 Schwab 1980
+\end_layout
+
+\begin_layout References
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "J. P. Vallée(2011)"
+key "Vallee2011"
+
+\end_inset
+
+Vallée 2011
+\end_layout
+
+\begin_layout References
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "Houde et al.(2013)"
+key "Houde2013"
+
+\end_inset
+
+Houde, Hezareh, Jones, Rajabi 2013
+\end_layout
+
+\begin_layout References
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "Houde(2014)"
+key "Houde2014"
+
+\end_inset
+
+Houde 2014
+\end_layout
+
+\begin_layout References
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "Hezareh et al.(2013)"
+key "Hezareh2013"
+
+\end_inset
+
+Hezareh T.
+ J.
+ 2013
 \end_layout
 
 \end_body
