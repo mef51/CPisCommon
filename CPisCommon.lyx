@@ -171,9 +171,16 @@ name "sec:Introduction"
 
 \end_inset
 
-This section will lay the context and background of measuring the magnetic
- field in star-forming regions using the techniques of polarimetry and radio
- interferometry, focusing specifically on circular polarization (CP).
+This section will cover the background of magnetic fields in star-forming
+ regions and Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Measurement-with-Radio"
+
+\end_inset
+
+ will discuss the issues that arise when doing polarimetry with radio interferom
+etry, focusing specifically on circular polarization (CP).
  Section 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -267,7 +274,7 @@ key "Hezareh2013"
 
 \end_inset
 
- whereby the measured circularly polarized flux of a CO line was 're-added'
+ where the measured circularly polarized flux of a CO line was 're-added'
  into the measured linearly polarized flux to correct the polarization angles.
  They found that the polarization angles obtained from the CO tracer only
  agreed with those obtained from dust polarimetry after the circularly polarized
@@ -277,7 +284,17 @@ key "Hezareh2013"
  CO's lines are also measured.
 \end_layout
 
+\begin_layout Section
+Measurement with Radio Interferometry
+\end_layout
+
 \begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Measurement-with-Radio"
+
+\end_inset
+
 The measurement of circular polarization in the radio has many challenges,
  especially when using radio interferometers like the SMA or ALMA for studies
  that require higher resolution.
@@ -1737,7 +1754,7 @@ The archival data used was in all cases observed with the goal of measuring
  V 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Marrone2008,Sault1996"
+key "Marrone2008"
 
 \end_inset
 
@@ -2079,6 +2096,82 @@ Sup
 \begin_layout References
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
+label "J. P. Vallée(2011)"
+key "Vallee2011"
+
+\end_inset
+
+Vallée, J.
+ P.
+ 2011, New Astronomy Reviews 55, 23–90
+\end_layout
+
+\begin_layout References
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "Hezareh et al.(2013)"
+key "Hezareh2013"
+
+\end_inset
+
+Hezareh, T.
+ J., Wiesemeyer, H., Houde, M., Gusdorf, A., Siringo, G.
+ 2013 A&A, 558, A45
+\end_layout
+
+\begin_layout References
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "Houde et al.(2013)"
+key "Houde2013"
+
+\end_inset
+
+Houde, M., Hezareh, T., Jones, S., & Rajabi, F.
+ 2013 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+apj
+\end_layout
+
+\end_inset
+
+, 764, 24
+\end_layout
+
+\begin_layout References
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "Houde(2014)"
+key "Houde2014"
+
+\end_inset
+
+Houde, M.
+ 2014 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+apj
+\end_layout
+
+\end_inset
+
+, 795, 27
+\end_layout
+
+\begin_layout References
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
 label "Mu\\~{n}oz et al.(2012)"
 key "Munoz2012"
 
@@ -2098,7 +2191,9 @@ status open
 \end_inset
 
 oz, D.
- J., et al.
+ J., Marrone, D.
+ P., Moran, J.
+ M., & Rao, R.
  2012 
 \begin_inset ERT
 status open
@@ -2123,20 +2218,11 @@ key "Marrone2008"
 
 \end_inset
 
-Marrone et al.
- 2008
-\end_layout
-
-\begin_layout References
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-label "Sault et al.(1996)"
-key "Sault1996"
-
-\end_inset
-
-Sault et al.
- 1996
+Marrone D.
+ P.
+ & Rao R.
+ 2008, Proc.
+ SPIE 7020, 70202B
 \end_layout
 
 \begin_layout References
@@ -2147,8 +2233,8 @@ key "Sault2008"
 
 \end_inset
 
-Sault, B., Killeen, N., 2008, Miriad Users Guide, Australia Telescope National
- Facility
+Sault, B., Killeen, N.
+ 2008, Miriad Users Guide, Australia Telescope National Facility
 \end_layout
 
 \begin_layout References
@@ -2159,53 +2245,10 @@ key "Schwab1980"
 
 \end_inset
 
-Schwab 1980
-\end_layout
-
-\begin_layout References
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-label "J. P. Vallée(2011)"
-key "Vallee2011"
-
-\end_inset
-
-Vallée 2011
-\end_layout
-
-\begin_layout References
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-label "Houde et al.(2013)"
-key "Houde2013"
-
-\end_inset
-
-Houde, Hezareh, Jones, Rajabi 2013
-\end_layout
-
-\begin_layout References
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-label "Houde(2014)"
-key "Houde2014"
-
-\end_inset
-
-Houde 2014
-\end_layout
-
-\begin_layout References
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-label "Hezareh et al.(2013)"
-key "Hezareh2013"
-
-\end_inset
-
-Hezareh T.
- J.
- 2013
+Schwab, F.
+ R.
+ 1980, Proc.
+ SPIE 0231, Intl Optical Computing Conf I
 \end_layout
 
 \end_body
