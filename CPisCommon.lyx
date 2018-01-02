@@ -2096,19 +2096,6 @@ Sup
 \begin_layout References
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-label "J. P. Vallée(2011)"
-key "Vallee2011"
-
-\end_inset
-
-Vallée, J.
- P.
- 2011, New Astronomy Reviews 55, 23–90
-\end_layout
-
-\begin_layout References
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
 label "Hezareh et al.(2013)"
 key "Hezareh2013"
 
@@ -2249,6 +2236,19 @@ Schwab, F.
  R.
  1980, Proc.
  SPIE 0231, Intl Optical Computing Conf I
+\end_layout
+
+\begin_layout References
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "J. P. Vallée(2011)"
+key "Vallee2011"
+
+\end_inset
+
+Vallée, J.
+ P.
+ 2011, New Astronomy Reviews 55, 23–90
 \end_layout
 
 \end_body
