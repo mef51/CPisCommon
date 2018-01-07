@@ -171,8 +171,8 @@ name "sec:Introduction"
 
 \end_inset
 
-This section will cover the background of magnetic fields in star-forming
- regions and Section 
+This section will cover the background of measuring magnetic fields in star-form
+ing regions and Section 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Measurement-with-Radio"
@@ -188,7 +188,7 @@ reference "sec:Observations"
 
 \end_inset
 
- presents archival observations of four objects taken with the Submillimeter
+ presents archival observations of four objects made with the Submillimeter
  Array (SMA) on Mauna Kea and makes the case that these circular polarization
  detections are real and physical.
  Section 
@@ -207,7 +207,7 @@ reference "sec:Discussion"
 
 \end_inset
 
- we'll highlight the significance of these CP detections and discuss relevant
+ we'll highlight the significance of these CP detections and summarize relevant
  research.
 \end_layout
 
@@ -215,14 +215,11 @@ reference "sec:Discussion"
 Since we can only measure the light from star-forming regions astronomers
  use polarimetry to infer properties like the direction and magnitude of
  the magnetic field.
- The Davis-Chandrasekhar-Fermi method uses the dispersion of polarization
- angles in dust (?) to figure out the magnitude and direction of the plane-of-th
-e-sky component (?) of the magnetic field.
-\end_layout
-
-\begin_layout Standard
-The presence of a magnetic field leads to linearly polarized radiation.
- Dust grains made will align themselves to the field (how?).
+ The Davis-Chandrasekhar-Fermi is one method that uses the dispersion of
+ polarization angles in the thermal emission of dust to find the magnitude
+ and direction of the plane-of-the-sky component of the magnetic field.
+ The presence of a magnetic field leads to linearly polarized radiation
+ because dust grains will align themselves to the field.
  This aligned dust emits thermal radiation in the continuum that is linearly
  polarized 
 \begin_inset CommandInset citation
@@ -234,16 +231,24 @@ key "Vallee2011"
 .
  Aligned dust will also absorb radiation whose polarization is aligned with
  its long axis, acting as a sort of polarizing grid.
- Thus measuring the amount of linear polarization tells us about the degree
- to which the dust is aligned with the magnetic field which tells us about
- the strength of the magnetic field.
- Further, the interaction between certain molecules and the ambient magnetic
- field can cause that molecules transitions to be linearly polarized by
- a few percent through the Goldreich-Kylafis effect.
+ Thus measuring the amount of linear polarization in the infrared continuum
+ tells us about the degree to which the dust is aligned with the magnetic
+ field which in turn tells us about the strength of the magnetic field.
+ 
 \end_layout
 
 \begin_layout Standard
-Significant circular polarization was reported by 
+In addition to this technique the interaction between certain molecules
+ and the ambient magnetic field can cause that molecule's transitions to
+ be linearly polarized by a few percent through the Goldreich-Kylafis effect.
+ The amount of linear polarization in the spectral line can be measured
+ and used to infer properties of the magnetic field.
+ 
+\end_layout
+
+\begin_layout Standard
+A significant amount of unexpected circular polarization was reported by
+ 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Houde2013"
@@ -252,14 +257,15 @@ key "Houde2013"
 
  in a rotational transition of CO using the Caltech Submillimeter Observatory
  (CSO), a common tracer of the magnetic field.
- Circular polarization usually comes from Zeeman splitting, but the lines
- of CO only split at magnetic fields of several thousand gauss.
+ The presence of circular polarization in a molecular transition is usually
+ explained with Zeeman splitting, but the lines of CO only split at magnetic
+ fields of several thousand gauss.
  In addition, the observed Stokes V profile was positive and symmetric,
  which is also unexpected since Zeeman splitting gives rise to an antisymmetric
  Stokes V profile.
- To explain this a model was proposed whereby linearly polarized light is
- converted to circularly polarized light through anisotropic resonant scattering
- (ARS) 
+ To explain this detection a model was proposed whereby linearly polarized
+ light is converted to circularly polarized light through anisotropic resonant
+ scattering (ARS) 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Houde2013,Houde2014"
@@ -282,10 +288,12 @@ key "Hezareh2013"
  If ARS is common to other objects then using CO as a tracer of the magnetic
  field will have a systematic error unless the circular polarization of
  CO's lines are also measured.
+ The goal of this paper is to show several examples of such circular polarizatio
+n.
 \end_layout
 
 \begin_layout Section
-Measurement with Radio Interferometry
+Measurement of Circular Polarization with Radio Interferometry
 \end_layout
 
 \begin_layout Standard
@@ -295,83 +303,44 @@ name "sec:Measurement-with-Radio"
 
 \end_inset
 
-The measurement of circular polarization in the radio has many challenges,
- especially when using radio interferometers like the SMA or ALMA for studies
- that require higher resolution.
- The SMA polarimeter uses a quarter-waveplate to convert linearly polarized
- light to circular to measure linear polarization.
+The measurement of circular polarization in the radio is challenging to
+ calibrate, especially when using radio interferometers like the SMA or
+ ALMA.
+ The SMA polarimeter uses a quarter-waveplate (QWP) to convert incident
+ linearly polarized light to circular primarily to measure linear polarization.
+ While not its intended use, The QWP can work the other way to measure CP:
+ incident CP is converted to LP and then measured by the receivers.
  ALMA on the other hand uses linear feeds and measures the linearly polarized
  light directly.
- While both systems can be used to measure circular polarization in principle,
- the SMA's quarter-waveplate enables the measurement of circular polarization.
- ALMA has had plenty of troubles getting their system to produce reliable
- circular polarization measurements.
- 
-\end_layout
+ While both types of feeds can be used to measure circular polarization,
+ the calibration process is different 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Sault1996"
 
-\begin_layout Standard
-The difference between the two systems and the difficulties arise because
- of the basis used to measure the Stokes parameters of the light.
- The SMA when using the quarter-waveplate measures in the circular basis,
- so Stokes V is defined by 
-\begin_inset Formula $V=\langle E_{l}^{2}\rangle-\langle E_{r}^{2}\rangle$
 \end_inset
 
- [Note: check the convention], where 
-\begin_inset Formula $E$
+.
+ Currently ALMA does not support measuring Stokes V reliably.
+ The SMA has been used to take precise measurements of CP in Sgr A* as reported
+ in 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Munoz2012"
+
 \end_inset
 
- is the electric field vector and 
-\begin_inset Formula $l$
+.
+ For a discussion on measuring CP with radio interferometry and on design
+ choices at the SMA (such as the choice of converting from linear- to circular-p
+olarization and vice-versa) see 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Hamaker1996,Marrone2008"
+
 \end_inset
 
- and 
-\begin_inset Formula $r$
-\end_inset
-
- correspond to the left-CP and right-CP bases.
- With ALMA's linear feeds Stokes V is defined by 
-\begin_inset Formula $V=-2\text{Im}(E_{x}E_{y}^{*})$
-\end_inset
-
- where here 
-\begin_inset Formula $x$
-\end_inset
-
- and 
-\begin_inset Formula $y$
-\end_inset
-
- are the linear bases.
- So in the circular feed case we take the difference of two measured intensities
- while the linear feed case requires us to measure the phase of the electromagne
-tic wave.
- 
-\end_layout
-
-\begin_layout Standard
-The analysis is further complicated when the measurement is made with interferom
-etry: the correlated waveforms between antennae (the visibilities) can be
- coupled to the visibilities of the other Stokes parameters.
- In the circular case the Stokes V visibility is roughly 
-\begin_inset Formula $\mathcal{V}_{\text{V}}\propto\text{\mathcal{V}}_{RR}-\text{\mathcal{V}}_{LL}$
-\end_inset
-
- where 
-\begin_inset Formula $RR$
-\end_inset
-
- indicates the correlation of the 
-\begin_inset Formula $R$
-\end_inset
-
- visibility from each antenna in a pair.
- The linear feed case depends has Stokes V coupled with Stokes Q and U.
- This means when calibrating for gain using a calibration object like a
- quasar the Stokes Q and U of that object must be measured as well.
- This is not possible with the SMA setup.
- ALMA has problems getting consistent results due to this calibration problem.
- [I hate this whole paragraph]
+.
 \end_layout
 
 \begin_layout Section
@@ -460,8 +429,8 @@ In Orion KL the lines of CO (
 \begin_inset Formula $J=8\rightarrow7$
 \end_inset
 
- at 347.3GHz) are both bright (peak Stokes I of ~20 Jy/beam and ~55 Jy/beam
- respectively; not shown) and both show Stokes V signals.
+ at 347.3GHz) are both bright (peak Stokes I of around 20 Jy/beam and 55
+ Jy/beam respectively; not shown) and both show Stokes V signals.
  The CO Stokes V signal has an antisymmetric structure while the SiO Stokes
  V signal is purely negative.
  Figure 
@@ -2068,15 +2037,91 @@ name "sec:Discussion"
 
 \end_inset
 
-Are these detections of CP in CO real and are they as common as we these
- archival observations lead us to believe? Probably.
- Houde 2014 saw some, Hezareh saw some CP.
+Are these detections of CP in CO real and are they as common as these archival
+ observations lead us to believe? 
+\end_layout
+
+\begin_layout Itemize
+Summarize earlier detections
+\end_layout
+
+\begin_layout Itemize
+Summarize ARS, other theories 
+\end_layout
+
+\begin_layout Subsection
+Linear vs.
+ Circular Feeds
+\end_layout
+
+\begin_layout Standard
+To illustrate briefly the differences between the two feed types consider
+ the following: with orthogonal circular polarization bases, the Stokes
+ V parameter for a beam of light is defined by 
+\begin_inset Formula $V=\langle E_{l}^{2}\rangle-\langle E_{r}^{2}\rangle$
+\end_inset
+
+, where 
+\begin_inset Formula $E$
+\end_inset
+
+ is the electric field vector and 
+\begin_inset Formula $l$
+\end_inset
+
+ and 
+\begin_inset Formula $r$
+\end_inset
+
+ correspond to the orthogonal left-CP and right-CP bases.
+ With orthogonal linear bases Stokes V is defined by 
+\begin_inset Formula $V=-2\text{Im}(E_{x}E_{y}^{*})$
+\end_inset
+
+ where 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ are the linear bases.
+ In the circular case we take the difference of two measured intensities
+ while the linear feed case requires us to measure the phase of the electromagne
+tic wave.
  
 \end_layout
 
 \begin_layout Standard
-Houde proposed the ARS model to explain it, but also a side effect of the
- formalism in Lazarin 2007 is conversion of linear to circular polarization.
+Now when the measurement is made with interferometry it is the visibilities
+ –the correlated waveforms between a pair of antennae– that are measured.
+ In the circular case the Stokes V visibility is roughly 
+\begin_inset Formula $\mathcal{V}_{\text{V}}\propto\text{\mathcal{V}}_{RR}-\text{\mathcal{V}}_{LL}$
+\end_inset
+
+ where 
+\begin_inset Formula $\text{\mathcal{V}}_{RR}$
+\end_inset
+
+ and 
+\begin_inset Formula $\text{\mathcal{V}}_{LL}$
+\end_inset
+
+ are the visibilities obtained from correlating two antenna measuring right-CP
+ and left-CP respectively.
+ In the linear feed case the Stokes V visibility is coupled with the Stokes
+ Q and U visibilities 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Thompson2001"
+
+\end_inset
+
+.
+ This means the Stokes Q and U of any calibration object must be measured
+ as well.
+ This is not possible with the SMA setup.
 \end_layout
 
 \begin_layout Section
@@ -2091,6 +2136,22 @@ name "sec:Conclusion"
 \end_inset
 
 Sup
+\end_layout
+
+\begin_layout References
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "Hamaker et al.(1996)"
+key "Hamaker1996"
+
+\end_inset
+
+Hamaker, J.
+ P., Bregman, J.
+ D., & Sault, R.
+ J.
+ 1996 A&A Suppl.
+ Ser., 117, 137-147
 \end_layout
 
 \begin_layout References
@@ -2215,12 +2276,28 @@ Marrone D.
 \begin_layout References
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
+label "Sault et al.(1996)"
+key "Sault1996"
+
+\end_inset
+
+Sault, R.
+ J., Hamaker, J.
+ P., & Bregman, J., D.
+ 1996 A&A Suppl.
+ Ser., 117, 149-159
+\end_layout
+
+\begin_layout References
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
 label "Sault et al.(2008)"
 key "Sault2008"
 
 \end_inset
 
-Sault, B., Killeen, N.
+Sault, R.
+ J., Killeen, N.
  2008, Miriad Users Guide, Australia Telescope National Facility
 \end_layout
 
@@ -2236,6 +2313,21 @@ Schwab, F.
  R.
  1980, Proc.
  SPIE 0231, Intl Optical Computing Conf I
+\end_layout
+
+\begin_layout References
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "Thompson et al.(2001)"
+key "Thompson2001"
+
+\end_inset
+
+Thompson, A.
+ R., Moran, J.
+ M., & Swenson Jr, G.
+ W.
+ 2001, Interferometry and synthesis in radio astronomy (John Wiley & Sons)
 \end_layout
 
 \begin_layout References
