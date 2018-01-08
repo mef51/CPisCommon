@@ -221,19 +221,19 @@ Since we can only measure the light from star-forming regions astronomers
  The presence of a magnetic field leads to linearly polarized radiation
  because dust grains will align themselves to the field.
  This aligned dust emits thermal radiation in the continuum that is linearly
- polarized 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Vallee2011"
-
-\end_inset
-
-.
+ polarized.
  Aligned dust will also absorb radiation whose polarization is aligned with
  its long axis, acting as a sort of polarizing grid.
  Thus measuring the amount of linear polarization in the infrared continuum
  tells us about the degree to which the dust is aligned with the magnetic
- field which in turn tells us about the strength of the magnetic field.
+ field which in turn tells us about the strength of the magnetic field 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Chandrasekhar1953,Vallee2011"
+
+\end_inset
+
+.
  
 \end_layout
 
@@ -1723,11 +1723,11 @@ The archival data used was in all cases observed with the goal of measuring
  V 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Marrone2008"
+key "Marrone2008,Thompson2001"
 
 \end_inset
 
- (cite the textbook).
+.
  Obtaining Stokes V from the visibilities measured with circular feeds is
  done as follows.
  Given antennae 
@@ -2136,6 +2136,31 @@ name "sec:Conclusion"
 \end_inset
 
 Sup
+\end_layout
+
+\begin_layout References
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "Chandrasekhar \\&{} Fermi(1953)"
+key "Chandrasekhar1953"
+
+\end_inset
+
+Chandrasekhar, S., & Fermi, E.
+ 1953 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+apj
+\end_layout
+
+\end_inset
+
+, 118, 113
 \end_layout
 
 \begin_layout References
