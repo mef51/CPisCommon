@@ -376,14 +376,25 @@ The four objects we present here are Orion KL, NGC7538, NGC1333 and IRC+10216.
  The first three are well-known star-formation regions while IRC+10216 is
  an evolved carbon star.
  We find significant Stokes V signals in all objects except for NGC1333.
- The visibility data are corrected for beam squint, an instrumental artifact
+ 
+\end_layout
+
+\begin_layout Standard
+The visibility data are corrected for beam squint, an instrumental artifact
  that gives rise to spurious Stokes V signals.
  Squint gives rise to distinct pairs of positive and negative peaks of Stokes
  V throughout the inverted image.
  Maps are then made of the continuum and lines for each object.
  The squint correction is confirmed visually by inspecting the Stokes V
  maps, where we see the pairs of peaks largely disappear.
- More details on the squint correction will be given in the next section.
+ More details on the squint correction will be given in Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Squint-Correction"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -417,7 +428,7 @@ reference "fig:beforeafterspec"
 
  when the spectra is taken from the inverted maps.
  We present here only the map spectra.
- In general the peaks of Stokes I and Stokes V do not align in the maps.
+ In general the peaks of Stokes I and Stokes V are not at the same map position.
 \end_layout
 
 \begin_layout Standard
@@ -446,7 +457,7 @@ reference "fig:SiO"
  is more intense than the SiO Stokes V signal, and the Stokes I intensities
  after averaging the visibilities were approximately 50 Jy and 75 Jy for
  CO and SiO respectively.
- If the Stokes V signal were purely leakage from Stokes I than we would
+ If the Stokes V signal were purely leakage from Stokes I then we would
  expect to see an SiO Stokes V signal that is stronger than the CO Stokes
  V signal, but we do not.
  
@@ -467,9 +478,6 @@ reference "tab:sumresults"
 \end_inset
 
 .
- We again note that the Stokes I intensity is not proportional to the Stokes
- V intensity.
- The detection in CS at 342.8 GHz is huge compared to it's I intensity.
 \end_layout
 
 \begin_layout Standard
@@ -495,7 +503,7 @@ reference "fig:iras2a"
 \end_layout
 
 \begin_layout Standard
-When assessing the Stokes V detection we consult the map for obvious pairs
+When assessing the Stokes V detections we consult the map for obvious pairs
  of positive/negative peaks that would indicate beam offset and therefore
  a false Stokes V signal.
  The maps are taken around a very narrow frequency band of around 2 MHz
@@ -2037,8 +2045,37 @@ name "sec:Discussion"
 
 \end_inset
 
-Are these detections of CP in CO real and are they as common as these archival
- observations lead us to believe? 
+Are these detections of CP in the archival SMA data shown real or are they
+ instrumental artifacts? This is our chief concern because of the difficulty
+ of calibrating CP measurements and because these measurements were not
+ made with any special considerations for calibrating the CP like in the
+ observation of Sgr A* reported in 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Munoz2012"
+
+\end_inset
+
+.
+ We repeat here the arguments made in Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Observations"
+
+\end_inset
+
+ that these detections are real.
+ Firstly we .
+\end_layout
+
+\begin_layout Standard
+We checked and confirmed that there were no Stokes V signals in the continuum
+ larger than those found at molecular lines like CO and SiO.
+ Finding a large signal in the continuum could indicate the data is suffering
+ from instrumental artifacts since we only expect conversion of linear to
+ circular polarization at the frequencies of molecular transitions.
+ This is not the case: we only find Stokes V peaks at frequencies that correspon
+d with emission from molecular lines
 \end_layout
 
 \begin_layout Itemize
@@ -2046,7 +2083,8 @@ Summarize earlier detections
 \end_layout
 
 \begin_layout Itemize
-Summarize ARS, other theories 
+Summarize ARS, other theories.
+ Mention the antisymmetry and the symmetry and that they fit with ARS
 \end_layout
 
 \begin_layout Subsection
