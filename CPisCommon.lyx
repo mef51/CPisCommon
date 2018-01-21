@@ -1240,14 +1240,10 @@ Orion KL
 
 \begin_layout Plain Layout
 CO 
-\begin_inset Formula $J=$
+\begin_inset Formula $J=3\rightarrow2$
 \end_inset
 
-3
-\begin_inset Formula $\rightarrow$
-\end_inset
 
-2
 \end_layout
 
 \end_inset
@@ -1286,14 +1282,10 @@ CO
 
 \begin_layout Plain Layout
 SiO 
-\begin_inset Formula $J=$
+\begin_inset Formula $J=8\rightarrow7$
 \end_inset
 
-8
-\begin_inset Formula $\rightarrow$
-\end_inset
 
-7
 \end_layout
 
 \end_inset
@@ -1378,14 +1370,10 @@ IRC+10216
 
 \begin_layout Plain Layout
 CS 
-\begin_inset Formula $J=$
+\begin_inset Formula $J=7\rightarrow6$
 \end_inset
 
-7
-\begin_inset Formula $\rightarrow$
-\end_inset
 
-6
 \end_layout
 
 \end_inset
@@ -1427,6 +1415,18 @@ SiS
 \begin_inset Formula $J=$
 \end_inset
 
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
 19
 \begin_inset Formula $\rightarrow$
 \end_inset
@@ -1477,6 +1477,18 @@ CN
 \begin_inset Formula $J=$
 \end_inset
 
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
 4
 \begin_inset Formula $\rightarrow$
 \end_inset
@@ -1520,14 +1532,10 @@ CN
 
 \begin_layout Plain Layout
 CO 
-\begin_inset Formula $J=$
+\begin_inset Formula $J=3\rightarrow2$
 \end_inset
 
-3
-\begin_inset Formula $\rightarrow$
-\end_inset
 
-2
 \end_layout
 
 \end_inset
@@ -2047,9 +2055,9 @@ name "sec:Discussion"
 
 Are these detections of CP in the archival SMA data shown real or are they
  instrumental artifacts? This is our chief concern because of the difficulty
- of calibrating CP measurements and because these measurements were not
- made with any special considerations for calibrating the CP like in the
- observation of Sgr A* reported in 
+ of calibrating CP measurements and because the measurements presented here
+ were not made with any special considerations for calibrating CP as in
+ the observation of Sgr A* reported in 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Munoz2012"
@@ -2065,21 +2073,63 @@ reference "sec:Observations"
 \end_inset
 
  that these detections are real.
- Firstly we .
+ We then discuss earlier detections of CP and summarize how ARS can explain
+ the detections presented in this work.
 \end_layout
 
 \begin_layout Standard
-We checked and confirmed that there were no Stokes V signals in the continuum
- larger than those found at molecular lines like CO and SiO.
+Firstly we take the average of all the visibility data and note that the
+ peak Stokes V is not proportional to the peak Stokes I at any particular
+ frequency –a large Stokes I at 347.25GHz for example does not indicate a
+ corresponding peak in Stokes V.
+ This property indicates that there isn't significant leakage of Stokes
+ I into Stokes V.
+ This is true in Orion KL (where CO and SiO are the strongest lines).
+ This also seems to be true in the visibilities of IRC+10216: the CS and
+ SiS lines have similar strengths but the Stokes V at SiS is twice as intense.
+ However in the same object H
+\begin_inset Formula $^{13}$
+\end_inset
+
+CN and CO have Stokes V intensities that appear proportional to their Stokes
+ I intensity (stronger I means stronger V).
+\end_layout
+
+\begin_layout Standard
+We also note that the shapes of the Stokes V signals vary across the frequency
+ band and interpret this to mean that the signals are not instrumental in
+ nature.
+ For example Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:SiO"
+
+\end_inset
+
+ shows a spectrum from Orion KL with Stokes V in CO and SiO.
+ The SiO signal is purely negative (indicating only left-circular polarization)
+ but the CO signal is antisymmetric and is initially positive and then becomes
+ negative, indicating the presence of both LCP and RCP.
+ This has a physical explanation using ARS in terms of blue-shifted and
+ red-shifted scattering populations that will be considered later.
+ We know of no instrumental mechanism for producing such a signature.
+ This argument only applies to Orion KL.
+ In the other objects the Stokes V signal is always positive.
+\end_layout
+
+\begin_layout Standard
+Finally we checked and confirmed that there were no Stokes V signals in
+ the continuum larger than those found at molecular lines like CO and SiO.
  Finding a large signal in the continuum could indicate the data is suffering
  from instrumental artifacts since we only expect conversion of linear to
  circular polarization at the frequencies of molecular transitions.
  This is not the case: we only find Stokes V peaks at frequencies that correspon
-d with emission from molecular lines
+d with emission from molecular lines and there is no significant CP in the
+ continuum.
 \end_layout
 
 \begin_layout Itemize
-Summarize earlier detections
+Summarize earlier detections (Houde 2013, Hezareh 2013)
 \end_layout
 
 \begin_layout Itemize
