@@ -141,8 +141,20 @@ ns from dust continuum and molecular spectral transitions and analysed through
  the Davis-Chandrasekhar-Fermi method.
  For molecular lines circular polarization is usually ignored, largely because
  of difficulty in measurement and its assumed irrelevance.
- We find in archival data of the Submillimeter Array (SMA) several examples
- of circular polarization in common molecular tracers, most notably CO.
+ We find in archival data of the Submillimeter Array (SMA
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+The Submillimeter Array is a joint project between the Smithsonian Astrophysical
+ Observatory and the Academia Sinica Institute of Astronomy and Astrophysics
+ and is funded by the Smithsonian Institution and the Academia Sinica.
+\end_layout
+
+\end_inset
+
+) several examples of circular polarization in common molecular tracers,
+ most notably CO.
  This circular polarization possibly arises from anisotropic resonant scattering
  implying that some background linearly polarized flux is being converted
  and lost to circular polarization.
@@ -341,6 +353,82 @@ key "Hamaker1996,Marrone2008"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Subsection
+Linear vs.
+ Circular Feeds
+\end_layout
+
+\begin_layout Standard
+To illustrate briefly the differences between the two feed types consider
+ the following: with orthogonal circular polarization bases, the Stokes
+ V parameter for a beam of light is defined by 
+\begin_inset Formula $V=\langle E_{l}^{2}\rangle-\langle E_{r}^{2}\rangle$
+\end_inset
+
+, where 
+\begin_inset Formula $E$
+\end_inset
+
+ is the electric field vector and 
+\begin_inset Formula $l$
+\end_inset
+
+ and 
+\begin_inset Formula $r$
+\end_inset
+
+ correspond to the orthogonal left-CP and right-CP bases.
+ With orthogonal linear bases Stokes V is defined by 
+\begin_inset Formula $V=-2\text{Im}(E_{x}E_{y}^{*})$
+\end_inset
+
+ where 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ are the linear bases.
+ In the circular case we take the difference of two measured intensities
+ while the linear feed case requires us to measure the phase of the electromagne
+tic wave.
+ 
+\end_layout
+
+\begin_layout Standard
+Now when the measurement is made with interferometry it is the visibilities
+ –the correlated waveforms between a pair of antennae– that are measured.
+ In the circular case the Stokes V visibility is roughly 
+\begin_inset Formula $\mathcal{V}_{\text{V}}\propto\text{\mathcal{V}}_{RR}-\text{\mathcal{V}}_{LL}$
+\end_inset
+
+ where 
+\begin_inset Formula $\text{\mathcal{V}}_{RR}$
+\end_inset
+
+ and 
+\begin_inset Formula $\text{\mathcal{V}}_{LL}$
+\end_inset
+
+ are the visibilities obtained from correlating two antenna measuring right-CP
+ and left-CP respectively.
+ In the linear feed case the Stokes V visibility is coupled with the Stokes
+ Q and U visibilities 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "see Section 4.1 of"
+key "Thompson2001"
+
+\end_inset
+
+.
+ This means the Stokes Q and U of any calibration object must be measured
+ as well.
+ This is not possible with the SMA setup.
 \end_layout
 
 \begin_layout Section
@@ -1694,7 +1782,7 @@ maxfit
  is used on the CO map for each respective object to obtain the location
  in the image where the Stokes V signal at 345.8GHz is maximum, and a spectra
  is obtained through that point.
- 
+ Note that the Stokes V signal decreases in all cases after squint correction.
 \end_layout
 
 \end_inset
@@ -2128,8 +2216,115 @@ d with emission from molecular lines and there is no significant CP in the
  continuum.
 \end_layout
 
-\begin_layout Itemize
-Summarize earlier detections (Houde 2013, Hezareh 2013)
+\begin_layout Standard
+For these reasons we believe the CP reported here while quite probably contamina
+ted with instrumental effects are real and originate from each of these
+ objects.
+ It is thus important to develop the instrumentation and improve the measurement
+ and calibration of CP for future studies of magnetic fields using polarimetry.
+\end_layout
+
+\begin_layout Subsection
+Earlier Detections
+\end_layout
+
+\begin_layout Standard
+Circular polarization in a spectral line of a Zeeman insensitive molecule
+ was first reported in 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Houde2013"
+
+\end_inset
+
+ where roughly 2% CP was detected in the 
+\begin_inset Formula $^{12}$
+\end_inset
+
+CO 
+\begin_inset Formula $(J=2\rightarrow1)$
+\end_inset
+
+ line at 230.5 GHz in Orion KL using the CSO.
+ The CP signal was positive and symmetric (
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $\cap$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+-shaped).
+ The observation was repeated three months after the first measurement to
+ confirm the result wasn't spurious, with similar results.
+ Additionally the strong line of HCN 
+\begin_inset Formula $(J=3\rightarrow2)$
+\end_inset
+
+ at 265.9 GHz in Orion KL was measured and no CP higher than the 0.1% level
+ was detected.
+ The detection in CO and the absence of a detection in HCN indicates that
+ the CSO observations were not suffering from leakage into Stokes V and
+ highlights the CO molecule as a source of non-Zeeman CP.
+ In all the objects presented here we find CP in 
+\begin_inset Formula $^{12}$
+\end_inset
+
+CO 
+\begin_inset Formula $(J=3\rightarrow2)$
+\end_inset
+
+ at 345.8 GHz (except for in NGC1333 where the CO line is weak).
+ This is consistent with the original 2013 detection.
+\end_layout
+
+\begin_layout Standard
+In follow up work 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Hezareh2013"
+
+\end_inset
+
+ examined the supernova remnant IC 443 using dust polarimetry with PolKa
+ at APEX and polarization maps of 
+\begin_inset Formula $^{12}$
+\end_inset
+
+CO 
+\begin_inset Formula $(J=2\rightarrow1)$
+\end_inset
+
+ and 
+\begin_inset Formula $(J=1\rightarrow0)$
+\end_inset
+
+ taken with the IRAM 30m telescope.
+ They found that initially the linear polarization maps of dust and CO differed
+ greatly in their polarization angles.
+ Expecting that there was conversion of linear to circular polarization
+ due to ARS, the CO Stokes V flux was then reinserted into the CO Stokes
+ U flux.
+ The resulting CO map's polarization angles now agreed very well with the
+ polarization angles in the dust map 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "Fig. 9 of"
+key "Hezareh2013"
+
+\end_inset
+
+.
+ This result gives strong support for a conversion from linear to circular
+ polarization.
+\end_layout
+
+\begin_layout Subsection
+Anisotropic Resonant Scattering
 \end_layout
 
 \begin_layout Itemize
@@ -2137,93 +2332,30 @@ Summarize ARS, other theories.
  Mention the antisymmetry and the symmetry and that they fit with ARS
 \end_layout
 
-\begin_layout Subsection
-Linear vs.
- Circular Feeds
-\end_layout
-
-\begin_layout Standard
-To illustrate briefly the differences between the two feed types consider
- the following: with orthogonal circular polarization bases, the Stokes
- V parameter for a beam of light is defined by 
-\begin_inset Formula $V=\langle E_{l}^{2}\rangle-\langle E_{r}^{2}\rangle$
-\end_inset
-
-, where 
-\begin_inset Formula $E$
-\end_inset
-
- is the electric field vector and 
-\begin_inset Formula $l$
-\end_inset
-
- and 
-\begin_inset Formula $r$
-\end_inset
-
- correspond to the orthogonal left-CP and right-CP bases.
- With orthogonal linear bases Stokes V is defined by 
-\begin_inset Formula $V=-2\text{Im}(E_{x}E_{y}^{*})$
-\end_inset
-
- where 
-\begin_inset Formula $x$
-\end_inset
-
- and 
-\begin_inset Formula $y$
-\end_inset
-
- are the linear bases.
- In the circular case we take the difference of two measured intensities
- while the linear feed case requires us to measure the phase of the electromagne
-tic wave.
- 
-\end_layout
-
-\begin_layout Standard
-Now when the measurement is made with interferometry it is the visibilities
- –the correlated waveforms between a pair of antennae– that are measured.
- In the circular case the Stokes V visibility is roughly 
-\begin_inset Formula $\mathcal{V}_{\text{V}}\propto\text{\mathcal{V}}_{RR}-\text{\mathcal{V}}_{LL}$
-\end_inset
-
- where 
-\begin_inset Formula $\text{\mathcal{V}}_{RR}$
-\end_inset
-
- and 
-\begin_inset Formula $\text{\mathcal{V}}_{LL}$
-\end_inset
-
- are the visibilities obtained from correlating two antenna measuring right-CP
- and left-CP respectively.
- In the linear feed case the Stokes V visibility is coupled with the Stokes
- Q and U visibilities 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Thompson2001"
-
-\end_inset
-
-.
- This means the Stokes Q and U of any calibration object must be measured
- as well.
- This is not possible with the SMA setup.
-\end_layout
-
 \begin_layout Section
 Conclusion
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Conclusion"
 
 \end_inset
 
-Sup
+we showed you can measure CP with the SMA 
+\end_layout
+
+\begin_layout Itemize
+this is more evidence that non-Zeeman CP is common
+\end_layout
+
+\begin_layout Itemize
+ARS seems to work
+\end_layout
+
+\begin_layout Itemize
+fix your polarimeters and improve CP measurement
 \end_layout
 
 \begin_layout References
