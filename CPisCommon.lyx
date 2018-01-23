@@ -2327,11 +2327,161 @@ key "Hezareh2013"
 Anisotropic Resonant Scattering
 \end_layout
 
-\begin_layout Itemize
-Summarize ARS, other theories.
- Mention the antisymmetry and the symmetry and that they fit with ARS
+\begin_layout Standard
+Anisotropic resonant scattering was the mechanism first proposed by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Houde2013"
+
+\end_inset
+
+ to explain the presence of CP in the transitions of CO, but failed to explain
+ the observed positive and symmetric 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $\cap$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+-shaped Stokes V profile.
+ In a follow up paper 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Houde2014"
+
+\end_inset
+
+ considered observations of Stokes V in SiO masers and showed that different
+ profile shapes easily arose if there were populations of scattering foreground
+ molecules slightly outside of the velocity range of the line.
+ For example in that case a blue-shifted scattering population of molecules
+ results in a negative 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $\cup$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+-shaped profile and a red-shifted population results in a positive 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $\cap$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+-shaped profile.
+ The presence of both a blue- and red-shifted population results in an antisymme
+tric 
+\begin_inset Quotes eld
+\end_inset
+
+S
+\begin_inset Quotes erd
+\end_inset
+
+-shaped profile like the one seen in the top left panel of Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:results"
+
+\end_inset
+
+.
 \end_layout
 
+\begin_layout Standard
+The basic principle of ARS can be illustrated by considering linearly polarized
+ radiation oriented at some angle 
+\begin_inset Formula $\theta$
+\end_inset
+
+ to the foreground magnetic field.
+ The incident and scattered radiation can be written in terms of the 
+\emph on
+n
+\emph default
+-photon states as 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Houde2013"
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+|\psi\rangle & =\alpha|n_{||}\rangle+\beta|n_{\perp}\rangle\\
+|\psi'\rangle & \simeq\alpha e^{i\phi}|n_{||}\rangle+\beta|n_{\perp}\rangle
+\end{align*}
+
+\end_inset
+
+where 
+\begin_inset Formula $\alpha=\cos(\theta)$
+\end_inset
+
+, 
+\begin_inset Formula $\beta=\sin(\theta)$
+\end_inset
+
+ and 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is a phase shift incurred after multiple scattering events.
+ Following the definitions of the Stokes parameters and using the appropriate
+ bases the Stokes parameters for the scattered radiation can be found to
+ be 
+\begin_inset Formula 
+\begin{align*}
+I & =\alpha^{2}+\beta^{2}\\
+Q & =\alpha^{2}-\beta^{2}\\
+U & =2\alpha\beta\cos(\phi)\\
+V & =2\alpha\beta\sin(\phi)
+\end{align*}
+
+\end_inset
+
+This implies that Stokes U is lost to Stokes V.
+ A calculation of the form of 
+\begin_inset Formula $\phi$
+\end_inset
+
+ can be found in 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Houde2013"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Apply ARS to the molecules detected here
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+HCN should have very little ARS? I need a place to find these values
+\end_layout
+
+\end_deeper
 \begin_layout Section
 Conclusion
 \end_layout
