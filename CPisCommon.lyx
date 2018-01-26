@@ -77,8 +77,7 @@
 \begin_body
 
 \begin_layout Title
-Non-Zeeman Circular Polarization of Molecular Spectral Lines is Common in
- Star-Forming Regions
+Non-Zeeman Circular Polarization of Molecular Spectral Lines in the ISM
 \end_layout
 
 \begin_layout Author
@@ -133,12 +132,12 @@ Submillimeter Array, Academia Sinica Institute of Astronomy and Astrophysics,
 \end_layout
 
 \begin_layout Abstract
-Understanding the magnetic field in star-forming regions allows us to test
- ideas about free-fall collapse and support mechanisms in molecular clouds,
- filling in details about the star formation process.
- These magnetic fields are usually probed through linear polarization observatio
-ns from dust continuum and molecular spectral transitions and analysed through
- the Davis-Chandrasekhar-Fermi method.
+Understanding the role of magnetic fields in star-forming regions allows
+ us to test ideas about free-fall collapse and support mechanisms in molecular
+ clouds, filling in details about the star formation process.
+ Magnetic fields are commonly probed through linear polarization observations
+ from dust continuum and/or molecular spectral transitions, and analysed
+ through the Davis-Chandrasekhar-Fermi method.
  For molecular lines circular polarization is usually ignored, largely because
  of difficulty in measurement and its assumed irrelevance.
  We find in archival data of the Submillimeter Array (SMA
@@ -157,12 +156,12 @@ The Submillimeter Array is a joint project between the Smithsonian Astrophysical
  most notably CO.
  This circular polarization possibly arises from anisotropic resonant scattering
  implying that some background linearly polarized flux is being converted
- and lost to circular polarization.
+ to circular polarization.
  We find circular polarization in NGC7538, IRC+10216 and Orion KL to sufficient
  degrees that we believe the presence of circular polarization in these
  spectral lines is widespread for such objects, implying that an important
  piece of information has been missed when studying magnetic fields through
- linear polarization from molecular spectral lines in star-forming regions.
+ linear polarization from molecular spectral lines in the interstellar medium.
 \end_layout
 
 \begin_layout Standard
@@ -183,8 +182,8 @@ name "sec:Introduction"
 
 \end_inset
 
-This section will cover the background of measuring magnetic fields in star-form
-ing regions and Section 
+This section will cover the background of measuring magnetic fields in the
+ interstellar medium (ISM) and Section 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Measurement-with-Radio"
@@ -219,21 +218,27 @@ reference "sec:Discussion"
 
 \end_inset
 
- we'll highlight the significance of these CP detections and summarize relevant
- research.
+ we will highlight the significance of these CP detections and summarize
+ relevant research.
 \end_layout
 
 \begin_layout Standard
-Since we can only measure the light from star-forming regions astronomers
+Since we can only measure the radiation from star-forming regions astronomers
  use polarimetry to infer properties like the direction and magnitude of
  the magnetic field.
- The Davis-Chandrasekhar-Fermi is one method that uses the dispersion of
- polarization angles in the thermal emission of dust to find the magnitude
- and direction of the plane-of-the-sky component of the magnetic field.
+ The Davis-Chandrasekhar-Fermi (DCF) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Chandrasekhar1953"
+
+\end_inset
+
+ is one method that uses the dispersion of polarization angles (PA) of linear
+ polarization (LP) to find the magnitude and direction of the plane-of-the-sky
+ component of the magnetic field.
  The presence of a magnetic field leads to linearly polarized radiation
- because dust grains will align themselves to the field.
- This aligned dust emits thermal radiation in the continuum that is linearly
- polarized.
+ because dust molecules will align themselves to the field.
+ The aligned particles emit radiation that is linearly polarized.
  Aligned dust will also absorb radiation whose polarization is aligned with
  its long axis, acting as a sort of polarizing grid.
  Thus measuring the amount of linear polarization in the infrared continuum
@@ -241,7 +246,7 @@ Since we can only measure the light from star-forming regions astronomers
  field which in turn tells us about the strength of the magnetic field 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Chandrasekhar1953,Vallee2011"
+key "Chandrasekhar1953,Crutcher2012"
 
 \end_inset
 
@@ -250,11 +255,19 @@ key "Chandrasekhar1953,Vallee2011"
 \end_layout
 
 \begin_layout Standard
-In addition to this technique the interaction between certain molecules
- and the ambient magnetic field can cause that molecule's transitions to
- be linearly polarized by a few percent through the Goldreich-Kylafis effect.
- The amount of linear polarization in the spectral line can be measured
- and used to infer properties of the magnetic field.
+The alignment of molecules and their interaction with the ambient magnetic
+ field can cause that molecule's transitions to be linearly polarized by
+ a few percent through the Goldreich-Kylafis effect 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Goldreich1981"
+
+\end_inset
+
+.
+ As with dust, the PA associated with the of linear polarization in the
+ spectral line can be measured and used to infer properties of the magnetic
+ field through a dispersion analysis.
  
 \end_layout
 
@@ -2424,10 +2437,12 @@ key "Houde2013"
 
 
 \begin_inset Formula 
-\begin{align*}
-|\psi\rangle & =\alpha|n_{||}\rangle+\beta|n_{\perp}\rangle\\
-|\psi'\rangle & \simeq\alpha e^{i\phi}|n_{||}\rangle+\beta|n_{\perp}\rangle
-\end{align*}
+\[
+\begin{array}{cc}
+|\psi\rangle= & \alpha|n_{||}\rangle+\beta|n_{\perp}\rangle\\
+|\psi'\rangle\simeq & \alpha e^{i\phi}|n_{||}\rangle+\beta|n_{\perp}\rangle
+\end{array}
+\]
 
 \end_inset
 
@@ -2448,12 +2463,14 @@ where
  bases the Stokes parameters for the scattered radiation can be found to
  be 
 \begin_inset Formula 
-\begin{align*}
-I & =\alpha^{2}+\beta^{2}\\
-Q & =\alpha^{2}-\beta^{2}\\
-U & =2\alpha\beta\cos(\phi)\\
-V & =2\alpha\beta\sin(\phi)
-\end{align*}
+\[
+\begin{array}{cc}
+I= & \alpha^{2}+\beta^{2}\\
+Q= & \alpha^{2}-\beta^{2}\\
+U= & 2\alpha\beta\cos(\phi)\\
+V= & 2\alpha\beta\sin(\phi)
+\end{array}
+\]
 
 \end_inset
 
@@ -2511,7 +2528,7 @@ fix your polarimeters and improve CP measurement
 \begin_layout References
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-label "Chandrasekhar \\&{} Fermi(1953)"
+label "Chandrasekhar \\& Fermi(1953)"
 key "Chandrasekhar1953"
 
 \end_inset
@@ -2531,6 +2548,48 @@ apj
 \end_inset
 
 , 118, 113
+\end_layout
+
+\begin_layout References
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "Crutcher(2012)"
+key "Crutcher2012"
+
+\end_inset
+
+Crutcher, R.
+ M.
+ 2012 Annu.
+ Rev.
+ Astron.
+ Astrophys, 50, 29-63
+\end_layout
+
+\begin_layout References
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "Goldreich \\& Kylafis(1981)"
+key "Goldreich1981"
+
+\end_inset
+
+Goldreich, P., Kylafis, N.
+ D.
+ 1981 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+apj
+\end_layout
+
+\end_inset
+
+, 243, L75-L78
 \end_layout
 
 \begin_layout References
