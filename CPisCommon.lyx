@@ -265,9 +265,16 @@ key "Goldreich1981"
 \end_inset
 
 .
- As with dust, the PA associated with the of linear polarization in the
- spectral line can be measured and used to infer properties of the magnetic
- field through a dispersion analysis.
+ As with dust, the PA associated with the linear polarization in the spectral
+ line can be measured and used to infer properties of the magnetic field
+ through a dispersion analysis 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Chandrasekhar1953,Crutcher2012"
+
+\end_inset
+
+.
  
 \end_layout
 
@@ -281,13 +288,28 @@ key "Houde2013"
 \end_inset
 
  in a rotational transition of CO using the Caltech Submillimeter Observatory
- (CSO), a common tracer of the magnetic field.
- The presence of circular polarization in a molecular transition is usually
- explained with Zeeman splitting, but the lines of CO only split at magnetic
- fields of several thousand gauss.
- In addition, the observed Stokes V profile was positive and symmetric,
- which is also unexpected since Zeeman splitting gives rise to an antisymmetric
- Stokes V profile.
+ (CSO), a common tracer of the magnetic field 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Crutcher2012"
+
+\end_inset
+
+.
+ The presence of circular polarization in a molecular transition can be
+ explained with Zeeman splitting for some molecules/transitions possessing
+ a significant magnetic momeny (e.g., CN), but CO is highly insensitive to
+ the Zeeman effect.
+ In addition, the observed Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ profile in Orion KL was positive and symmetric, which is also unexpected
+ since Zeeman splitting usually gives rise to an antisymmetric Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ profile.
  To explain this detection a model was proposed whereby linearly polarized
  light is converted to circularly polarized light through anisotropic resonant
  scattering (ARS) 
@@ -298,21 +320,29 @@ key "Houde2013,Houde2014"
 \end_inset
 
 .
- This was tested in IC443 by 
+ This was further tested in IC443 by 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Hezareh2013"
 
 \end_inset
 
- where the measured circularly polarized flux of a CO line was 're-added'
- into the measured linearly polarized flux to correct the polarization angles.
- They found that the polarization angles obtained from the CO tracer only
+ where the measured circularly polarized flux of CO lines (
+\begin_inset Formula $J=2\rightarrow1$
+\end_inset
+
+) and (
+\begin_inset Formula $J=1\rightarrow0$
+\end_inset
+
+) were `re-added' into the measured linearly polarized flux to correct the
+ polarization angles.
+ They found that the polarization angles obtained from the CO tracers only
  agreed with those obtained from dust polarimetry after the circularly polarized
  flux was accounted for.
- If ARS is common to other objects then using CO as a tracer of the magnetic
- field will have a systematic error unless the circular polarization of
- CO's lines are also measured.
+ If ARS is common to other objects then using linear polarization in CO
+ as a tracer of the magnetic field will have a systematic error unless the
+ circular polarization of CO's lines are also measured.
  The goal of this paper is to show several examples of such circular polarizatio
 n.
 \end_layout
@@ -328,12 +358,12 @@ name "sec:Measurement-with-Radio"
 
 \end_inset
 
-The measurement of circular polarization in the radio is challenging to
- calibrate, especially when using radio interferometers like the SMA or
- ALMA.
+The measurement of circular polarization is challenging to calibrate, especially
+ when using radio interferometers like the SMA or ALMA.
  The SMA polarimeter uses a quarter-waveplate (QWP) to convert incident
- linearly polarized light to circular primarily to measure linear polarization.
- While not its intended use, The QWP can work the other way to measure CP:
+ linearly polarized light to circularly polarized light primarily to measure
+ linear polarization.
+ While not its intended use, the QWP can work the other way to measure CP:
  incident CP is converted to LP and then measured by the receivers.
  ALMA on the other hand uses linear feeds and measures the linearly polarized
  light directly.
@@ -346,7 +376,11 @@ key "Sault1996"
 \end_inset
 
 .
- Currently ALMA does not support measuring Stokes V reliably.
+ Currently ALMA does not support measuring Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ reliably.
  The SMA has been used to take precise measurements of CP in Sgr A* as reported
  in 
 \begin_inset CommandInset citation
@@ -376,8 +410,12 @@ Linear vs.
 \begin_layout Standard
 To illustrate briefly the differences between the two feed types consider
  the following: with orthogonal circular polarization bases, the Stokes
- V parameter for a beam of light is defined by 
-\begin_inset Formula $V=\langle E_{l}^{2}\rangle-\langle E_{r}^{2}\rangle$
+ 
+\begin_inset Formula $V$
+\end_inset
+
+ parameter for a beam of light is defined by 
+\begin_inset Formula $V=\langle E_{L}^{2}\rangle-\langle E_{R}^{2}\rangle$
 \end_inset
 
 , where 
@@ -385,15 +423,19 @@ To illustrate briefly the differences between the two feed types consider
 \end_inset
 
  is the electric field vector and 
-\begin_inset Formula $l$
+\begin_inset Formula $L$
 \end_inset
 
  and 
-\begin_inset Formula $r$
+\begin_inset Formula $R$
 \end_inset
 
  correspond to the orthogonal left-CP and right-CP bases.
- With orthogonal linear bases Stokes V is defined by 
+ With orthogonal linear bases Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ is defined by 
 \begin_inset Formula $V=-2\text{Im}(E_{x}E_{y}^{*})$
 \end_inset
 
@@ -415,7 +457,11 @@ tic wave.
 \begin_layout Standard
 Now when the measurement is made with interferometry it is the visibilities
  –the correlated waveforms between a pair of antennae– that are measured.
- In the circular case the Stokes V visibility is roughly 
+ In the circular case the Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ visibility is roughly 
 \begin_inset Formula $\mathcal{V}_{\text{V}}\propto\text{\mathcal{V}}_{RR}-\text{\mathcal{V}}_{LL}$
 \end_inset
 
@@ -429,8 +475,19 @@ Now when the measurement is made with interferometry it is the visibilities
 
  are the visibilities obtained from correlating two antenna measuring right-CP
  and left-CP respectively.
- In the linear feed case the Stokes V visibility is coupled with the Stokes
- Q and U visibilities 
+ In the linear feed case the Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ visibility is coupled with the Stokes 
+\begin_inset Formula $Q$
+\end_inset
+
+ and 
+\begin_inset Formula $U$
+\end_inset
+
+ visibilities 
 \begin_inset CommandInset citation
 LatexCommand citep
 before "see Section 4.1 of"
@@ -439,9 +496,403 @@ key "Thompson2001"
 \end_inset
 
 .
- This means the Stokes Q and U of any calibration object must be measured
- as well.
+ This means the Stokes 
+\begin_inset Formula $Q$
+\end_inset
+
+ and 
+\begin_inset Formula $U$
+\end_inset
+
+ of any calibration object must be measured as well.
  This is not possible with the SMA setup.
+\end_layout
+
+\begin_layout Section
+Squint Correction
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Squint-Correction"
+
+\end_inset
+
+Here we describe spurious Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ that arises when using the SMA and our scheme for correcting it.
+ This instrumental Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ comes from a slight pointing offset between the left- and right-handed
+ CP beams.
+\end_layout
+
+\begin_layout Standard
+The archival data used was in all cases observed with the goal of measuring
+ linear polarization (i.e., the Stokes 
+\begin_inset Formula $Q$
+\end_inset
+
+ and Stokes 
+\begin_inset Formula $U$
+\end_inset
+
+ parameters).
+ On the SMA this is done with a quarter-waveplate placed in front of the
+ linear receivers to convert incident circular polarization (CP) to linear
+ polarization.
+ While this method suffers from the errors that arise when subtracting two
+ large measurements from each other, it avoids having to solve for the linear
+ polarization terms of calibration objects when obtaining Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Marrone2008,Thompson2001"
+
+\end_inset
+
+.
+ Obtaining Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ from the visibilities measured with circular feeds is done as follows.
+ Given antennae 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+, the Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ visibility in the circular feed case is found through 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Munoz2012"
+
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{equation}
+\mathcal{V}_{V}\simeq\frac{1}{2}\Big\{\mathcal{V}_{RR}/(g_{Ra}g_{Rb}^{*})-\mathcal{V}_{LL}/(g_{La}g_{Lb}^{*})\Big\},
+\end{equation}
+
+\end_inset
+
+where the right-handed CP and left-handed CP visibilities are 
+\begin_inset Formula $\mathcal{V}_{RR}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathcal{V}_{LL}$
+\end_inset
+
+ and are measured by orienting the quarter-waveplate that is placed in the
+ beam of the antennae ***add details***.
+ The complex gain factors for each polarization for each antennae are 
+\begin_inset Formula $g_{Ra}$
+\end_inset
+
+, 
+\begin_inset Formula $g_{Rb}$
+\end_inset
+
+, 
+\begin_inset Formula $g_{La}$
+\end_inset
+
+ and 
+\begin_inset Formula $g_{Lb}$
+\end_inset
+
+ with `
+\begin_inset Formula $R$
+\end_inset
+
+' and `
+\begin_inset Formula $L$
+\end_inset
+
+' for right- and left-CP, respectively.
+ Because the Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ visibility is found by taking the difference of two beams a slight offset
+ gives rise to pairs of positive and negative peaks of Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+, as shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:beforeafter"
+
+\end_inset
+
+.
+ This offset likely arises because of slight differences in the index of
+ refraction of the quarter-waveplate when it is rotated, but has not been
+ studied with the SMA as far as we know.
+\end_layout
+
+\begin_layout Standard
+Because the visibilities are the Fourier transform of the intensity map,
+ an offset in image space is equivalent to a complex exponential term in
+ visibility space that can be absorbed into the gain coefficients (see Appendix).
+ Thus it is easiest to correct for the offset in visibility-space by using
+ 
+\emph on
+Miriad 
+\emph default
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Sault1995"
+
+\end_inset
+
+ to solve for the gain coefficients on each beam.
+ Specifically the process is:
+\end_layout
+
+\begin_layout Enumerate
+Observations are calibrated for gain and phase in the usual way using calibratio
+n observations of 'good' sources (usually quasars like 3C84, 3C454, etc.)
+ (See Miriad User Guide 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Sault2008"
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+Visibilities are split into line-free continuum data and line data.
+ These are then mapped and used to obtain CLEAN models
+\end_layout
+
+\begin_layout Enumerate
+The separate continuum and line data are further split into 
+\emph on
+LL
+\emph default
+ and 
+\emph on
+RR
+\emph default
+ visibilities.
+ 
+\emph on
+Miriad'
+\emph default
+s 
+\family typewriter
+selfcal
+\family default
+ is used on the continuum data to solve for the gain coefficients of each
+ antenna and each polarization (
+\emph on
+L
+\emph default
+ or 
+\emph on
+R
+\emph default
+).
+ This is done by minimizing the difference between measured visibilities
+ 
+\begin_inset Formula $\mathcal{V}_{ij}$
+\end_inset
+
+ of antennae 
+\begin_inset Formula $i$
+\end_inset
+
+ and 
+\begin_inset Formula $j$
+\end_inset
+
+ and model visibilities 
+\begin_inset Formula $\hat{\mathcal{V}}_{ij}$
+\end_inset
+
+ according to 
+\begin_inset Formula $\epsilon^{2}=\sum|\mathcal{V}_{ij}-g_{i}g_{j}^{*}\hat{\mathcal{V}}_{ij}|^{2}$
+\end_inset
+
+ for each of the correlations 
+\emph on
+LL
+\emph default
+ and 
+\emph on
+RR
+\emph default
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Sault2008,Schwab1980"
+
+\end_inset
+
+.
+ The model visibilities used are those found earlier.
+\end_layout
+
+\begin_layout Enumerate
+The gains found from the continuum 
+\emph on
+LL
+\emph default
+ data is then applied to the line 
+\emph on
+LL
+\emph default
+ data, similarly for the 
+\emph on
+RR
+\emph default
+ continuum and line data.
+\end_layout
+
+\begin_layout Enumerate
+The different visibilities (
+\emph on
+LL
+\emph default
+, 
+\emph on
+RR
+\emph default
+, 
+\emph on
+RL
+\emph default
+, 
+\emph on
+LR
+\emph default
+) are recombined and inverted to produce corrected maps.
+ Spectra can be obtained either from the corrected visibilities or the maps.
+ 
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:beforeafter"
+
+\end_inset
+
+ shows maps before and after this correction is applied.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename maps/orkl.cnt.uncorr.ps
+	lyxscale 80
+	scale 45
+	rotateAngle 270
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename maps/orkl.cnt.corr.ps
+	lyxscale 80
+	scale 45
+	rotateAngle 270
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:beforeafter"
+
+\end_inset
+
+**try getting the corrected solution with different bandpasses** Map of
+ the continuum around 345GHz in Orion KL before (top) and after (bottom)
+ squint correction.
+ Red contours are Stokes 
+\begin_inset Formula $I$
+\end_inset
+
+, blue contours are Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ Dashed lines denote negative values, solid lines denote positive values.
+ Note the multiple pairs of positive and negative Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ peaks.
+ These largely disappear after correction.
+ The contour scales on both maps are identical.
+ Red Stokes 
+\begin_inset Formula $I$
+\end_inset
+
+ contours are at 15%, 35%, 55%, 75% and 95% of the peak intensity.
+ Blue Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ contours are at -8, -7, -6, -5, -4, -3, -2, 2, 3, 4, 5, 6, 7 and 8
+\begin_inset Formula $\sigma$
+\end_inset
+
+ levels.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -455,9 +906,9 @@ name "sec:Observations"
 
 \end_inset
 
-We collected radio interferometric archival polarimetry observations from
- the Submillimeter Array (SMA) archive that had been measured using the
- circular feeds, a similar setup to that used by 
+We collected radio interferometric polarimetry observations from the Submillimet
+er Array (SMA) archive that had been measured using the circular feeds,
+ a similar setup to that used by 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Munoz2012"
@@ -466,27 +917,43 @@ key "Munoz2012"
 
  to measure circular polarization in Sgr A*.
  Because the archival observations were not taken with measurements of circular
- polarization in mind the SNR is often very low, and we had to average velocity
+ polarization in mind the SNR is often low, and we had to average velocity
  channels to increase the SNR at the cost of spectral resolution.
  This generally increases the SNR from 3-4 to 6-10.
  
 \end_layout
 
 \begin_layout Standard
-The four objects we present here are Orion KL, NGC7538, NGC1333 and IRC+10216.
+The four objects we present here are Orion KL, NGC7538, IRAS2a in NGC1333
+ and IRC+10216.
  The first three are well-known star-formation regions while IRC+10216 is
  an evolved carbon star.
- We find significant Stokes V signals in all objects except for NGC1333.
+ We find significant Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ signals in all objects except for NGC1333.
  
 \end_layout
 
 \begin_layout Standard
 The visibility data are corrected for beam squint, an instrumental artifact
- that gives rise to spurious Stokes V signals.
- Squint gives rise to distinct pairs of positive and negative peaks of Stokes
- V throughout the inverted image.
+ that gives rise to spurious Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ signals.
+ Squint typically causes distinct pairs of positive and negative peaks of
+ Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ throughout the inverted image.
  Maps are then made of the continuum and lines for each object.
- The squint correction is confirmed visually by inspecting the Stokes V
+ The squint correction is confirmed visually by inspecting the Stokes 
+\begin_inset Formula $V$
+\end_inset
+
  maps, where we see the pairs of peaks largely disappear.
  More details on the squint correction will be given in Section 
 \begin_inset CommandInset ref
@@ -506,10 +973,24 @@ reference "fig:results"
 
 \end_inset
 
- shows corrected Stokes I and Stokes V spectra obtained at the peak of Stokes
- V on the corresponding maps.
- A comparison of Stokes V spectra before and after correction are shown
- in Figure 
+ shows corrected Stokes 
+\begin_inset Formula $I$
+\end_inset
+
+ and Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ spectra (left) obtained at the peak of Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ on the corresponding maps (right).
+ A comparison of Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ spectra before and after correction are shown in Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:beforeafterspec"
@@ -517,9 +998,17 @@ reference "fig:beforeafterspec"
 \end_inset
 
 .
- Notice in all cases the Stokes V signal decreases after squint correction.
- Stokes V can be found in the average of all the visibility data as well,
- though the significance is 3-5
+ Notice in all cases the Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ signal decreases after squint correction.
+ Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ can also be found in the average of all the visibility data, though the
+ significance is 3-5
 \begin_inset Formula $\sigma$
 \end_inset
 
@@ -528,8 +1017,18 @@ reference "fig:beforeafterspec"
 \end_inset
 
  when the spectra is taken from the inverted maps.
+ This indicates the detections are not simply the result of the inversion
+ process that creates the maps.
  We present here only the map spectra.
- In general the peaks of Stokes I and Stokes V are not at the same map position.
+ In general the peaks of Stokes 
+\begin_inset Formula $I$
+\end_inset
+
+ and Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ are not at the same map position.
 \end_layout
 
 \begin_layout Standard
@@ -541,10 +1040,25 @@ In Orion KL the lines of CO (
 \begin_inset Formula $J=8\rightarrow7$
 \end_inset
 
- at 347.3GHz) are both bright (peak Stokes I of around 20 Jy/beam and 55
- Jy/beam respectively; not shown) and both show Stokes V signals.
- The CO Stokes V signal has an antisymmetric structure while the SiO Stokes
- V signal is purely negative.
+ at 347.3GHz) are both bright (peak Stokes 
+\begin_inset Formula $I$
+\end_inset
+
+ of around 20 Jy/beam and 55 Jy/beam respectively; not shown) and both show
+ Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ signals.
+ The CO Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ signal has an antisymmetric structure while the SiO Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ signal is purely negative.
  Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -552,25 +1066,72 @@ reference "fig:SiO"
 
 \end_inset
 
- shows the peak Stokes V signal of the SiO line.
+ shows the peak Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ signal of the SiO line.
  We checked the average of all the visibilities (average over all antennae
- baselines and all time intervals) and found that the CO Stokes V signal
- is more intense than the SiO Stokes V signal, and the Stokes I intensities
- after averaging the visibilities were approximately 50 Jy and 75 Jy for
- CO and SiO respectively.
- If the Stokes V signal were purely leakage from Stokes I then we would
- expect to see an SiO Stokes V signal that is stronger than the CO Stokes
- V signal, but we do not.
+ baselines and all time intervals) and found that the CO Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ signal is more intense than the SiO Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ signal, and the Stokes 
+\begin_inset Formula $I$
+\end_inset
+
+ intensities after averaging the visibilities were approximately 50 Jy and
+ 75 Jy for CO and SiO respectively.
+ If the Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ signal were purely leakage from Stokes 
+\begin_inset Formula $I$
+\end_inset
+
+ then we would expect to see an SiO Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ signal that is stronger than the CO Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ signal, but we do not.
  
 \end_layout
 
 \begin_layout Standard
-In IRC+10216 we again see Stokes V in the CO transition at 345.8 GHz but
- also several signals in CS, SiS, and H
+In IRC+10216 we again see Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ in the CO (
+\begin_inset Formula $J=3\rightarrow2$
+\end_inset
+
+) but also several signals in CS (
+\begin_inset Formula $J=7\rightarrow6$
+\end_inset
+
+), SiS (
+\begin_inset Formula $J=19\rightarrow18$
+\end_inset
+
+), and H
 \begin_inset Formula $^{13}$
 \end_inset
 
-CN.
+CN (
+\begin_inset Formula $J=4\rightarrow3$
+\end_inset
+
+).
  These lines and their frequencies are listed in Table 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -582,13 +1143,24 @@ reference "tab:sumresults"
 \end_layout
 
 \begin_layout Standard
-In NGC7538 there was a strong Stokes V detection in CH
+In NGC7538 there was a strong Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ detection in CH
 \begin_inset Formula $_{2}$
 \end_inset
 
 CO at 346.6 GHz that completely disappeared after correction.
- The Stokes V signal in CO at 345.8 GHz decreased in intensity but is still
- extremely prominent.
+ The Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ signal in CO (
+\begin_inset Formula $J=3\rightarrow2$
+\end_inset
+
+) at 345.8 GHz decreased in intensity but is still extremely prominent.
 \end_layout
 
 \begin_layout Standard
@@ -600,15 +1172,27 @@ reference "fig:iras2a"
 \end_inset
 
  shows no detection in NGC1333, with only a weak detection of CO in Stokes
- I.
+ 
+\begin_inset Formula $I$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-When assessing the Stokes V detections we consult the map for obvious pairs
- of positive/negative peaks that would indicate beam offset and therefore
- a false Stokes V signal.
- The maps are taken around a very narrow frequency band of around 2 MHz
- so any peaks that exist shouldn't be washed out by noise in adjacent channels.
+When assessing the Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ detections we consult the map for obvious pairs of positive/negative peaks
+ that would indicate beam offset and therefore a false Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ signal.
+ The maps are integrated over a narrow frequency band of approximately 2
+ MHz so any peaks that exist should not be washed out by noise in adjacent
+ channels.
  In the maps for Orion KL and IRC+10216 shown in Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -616,9 +1200,16 @@ reference "fig:results"
 
 \end_inset
 
- there are no negative peaks around the peak of Stokes V.
- However in NGC7538 there is quite a large negative Stokes V peak near our
- chosen peak that may indicate squint.
+ there are no negative peaks around the peak of Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ However in NGC7538 there is quite a large negative Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ peak near our chosen peak that may indicate squint.
  The top panel of Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -626,7 +1217,7 @@ reference "fig:beforeafter"
 
 \end_inset
 
- shows what 'squint peaks' look like (we know these peaks are from squint
+ shows what `squint peaks' look like (we know these peaks are from squint
  because they disappear after correction) and the pairs tend to resemble
  each other in shape.
  The pair of peaks around our chosen peak in NGC7538 however have distinct
@@ -1087,32 +1678,6 @@ Corrected maps of the CO
  
 \series bold
 \emph on
-Maps
-\emph default
-:
-\series default
- Blue contours are Stokes V and are shown at the -4, -3, -2, 2, 3, 4
-\begin_inset Formula $\sigma$
-\end_inset
-
- levels.
- The RMS error for each Stokes V map is found using 
-\emph on
-Miriad'
-\emph default
-s 
-\family typewriter
-imstat
-\family default
- command.
- Dark red contours are Stokes I and the levels are 15%, 30%, 45%, 60%, 85%
- and 95% of the maximum.
- The value in the top left is the frequency of the mapped signal.
- Each map has a narrow bandwidth of ~2 MHz around the frequency given in
- the top left corner.
- 
-\series bold
-\emph on
 Spectra
 \emph default
 :
@@ -1126,10 +1691,148 @@ Miriad
 maxfit
 \family default
  is used on the CO map to obtain the location on the image where the Stokes
- V signal at 345.8GHz is maximum, and a spectra is obtained through that
- point.
+ 
+\begin_inset Formula $V$
+\end_inset
+
+ signal at 345.8GHz is maximum, and a spectra is obtained through that point.
  The cross on the map denotes the location of that peak.
+ The red line is Stokes 
+\begin_inset Formula $I$
+\end_inset
+
+ and the blue is Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+.
  The spectrum for NGC7538 is Hanning smoothed by a length of 15.
+
+\series bold
+\emph on
+ Maps
+\emph default
+:
+\series default
+ Blue contours are Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ and are shown at the -4, -3, -2, 2, 3, 4
+\begin_inset Formula $\sigma$
+\end_inset
+
+ levels.
+ The RMS error for each Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ map is found using 
+\emph on
+Miriad'
+\emph default
+s 
+\family typewriter
+imstat
+\family default
+ command: 
+\begin_inset Formula $\sigma=$
+\end_inset
+
+0.30, 0.15, and 0.17 Jy/beam, respectively.
+ Dark red contours are Stokes 
+\begin_inset Formula $I$
+\end_inset
+
+ and the levels are 15%, 30%, 45%, 60%, 85% and 95% of the maximum.
+ The value in the top left is the central frequency of the mapped signal
+ and the map is integrated over a narrow bandwidth of 
+\begin_inset Formula $\sim$
+\end_inset
+
+2 MHz.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide true
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-0.5cm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/stokesv.map.spec.co3-2peakv.pdf
+	width 80page%
+	BoundingBox 20bp 40bp 565bp 780bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:beforeafterspec"
+
+\end_inset
+
+Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ spectra of all objects before and after squint correction.
+
+\emph on
+ Miriad
+\emph default
+'s 
+\family typewriter
+maxfit
+\family default
+ is used on the CO map for each respective object to obtain the location
+ in the image where the Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ signal at 345.8GHz is maximum, and a spectra is obtained through that point.
+ Note that the Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ signal decreases in all cases after squint correction.
 \end_layout
 
 \end_inset
@@ -1184,8 +1887,11 @@ Corrected maps of the CO
 \end_inset
 
  line and corrected spectrum for NGC1333 (IRAS2a).
- No significant Stokes V signal is detected here, probably because the object
- is too dim.
+ No significant Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ signal is detected here, probably because the object is too dim.
  Contours are the same levels as in Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1236,12 +1942,20 @@ name "fig:SiO"
 
 \end_inset
 
-Peak Stokes V signal for the SiO (
+Peak Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ signal for the SiO (
 \begin_inset Formula $J=7\rightarrow8$
 \end_inset
 
  at 347.3 GHz) transition in Orion KL.
- Note there is also a strong Stokes V signal in the CO 
+ Note there is also a strong Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ signal in the CO 
 \begin_inset Formula $(J=3\rightarrow2$
 \end_inset
 
@@ -1318,7 +2032,11 @@ Line
 \begin_layout Plain Layout
 
 \series bold
-Stokes V (Jy/beam)
+Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ (Jy/beam)
 \end_layout
 
 \end_inset
@@ -1721,420 +2439,22 @@ name "tab:sumresults"
 
 \end_inset
 
-Summary of corrected Stokes V signals found.
+Summary of corrected Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ signals found.
  The beam size is determined by the configuration of the antennae array.
- An intensity for the Stokes V signal is only given if the peak is noticeably
- higher than the noise level.
+ An intensity for the Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ signal is only given if the peak is noticeably higher than the noise level.
  The intensity quoted for CO in NGC7538 is before smoothing is applied.
 \end_layout
 
 \end_inset
 
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide true
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-vspace{-0.5cm}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename figures/stokesv.map.spec.co3-2peakv.pdf
-	width 80page%
-	BoundingBox 20bp 40bp 565bp 780bp
-	clip
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:beforeafterspec"
-
-\end_inset
-
-Stokes V spectra of all objects before and after squint correction.
-
-\emph on
- Miriad
-\emph default
-'s 
-\family typewriter
-maxfit
-\family default
- is used on the CO map for each respective object to obtain the location
- in the image where the Stokes V signal at 345.8GHz is maximum, and a spectra
- is obtained through that point.
- Note that the Stokes V signal decreases in all cases after squint correction.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Squint Correction
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset label
-LatexCommand label
-name "sec:Squint-Correction"
-
-\end_inset
-
-Here we describe spurious Stokes V that arises when using the SMA and our
- scheme for correcting it.
- This instrumental Stokes V comes from a slight pointing offset between
- the left- and right-handed CP beams.
-\end_layout
-
-\begin_layout Standard
-The archival data used was in all cases observed with the goal of measuring
- linear polarization (i.e., the Stokes Q and Stokes U parameters).
- On the SMA this is done with a quarter-waveplate placed in front of the
- linear receivers to convert incident circular polarization (CP) to linear
- polarization.
- While this method is relatively imprecise, it avoids having to solve for
- the linear polarization terms of calibration objects when obtaining Stokes
- V 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Marrone2008,Thompson2001"
-
-\end_inset
-
-.
- Obtaining Stokes V from the visibilities measured with circular feeds is
- done as follows.
- Given antennae 
-\begin_inset Formula $a$
-\end_inset
-
- and 
-\begin_inset Formula $b$
-\end_inset
-
-, the Stokes V visibility in the circular feed case is found through 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Munoz2012"
-
-\end_inset
-
-:
-\begin_inset Formula 
-\[
-\mathcal{V}_{\text{V}}\simeq\frac{1}{2}\Big\{\mathcal{V}_{RR}/(g_{Ra}g_{Rb}^{*})-\mathcal{V}_{LL}/(g_{La}g_{Lb}^{*})\Big\}
-\]
-
-\end_inset
-
-Here the right-handed CP and left-handed CP visibilities are 
-\begin_inset Formula $\mathcal{V}_{RR}$
-\end_inset
-
- and 
-\begin_inset Formula $\mathcal{V}_{LL}$
-\end_inset
-
- and are measured by orienting the quarter-waveplate that is placed in the
- beam of the antennae.
- The complex gain factors for each polarization for each antennae are 
-\begin_inset Formula $g_{Ra}$
-\end_inset
-
-, 
-\begin_inset Formula $g_{Rb}$
-\end_inset
-
-, 
-\begin_inset Formula $g_{La}$
-\end_inset
-
- and 
-\begin_inset Formula $g_{Lb}$
-\end_inset
-
- with '
-\begin_inset Formula $R$
-\end_inset
-
-' and '
-\begin_inset Formula $L$
-\end_inset
-
-' for right- and left-CP, respectively.
- Because the Stokes V visibility is found by taking the difference of two
- beams a slight offset gives rise to pairs of positive and negative peaks
- of Stokes V, as shown in Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:beforeafter"
-
-\end_inset
-
-.
- This offset likely arises because of slight differences in the index of
- refraction of the quarter-waveplate when it is rotated, but hasn't been
- studied with the SMA as far as we know.
-\end_layout
-
-\begin_layout Standard
-Because the visibilities are the Fourier transform of the intensity map,
- an offset in image space is equivalent to a complex exponential term in
- visibility space that can be absorbed into the gain coefficients (see Appendix).
- Thus it is easiest to correct for the offset in visibility-space by using
- 
-\emph on
-Miriad 
-\emph default
-(citation) to solve for the gain coefficients on each beam.
- Specifically the process is:
-\end_layout
-
-\begin_layout Enumerate
-Observations are calibrated for gain and phase in the usual way using calibratio
-n observations of 'good' sources (usually quasars like 3C84, 3C454, etc.)
- (See Miriad User Guide 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Sault2008"
-
-\end_inset
-
-)
-\end_layout
-
-\begin_layout Enumerate
-Visibilities are split into line-free continuum data and line data.
- These are then mapped and used to obtain CLEAN models
-\end_layout
-
-\begin_layout Enumerate
-The separate continuum and line data are further split into 
-\emph on
-LL
-\emph default
- and 
-\emph on
-RR
-\emph default
- visibilities.
- 
-\emph on
-Miriad'
-\emph default
-s 
-\family typewriter
-selfcal
-\family default
- is used on the continuum data to solve for the gain coefficients of each
- antenna and each polarization (
-\emph on
-L
-\emph default
- or 
-\emph on
-R
-\emph default
-).
- This is done by minimizing the difference between measured visibilities
- 
-\begin_inset Formula $\mathcal{V}_{ij}$
-\end_inset
-
- of antennae 
-\begin_inset Formula $i$
-\end_inset
-
- and 
-\begin_inset Formula $j$
-\end_inset
-
- and model visibilities 
-\begin_inset Formula $\hat{\mathcal{V}}_{ij}$
-\end_inset
-
- according to 
-\begin_inset Formula $\epsilon^{2}=\sum|\mathcal{V}_{ij}-g_{i}g_{j}^{*}\hat{\mathcal{V}}_{ij}|^{2}$
-\end_inset
-
- for each of the correlations 
-\emph on
-LL
-\emph default
- and 
-\emph on
-RR
-\emph default
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Sault2008,Schwab1980"
-
-\end_inset
-
-.
- The model visibilities used are those found earlier.
-\end_layout
-
-\begin_layout Enumerate
-The gains found from the continuum 
-\emph on
-LL
-\emph default
- data is then applied to the line 
-\emph on
-LL
-\emph default
- data, similarly for the 
-\emph on
-RR
-\emph default
- continuum and line data.
-\end_layout
-
-\begin_layout Enumerate
-The different polarizations (
-\emph on
-LL
-\emph default
-, 
-\emph on
-RR
-\emph default
-, 
-\emph on
-RL
-\emph default
-, 
-\emph on
-LR
-\emph default
-) are recombined and inverted to produce corrected maps.
- Spectra can be obtained either from the corrected visibilities or the maps.
- 
-\end_layout
-
-\begin_layout Standard
-Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:beforeafter"
-
-\end_inset
-
- shows maps before and after this correction is applied.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename maps/orkl.cnt.uncorr.ps
-	lyxscale 80
-	scale 45
-	rotateAngle 270
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename maps/orkl.cnt.corr.ps
-	lyxscale 80
-	scale 45
-	rotateAngle 270
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:beforeafter"
-
-\end_inset
-
-Map of the continuum around 345GHz in Orion KL before (top) and after (bottom)
- squint correction.
- Red contours are Stokes I, blue contours are Stokes V.
- Dashed lines denote negative values, solid lines denote positive values.
- Note the multiple pairs of positive and negative Stokes V peaks.
- These largely disappear after correction.
- The contour scales on both maps are identical.
- Red Stokes I contours are at 15%, 35%, 55%, 75% and 95% of the peak intensity.
- Blue Stokes V contours are at -8, -7, -6, -5, -4, -3, -2, 2, 3, 4, 5, 6,
- 7 and 8
-\begin_inset Formula $\sigma$
-\end_inset
-
- levels.
- 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -2180,26 +2500,71 @@ reference "sec:Observations"
 
 \begin_layout Standard
 Firstly we take the average of all the visibility data and note that the
- peak Stokes V is not proportional to the peak Stokes I at any particular
- frequency –a large Stokes I at 347.25GHz for example does not indicate a
- corresponding peak in Stokes V.
+ peak Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ is not proportional to the peak Stokes 
+\begin_inset Formula $I$
+\end_inset
+
+ at any particular frequency –a large Stokes 
+\begin_inset Formula $I$
+\end_inset
+
+ at 347.25GHz for example does not indicate a corresponding peak in Stokes
+ 
+\begin_inset Formula $V$
+\end_inset
+
+.
  This property indicates that there isn't significant leakage of Stokes
- I into Stokes V.
+ 
+\begin_inset Formula $I$
+\end_inset
+
+ into Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+.
  This is true in Orion KL (where CO and SiO are the strongest lines).
  This also seems to be true in the visibilities of IRC+10216: the CS and
- SiS lines have similar strengths but the Stokes V at SiS is twice as intense.
+ SiS lines have similar strengths but the Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ at SiS is twice as intense.
  However in the same object H
 \begin_inset Formula $^{13}$
 \end_inset
 
-CN and CO have Stokes V intensities that appear proportional to their Stokes
- I intensity (stronger I means stronger V).
+CN and CO have Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ intensities that appear proportional to their Stokes 
+\begin_inset Formula $I$
+\end_inset
+
+ intensity (stronger 
+\begin_inset Formula $I$
+\end_inset
+
+ means stronger 
+\begin_inset Formula $V$
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
-We also note that the shapes of the Stokes V signals vary across the frequency
- band and interpret this to mean that the signals are not instrumental in
- nature.
+We also note that the shapes of the Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ signals vary across the frequency band and interpret this to mean that
+ the signals are not instrumental in nature.
  For example Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2207,7 +2572,11 @@ reference "fig:SiO"
 
 \end_inset
 
- shows a spectrum from Orion KL with Stokes V in CO and SiO.
+ shows a spectrum from Orion KL with Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ in CO and SiO.
  The SiO signal is purely negative (indicating only left-circular polarization)
  but the CO signal is antisymmetric and is initially positive and then becomes
  negative, indicating the presence of both LCP and RCP.
@@ -2215,18 +2584,29 @@ reference "fig:SiO"
  red-shifted scattering populations that will be considered later.
  We know of no instrumental mechanism for producing such a signature.
  This argument only applies to Orion KL.
- In the other objects the Stokes V signal is always positive.
+ In the other objects the Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ signal is always positive.
 \end_layout
 
 \begin_layout Standard
-Finally we checked and confirmed that there were no Stokes V signals in
- the continuum larger than those found at molecular lines like CO and SiO.
+Finally we checked and confirmed that there were no Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ signals in the continuum larger than those found at molecular lines like
+ CO and SiO.
  Finding a large signal in the continuum could indicate the data is suffering
  from instrumental artifacts since we only expect conversion of linear to
  circular polarization at the frequencies of molecular transitions.
- This is not the case: we only find Stokes V peaks at frequencies that correspon
-d with emission from molecular lines and there is no significant CP in the
- continuum.
+ This is not the case: we only find Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ peaks at frequencies that correspond with emission from molecular lines
+ and there is no significant CP in the continuum.
 \end_layout
 
 \begin_layout Standard
@@ -2281,8 +2661,11 @@ CO
  at 265.9 GHz in Orion KL was measured and no CP higher than the 0.1% level
  was detected.
  The detection in CO and the absence of a detection in HCN indicates that
- the CSO observations were not suffering from leakage into Stokes V and
- highlights the CO molecule as a source of non-Zeeman CP.
+ the CSO observations were not suffering from leakage into Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ and highlights the CO molecule as a source of non-Zeeman CP.
  In all the objects presented here we find CP in 
 \begin_inset Formula $^{12}$
 \end_inset
@@ -2320,8 +2703,15 @@ CO
  They found that initially the linear polarization maps of dust and CO differed
  greatly in their polarization angles.
  Expecting that there was conversion of linear to circular polarization
- due to ARS, the CO Stokes V flux was then reinserted into the CO Stokes
- U flux.
+ due to ARS, the CO Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ flux was then reinserted into the CO Stokes 
+\begin_inset Formula $U$
+\end_inset
+
+ flux.
  The resulting CO map's polarization angles now agreed very well with the
  polarization angles in the dust map 
 \begin_inset CommandInset citation
@@ -2361,7 +2751,11 @@ key "Houde2013"
 \begin_inset Quotes erd
 \end_inset
 
--shaped Stokes V profile.
+-shaped Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ profile.
  In a follow up paper 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -2369,9 +2763,13 @@ key "Houde2014"
 
 \end_inset
 
- considered observations of Stokes V in SiO masers and showed that different
- profile shapes easily arose if there were populations of scattering foreground
- molecules slightly outside of the velocity range of the line.
+ considered observations of Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ in SiO masers and showed that different profile shapes easily arose if
+ there were populations of scattering foreground molecules slightly outside
+ of the velocity range of the line.
  For example in that case a blue-shifted scattering population of molecules
  results in a negative 
 \begin_inset Quotes eld
@@ -2474,7 +2872,15 @@ V= & 2\alpha\beta\sin(\phi)
 
 \end_inset
 
-This implies that Stokes U is lost to Stokes V.
+This implies that Stokes 
+\begin_inset Formula $U$
+\end_inset
+
+ is lost to Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+.
  A calculation of the form of 
 \begin_inset Formula $\phi$
 \end_inset
@@ -2725,6 +3131,23 @@ Marrone D.
  & Rao R.
  2008, Proc.
  SPIE 7020, 70202B
+\end_layout
+
+\begin_layout References
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "Sault et al.(1995)"
+key "Sault1995"
+
+\end_inset
+
+Sault, R.
+ J., Teuben, P.
+ J.
+ & Wright M.
+ C.
+ H.
+ 1995 ADASS IV, ASP Conference Series, 77, 433-436
 \end_layout
 
 \begin_layout References
