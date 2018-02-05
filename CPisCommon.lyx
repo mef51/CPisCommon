@@ -2528,18 +2528,45 @@ Firstly we take the average of all the visibility data and note that the
 \end_inset
 
 .
- This is true in Orion KL (where CO and SiO are the strongest lines).
- This also seems to be true in the visibilities of IRC+10216: the CS and
- SiS lines have similar strengths but the Stokes 
+ This is true in Orion KL (where CO (
+\begin_inset Formula $J=3\rightarrow2$
+\end_inset
+
+) and SiO (
+\begin_inset Formula $J=8\rightarrow7$
+\end_inset
+
+) are the strongest lines).
+ This also seems to be true in the visibilities of IRC+10216: the CS (
+\begin_inset Formula $J=7\rightarrow6$
+\end_inset
+
+) and SiS 
+\begin_inset Formula $(J=19\rightarrow18)$
+\end_inset
+
+ lines have similar strengths but the Stokes 
 \begin_inset Formula $V$
 \end_inset
 
- at SiS is twice as intense.
+ at SiS 
+\begin_inset Formula $(J=19\rightarrow18)$
+\end_inset
+
+ is twice as intense.
  However in the same object H
 \begin_inset Formula $^{13}$
 \end_inset
 
-CN and CO have Stokes 
+CN 
+\begin_inset Formula $(J=4\rightarrow3$
+\end_inset
+
+) and CO 
+\begin_inset Formula $(J=3\rightarrow2)$
+\end_inset
+
+ have Stokes 
 \begin_inset Formula $V$
 \end_inset
 
@@ -2580,8 +2607,16 @@ reference "fig:SiO"
  The SiO signal is purely negative (indicating only left-circular polarization)
  but the CO signal is antisymmetric and is initially positive and then becomes
  negative, indicating the presence of both LCP and RCP.
- This has a physical explanation using ARS in terms of blue-shifted and
- red-shifted scattering populations that will be considered later.
+ This has a physical explanation using the ARS model in terms of blue-shifted
+ and red-shifted scattering populations that will be considered in Section
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:ARS"
+
+\end_inset
+
+.
  We know of no instrumental mechanism for producing such a signature.
  This argument only applies to Orion KL.
  In the other objects the Stokes 
@@ -2589,6 +2624,89 @@ reference "fig:SiO"
 \end_inset
 
  signal is always positive.
+\end_layout
+
+\begin_layout Standard
+In the case of IRC+10216, an evolved carbon star with an extended envelope,
+ we note that the peak of Stokes V in the CO 
+\begin_inset Formula $(J=3\rightarrow2)$
+\end_inset
+
+ map (bottom-right panel of Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:results"
+
+\end_inset
+
+) is roughly 6
+\begin_inset Quotes erd
+\end_inset
+
+ away from the Stokes I emission, and were concerned that the Stokes V peak
+ was not even on the object.
+ From single-dish CO 
+\begin_inset Formula $(J=2\rightarrow1$
+\end_inset
+
+) observations of the shell around IRC+10216 we find the radius of the CO
+ shell to be 50
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "Fig. 1 of"
+key "Cernicharo2015"
+
+\end_inset
+
+, indicating that the Stokes V signal is indeed on the object.
+ 
+\end_layout
+
+\begin_layout Standard
+Spatial filtering due to the resolution of the interferometer explains the
+ much smaller radius of IRC+10216 in the observations presented here and
+ also explains the frequent occurences of negative Stokes I in almost all
+ the spectra shown in Figures 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:results"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:iras2a"
+
+\end_inset
+
+, and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:SiO"
+
+\end_inset
+
+.
+ The largest resolvable object by an interferomter is determined by the
+ length of the shortest baseline, meaning that large scale emission can
+ be invisible to the interferometer.
+ For example in Orion KL the CO 
+\begin_inset Formula $(J=3\rightarrow2$
+\end_inset
+
+) Stokes I emission is large and extended.
+ If then the Stokes V signal comes from smaller more localized areas, we
+ would observe peaks of Stokes V as shown and only a portion of the Stokes
+ I that is present.
+ The rest of the Stokes I signal would be filtered away, which could shift
+ the zero-level to smaller values, causing fluctuations in Stokes I to appear
+ to have negative values.
+ ***details, maybe an equation***
 \end_layout
 
 \begin_layout Standard
@@ -2731,6 +2849,12 @@ Anisotropic Resonant Scattering
 \end_layout
 
 \begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:ARS"
+
+\end_inset
+
 Anisotropic resonant scattering was the mechanism first proposed by 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -2881,11 +3005,11 @@ This implies that Stokes
 \end_inset
 
 .
- A calculation of the form of 
+ A calculation of the phase shift 
 \begin_inset Formula $\phi$
 \end_inset
 
- can be found in 
+ incurred due to anisotropic resonant scattering can be found in 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Houde2013"
@@ -2895,16 +3019,6 @@ key "Houde2013"
 .
 \end_layout
 
-\begin_layout Itemize
-Apply ARS to the molecules detected here
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-HCN should have very little ARS? I need a place to find these values
-\end_layout
-
-\end_deeper
 \begin_layout Section
 Conclusion
 \end_layout
@@ -2929,6 +3043,18 @@ ARS seems to work
 
 \begin_layout Itemize
 fix your polarimeters and improve CP measurement
+\end_layout
+
+\begin_layout References
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "Cernicharo et al.(2015)"
+key "Cernicharo2015"
+
+\end_inset
+
+Cernicharo, J., Marcelino, N., Agúndez M., & Guéllin, M.
+ 2015 A&A, 575, A91
 \end_layout
 
 \begin_layout References
