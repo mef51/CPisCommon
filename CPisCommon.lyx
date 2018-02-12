@@ -2071,7 +2071,7 @@ CO
 \begin_inset Text
 
 \begin_layout Plain Layout
-345.78
+345.8
 \end_layout
 
 \end_inset
@@ -2445,7 +2445,7 @@ Summary of corrected Stokes
 
  signals found.
  The beam size is determined by the configuration of the antennae array.
- An intensity for the Stokes 
+ An intensity for the peak of the Stokes 
 \begin_inset Formula $V$
 \end_inset
 
@@ -2628,7 +2628,11 @@ reference "subsec:ARS"
 
 \begin_layout Standard
 In the case of IRC+10216, an evolved carbon star with an extended envelope,
- we note that the peak of Stokes V in the CO 
+ we note that the peak of Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ in the CO 
 \begin_inset Formula $(J=3\rightarrow2)$
 \end_inset
 
@@ -2643,8 +2647,15 @@ reference "fig:results"
 \begin_inset Quotes erd
 \end_inset
 
- away from the Stokes I emission, and were concerned that the Stokes V peak
- was not even on the object.
+ away from the Stokes 
+\begin_inset Formula $I$
+\end_inset
+
+ emission, and were concerned that the Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ peak was not even on the object.
  From single-dish CO 
 \begin_inset Formula $(J=2\rightarrow1$
 \end_inset
@@ -2662,15 +2673,22 @@ key "Cernicharo2015"
 
 \end_inset
 
-, indicating that the Stokes V signal is indeed on the object.
+, indicating that the Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ signal is indeed on the object.
  
 \end_layout
 
 \begin_layout Standard
 Spatial filtering due to the resolution of the interferometer explains the
  much smaller radius of IRC+10216 in the observations presented here and
- also explains the frequent occurences of negative Stokes I in almost all
- the spectra shown in Figures 
+ also explains the frequent occurences of negative Stokes 
+\begin_inset Formula $I$
+\end_inset
+
+ in almost all the spectra shown in Figures 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:results"
@@ -2699,13 +2717,36 @@ reference "fig:SiO"
 \begin_inset Formula $(J=3\rightarrow2$
 \end_inset
 
-) Stokes I emission is large and extended.
- If then the Stokes V signal comes from smaller more localized areas, we
- would observe peaks of Stokes V as shown and only a portion of the Stokes
- I that is present.
- The rest of the Stokes I signal would be filtered away, which could shift
- the zero-level to smaller values, causing fluctuations in Stokes I to appear
- to have negative values.
+) Stokes 
+\begin_inset Formula $I$
+\end_inset
+
+ emission is large and extended.
+ If then the Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ signal comes from smaller more localized areas, we would observe peaks
+ of Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ as shown and only a portion of the Stokes 
+\begin_inset Formula $I$
+\end_inset
+
+ that is present.
+ The rest of the Stokes 
+\begin_inset Formula $I$
+\end_inset
+
+ signal would be filtered away which could shift the zero-level to smaller
+ values.
+ Fluctuations in Stokes 
+\begin_inset Formula $I$
+\end_inset
+
+ would then appear to have negative values.
  ***details, maybe an equation***
 \end_layout
 
@@ -3023,26 +3064,70 @@ key "Houde2013"
 Conclusion
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Conclusion"
 
 \end_inset
 
-we showed you can measure CP with the SMA 
+We took polarimetric observations from the SMA archive of Orion KL, IRC+10216,
+ NGC7538 and NGC1333 and examined them for signals of circular polarization.
+ The data were corrected for squint, a source of false Stokes V signals
+ that arises due to a slight misalignment in the beams used to obtain Stokes
+ V when using the SMA's quarter-waveplate-based polarimeter.
+ We found evidence of significant Stokes V in Orion KL, IRC+10216 and NGC7538
+ in the transitions of CO (
+\begin_inset Formula $J=3\rightarrow2$
+\end_inset
+
+), SiO 
+\begin_inset Formula $(J=8\rightarrow7$
+\end_inset
+
+), CS (
+\begin_inset Formula $J=7\rightarrow6$
+\end_inset
+
+), SiS (
+\begin_inset Formula $J=19\rightarrow18$
+\end_inset
+
+) and H
+\begin_inset Formula $^{13}$
+\end_inset
+
+CN (
+\begin_inset Formula $J=4\rightarrow3$
+\end_inset
+
+), but because of low SNR in the spectra we could not model the shape of
+ Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ We also obtained much higher percentages of polarization than expected
+ (ranging from 6-30% for 
+\begin_inset Formula $V/I$
+\end_inset
+
+) due to the spatial filtering of large scale emission.
 \end_layout
 
-\begin_layout Itemize
-this is more evidence that non-Zeeman CP is common
+\begin_layout Standard
+Theories that explain the presence of non-Zeeman circular polarization in
+ molecular spectral lines rely on the conversion of background linear polarizati
+on.
+ The several detections in multiple lines and objects presented here indicate
+ that such an effect is likely widespread and common.
+ 
 \end_layout
 
-\begin_layout Itemize
-ARS seems to work
-\end_layout
-
-\begin_layout Itemize
-fix your polarimeters and improve CP measurement
+\begin_layout Standard
+Taking precise observations of CP as well as LP and correcting for this
+ conversion effect is therefore a critical step in polarization studies
+ of the magnetic field in the interstellar medium.
 \end_layout
 
 \begin_layout References
