@@ -601,7 +601,15 @@ where the right-handed CP and left-handed CP visibilities are
 \end_inset
 
  and are measured by orienting the quarter-waveplate that is placed in the
- beam of the antennae ***add details***.
+ beam of the antennae and correlating the responses of the antennae ***add
+ details***
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Marrone2008"
+
+\end_inset
+
+.
  The complex gain factors for each polarization for each antennae are 
 \begin_inset Formula $g_{Ra}$
 \end_inset
@@ -651,10 +659,73 @@ reference "fig:beforeafter"
 
 \begin_layout Standard
 Because the visibilities are the Fourier transform of the intensity map,
- an offset in image space is equivalent to a complex exponential term in
- visibility space that can be absorbed into the gain coefficients (see Appendix).
- Thus it is easiest to correct for the offset in visibility-space by using
+ an offset in image space is equivalent to a complex exponential factor
+ in visibility space that can be absorbed into the gain coefficients.
+ Consider a function 
+\begin_inset Formula $I(x)$
+\end_inset
+
+ that represents an intensity 
+\begin_inset Formula $I$
+\end_inset
+
+ at position 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ An interferometer measures the Fourier transform of this function 
+\begin_inset Formula $I(k)=\int_{-\infty}^{\infty}e^{-ikx}I(x)dx$
+\end_inset
+
+.
+ If instead the instrument introduces an offset from some reference position
  
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ such that the final image we calculate is 
+\begin_inset Formula $I'(x)=I(x-x_{0})$
+\end_inset
+
+ then the Fourier transform of the shifted image is 
+\begin_inset Formula $I'(k)=\int_{-\infty}^{\infty}e^{-ikx}I(x-x_{0})dx$
+\end_inset
+
+.
+ Changing variables with 
+\begin_inset Formula $y=x-x_{0}$
+\end_inset
+
+ we see 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+I'(k)=\int_{-\infty}^{\infty}e^{-ik(y+x_{0})}I(y)dy=e^{-ikx_{0}}\int_{-\infty}^{\infty}I(y)dy
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+I'(k)=e^{-ikx_{0}}I(k)\equiv g_{\text{offset}}I(k)
+\end{equation}
+
+\end_inset
+
+This means that a shifted map will introduce a complex factor (
+\begin_inset Formula $g_{\text{offset}}$
+\end_inset
+
+) to the true visibilities.
+ It is therefore easiest to correct for the offset in visibility-space by
+ using 
 \emph on
 Miriad 
 \emph default
@@ -807,7 +878,6 @@ reference "fig:beforeafter"
 
 \begin_layout Standard
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
