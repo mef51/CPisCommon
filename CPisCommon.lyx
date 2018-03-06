@@ -132,36 +132,21 @@ Submillimeter Array, Academia Sinica Institute of Astronomy and Astrophysics,
 \end_layout
 
 \begin_layout Abstract
-Understanding the role of magnetic fields in star-forming regions allows
- us to test ideas about free-fall collapse and support mechanisms in molecular
- clouds, filling in details about the star formation process.
- Magnetic fields are commonly probed through linear polarization observations
- from dust continuum and/or molecular spectral transitions, and analysed
- through the Davis-Chandrasekhar-Fermi method.
- For molecular lines circular polarization is usually ignored, largely because
- of difficulty in measurement and its assumed irrelevance.
- We find in archival data of the Submillimeter Array (SMA
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-The Submillimeter Array is a joint project between the Smithsonian Astrophysical
- Observatory and the Academia Sinica Institute of Astronomy and Astrophysics
- and is funded by the Smithsonian Institution and the Academia Sinica.
-\end_layout
-
+We searched archival data of the Submillimeter Array (SMA) for evidence
+ of circular polarization in common molecular tracers, most notably CO.
+ This circular polarization possibly arises from anisotropic resonant scattering
+, which would imply that some background linearly polarized flux is being
+ converted to circular polarization.
+ We find circular polarization in NGC7538, IRC+10216 and Orion KL for transition
+s of CO, SiO, SiS, and H
+\begin_inset Formula $^{13}$
 \end_inset
 
-) several examples of circular polarization in common molecular tracers,
- most notably CO.
- This circular polarization possibly arises from anisotropic resonant scattering
- implying that some background linearly polarized flux is being converted
- to circular polarization.
- We find circular polarization in NGC7538, IRC+10216 and Orion KL to sufficient
- degrees that we believe the presence of circular polarization in these
- spectral lines is widespread for such objects, implying that an important
- piece of information has been missed when studying magnetic fields through
- linear polarization from molecular spectral lines in the interstellar medium.
+CN at high enough levels to suggest that the presence of circular polarization
+ in these spectral lines is common for such objects.
+ This implies that an important piece of information has been omitted when
+ studying magnetic fields through linear polarization from molecular spectral
+ lines in the interstellar medium.
 \end_layout
 
 \begin_layout Standard
@@ -182,50 +167,12 @@ name "sec:Introduction"
 
 \end_inset
 
-This section will cover the background of measuring magnetic fields in the
- interstellar medium (ISM) and Section 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:Measurement-with-Radio"
-
-\end_inset
-
- will discuss the issues that arise when doing polarimetry with radio interferom
-etry, focusing specifically on circular polarization (CP).
- Section 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:Observations"
-
-\end_inset
-
- presents archival observations of four objects made with the Submillimeter
- Array (SMA) on Mauna Kea and makes the case that these circular polarization
- detections are real and physical.
- Section 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:Squint-Correction"
-
-\end_inset
-
- will give in detail our scheme for correcting a spurious source of CP that
- arises with the SMA.
- Finally in Section 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:Discussion"
-
-\end_inset
-
- we will highlight the significance of these CP detections and summarize
- relevant research.
-\end_layout
-
-\begin_layout Standard
-Since we can only measure the radiation from star-forming regions astronomers
- use polarimetry to infer properties like the direction and magnitude of
- the magnetic field.
+Understanding the role of magnetic fields in star-forming regions allows
+ us to test ideas about free-fall collapse and support mechanisms in molecular
+ clouds, filling in details about the star formation process.
+ Since we can only measure the radiation from star-forming regions astronomers
+ use polarimetry to infer the magnitude and orientation of the magnetic
+ field.
  The Davis-Chandrasekhar-Fermi (DCF) 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -234,16 +181,18 @@ key "Chandrasekhar1953"
 \end_inset
 
  is one method that uses the dispersion of polarization angles (PA) of linear
- polarization (LP) to find the magnitude and direction of the plane-of-the-sky
- component of the magnetic field.
+ polarization (LP) [I don't understand Martin's note here] to find the magnitude
+ and direction of the plane-of-the-sky component of the magnetic field.
  The presence of a magnetic field leads to linearly polarized radiation
- because dust molecules will align themselves to the field.
- The aligned particles emit radiation that is linearly polarized.
- Aligned dust will also absorb radiation whose polarization is aligned with
+ because dust and molecules will align themselves relative to the field.
+ Aligned particles can emit radiation with a net level of linear polarization
+ greater than zero.
+ Aligned dust can also absorb radiation whose polarization is aligned with
  its long axis, acting as a sort of polarizing grid.
- Thus measuring the amount of linear polarization in the infrared continuum
+ Thus measuring the amount of dust linear polarization in the infrared continuum
  tells us about the degree to which the dust is aligned with the magnetic
- field which in turn tells us about the strength of the magnetic field 
+ field, which in turn can tell us about the strength of the magnetic field
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Chandrasekhar1953,Crutcher2012"
@@ -257,7 +206,7 @@ key "Chandrasekhar1953,Crutcher2012"
 \begin_layout Standard
 The alignment of molecules and their interaction with the ambient magnetic
  field can cause that molecule's transitions to be linearly polarized by
- a few percent through the Goldreich-Kylafis effect 
+ a few percent through the so-called Goldreich-Kylafis effect 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Goldreich1981"
@@ -279,8 +228,10 @@ key "Chandrasekhar1953,Crutcher2012"
 \end_layout
 
 \begin_layout Standard
-A significant amount of unexpected circular polarization was reported by
- 
+For molecular lines circular polarization is usually ignored, largely because
+ of difficulty in its measurement and its assumed irrelevance.
+ However, a significant amount of unexpected circular polarization was reported
+ by 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Houde2013"
@@ -288,7 +239,7 @@ key "Houde2013"
 \end_inset
 
  in a rotational transition of CO using the Caltech Submillimeter Observatory
- (CSO), a common tracer of the magnetic field 
+ (CSO), a common tracer through LP of magnetic fields 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Crutcher2012"
@@ -298,14 +249,15 @@ key "Crutcher2012"
 .
  The presence of circular polarization in a molecular transition can be
  explained with Zeeman splitting for some molecules/transitions possessing
- a significant magnetic momeny (e.g., CN), but CO is highly insensitive to
+ a significant magnetic moment (e.g., CN), but CO is highly insensitive to
  the Zeeman effect.
  In addition, the observed Stokes 
 \begin_inset Formula $V$
 \end_inset
 
  profile in Orion KL was positive and symmetric, which is also unexpected
- since Zeeman splitting usually gives rise to an antisymmetric Stokes 
+ since Zeeman splitting usually gives rise to an approximately antisymmetric
+ Stokes 
 \begin_inset Formula $V$
 \end_inset
 
@@ -320,14 +272,14 @@ key "Houde2013,Houde2014"
 \end_inset
 
 .
- This was further tested in IC443 by 
+ This was further tested in the supernova remnant IC443 by 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Hezareh2013"
 
 \end_inset
 
- where the measured circularly polarized flux of CO lines (
+ where the measured CP flux of CO lines (
 \begin_inset Formula $J=2\rightarrow1$
 \end_inset
 
@@ -335,16 +287,70 @@ key "Hezareh2013"
 \begin_inset Formula $J=1\rightarrow0$
 \end_inset
 
-) were `re-added' into the measured linearly polarized flux to correct the
- polarization angles.
- They found that the polarization angles obtained from the CO tracers only
- agreed with those obtained from dust polarimetry after the circularly polarized
- flux was accounted for.
- If ARS is common to other objects then using linear polarization in CO
- as a tracer of the magnetic field will have a systematic error unless the
- circular polarization of CO's lines are also measured.
- The goal of this paper is to show several examples of such circular polarizatio
-n.
+) were `re-inserted' into the measured LP flux to account for the LP-to-CP
+ conversion and its effect on the PA.
+ They found that the PAs obtained from different CO transitions only agreed
+ with each other and those obtained from dust polarimetry after the CP flux
+ was accounted for.
+ If ARS is common to other objects then using LP in CO as a tracer of the
+ magnetic field will introduce a systematic error unless the CP of CO lines
+ are also measured.
+ 
+\end_layout
+
+\begin_layout Standard
+The main goal of this paper is to find further evidence of CP in more objects
+ and molecular lines through a search of archival data of the Submillimeter
+ Array (SMA
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The Submillimeter Array is a joint project between the Smithsonian Astrophysical
+ Observatory and the Academia Sinica Institute of Astronomy and Astrophysics
+ and is funded by the Smithsonian Institution and the Academia Sinica.
+\end_layout
+
+\end_inset
+
+).
+ In Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Measurement-with-Radio"
+
+\end_inset
+
+ we discuss the issues that arise when doing polarimetry with radio interferomet
+ry, focusing specifically on circular polarization (CP).
+ Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Observations"
+
+\end_inset
+
+ presents archival observations of four objects made with the SMA on Mauna
+ Kea and makes the case that these circular polarization detections are
+ real and physical.
+ Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Squint-Correction"
+
+\end_inset
+
+ will give in detail our scheme for correcting a spurious source of CP that
+ arises with the SMA.
+ Finally in Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Discussion"
+
+\end_inset
+
+ we will highlight the significance of these CP detections and summarize
+ relevant research.
 \end_layout
 
 \begin_layout Section
