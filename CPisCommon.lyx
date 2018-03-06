@@ -348,7 +348,7 @@ n.
 \end_layout
 
 \begin_layout Section
-Measurement of Circular Polarization with Radio Interferometry
+Measurement of CP with Radio Interferometry
 \end_layout
 
 \begin_layout Standard
@@ -601,8 +601,7 @@ where the right-handed CP and left-handed CP visibilities are
 \end_inset
 
  and are measured by orienting the quarter-waveplate that is placed in the
- beam of the antennae and correlating the responses of the antennae ***add
- details***
+ beam of the antennae and correlating the responses of the antennae 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Marrone2008"
@@ -659,42 +658,53 @@ reference "fig:beforeafter"
 
 \begin_layout Standard
 Because the visibilities are the Fourier transform of the intensity map,
- an offset in image space is equivalent to a complex exponential factor
- in visibility space that can be absorbed into the gain coefficients.
- Consider a function 
-\begin_inset Formula $I(x)$
+ an offset in image space is equivalent to a complex factor in visibility
+ space that can be absorbed into the gain coefficients.
+ 
+\end_layout
+
+\begin_layout Standard
+Consider a map 
+\begin_inset Formula $I(l,m)$
 \end_inset
 
- that represents an intensity 
+ that represents the true intensity 
 \begin_inset Formula $I$
 \end_inset
 
- at position 
-\begin_inset Formula $x$
+ at angular position 
+\begin_inset Formula $l$
+\end_inset
+
+ and 
+\begin_inset Formula $m$
 \end_inset
 
 .
- An interferometer measures the Fourier transform of this function 
-\begin_inset Formula $I(k)=\int_{-\infty}^{\infty}e^{-ikx}I(x)dx$
+ An interferometer samples the Fourier transform of this map 
+\begin_inset Formula $V(u,v)=\int\int e^{-iul}e^{-ivm}I(l,m)dldm$
 \end_inset
 
 .
- If instead the instrument introduces an offset from some reference position
- 
-\begin_inset Formula $x_{0}$
+ If the instrument introduces an offset from some unknown position 
+\begin_inset Formula $(l_{0},m_{0})$
 \end_inset
 
- such that the final image we calculate is 
-\begin_inset Formula $I'(x)=I(x-x_{0})$
+ then the final image we calculate is shifted such that 
+\begin_inset Formula $I'(l,m)=I(l-l_{0},m-m_{0})$
 \end_inset
 
- then the Fourier transform of the shifted image is 
-\begin_inset Formula $I'(k)=\int_{-\infty}^{\infty}e^{-ikx}I(x-x_{0})dx$
+ and the Fourier transform of the shifted map is 
+\begin_inset Formula $V'(u,v)=\int\int e^{-iul}e^{-ivm}I(l-l_{0},m-m_{0})dldm$
 \end_inset
 
 .
  Changing variables with 
-\begin_inset Formula $y=x-x_{0}$
+\begin_inset Formula $\alpha=l-l_{0}$
+\end_inset
+
+ and 
+\begin_inset Formula $\delta=m-m_{0}$
 \end_inset
 
  we see 
@@ -703,7 +713,15 @@ Because the visibilities are the Fourier transform of the intensity map,
 \begin_layout Standard
 \begin_inset Formula 
 \[
-I'(k)=\int_{-\infty}^{\infty}e^{-ik(y+x_{0})}I(y)dy=e^{-ikx_{0}}\int_{-\infty}^{\infty}I(y)dy
+V'(u,v)=\int\int e^{-iu(\alpha+l_{0})}e^{-iv(\delta+m_{0})}I(\alpha,\delta)d\alpha d\delta
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+V'(u,v)=e^{-iul_{0}}e^{-ivm_{0}}\int\int e^{-iu\alpha}e^{-iv\delta}I(\alpha,\delta)d\alpha d\delta
 \]
 
 \end_inset
@@ -714,12 +732,12 @@ I'(k)=\int_{-\infty}^{\infty}e^{-ik(y+x_{0})}I(y)dy=e^{-ikx_{0}}\int_{-\infty}^{
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-I'(k)=e^{-ikx_{0}}I(k)\equiv g_{\text{offset}}I(k)
+V'(u,v)=e^{-iul_{0}}e^{-ivm_{0}}V(u,v)\equiv g_{\text{offset}}V(u,v)
 \end{equation}
 
 \end_inset
 
-This means that a shifted map will introduce a complex factor (
+This means that an offset will introduce a complex factor (
 \begin_inset Formula $g_{\text{offset}}$
 \end_inset
 
@@ -742,7 +760,7 @@ key "Sault1995"
 
 \begin_layout Enumerate
 Observations are calibrated for gain and phase in the usual way using calibratio
-n observations of 'good' sources (usually quasars like 3C84, 3C454, etc.)
+n observations of `good' sources (usually quasars like 3C84, 3C454, etc.)
  (See Miriad User Guide 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -3195,7 +3213,7 @@ on.
 \end_layout
 
 \begin_layout Standard
-Taking precise observations of CP as well as LP and correcting for this
+Taking precise observations of CP along with LP and correcting for this
  conversion effect is therefore a critical step in polarization studies
  of the magnetic field in the interstellar medium.
 \end_layout
