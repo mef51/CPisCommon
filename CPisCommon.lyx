@@ -366,15 +366,15 @@ name "sec:Measurement-with-Radio"
 
 The measurement of circular polarization is challenging to calibrate, especially
  when using radio interferometers like the SMA or ALMA.
- The SMA polarimeter uses a quarter-waveplate (QWP) to convert incident
- linearly polarized light to circularly polarized light primarily to measure
- linear polarization.
- While not its intended use, the QWP can work the other way to measure CP:
- incident CP is converted to LP and then measured by the receivers.
+ The SMA polarimeters use a quarter-waveplate (QWP) usually to convert incident
+ LP light to CP light to measure LP signals.
+ While not its most common use, at the SMA, the QWP can work the other way
+ to measure CP: incident CP is converted to LP and then measured by the
+ receivers.
  ALMA on the other hand uses linear feeds and measures the linearly polarized
  light directly.
- While both types of feeds can be used to measure circular polarization,
- the calibration process is different 
+ While both types of feeds can be used to measure CP, the calibration process
+ is different 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Sault1996"
@@ -382,15 +382,14 @@ key "Sault1996"
 \end_inset
 
 .
- Currently ALMA does not support measuring Stokes 
+ While ALMA does not yet support measuring Stokes 
 \begin_inset Formula $V$
 \end_inset
 
- reliably.
- The SMA has been used to take precise measurements of CP in Sgr A* as reported
- in 
+ reliably, the SMA has been used to take precise measurements of CP in Sgr
+ A* 
 \begin_inset CommandInset citation
-LatexCommand citet
+LatexCommand citep
 key "Munoz2012"
 
 \end_inset
@@ -415,7 +414,7 @@ Linear vs.
 
 \begin_layout Standard
 To illustrate briefly the differences between the two feed types consider
- the following: with orthogonal circular polarization bases, the Stokes
+ the following: with an orthogonal circular polarization basis, the Stokes
  
 \begin_inset Formula $V$
 \end_inset
@@ -425,19 +424,15 @@ To illustrate briefly the differences between the two feed types consider
 \end_inset
 
 , where 
-\begin_inset Formula $E$
-\end_inset
-
- is the electric field vector and 
-\begin_inset Formula $L$
+\begin_inset Formula $E_{L}$
 \end_inset
 
  and 
-\begin_inset Formula $R$
+\begin_inset Formula $E_{R}$
 \end_inset
 
- correspond to the orthogonal left-CP and right-CP bases.
- With orthogonal linear bases Stokes 
+ are the left-CP and right-CP electric fields, respectively.
+ With an orthogonal linear basis Stokes 
 \begin_inset Formula $V$
 \end_inset
 
@@ -446,28 +441,32 @@ To illustrate briefly the differences between the two feed types consider
 \end_inset
 
  where 
-\begin_inset Formula $x$
+\begin_inset Formula $E_{x}$
 \end_inset
 
  and 
-\begin_inset Formula $y$
+\begin_inset Formula $E_{y}$
 \end_inset
 
- are the linear bases.
- In the circular case we take the difference of two measured intensities
- while the linear feed case requires us to measure the phase of the electromagne
-tic wave.
+ are the LP fields, and 
+\begin_inset Formula $\text{Im}()$
+\end_inset
+
+ denotes taking the imaginary part.
+ In the CP case we take the difference of two measured intensities while
+ the linear feed case requires us to measure the phase of the electromagnetic
+ wave.
  
 \end_layout
 
 \begin_layout Standard
-Now when the measurement is made with interferometry it is the visibilities
- –the correlated waveforms between a pair of antennae– that are measured.
- In the circular case the Stokes 
+Now, when the measurement is made with interferometry it is the visibilities
+ – the correlated waveforms between a pair of antennae – that are measured.
+ In the CP case the Stokes 
 \begin_inset Formula $V$
 \end_inset
 
- visibility is roughly 
+ visibility scales as 
 \begin_inset Formula $\mathcal{V}_{\text{V}}\propto\text{\mathcal{V}}_{RR}-\text{\mathcal{V}}_{LL}$
 \end_inset
 
@@ -480,7 +479,15 @@ Now when the measurement is made with interferometry it is the visibilities
 \end_inset
 
  are the visibilities obtained from correlating two antenna measuring right-CP
- and left-CP respectively.
+ and left-CP, respectively (see eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:CPV"
+
+\end_inset
+
+ below).
  In the linear feed case the Stokes 
 \begin_inset Formula $V$
 \end_inset
@@ -525,11 +532,12 @@ name "sec:Squint-Correction"
 
 \end_inset
 
-Here we describe spurious Stokes 
+We now describe spurious Stokes 
 \begin_inset Formula $V$
 \end_inset
 
- that arises when using the SMA and our scheme for correcting it.
+ signals that can arise during observations such as those presented here
+ and our scheme for correcting it.
  This instrumental Stokes 
 \begin_inset Formula $V$
 \end_inset
@@ -540,7 +548,7 @@ Here we describe spurious Stokes
 
 \begin_layout Standard
 The archival data used was in all cases observed with the goal of measuring
- linear polarization (i.e., the Stokes 
+ LP (i.e., the Stokes 
 \begin_inset Formula $Q$
 \end_inset
 
@@ -550,15 +558,10 @@ The archival data used was in all cases observed with the goal of measuring
 
  parameters).
  On the SMA this is done with a quarter-waveplate placed in front of the
- linear receivers to convert incident circular polarization (CP) to linear
- polarization.
+ linear receivers to convert incident CP (LP) to LP (CP).
  While this method suffers from the errors that arise when subtracting two
- large measurements from each other, it avoids having to solve for the linear
- polarization terms of calibration objects when obtaining Stokes 
-\begin_inset Formula $V$
-\end_inset
-
- 
+ large measurements from each other, when performing CP measurements, it
+ avoids having to solve for the LP terms of calibration objects 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Marrone2008,Thompson2001"
@@ -571,7 +574,17 @@ key "Marrone2008,Thompson2001"
 \end_inset
 
  from the visibilities measured with circular feeds is done as follows.
- Given antennae 
+ 
+\end_layout
+
+\begin_layout Standard
+The output of an interferometer arrray of antennae are the visibilities.
+ A visibility is a correlation between a pair of antennae.
+ blah blah blah define visibilities here.
+\end_layout
+
+\begin_layout Standard
+Given antennae 
 \begin_inset Formula $a$
 \end_inset
 
@@ -593,7 +606,7 @@ key "Munoz2012"
 :
 \begin_inset Formula 
 \begin{equation}
-\mathcal{V}_{V}\simeq\frac{1}{2}\Big\{\mathcal{V}_{RR}/(g_{Ra}g_{Rb}^{*})-\mathcal{V}_{LL}/(g_{La}g_{Lb}^{*})\Big\},
+\mathcal{V}_{V}\simeq\frac{1}{2}\Big\{\mathcal{V}_{RR}/(g_{Ra}g_{Rb}^{*})-\mathcal{V}_{LL}/(g_{La}g_{Lb}^{*})\Big\},\label{eq:CPV}
 \end{equation}
 
 \end_inset
@@ -649,17 +662,16 @@ key "Marrone2008"
 \begin_inset Formula $V$
 \end_inset
 
-, as shown in Figure 
+, as can be seen in Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:beforeafter"
 
 \end_inset
 
-.
+ for example.
  This offset likely arises because of slight differences in the index of
- refraction of the quarter-waveplate when it is rotated, but has not been
- studied with the SMA as far as we know.
+ refraction of the quarter-waveplate when it is rotated.
 \end_layout
 
 \begin_layout Standard
@@ -687,25 +699,34 @@ Consider a map
 \end_inset
 
 .
- An interferometer samples the Fourier transform of this map 
-\begin_inset Formula $V(u,v)=\int\int e^{-iul}e^{-ivm}I(l,m)dldm$
+ An interferometer samples the Fourier transform of this map: 
+\begin_inset Formula 
+\[
+V(u,v)=\int\int e^{-iul}e^{-ivm}I(l,m)dldm.
+\]
+
 \end_inset
 
-.
- If the instrument introduces an offset from some unknown position 
+If the instrument introduces an arbitrary offset to position 
 \begin_inset Formula $(l_{0},m_{0})$
 \end_inset
 
- then the final image we calculate is shifted such that 
+, then the final image we calculate is shifted such that 
 \begin_inset Formula $I'(l,m)=I(l-l_{0},m-m_{0})$
 \end_inset
 
- and the Fourier transform of the shifted map is 
-\begin_inset Formula $V'(u,v)=\int\int e^{-iul}e^{-ivm}I(l-l_{0},m-m_{0})dldm$
+ and the Fourier transform of the shifted map becomes 
+\begin_inset Formula 
+\begin{eqnarray}
+V'(u,v) & = & \int\int e^{-iul}e^{-ivm}I(l-l_{0},m-m_{0})dldm\nonumber \\
+ & = & \int\int e^{-iu(\alpha+l_{0})}e^{-iv(\delta+m_{0})}I(\alpha,\delta)d\alpha d\delta\nonumber \\
+ & = & e^{-iul_{0}}e^{-ivm_{0}}\int\int e^{-iu\alpha}e^{-iv\delta}I(\alpha,\delta)d\alpha d\delta\nonumber \\
+ & = & e^{-iul_{0}}e^{-ivm_{0}}V(u,v)\equiv g_{\text{offset}}V(u,v)
+\end{eqnarray}
+
 \end_inset
 
-.
- Changing variables with 
+where we used the change of variables 
 \begin_inset Formula $\alpha=l-l_{0}$
 \end_inset
 
@@ -713,41 +734,8 @@ Consider a map
 \begin_inset Formula $\delta=m-m_{0}$
 \end_inset
 
- we see 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-V'(u,v)=\int\int e^{-iu(\alpha+l_{0})}e^{-iv(\delta+m_{0})}I(\alpha,\delta)d\alpha d\delta
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-V'(u,v)=e^{-iul_{0}}e^{-ivm_{0}}\int\int e^{-iu\alpha}e^{-iv\delta}I(\alpha,\delta)d\alpha d\delta
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-V'(u,v)=e^{-iul_{0}}e^{-ivm_{0}}V(u,v)\equiv g_{\text{offset}}V(u,v)
-\end{equation}
-
-\end_inset
-
-This means that an offset will introduce a complex factor (
-\begin_inset Formula $g_{\text{offset}}$
-\end_inset
-
-) to the true visibilities.
+.
+ We thus find the aforementioned complex factor that multiplies the visibility.
  It is therefore easiest to correct for the offset in visibility-space by
  using 
 \emph on
@@ -774,12 +762,12 @@ key "Sault2008"
 
 \end_inset
 
-)
+).
 \end_layout
 
 \begin_layout Enumerate
 Visibilities are split into line-free continuum data and line data.
- These are then mapped and used to obtain CLEAN models
+ These are then mapped and used to obtain CLEAN models.
 \end_layout
 
 \begin_layout Enumerate
@@ -848,6 +836,9 @@ key "Sault2008,Schwab1980"
 
 .
  The model visibilities used are those found earlier.
+ Note the subscripts here denote a specific antenna and not the polarization
+ as before.
+ 
 \end_layout
 
 \begin_layout Enumerate
@@ -859,7 +850,7 @@ LL
 \emph on
 LL
 \emph default
- data, similarly for the 
+ data, and similarly for the 
 \emph on
 RR
 \emph default
@@ -896,8 +887,8 @@ reference "fig:beforeafter"
 
 \end_inset
 
- shows maps before and after this correction is applied.
- 
+ shows maps before and after this correction is applied for the continuum
+ in Orion KL around 345GHz.
 \end_layout
 
 \begin_layout Standard
