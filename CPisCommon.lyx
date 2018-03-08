@@ -1045,8 +1045,7 @@ name "fig:beforeafter"
 
 \end_inset
 
-**try getting the corrected solution with different bandpasses** Map of
- the continuum around 345GHz in Orion KL before (top) and after (bottom)
+Map of the continuum around 345GHz in Orion KL before (top) and after (bottom)
  squint correction.
  Red contours are Stokes 
 \begin_inset Formula $I$
@@ -1062,7 +1061,7 @@ name "fig:beforeafter"
 \begin_inset Formula $V$
 \end_inset
 
- peaks.
+ peaks in the uncorrected map.
  These largely disappear after correction.
  The contour scales on both maps are identical.
  Red Stokes 
@@ -1130,313 +1129,7 @@ The four objects we present here are Orion KL, NGC7538, IRAS2A in NGC1333
 \end_inset
 
  signals in all objects except for NGC1333.
- 
-\end_layout
-
-\begin_layout Standard
-The visibility data are corrected for beam squint, as explained in Section
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:Squint-Correction"
-
-\end_inset
-
- in order to reduce spurious Stokes 
-\begin_inset Formula $V$
-\end_inset
-
- signals.
- As previously mentioned squint typically causes distinct pairs of positive
- and negative peaks of Stokes 
-\begin_inset Formula $V$
-\end_inset
-
- throughout the inverted image.
- The squint correction is confirmed visually by inspecting the Stokes 
-\begin_inset Formula $V$
-\end_inset
-
- maps, where we see the pairs of peaks largely disappear.
-\end_layout
-
-\begin_layout Standard
-Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:results"
-
-\end_inset
-
- shows corrected Stokes 
-\begin_inset Formula $I$
-\end_inset
-
- and Stokes 
-\begin_inset Formula $V$
-\end_inset
-
- spectra (left) obtained at the peak of the CO 
-\begin_inset Formula $(J=3\rightarrow2)$
-\end_inset
-
- Stokes 
-\begin_inset Formula $V$
-\end_inset
-
- signal on the corresponding maps (right).
- A comparison of Stokes 
-\begin_inset Formula $V$
-\end_inset
-
- spectra before and after correction are shown in Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:beforeafterspec"
-
-\end_inset
-
-.
- Notice in all cases the Stokes 
-\begin_inset Formula $V$
-\end_inset
-
- signal decreases after squint correction.
- Stokes 
-\begin_inset Formula $V$
-\end_inset
-
- can also be found in the average spectrum obtained from all the visibility
- data, though the significance is 3-5
-\begin_inset Formula $\sigma$
-\end_inset
-
- in that case compared to approximately 6-10
-\begin_inset Formula $\sigma$
-\end_inset
-
- when the spectra is taken from the inverted maps.
- The presence of a Stokes 
-\begin_inset Formula $V$
-\end_inset
-
- signal in the visibilities indicates the detections are not simply the
- result of the inversion process that creates the maps.
- That is, the Stokes 
-\begin_inset Formula $V$
-\end_inset
-
- signals are not due to sidelobes that appear when calculating the inverse
- Fourier transform of the visibilities.
- As can be seen in the maps, in general the peaks of Stokes 
-\begin_inset Formula $I$
-\end_inset
-
- and Stokes 
-\begin_inset Formula $V$
-\end_inset
-
- do not coincide.
-\end_layout
-
-\begin_layout Standard
-In Orion KL the lines of CO (
-\begin_inset Formula $J=3\rightarrow2$
-\end_inset
-
- at 345.8GHz) and SiO (
-\begin_inset Formula $J=8\rightarrow7$
-\end_inset
-
- at 347.3GHz) are both bright (peak Stokes 
-\begin_inset Formula $I$
-\end_inset
-
- of around 20 Jy/beam and 55 Jy/beam respectively; not shown) and both show
- Stokes 
-\begin_inset Formula $V$
-\end_inset
-
- signals.
- The CO Stokes 
-\begin_inset Formula $V$
-\end_inset
-
- signal has an antisymmetric structure while the SiO Stokes 
-\begin_inset Formula $V$
-\end_inset
-
- signal is purely negative.
- Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:SiO"
-
-\end_inset
-
- shows the peak Stokes 
-\begin_inset Formula $V$
-\end_inset
-
- signal of the SiO line.
- We checked the average of all the visibilities (average over all antennas
- baselines and all time intervals) and found that the CO Stokes 
-\begin_inset Formula $V$
-\end_inset
-
- signal is more intense than the SiO Stokes 
-\begin_inset Formula $V$
-\end_inset
-
- signal, and the Stokes 
-\begin_inset Formula $I$
-\end_inset
-
- intensities after averaging the visibilities were approximately 50 Jy and
- 75 Jy for CO and SiO respectively.
- If the Stokes 
-\begin_inset Formula $V$
-\end_inset
-
- signal were purely leakage from Stokes 
-\begin_inset Formula $I$
-\end_inset
-
- then we would expect to see an SiO Stokes 
-\begin_inset Formula $V$
-\end_inset
-
- signal that is stronger than the CO Stokes 
-\begin_inset Formula $V$
-\end_inset
-
- signal, but we do not.
- 
-\end_layout
-
-\begin_layout Standard
-In IRC+10216 we again see Stokes 
-\begin_inset Formula $V$
-\end_inset
-
- in the CO (
-\begin_inset Formula $J=3\rightarrow2$
-\end_inset
-
-) but also several signals in CS (
-\begin_inset Formula $J=7\rightarrow6$
-\end_inset
-
-), SiS (
-\begin_inset Formula $J=19\rightarrow18$
-\end_inset
-
-), and H
-\begin_inset Formula $^{13}$
-\end_inset
-
-CN (
-\begin_inset Formula $J=4\rightarrow3$
-\end_inset
-
-).
- These lines and their frequencies are listed in Table 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "tab:sumresults"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-In NGC7538 there was a strong Stokes 
-\begin_inset Formula $V$
-\end_inset
-
- detection in CH
-\begin_inset Formula $_{2}$
-\end_inset
-
-CO at 346.6 GHz that completely disappeared after correction.
- The Stokes 
-\begin_inset Formula $V$
-\end_inset
-
- signal in CO (
-\begin_inset Formula $J=3\rightarrow2$
-\end_inset
-
-) at 345.8 GHz decreased in intensity but is still extremely prominent.
-\end_layout
-
-\begin_layout Standard
-Finally Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:iras2a"
-
-\end_inset
-
- shows no detection in NGC1333, with only a weak detection of CO in Stokes
- 
-\begin_inset Formula $I$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-When assessing the Stokes 
-\begin_inset Formula $V$
-\end_inset
-
- detections we consult the map for obvious pairs of positive/negative peaks
- that would indicate beam offset and therefore a false Stokes 
-\begin_inset Formula $V$
-\end_inset
-
- signal.
- The maps are integrated over a narrow frequency band of approximately 2
- MHz so any peaks that exist should not be washed out by noise in adjacent
- channels.
- In the maps for Orion KL and IRC+10216 shown in Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:results"
-
-\end_inset
-
- there are no negative peaks around the peak of Stokes 
-\begin_inset Formula $V$
-\end_inset
-
-.
- However in NGC7538 there is quite a large negative Stokes 
-\begin_inset Formula $V$
-\end_inset
-
- peak near our chosen peak that may indicate squint.
- The top panel of Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:beforeafter"
-
-\end_inset
-
- shows what `squint peaks' look like (we know these peaks are from squint
- because they disappear after correction) and the pairs tend to resemble
- each other in shape.
- The pair of peaks around our chosen peak in NGC7538 however have distinct
- shapes.
- The worst case here is that the signal is entirely squint but on the other
- hand the signal may be a mixture of real and heavily affected by squint.
- The detections in Orion KL and IRC+10216 are more reliable.
-\end_layout
-
-\begin_layout Standard
-Table 
+ Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:Summary-of-Archival"
@@ -1772,13 +1465,283 @@ Summary of Archival Observations Used
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+The visibility data are corrected for beam squint, as explained in Section
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Squint-Correction"
+
+\end_inset
+
+ in order to reduce spurious Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ signals.
+ As previously mentioned squint typically causes distinct pairs of positive
+ and negative peaks of Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ throughout the inverted image.
+ The squint correction is confirmed visually by inspecting the Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ maps, where we see the pairs of peaks largely disappear.
+\end_layout
+
+\begin_layout Standard
+Figures 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:results"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:iras2a"
+
+\end_inset
+
+ show corrected Stokes 
+\begin_inset Formula $I$
+\end_inset
+
+ and Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ spectra (left) obtained at the peak of the CO 
+\begin_inset Formula $(J=3\rightarrow2)$
+\end_inset
+
+ Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ signal on the corresponding maps (right).
+ A comparison of Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ spectra before and after correction are shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:beforeafterspec"
+
+\end_inset
+
+.
+ Notice in all cases the Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ signal decreases after squint correction.
+ Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ can also be found in the average spectrum obtained from all the visibility
+ data, though the significance is 3-5
+\begin_inset Formula $\sigma$
+\end_inset
+
+ in that case compared to approximately 6-10
+\begin_inset Formula $\sigma$
+\end_inset
+
+ when the spectra is taken from the inverted maps.
+ The presence of a Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ signal in the visibilities indicates the detections are not simply the
+ result of the inversion process that creates the maps.
+ That is, the Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ signals are not due to sidelobes that appear when calculating the inverse
+ Fourier transform of the visibilities.
+ As can be seen in the maps, in general the peaks of Stokes 
+\begin_inset Formula $I$
+\end_inset
+
+ and Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ do not coincide.
+\end_layout
+
+\begin_layout Standard
+In Orion KL the lines of CO (
+\begin_inset Formula $J=3\rightarrow2$
+\end_inset
+
+ at 345.8GHz) and SiO (
+\begin_inset Formula $J=8\rightarrow7$
+\end_inset
+
+ at 347.3GHz) are both bright (a peak Stokes 
+\begin_inset Formula $I$
+\end_inset
+
+ of around 20 Jy/beam and 55 Jy/beam respectively; not shown) and both show
+ Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ signals.
+ The CO Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ signal has an antisymmetric structure.
+ On the other hand, Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:SiO"
+
+\end_inset
+
+ shows the peak SiO Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ signal is purely negative.
+ 
+\end_layout
+
+\begin_layout Standard
+In IRC+10216 we again see Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ in the CO (
+\begin_inset Formula $J=3\rightarrow2$
+\end_inset
+
+) but also several signals in CS (
+\begin_inset Formula $J=7\rightarrow6$
+\end_inset
+
+), SiS (
+\begin_inset Formula $J=19\rightarrow18$
+\end_inset
+
+), and H
+\begin_inset Formula $^{13}$
+\end_inset
+
+CN (
+\begin_inset Formula $J=4\rightarrow3$
+\end_inset
+
+).
+ These lines and their frequencies are listed in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:sumresults"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In NGC7538 the Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ signal in CO (
+\begin_inset Formula $J=3\rightarrow2$
+\end_inset
+
+) at 345.8 GHz decreased in intensity after correction but is still extremely
+ prominent.
+ There was also a very strong Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ signal in CH
+\begin_inset Formula $_{2}$
+\end_inset
+
+CO at 346.6 GHz but it completely disappeared after correction.
+ 
+\end_layout
+
+\begin_layout Standard
+Finally Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:iras2a"
+
+\end_inset
+
+ shows no detection in NGC1333, with only a weak detection of CO in Stokes
+ 
+\begin_inset Formula $I$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+When assessing the Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ detections we consult the map for obvious pairs of positive/negative peaks
+ that would indicate beam offset and therefore a false Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ signal.
+ The maps are integrated over a narrow frequency band of approximately 2
+ MHz so any peaks that exist are not washed out by noise in adjacent channels.
+ In the maps for Orion KL and IRC+10216 shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:results"
+
+\end_inset
+
+ there are no negative peaks around the peak of Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ However in NGC7538 there is quite a large negative Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ peak near our chosen peak that may indicate squint.
+ The top panel of Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:beforeafter"
+
+\end_inset
+
+ shows what `squint peaks' look like (we know these peaks are from squint
+ because they disappear after correction) and the pairs tend to resemble
+ each other in shape.
+ The pair of peaks around our chosen peak in NGC7538 however have distinct
+ shapes.
+ The worst case here is that the signal is entirely squint but on the other
+ hand the signal may be a mixture of real and heavily affected by squint.
+ The detections in Orion KL and IRC+10216 are more reliable.
 \end_layout
 
 \begin_layout Standard
@@ -1828,28 +1791,6 @@ vspace{-1cm}
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename figures/NGC7538.map.spec.co3-2peakv.notfull.pdf
-	lyxscale 70
-	scale 35
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename maps/NGC7538S-s4.co3-2.full.plane38.ps
-	scale 37
-	scaleBeforeRotation
-	rotateAngle 270
-	rotateOrigin center
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
 	filename figures/IRC+10216.map.spec.co3-2peakv.pdf
 	lyxscale 70
 	scale 35
@@ -1878,11 +1819,11 @@ name "fig:results"
 
 \end_inset
 
-Corrected maps of the CO 
+Corrected spectra and maps of the CO (
 \begin_inset Formula $J=3\rightarrow2$
 \end_inset
 
- line (345.8GHz) and corrected spectra for Orion KL, NGC7538, IRC+10216.
+) line (345.8GHz) for Orion KL and IRC+10216.
  
 \series bold
 \emph on
@@ -1903,7 +1844,7 @@ maxfit
 \begin_inset Formula $V$
 \end_inset
 
- signal at 345.8GHz is maximum, and a spectra is obtained through that point.
+ signal at 345.8GHz is maximum, and a spectrum is obtained through that point.
  The cross on the map denotes the location of that peak.
  The red line is Stokes 
 \begin_inset Formula $I$
@@ -1914,7 +1855,6 @@ maxfit
 \end_inset
 
 .
- The spectrum for NGC7538 is Hanning smoothed by a length of 15.
 
 \series bold
 \emph on
@@ -1944,10 +1884,10 @@ s
 imstat
 \family default
  command: 
-\begin_inset Formula $\sigma=$
+\begin_inset Formula $\sigma=0.30$
 \end_inset
 
-0.30, 0.15, and 0.17 Jy/beam, respectively.
+ and 0.17 Jy/beam, for Orion KL and IRC+10216, respectively.
  Dark red contours are Stokes 
 \begin_inset Formula $I$
 \end_inset
@@ -1960,6 +1900,104 @@ imstat
 
 2 MHz.
  
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide true
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/NGC7538.map.spec.co3-2peakv.notfull.pdf
+	lyxscale 70
+	scale 35
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename maps/NGC7538S-s4.co3-2.full.plane38.ps
+	scale 37
+	scaleBeforeRotation
+	rotateAngle 270
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figures/IRAS2a.map.spec.co3-2peakv.pdf
+	lyxscale 70
+	scale 35
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename maps/iras2a.aver.co3-2.ps
+	scale 37
+	rotateAngle 270
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:iras2a"
+
+\end_inset
+
+Same as Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:results"
+
+\end_inset
+
+ but for NGC7538 and NGC1333 (IRAS2A).
+ The spectrum for NGC7538 is Hanning smoothed.
+ No significant Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ signal is detected in NGC7538, probably because the object is too dim.
+ Contours are the same levels as in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:results"
+
+\end_inset
+
+ and the spectrum is obtained the same way.
+ The RMS for the NGC7538 map is 
+\begin_inset Formula $\sigma=0.15$
+\end_inset
+
+ Jy/beam.
 \end_layout
 
 \end_inset
@@ -2035,79 +2073,12 @@ maxfit
 \begin_inset Formula $V$
 \end_inset
 
- signal at 345.8GHz is maximum, and a spectra is obtained through that point.
+ signal at 345.8GHz is maximum, and a spectrum is obtained through that point.
  Note that the Stokes 
 \begin_inset Formula $V$
 \end_inset
 
  signal decreases in all cases after squint correction.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide true
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename figures/IRAS2a.map.spec.co3-2peakv.pdf
-	lyxscale 70
-	scale 35
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename maps/iras2a.aver.co3-2.ps
-	scale 37
-	rotateAngle 270
-	rotateOrigin center
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:iras2a"
-
-\end_inset
-
-Corrected maps of the CO 
-\begin_inset Formula $J=3\rightarrow2$
-\end_inset
-
- line and corrected spectrum for NGC1333 (IRAS2a).
- No significant Stokes 
-\begin_inset Formula $V$
-\end_inset
-
- signal is detected here, probably because the object is too dim.
- Contours are the same levels as in Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:results"
-
-\end_inset
-
- and the spectrum is obtained the same way.
 \end_layout
 
 \end_inset
@@ -2716,12 +2687,11 @@ Firstly we take the average of all the visibility data and note that the
 \begin_inset Formula $I$
 \end_inset
 
- at any particular frequency –a large Stokes 
+ at any particular frequency – for example, a large Stokes 
 \begin_inset Formula $I$
 \end_inset
 
- at 347.25GHz for example does not indicate a corresponding peak in Stokes
- 
+ at 347.25GHz does not indicate a corresponding peak in Stokes 
 \begin_inset Formula $V$
 \end_inset
 
@@ -2736,7 +2706,7 @@ Firstly we take the average of all the visibility data and note that the
 \end_inset
 
 .
- This is true in Orion KL (where CO (
+ This is true in Orion KL where CO (
 \begin_inset Formula $J=3\rightarrow2$
 \end_inset
 
@@ -2744,7 +2714,36 @@ Firstly we take the average of all the visibility data and note that the
 \begin_inset Formula $J=8\rightarrow7$
 \end_inset
 
-) are the strongest lines).
+) are the strongest lines, and the SiO (
+\begin_inset Formula $J=8\rightarrow7$
+\end_inset
+
+) line is stronger.
+ Therefore, if the Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ signal were purely leakage from Stokes 
+\begin_inset Formula $I$
+\end_inset
+
+ then we would expect to see an SiO Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ signal that is stronger than the CO Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ signal in the visibilities, but we do not; the Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ signal from CO 
+\begin_inset Formula $(J=3\rightarrow2$
+\end_inset
+
+) is stronger.
  This also seems to be true in the visibilities of IRC+10216: the CS (
 \begin_inset Formula $J=7\rightarrow6$
 \end_inset
