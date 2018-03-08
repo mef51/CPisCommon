@@ -144,9 +144,9 @@ s of CO, SiO, SiS, and H
 
 CN at high enough levels to suggest that the presence of circular polarization
  in these spectral lines is common for such objects.
- This implies that an important piece of information has been omitted when
- studying magnetic fields through linear polarization from molecular spectral
- lines in the interstellar medium.
+ This would imply that an important piece of information has been missed
+ when studying magnetic fields through linear polarization from molecular
+ spectral lines in the interstellar medium.
 \end_layout
 
 \begin_layout Standard
@@ -452,7 +452,7 @@ To illustrate briefly the differences between the two feed types consider
 \begin_inset Formula $\text{Im}()$
 \end_inset
 
- denotes taking the imaginary part.
+ denotes the imaginary part.
  In the CP case we take the difference of two measured intensities while
  the linear feed case requires us to measure the phase of the electromagnetic
  wave.
@@ -461,7 +461,7 @@ To illustrate briefly the differences between the two feed types consider
 
 \begin_layout Standard
 Now, when the measurement is made with interferometry it is the visibilities
- – the correlated waveforms between a pair of antennae – that are measured.
+ – the correlated waveforms between a pair of antennas – that are measured.
  In the CP case the Stokes 
 \begin_inset Formula $V$
 \end_inset
@@ -569,7 +569,114 @@ key "Marrone2008,Thompson2001"
 \end_inset
 
 .
- Obtaining Stokes 
+ 
+\end_layout
+
+\begin_layout Standard
+The output of an interferometer are the visibilities.
+ A visibility is the cross-correlation between the voltage signals from
+ a pair of antennas and can be written as 
+\begin_inset Formula 
+\begin{equation}
+\mathcal{V}(u,v)=\frac{r}{A_{0}\Delta\nu}=\frac{\langle V_{a}(t)\star V_{b}(t)\rangle}{A_{0}\Delta\nu}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $A_{0}$
+\end_inset
+
+ is the collecting area of the antennas, 
+\begin_inset Formula $\Delta\nu$
+\end_inset
+
+ is the bandwidth, and 
+\begin_inset Formula $r=\langle V_{a}(t)\star V_{b}(t)\rangle$
+\end_inset
+
+ is the output of the correlator which is the time-averaged cross-correlation
+ of voltage signals 
+\begin_inset Formula $V_{a}(t)$
+\end_inset
+
+ and 
+\begin_inset Formula $V_{b}(t)$
+\end_inset
+
+ from antenna 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+, respectively.
+ The arguments 
+\begin_inset Formula $u$
+\end_inset
+
+ and 
+\begin_inset Formula $v$
+\end_inset
+
+ are determined by the baseline separation of the two antennas.
+ Thus a pair of antennas samples a single point of the visibility function
+ 
+\begin_inset Formula $\mathcal{V}(u,v)$
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Thompson2001"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Through the van Cittert-Zernike theorem it can be shown that the visibility
+ function 
+\begin_inset Formula $\mathcal{V}(u,v)$
+\end_inset
+
+ gives the Fourier transform of the source intensity 
+\begin_inset Formula $I(l,m)$
+\end_inset
+
+ for angular position 
+\begin_inset Formula $l$
+\end_inset
+
+ and 
+\begin_inset Formula $m$
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "chap. 3 of"
+key "Thompson2001"
+
+\end_inset
+
+.
+ Thus we have 
+\begin_inset Formula 
+\begin{equation}
+\mathcal{V}(u,v)=\int\int e^{-iul}e^{-ivm}I(l,m)dldm.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Obtaining Stokes 
 \begin_inset Formula $V$
 \end_inset
 
@@ -578,13 +685,7 @@ key "Marrone2008,Thompson2001"
 \end_layout
 
 \begin_layout Standard
-The output of an interferometer arrray of antennae are the visibilities.
- A visibility is a correlation between a pair of antennae.
- blah blah blah define visibilities here.
-\end_layout
-
-\begin_layout Standard
-Given antennae 
+Given antennas 
 \begin_inset Formula $a$
 \end_inset
 
@@ -596,7 +697,7 @@ Given antennae
 \begin_inset Formula $V$
 \end_inset
 
- visibility in the circular feed case is found through 
+ visibility in the circular feed case is given by
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Munoz2012"
@@ -611,7 +712,7 @@ key "Munoz2012"
 
 \end_inset
 
-where the right-handed CP and left-handed CP visibilities are 
+where 
 \begin_inset Formula $\mathcal{V}_{RR}$
 \end_inset
 
@@ -619,8 +720,9 @@ where the right-handed CP and left-handed CP visibilities are
 \begin_inset Formula $\mathcal{V}_{LL}$
 \end_inset
 
+ are the right-handed CP and left-handed CP visibilities, respectively,
  and are measured by orienting the quarter-waveplate that is placed in the
- beam of the antennae and correlating the responses of the antennae 
+ beam of the antennas and correlating the antenna responses 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Marrone2008"
@@ -628,7 +730,7 @@ key "Marrone2008"
 \end_inset
 
 .
- The complex gain factors for each polarization for each antennae are 
+ The complex gain factors for each polarization for each antenna are 
 \begin_inset Formula $g_{Ra}$
 \end_inset
 
@@ -644,15 +746,15 @@ key "Marrone2008"
 \begin_inset Formula $g_{Lb}$
 \end_inset
 
- with `
+ where 
 \begin_inset Formula $R$
 \end_inset
 
-' and `
+ and 
 \begin_inset Formula $L$
 \end_inset
 
-' for right- and left-CP, respectively.
+ are for right- and left-CP, respectively.
  Because the Stokes 
 \begin_inset Formula $V$
 \end_inset
@@ -675,14 +777,15 @@ reference "fig:beforeafter"
 \end_layout
 
 \begin_layout Standard
-Because the visibilities are the Fourier transform of the intensity map,
- an offset in image space is equivalent to a complex factor in visibility
- space that can be absorbed into the gain coefficients.
+To correct this offset we first note that since the visibilities are the
+ Fourier transform of the intensity map, an offset in image space results
+ in a complex factor in visibility space that can be absorbed into the gain
+ coefficients.
  
 \end_layout
 
 \begin_layout Standard
-Consider a map 
+To see this, consider a map 
 \begin_inset Formula $I(l,m)$
 \end_inset
 
@@ -699,15 +802,7 @@ Consider a map
 \end_inset
 
 .
- An interferometer samples the Fourier transform of this map: 
-\begin_inset Formula 
-\[
-V(u,v)=\int\int e^{-iul}e^{-ivm}I(l,m)dldm.
-\]
-
-\end_inset
-
-If the instrument introduces an arbitrary offset to position 
+ If the instrument introduces an arbitrary offset to position 
 \begin_inset Formula $(l_{0},m_{0})$
 \end_inset
 
@@ -715,10 +810,10 @@ If the instrument introduces an arbitrary offset to position
 \begin_inset Formula $I'(l,m)=I(l-l_{0},m-m_{0})$
 \end_inset
 
- and the Fourier transform of the shifted map becomes 
+ and the measured visibility of the shifted map becomes 
 \begin_inset Formula 
 \begin{eqnarray}
-V'(u,v) & = & \int\int e^{-iul}e^{-ivm}I(l-l_{0},m-m_{0})dldm\nonumber \\
+\mathcal{V}'(u,v) & = & \int\int e^{-iul}e^{-ivm}I(l-l_{0},m-m_{0})dldm\nonumber \\
  & = & \int\int e^{-iu(\alpha+l_{0})}e^{-iv(\delta+m_{0})}I(\alpha,\delta)d\alpha d\delta\nonumber \\
  & = & e^{-iul_{0}}e^{-ivm_{0}}\int\int e^{-iu\alpha}e^{-iv\delta}I(\alpha,\delta)d\alpha d\delta\nonumber \\
  & = & e^{-iul_{0}}e^{-ivm_{0}}V(u,v)\equiv g_{\text{offset}}V(u,v)
@@ -735,7 +830,12 @@ where we used the change of variables
 \end_inset
 
 .
- We thus find the aforementioned complex factor that multiplies the visibility.
+ We thus find the aforementioned complex factor that multiplies the true
+ visibility 
+\begin_inset Formula $\mathcal{V}(u,v)$
+\end_inset
+
+.
  It is therefore easiest to correct for the offset in visibility-space by
  using 
 \emph on
@@ -748,7 +848,8 @@ key "Sault1995"
 
 \end_inset
 
- to solve for the gain coefficients on each beam.
+ to solve for the gain coefficients on each of the two polarized beams,
+ independently of each other.
  Specifically the process is:
 \end_layout
 
@@ -803,7 +904,7 @@ R
 \begin_inset Formula $\mathcal{V}_{ij}$
 \end_inset
 
- of antennae 
+ of antennas 
 \begin_inset Formula $i$
 \end_inset
 
@@ -889,6 +990,17 @@ reference "fig:beforeafter"
 
  shows maps before and after this correction is applied for the continuum
  in Orion KL around 345GHz.
+ We see that before correction there are four large peaks of Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+, and that the two positive peaks have a negative peak close by.
+ After the correction, though there are still noisy Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ signals throughout the image, the four peaks from before have completely
+ disappeared.
 \end_layout
 
 \begin_layout Standard
@@ -1003,16 +1115,16 @@ key "Munoz2012"
  to measure circular polarization in Sgr A*.
  Because the archival observations were not taken with measurements of circular
  polarization in mind the SNR is often low, and we had to average velocity
- channels to increase the SNR at the cost of spectral resolution.
+ channels to increase it at the cost of spectral resolution.
  This generally increases the SNR from 3-4 to 6-10.
  
 \end_layout
 
 \begin_layout Standard
-The four objects we present here are Orion KL, NGC7538, IRAS2a in NGC1333
+The four objects we present here are Orion KL, NGC7538, IRAS2A in NGC1333
  and IRC+10216.
- The first three are well-known star-formation regions while IRC+10216 is
- an evolved carbon star.
+ The first three are well-known star-formation regions, while IRC+10216
+ is an evolved carbon star.
  We find significant Stokes 
 \begin_inset Formula $V$
 \end_inset
@@ -1022,32 +1134,30 @@ The four objects we present here are Orion KL, NGC7538, IRAS2a in NGC1333
 \end_layout
 
 \begin_layout Standard
-The visibility data are corrected for beam squint, an instrumental artifact
- that gives rise to spurious Stokes 
-\begin_inset Formula $V$
-\end_inset
-
- signals.
- Squint typically causes distinct pairs of positive and negative peaks of
- Stokes 
-\begin_inset Formula $V$
-\end_inset
-
- throughout the inverted image.
- Maps are then made of the continuum and lines for each object.
- The squint correction is confirmed visually by inspecting the Stokes 
-\begin_inset Formula $V$
-\end_inset
-
- maps, where we see the pairs of peaks largely disappear.
- More details on the squint correction will be given in Section 
+The visibility data are corrected for beam squint, as explained in Section
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Squint-Correction"
 
 \end_inset
 
-.
+ in order to reduce spurious Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ signals.
+ As previously mentioned squint typically causes distinct pairs of positive
+ and negative peaks of Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ throughout the inverted image.
+ The squint correction is confirmed visually by inspecting the Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ maps, where we see the pairs of peaks largely disappear.
 \end_layout
 
 \begin_layout Standard
@@ -1066,11 +1176,15 @@ reference "fig:results"
 \begin_inset Formula $V$
 \end_inset
 
- spectra (left) obtained at the peak of Stokes 
+ spectra (left) obtained at the peak of the CO 
+\begin_inset Formula $(J=3\rightarrow2)$
+\end_inset
+
+ Stokes 
 \begin_inset Formula $V$
 \end_inset
 
- on the corresponding maps (right).
+ signal on the corresponding maps (right).
  A comparison of Stokes 
 \begin_inset Formula $V$
 \end_inset
@@ -1092,8 +1206,8 @@ reference "fig:beforeafterspec"
 \begin_inset Formula $V$
 \end_inset
 
- can also be found in the average of all the visibility data, though the
- significance is 3-5
+ can also be found in the average spectrum obtained from all the visibility
+ data, though the significance is 3-5
 \begin_inset Formula $\sigma$
 \end_inset
 
@@ -1102,10 +1216,19 @@ reference "fig:beforeafterspec"
 \end_inset
 
  when the spectra is taken from the inverted maps.
- This indicates the detections are not simply the result of the inversion
- process that creates the maps.
- We present here only the map spectra.
- In general the peaks of Stokes 
+ The presence of a Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ signal in the visibilities indicates the detections are not simply the
+ result of the inversion process that creates the maps.
+ That is, the Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ signals are not due to sidelobes that appear when calculating the inverse
+ Fourier transform of the visibilities.
+ As can be seen in the maps, in general the peaks of Stokes 
 \begin_inset Formula $I$
 \end_inset
 
@@ -1113,7 +1236,7 @@ reference "fig:beforeafterspec"
 \begin_inset Formula $V$
 \end_inset
 
- are not at the same map position.
+ do not coincide.
 \end_layout
 
 \begin_layout Standard
@@ -1156,7 +1279,7 @@ reference "fig:SiO"
 \end_inset
 
  signal of the SiO line.
- We checked the average of all the visibilities (average over all antennae
+ We checked the average of all the visibilities (average over all antennas
  baselines and all time intervals) and found that the CO Stokes 
 \begin_inset Formula $V$
 \end_inset
@@ -2529,7 +2652,7 @@ Summary of corrected Stokes
 \end_inset
 
  signals found.
- The beam size is determined by the configuration of the antennae array.
+ The beam size is determined by the configuration of the antennas array.
  An intensity for the peak of the Stokes 
 \begin_inset Formula $V$
 \end_inset
