@@ -180,9 +180,9 @@ key "Chandrasekhar1953"
 
 \end_inset
 
- is one method that uses the dispersion of polarization angles (PA) of linear
- polarization (LP) [I don't understand Martin's note here] to find the magnitude
- and direction of the plane-of-the-sky component of the magnetic field.
+ uses the dispersion of polarization angles (PA) of linear polarization
+ (LP) for such studies[I don't understand Martin's note here] to obtain
+ corresponding maps of the plane-of-the-sky component of the magnetic field.
  The presence of a magnetic field leads to linearly polarized radiation
  because dust and molecules will align themselves relative to the field.
  Aligned particles can emit radiation with a net level of linear polarization
@@ -1698,7 +1698,7 @@ reference "fig:iras2a"
 \end_layout
 
 \begin_layout Standard
-When assessing the Stokes 
+As mentioned previously, when assessing the Stokes 
 \begin_inset Formula $V$
 \end_inset
 
@@ -2167,8 +2167,8 @@ status open
 \begin_inset Tabular
 <lyxtabular version="3" rows="9" columns="4">
 <features booktabs="true" tabularvalignment="middle">
-<column alignment="left" valignment="top" width="20col%">
-<column alignment="left" valignment="top" width="27col%">
+<column alignment="left" valignment="top" width="19col%">
+<column alignment="left" valignment="top" width="30col%">
 <column alignment="right" valignment="top" width="10col%">
 <column alignment="right" valignment="top" width="20col%">
 <row>
@@ -2238,7 +2238,7 @@ Orion KL
 
 \begin_layout Plain Layout
 CO 
-\begin_inset Formula $J=3\rightarrow2$
+\begin_inset Formula $(J=3\rightarrow2)$
 \end_inset
 
 
@@ -2280,7 +2280,7 @@ CO
 
 \begin_layout Plain Layout
 SiO 
-\begin_inset Formula $J=8\rightarrow7$
+\begin_inset Formula $(J=8\rightarrow7)$
 \end_inset
 
 
@@ -2323,11 +2323,11 @@ NGC7538
 \begin_inset Text
 
 \begin_layout Plain Layout
-CO 
+CO (
 \begin_inset Formula $J=3\rightarrow2$
 \end_inset
 
-
+)
 \end_layout
 
 \end_inset
@@ -2367,11 +2367,11 @@ IRC+10216
 \begin_inset Text
 
 \begin_layout Plain Layout
-CS 
+CS (
 \begin_inset Formula $J=7\rightarrow6$
 \end_inset
 
-
+)
 \end_layout
 
 \end_inset
@@ -2410,7 +2410,7 @@ CS
 
 \begin_layout Plain Layout
 SiS 
-\begin_inset Formula $J=$
+\begin_inset Formula $(J=$
 \end_inset
 
 
@@ -2429,7 +2429,7 @@ SiS
 \begin_inset Formula $\rightarrow$
 \end_inset
 
-18
+18)
 \end_layout
 
 \end_inset
@@ -2471,7 +2471,7 @@ H
 \begin_inset Formula $^{13}$
 \end_inset
 
-CN 
+CN (
 \begin_inset Formula $J=$
 \end_inset
 
@@ -2491,7 +2491,7 @@ CN
 \begin_inset Formula $\rightarrow$
 \end_inset
 
-3
+3)
 \end_layout
 
 \end_inset
@@ -2529,11 +2529,11 @@ CN
 \begin_inset Text
 
 \begin_layout Plain Layout
-CO 
+CO (
 \begin_inset Formula $J=3\rightarrow2$
 \end_inset
 
-
+)
 \end_layout
 
 \end_inset
@@ -2573,11 +2573,11 @@ NGC1333 (IRAS2a)
 \begin_inset Text
 
 \begin_layout Plain Layout
-CO 
+CO (
 \begin_inset Formula $J=3\rightarrow2$
 \end_inset
 
-
+)
 \end_layout
 
 \end_inset
@@ -2653,11 +2653,12 @@ name "sec:Discussion"
 
 \end_inset
 
-Are these detections of CP in the archival SMA data shown real or are they
- instrumental artifacts? This is our chief concern because of the difficulty
- of calibrating CP measurements and because the measurements presented here
- were not made with any special considerations for calibrating CP as in
- the observation of Sgr A* reported in 
+The first question to address is whether our CP detections are real or result
+ from instrumental artifacts.
+ This is our chief concern because of the difficulty of calibrating CP measureme
+nts, especially since the observations presented here were not made with
+ any special considerations for calibrating CP as in the observation of
+ Sgr A* reported in 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Munoz2012"
@@ -2665,20 +2666,20 @@ key "Munoz2012"
 \end_inset
 
 .
- We repeat here the arguments made in Section 
+ We will repeat here the arguments made in Section 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Observations"
 
 \end_inset
 
- that these detections are real.
+ in support for the soundness of these detections.
  We then discuss earlier detections of CP and summarize how ARS can explain
  the detections presented in this work.
 \end_layout
 
 \begin_layout Standard
-Firstly we take the average of all the visibility data and note that the
+Firstly, we take the average of all the visibility data and note that the
  peak Stokes 
 \begin_inset Formula $V$
 \end_inset
@@ -2687,7 +2688,8 @@ Firstly we take the average of all the visibility data and note that the
 \begin_inset Formula $I$
 \end_inset
 
- at any particular frequency – for example, a large Stokes 
+ at any particular frequency.
+ For example, a large Stokes 
 \begin_inset Formula $I$
 \end_inset
 
@@ -2696,7 +2698,7 @@ Firstly we take the average of all the visibility data and note that the
 \end_inset
 
 .
- This property indicates that there isn't significant leakage of Stokes
+ This property indicates that there is no significant leakage of Stokes
  
 \begin_inset Formula $I$
 \end_inset
@@ -2706,7 +2708,7 @@ Firstly we take the average of all the visibility data and note that the
 \end_inset
 
 .
- This is true in Orion KL where CO (
+ This is true in Orion KL, where CO (
 \begin_inset Formula $J=3\rightarrow2$
 \end_inset
 
@@ -2744,7 +2746,7 @@ Firstly we take the average of all the visibility data and note that the
 \end_inset
 
 ) is stronger.
- This also seems to be true in the visibilities of IRC+10216: the CS (
+ This is also true in the visibilities of IRC+10216, where the CS (
 \begin_inset Formula $J=7\rightarrow6$
 \end_inset
 
@@ -2761,7 +2763,7 @@ Firstly we take the average of all the visibility data and note that the
 \end_inset
 
  is twice as intense.
- However in the same object H
+ However, in the same object H
 \begin_inset Formula $^{13}$
 \end_inset
 
@@ -2793,12 +2795,17 @@ CN
 \end_layout
 
 \begin_layout Standard
-We also note that the shapes of the Stokes 
+We also note that for Orion KL the shapes of the Stokes 
 \begin_inset Formula $V$
 \end_inset
 
  signals vary across the frequency band and interpret this to mean that
- the signals are not instrumental in nature.
+ the signals are not instrumental in nature, assuming that any instrumental
+ mechanism for producing spurious Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ produces a single type of CP (left or right).
  For example Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2806,14 +2813,14 @@ reference "fig:SiO"
 
 \end_inset
 
- shows a spectrum from Orion KL with Stokes 
+ shows a spectrum for that source with Stokes 
 \begin_inset Formula $V$
 \end_inset
 
  in CO and SiO.
  The SiO signal is purely negative (indicating only left-circular polarization)
- but the CO signal is antisymmetric and is initially positive and then becomes
- negative, indicating the presence of both LCP and RCP.
+ but the CO signal is antisymmetric, indicating the presence of both LCP
+ and RCP.
  This has a physical explanation using the ARS model in terms of blue-shifted
  and red-shifted scattering populations that will be considered in Section
  
@@ -2825,8 +2832,7 @@ reference "subsec:ARS"
 
 .
  We know of no instrumental mechanism for producing such a signature.
- This argument only applies to Orion KL.
- In the other objects the Stokes 
+ For the other objects the Stokes 
 \begin_inset Formula $V$
 \end_inset
 
@@ -2916,7 +2922,7 @@ reference "fig:SiO"
 
 \end_inset
 
-.
+, as well as the extremely high levels of CP that range from 6% to 30%.
  The largest resolvable object by an interferomter is determined by the
  length of the shortest baseline, meaning that large scale emission can
  be invisible to the interferometer.
@@ -2954,7 +2960,15 @@ reference "fig:SiO"
 \end_inset
 
  would then appear to have negative values.
- ***details, maybe an equation***
+ The smaller Stokes 
+\begin_inset Formula $I$
+\end_inset
+
+ would also explains the high levels of 
+\begin_inset Formula $V/I$
+\end_inset
+
+ observed.
 \end_layout
 
 \begin_layout Standard
@@ -2964,23 +2978,18 @@ Finally we checked and confirmed that there were no Stokes
 
  signals in the continuum larger than those found at molecular lines like
  CO and SiO.
- Finding a large signal in the continuum could indicate the data is suffering
- from instrumental artifacts since we only expect conversion of linear to
- circular polarization at the frequencies of molecular transitions.
- This is not the case: we only find Stokes 
-\begin_inset Formula $V$
-\end_inset
-
- peaks at frequencies that correspond with emission from molecular lines
- and there is no significant CP in the continuum.
+ If the detected CP originates from instrumental artifacts then we would
+ detect CP at similar levels in the continuum, but this is not seen.
+ The level of CP found at molecular transitions is always higher than the
+ level of CP in the continuum for the observations presented here.
 \end_layout
 
 \begin_layout Standard
-For these reasons we believe the CP reported here while quite probably contamina
-ted with instrumental effects are real and originate from each of these
- objects.
- It is thus important to develop the instrumentation and improve the measurement
- and calibration of CP for future studies of magnetic fields using polarimetry.
+We therefore feel confident that the CP reported here, although perhaps
+ suffering from some level of instrumental contamination, is real and originate
+ from each of these objects.
+ It is thus important to improve the measurement and calibration of CP for
+ future studies of magnetic fields using polarimetry.
 \end_layout
 
 \begin_layout Subsection
@@ -2988,15 +2997,15 @@ Earlier Detections
 \end_layout
 
 \begin_layout Standard
-Circular polarization in a spectral line of a Zeeman insensitive molecule
- was first reported in 
+Circular polarization in a molecular spectral line weakly sensitive to the
+ Zeeman effect was first reported in 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Houde2013"
 
 \end_inset
 
- where roughly 2% CP was detected in the 
+, where roughly 2% CP was detected in the 
 \begin_inset Formula $^{12}$
 \end_inset
 
@@ -3004,8 +3013,9 @@ CO
 \begin_inset Formula $(J=2\rightarrow1)$
 \end_inset
 
- line at 230.5 GHz in Orion KL using the CSO.
- The CP signal was positive and symmetric (
+ transition at 230.5 GHz in Orion KL using the FSPPol at the CSO.
+ The CP signal was approximately symmetric (i.e.
+ 
 \begin_inset Quotes eld
 \end_inset
 
@@ -3019,7 +3029,7 @@ CO
 
 -shaped).
  The observation was repeated three months after the first measurement to
- confirm the result wasn't spurious, with similar results.
+ confirm the result was not spurious, with similar results.
  Additionally the strong line of HCN 
 \begin_inset Formula $(J=3\rightarrow2)$
 \end_inset
@@ -3027,7 +3037,8 @@ CO
  at 265.9 GHz in Orion KL was measured and no CP higher than the 0.1% level
  was detected.
  The detection in CO and the absence of a detection in HCN indicates that
- the CSO observations were not suffering from leakage into Stokes 
+ the FSPPol/CSO observations were not suffering from leakage into Stokes
+ 
 \begin_inset Formula $V$
 \end_inset
 
@@ -3073,13 +3084,9 @@ CO
 \begin_inset Formula $V$
 \end_inset
 
- flux was then reinserted into the CO Stokes 
-\begin_inset Formula $U$
-\end_inset
-
- flux.
- The resulting CO map's polarization angles now agreed very well with the
- polarization angles in the dust map 
+ fluxes were then reinserted into the CO LP signals.
+ The resulting CO polarization angle maps then agreed very well with each
+ other as well as with the dust map 
 \begin_inset CommandInset citation
 LatexCommand citep
 before "Fig. 9 of"
@@ -3088,8 +3095,8 @@ key "Hezareh2013"
 \end_inset
 
 .
- This result gives strong support for a conversion from linear to circular
- polarization.
+ This result clearly establishes a conversion from linear to circular polarizati
+on.
 \end_layout
 
 \begin_layout Subsection
@@ -3103,7 +3110,7 @@ name "subsec:ARS"
 
 \end_inset
 
-Anisotropic resonant scattering was the mechanism first proposed by 
+ARS was the mechanism first proposed by 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Houde2013"
@@ -3207,12 +3214,10 @@ key "Houde2013"
 
 
 \begin_inset Formula 
-\[
-\begin{array}{cc}
-|\psi\rangle= & \alpha|n_{||}\rangle+\beta|n_{\perp}\rangle\\
-|\psi'\rangle\simeq & \alpha e^{i\phi}|n_{||}\rangle+\beta|n_{\perp}\rangle
-\end{array}
-\]
+\begin{eqnarray}
+|\psi\rangle & = & \alpha|n_{||}\rangle+\beta|n_{\perp}\rangle\\
+|\psi'\rangle & \simeq & \alpha e^{i\phi}|n_{||}\rangle+\beta|n_{\perp}\rangle,
+\end{eqnarray}
 
 \end_inset
 
@@ -3229,22 +3234,20 @@ where
 \end_inset
 
  is a phase shift incurred after multiple scattering events.
- Following the definitions of the Stokes parameters and using the appropriate
- bases the Stokes parameters for the scattered radiation can be found to
+ Following the definitions of the Stokes parameters and using an appropriate
+ basis the Stokes parameters for the scattered radiation can be found to
  be 
 \begin_inset Formula 
-\[
-\begin{array}{cc}
-I= & \alpha^{2}+\beta^{2}\\
-Q= & \alpha^{2}-\beta^{2}\\
-U= & 2\alpha\beta\cos(\phi)\\
-V= & 2\alpha\beta\sin(\phi)
-\end{array}
-\]
+\begin{eqnarray}
+I & = & \alpha^{2}+\beta^{2}\\
+Q & = & \alpha^{2}-\beta^{2}\\
+U & = & 2\alpha\beta\cos(\phi)\\
+V & = & 2\alpha\beta\sin(\phi).
+\end{eqnarray}
 
 \end_inset
 
-This implies that Stokes 
+This implies that in the chosen basis Stokes 
 \begin_inset Formula $U$
 \end_inset
 
@@ -3257,10 +3260,86 @@ This implies that Stokes
 \begin_inset Formula $\phi$
 \end_inset
 
- incurred due to anisotropic resonant scattering can be found in 
+ incurred due to ARS can be found in 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Houde2013"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Now, given a conversion from 
+\begin_inset Formula $U$
+\end_inset
+
+ to 
+\begin_inset Formula $V$
+\end_inset
+
+ it is clear that measuring 
+\begin_inset Formula $V$
+\end_inset
+
+ is necessary for techniques like the DCF method that rely on the dispersion
+ of the PAs of LP to calculate the strength of the magnetic field.
+ This is because without corresponding 
+\begin_inset Formula $V$
+\end_inset
+
+ measurements, the PAs obtained from a molecular spectral line subject to
+ ARS (like CO 
+\begin_inset Formula $(J=3\rightarrow2)$
+\end_inset
+
+) will be rotated in a complicated way that changes the dispersion of the
+ PAs, as seen in 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Hezareh2013"
+
+\end_inset
+
+.
+ In that study the measured 
+\begin_inset Formula $V$
+\end_inset
+
+ was re-inserted into 
+\begin_inset Formula $U$
+\end_inset
+
+ according to 
+\begin_inset Formula 
+\begin{equation}
+U'=U\cos\phi+V\sin\phi,
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\phi=\tan^{-1}(V/U)$
+\end_inset
+
+, to obtain corrected polarization angles.
+ This was shown to work by comparing CO 
+\begin_inset Formula $(J=2\rightarrow1)$
+\end_inset
+
+ polarization maps to dust continuum maps (which is not subject to ARS)
+ and seeing that the two maps only agreed after correction.
+ 
+\end_layout
+
+\begin_layout Standard
+Because the DCF method relies on the observed dispersion of PAs using LP
+ from CO maps therefore yields the incorrect value for the magnetic field
+ unless the PAs are corrected 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Hezareh2013,Chandrasekhar1953,Hildebrand2009"
 
 \end_inset
 
@@ -3278,13 +3357,23 @@ name "sec:Conclusion"
 
 \end_inset
 
-We took polarimetric observations from the SMA archive of Orion KL, IRC+10216,
- NGC7538 and NGC1333 and examined them for signals of circular polarization.
- The data were corrected for squint, a source of false Stokes V signals
- that arises due to a slight misalignment in the beams used to obtain Stokes
- V when using the SMA's quarter-waveplate-based polarimeter.
- We found evidence of significant Stokes V in Orion KL, IRC+10216 and NGC7538
- in the transitions of CO (
+We analyzed polarimetric observations from the SMA archive of Orion KL,
+ IRC+10216, NGC7538 and NGC1333 and examined them for CP signals.
+ The data were corrected for squint, a source of false Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ signals that arises due to a slight misalignment in the beams used to obtain
+ Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ when performing observations.
+ We found evidence of significant Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ in Orion KL, IRC+10216 and NGC7538 in the transitions of CO (
 \begin_inset Formula $J=3\rightarrow2$
 \end_inset
 
@@ -3308,12 +3397,7 @@ CN (
 \begin_inset Formula $J=4\rightarrow3$
 \end_inset
 
-), but because of low SNR in the spectra we could not model the shape of
- Stokes 
-\begin_inset Formula $V$
-\end_inset
-
-.
+).
  We also obtained much higher percentages of polarization than expected
  (ranging from 6-30% for 
 \begin_inset Formula $V/I$
@@ -3323,12 +3407,13 @@ CN (
 \end_layout
 
 \begin_layout Standard
-Theories that explain the presence of non-Zeeman circular polarization in
- molecular spectral lines rely on the conversion of background linear polarizati
-on.
- The several detections in multiple lines and objects presented here indicate
- that such an effect is likely widespread and common.
- 
+Theories that explain the presence of non-Zeeman CP in molecular spectral
+ lines rely on the conversion of background LP.
+ The detections in multiple lines and objects presented here indicate that
+ such an effect is likely widespread and common.
+ The conversion of CP-to-LP modified the observed dispersion of PAs which
+ alters the calculated magnetic field obtained from analyses like the DCF
+ method.
 \end_layout
 
 \begin_layout Standard
@@ -3443,6 +3528,35 @@ key "Hezareh2013"
 Hezareh, T.
  J., Wiesemeyer, H., Houde, M., Gusdorf, A., Siringo, G.
  2013 A&A, 558, A45
+\end_layout
+
+\begin_layout References
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "Hildebrand et al.(2009)"
+key "Hildebrand2009"
+
+\end_inset
+
+Hildebrand, R.
+ G., Kirby, L., Dotson.
+ J.
+ L., Houde, M., Vaillancourt, J.
+ E.
+ 2009 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+apj
+\end_layout
+
+\end_inset
+
+, 696, 567-573
 \end_layout
 
 \begin_layout References
