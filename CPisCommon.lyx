@@ -1833,7 +1833,7 @@ Corrected spectra and maps of the CO (
 \begin_inset Formula $J=3\rightarrow2$
 \end_inset
 
-) line (345.8GHz) for Orion KL and IRC+10216.
+) line (345.8GHz) for Orion KL (top) and IRC+10216 (bottom).
  
 \series bold
 \emph on
@@ -1903,8 +1903,8 @@ imstat
 \end_inset
 
  and the levels are 15%, 30%, 45%, 60%, 85% and 95% of the maximum.
- The value in the top left is the central frequency of the mapped signal
- and the map is integrated over a narrow bandwidth of 
+ The value in the top left is the central frequency in GHz of the mapped
+ signal, integrated over a narrow bandwidth of 
 \begin_inset Formula $\sim$
 \end_inset
 
@@ -2004,7 +2004,7 @@ reference "fig:results"
 
 \end_inset
 
- but for NGC7538 and NGC1333 (IRAS2A).
+ but for NGC7538 (top) and NGC1333 IRAS2A (bottom).
  The spectrum for NGC7538 is Hanning smoothed.
  No significant Stokes 
 \begin_inset Formula $V$
@@ -2019,11 +2019,15 @@ reference "fig:results"
 \end_inset
 
  and the spectrum is obtained the same way.
- The RMS for the NGC7538 map is 
+ The RMS for the NGC7538 and NGC1333 IRAS2A maps is 
 \begin_inset Formula $\sigma=0.15$
 \end_inset
 
- Jy/beam.
+ and 
+\begin_inset Formula $0.12$
+\end_inset
+
+ Jy/beam, respectively.
 \end_layout
 
 \end_inset
@@ -2681,7 +2685,7 @@ name "sec:Discussion"
 
 The first question to address is whether our CP detections are real or result
  from instrumental artifacts.
- This is our chief concern because of the difficulty of calibrating CP measureme
+ This is our chief concern because of the difficulty in calibrating CP measureme
 nts, especially since the observations presented here were not made with
  any special considerations for calibrating CP as in the observation of
  Sgr A* reported in 
@@ -2724,8 +2728,7 @@ Firstly, we take the average of all the visibility data and note that the
 \end_inset
 
 .
- This property indicates that there is no significant leakage of Stokes
- 
+ This property indicates that there is no systematic leakage of Stokes 
 \begin_inset Formula $I$
 \end_inset
 
@@ -2882,7 +2885,7 @@ reference "fig:results"
 
 \end_inset
 
-) is roughly 6
+) is approximately 6
 \begin_inset Quotes erd
 \end_inset
 
@@ -2922,8 +2925,8 @@ key "Cernicharo2015"
 
 \begin_layout Standard
 Spatial filtering due to the resolution of the interferometer explains the
- much smaller radius of IRC+10216 in the observations presented here and
- also explains the frequent occurences of negative Stokes 
+ smaller spatial extent of IRC+10216 in the observations presented here
+ and also explains the frequent occurences of negative Stokes 
 \begin_inset Formula $I$
 \end_inset
 
@@ -2948,10 +2951,10 @@ reference "fig:SiO"
 
 \end_inset
 
-, as well as the extremely high levels of CP that range from 6% to 30%.
- The largest resolvable object by an interferomter is determined by the
- length of the shortest baseline, meaning that large scale emission can
- be invisible to the interferometer.
+, as well as the high levels of CP that range from 6% to 30%.
+ The largest resolvable scale by an interferomter is determined by the length
+ of the shortest baseline, meaning that large scale emission can be filtered
+ out by the interferometer.
  For example in Orion KL the CO 
 \begin_inset Formula $(J=3\rightarrow2$
 \end_inset
@@ -2961,36 +2964,35 @@ reference "fig:SiO"
 \end_inset
 
  emission is large and extended.
- If then the Stokes 
+ If the Stokes 
 \begin_inset Formula $V$
 \end_inset
 
- signal comes from smaller more localized areas, we would observe peaks
- of Stokes 
+ signal came from smaller localized areas, then we would observe peaks of
+ Stokes 
 \begin_inset Formula $V$
 \end_inset
 
- as shown and only a portion of the Stokes 
+ as shown while only a portion of the Stokes 
 \begin_inset Formula $I$
 \end_inset
 
- that is present.
+ would be present.
  The rest of the Stokes 
 \begin_inset Formula $I$
 \end_inset
 
- signal would be filtered away which could shift the zero-level to smaller
- values.
+ signal would be filtered away, which could shift the zero-level downward.
  Fluctuations in Stokes 
 \begin_inset Formula $I$
 \end_inset
 
- would then appear to have negative values.
+ could then appear to have negative values.
  The smaller Stokes 
 \begin_inset Formula $I$
 \end_inset
 
- would also explains the high levels of 
+ could also explain the high levels of 
 \begin_inset Formula $V/I$
 \end_inset
 
@@ -3002,36 +3004,36 @@ Finally we checked and confirmed that there were no Stokes
 \begin_inset Formula $V$
 \end_inset
 
- signals in the continuum larger than those found at molecular lines like
+ signals in the continuum larger than those found in molecular lines like
  CO and SiO.
- If the detected CP originates from instrumental artifacts then we would
+ If the detected CP originated from instrumental artifacts then we would
  detect CP at similar levels in the continuum, but this is not seen.
- The level of CP found at molecular transitions is always higher than the
+ The level of CP found in molecular transitions is always higher than the
  level of CP in the continuum for the observations presented here.
 \end_layout
 
 \begin_layout Standard
 We therefore feel confident that the CP reported here, although perhaps
- suffering from some level of instrumental contamination, is real and originate
- from each of these objects.
- It is thus important to improve the measurement and calibration of CP for
- future studies of magnetic fields using polarimetry.
+ suffering from some level of instrumental contamination, is real and originates
+ from within these objects.
+ It is important to improve the measurement and calibration of CP for future
+ studies of magnetic fields using polarimetry.
 \end_layout
 
 \begin_layout Subsection
-Earlier Detections
+Earlier Non-Zeeman CP Detections
 \end_layout
 
 \begin_layout Standard
-Circular polarization in a molecular spectral line weakly sensitive to the
- Zeeman effect was first reported in 
+CP in a molecular spectral line weakly sensitive to the Zeeman effect was
+ first reported by 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Houde2013"
 
 \end_inset
 
-, where roughly 2% CP was detected in the 
+, where approximately 2% polarization was detected in the 
 \begin_inset Formula $^{12}$
 \end_inset
 
@@ -3062,13 +3064,13 @@ CO
 
  at 265.9 GHz in Orion KL was measured and no CP higher than the 0.1% level
  was detected.
- The detection in CO and the absence of a detection in HCN indicates that
- the FSPPol/CSO observations were not suffering from leakage into Stokes
- 
+ The detection in CO and the absence of a detection in HCN were evidence
+ that the FSPPol/CSO observations were not significantly suffering from
+ leakage into Stokes 
 \begin_inset Formula $V$
 \end_inset
 
- and highlights the CO molecule as a source of non-Zeeman CP.
+ and highlighted the CO molecule as a target for non-Zeeman CP.
  In all the objects presented here we find CP in 
 \begin_inset Formula $^{12}$
 \end_inset
@@ -3077,7 +3079,7 @@ CO
 \begin_inset Formula $(J=3\rightarrow2)$
 \end_inset
 
- at 345.8 GHz (except for in NGC1333 where the CO line is weak).
+ at 345.8 GHz (except for in NGC1333 where the CO line is relatively weak).
  This is consistent with the original 2013 detection.
 \end_layout
 
@@ -3103,8 +3105,8 @@ CO
 \end_inset
 
  taken with the IRAM 30m telescope.
- They found that initially the linear polarization maps of dust and CO differed
- greatly in their polarization angles.
+ They initially found that the LP maps of dust and CO differed greatly in
+ their polarization angles.
  Expecting that there was conversion of linear to circular polarization
  due to ARS, the CO Stokes 
 \begin_inset Formula $V$
@@ -3112,7 +3114,7 @@ CO
 
  fluxes were then reinserted into the CO LP signals.
  The resulting CO polarization angle maps then agreed very well with each
- other as well as with the dust map 
+ other, as well as with the dust map 
 \begin_inset CommandInset citation
 LatexCommand citep
 before "Fig. 9 of"
@@ -3143,8 +3145,8 @@ key "Houde2013"
 
 \end_inset
 
- to explain the presence of CP in the transitions of CO, but failed to explain
- the observed positive and symmetric 
+ to explain the presence of CP in the transitions of CO, but initially failed
+ to explain the observed symmetric 
 \begin_inset Quotes eld
 \end_inset
 
@@ -3172,11 +3174,18 @@ key "Houde2014"
 \begin_inset Formula $V$
 \end_inset
 
- in SiO masers and showed that different profile shapes easily arose if
- there were populations of scattering foreground molecules slightly outside
+ in SiO masers 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Cotton2011"
+
+\end_inset
+
+ and showed that different profile shapes detected are readily explained
+ through ARS off populations of foreground molecules located slightly outside
  of the velocity range of the line.
- For example in that case a blue-shifted scattering population of molecules
- results in a negative 
+ For example, a blue-shifted scattering population of molecules could result
+ in a negative 
 \begin_inset Quotes eld
 \end_inset
 
@@ -3188,7 +3197,7 @@ key "Houde2014"
 \begin_inset Quotes erd
 \end_inset
 
--shaped profile and a red-shifted population results in a positive 
+-shaped profile while a red-shifted population in a positive 
 \begin_inset Quotes eld
 \end_inset
 
@@ -3201,8 +3210,8 @@ key "Houde2014"
 \end_inset
 
 -shaped profile.
- The presence of both a blue- and red-shifted population results in an antisymme
-tric 
+ The presence of both a blue- and red-shifted population would cause an
+ antisymmetric 
 \begin_inset Quotes eld
 \end_inset
 
@@ -3210,19 +3219,19 @@ S
 \begin_inset Quotes erd
 \end_inset
 
--shaped profile like the one seen in the top left panel of Figure 
+-shaped profile (like the one seen in the top left panel of Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:results"
 
 \end_inset
 
-.
+).
 \end_layout
 
 \begin_layout Standard
-The basic principle of ARS can be illustrated by considering linearly polarized
- radiation oriented at some angle 
+The basic principle of ARS can be illustrated by considering background
+ LP radiation oriented at some angle 
 \begin_inset Formula $\theta$
 \end_inset
 
@@ -3320,7 +3329,7 @@ Now, given a conversion from
 \begin_inset Formula $(J=3\rightarrow2)$
 \end_inset
 
-) will be rotated in a complicated way that changes the dispersion of the
+) will be rotated in a systematic way that changes the dispersion of the
  PAs, as seen in 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -3329,43 +3338,19 @@ key "Hezareh2013"
 \end_inset
 
 .
- In that study the measured 
-\begin_inset Formula $V$
-\end_inset
-
- was re-inserted into 
-\begin_inset Formula $U$
-\end_inset
-
- according to 
-\begin_inset Formula 
-\begin{equation}
-U'=U\cos\phi+V\sin\phi,
-\end{equation}
-
-\end_inset
-
-where 
-\begin_inset Formula $\phi=\tan^{-1}(V/U)$
-\end_inset
-
-, to obtain corrected polarization angles.
- This was shown to work by comparing CO 
-\begin_inset Formula $(J=2\rightarrow1)$
-\end_inset
-
- polarization maps to dust continuum maps (which is not subject to ARS)
- and seeing that the two maps only agreed after correction.
+ As mentioned earlier, LP to CP conversion was reversed to obtain corrected
+ polarization angles.
  
 \end_layout
 
 \begin_layout Standard
-Because the DCF method relies on the observed dispersion of PAs using LP
- from CO maps therefore yields the incorrect value for the magnetic field
- unless the PAs are corrected 
+Because the DCF method relies on the observed dispersion of PAs using LP,
+ any such studies using molecular lines must also include corresponding
+ CP measurements to account for the polarization conversion effect and determine
+ the needed orientation of the PAs 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Hezareh2013,Chandrasekhar1953,Hildebrand2009"
+key "Hezareh2013,Chandrasekhar1953,Hildebrand2009,Houde2009"
 
 \end_inset
 
@@ -3384,8 +3369,8 @@ name "sec:Conclusion"
 \end_inset
 
 We analyzed polarimetric observations from the SMA archive of Orion KL,
- IRC+10216, NGC7538 and NGC1333 and examined them for CP signals.
- The data were corrected for squint, a source of false Stokes 
+ IRC+10216, NGC7538 and NGC1333 to search for CP signals.
+ The data were corrected for squint, a source of spurious Stokes 
 \begin_inset Formula $V$
 \end_inset
 
@@ -3399,15 +3384,15 @@ We analyzed polarimetric observations from the SMA archive of Orion KL,
 \begin_inset Formula $V$
 \end_inset
 
- in Orion KL, IRC+10216 and NGC7538 in the transitions of CO (
+ in Orion KL (in CO (
 \begin_inset Formula $J=3\rightarrow2$
 \end_inset
 
-), SiO 
+) and SiO 
 \begin_inset Formula $(J=8\rightarrow7$
 \end_inset
 
-), CS (
+)), in IRC+10216 (in CS (
 \begin_inset Formula $J=7\rightarrow6$
 \end_inset
 
@@ -3415,7 +3400,7 @@ We analyzed polarimetric observations from the SMA archive of Orion KL,
 \begin_inset Formula $J=19\rightarrow18$
 \end_inset
 
-) and H
+), H
 \begin_inset Formula $^{13}$
 \end_inset
 
@@ -3423,29 +3408,27 @@ CN (
 \begin_inset Formula $J=4\rightarrow3$
 \end_inset
 
-).
- We also obtained much higher percentages of polarization than expected
- (ranging from 6-30% for 
-\begin_inset Formula $V/I$
+) and CO (
+\begin_inset Formula $J=3\rightarrow2$
 \end_inset
 
-) due to the spatial filtering of large scale emission.
+)) and in NGC7538 (in CO (
+\begin_inset Formula $J=3\rightarrow2$
+\end_inset
+
+)).
+ We measured relatively important levels of CP ranging from 6%-30% probably
+ due to the interferometric spatial filtering of large scale emission.
 \end_layout
 
 \begin_layout Standard
 Theories that explain the presence of non-Zeeman CP in molecular spectral
  lines rely on the conversion of background LP.
  The detections in multiple lines and objects presented here indicate that
- such an effect is likely widespread and common.
- The conversion of CP-to-LP modified the observed dispersion of PAs which
- alters the calculated magnetic field obtained from analyses like the DCF
- method.
-\end_layout
-
-\begin_layout Standard
-Taking precise observations of CP along with LP and correcting for this
- conversion effect is therefore a critical step in polarization studies
- of the magnetic field in the interstellar medium.
+ such an effect is likely widespread.
+ Since the conversion of LP-to-CP modifies the observed dispersion of PAs,
+ it is necessary to obtain precise measurements of CP along with LP for
+ corresponding studies of the magnetic field in the interstellar medium.
 \end_layout
 
 \begin_layout References
@@ -3483,6 +3466,33 @@ apj
 \end_inset
 
 , 118, 113
+\end_layout
+
+\begin_layout References
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "Cotton et al.(2011)"
+key "Cotton2011"
+
+\end_inset
+
+Cotton, W.
+ D., Ragland, S., & Danchi, W.
+ C.
+ 2011, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+apj
+\end_layout
+
+\end_inset
+
+, 736, 96
 \end_layout
 
 \begin_layout References
@@ -3607,6 +3617,32 @@ apj
 \end_inset
 
 , 696, 567-573
+\end_layout
+
+\begin_layout References
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "Houde et al.(2009)"
+key "Houde2009"
+
+\end_inset
+
+Houde, M., Vaillancour, J.
+ E., Hildebrand, R.
+ H., Chitsazzadeh, S., & Kirby, L., 2009 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+apj
+\end_layout
+
+\end_inset
+
+, 706, 1504
 \end_layout
 
 \begin_layout References
