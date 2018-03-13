@@ -81,25 +81,19 @@ Non-Zeeman Circular Polarization of Molecular Spectral Lines in the ISM
 \end_layout
 
 \begin_layout Author
-M.
- A.
- Chamma
+Mohammed Afif Chamma
 \begin_inset Formula $^{1}$
 \end_inset
 
-, M.
- Houde
+, Martin Houde
 \begin_inset Formula $^{1}$
 \end_inset
 
-, J.
- M.
- Girart
+, Josep Miquel Girart
 \begin_inset Formula $^{2}$
 \end_inset
 
- and R.
- Rao
+ and Ramprasad Rao
 \begin_inset Formula $^{3}$
 \end_inset
 
@@ -137,14 +131,15 @@ We searched archival data of the Submillimeter Array (SMA) for evidence
  This circular polarization possibly arises from anisotropic resonant scattering
 , which would imply that some background linearly polarized flux is being
  converted to circular polarization.
- We find circular polarization in NGC7538, IRC+10216 and Orion KL for transition
-s of CO, SiO, SiS, and H
+ We find circular polarization in NGC7538 (in CO), IRC+10216 (in CS, SiS,
+ H
 \begin_inset Formula $^{13}$
 \end_inset
 
-CN at high enough levels to suggest that the presence of circular polarization
- in these spectral lines is common for such objects.
- This would imply that an important piece of information has been missed
+CN and CO) and Orion KL (in CO and SiO) at high enough levels to suggest
+ that the presence of circular polarization in these spectral lines is common
+ for such objects.
+ This would imply that an important piece of information has been neglected
  when studying magnetic fields through linear polarization from molecular
  spectral lines in the interstellar medium.
 \end_layout
@@ -176,26 +171,24 @@ Understanding the role of magnetic fields in star-forming regions allows
  The Davis-Chandrasekhar-Fermi (DCF) 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Chandrasekhar1953"
+key "Davis1951,Chandrasekhar1953"
 
 \end_inset
 
  uses the dispersion of polarization angles (PA) of linear polarization
- (LP) for such studies[I don't understand Martin's note here] to obtain
- corresponding maps of the plane-of-the-sky component of the magnetic field.
- The presence of a magnetic field leads to linearly polarized radiation
- because dust and molecules will align themselves relative to the field.
- Aligned particles can emit radiation with a net level of linear polarization
- greater than zero.
+ (LP) for measuring the plane-of-the-sky component of the magnetic field.
+ The presence of a magnetic field leads to LP radiation because dust and
+ molecules will align themselves relative to the field.
+ Aligned particles can emit radiation with a net level of LP greater than
+ zero.
  Aligned dust can also absorb radiation whose polarization is aligned with
  its long axis, acting as a sort of polarizing grid.
- Thus measuring the amount of dust linear polarization in the infrared continuum
- tells us about the degree to which the dust is aligned with the magnetic
- field, which in turn can tell us about the strength of the magnetic field
- 
+ Thus measuring the amount of dust LP in the infrared continuum tells us
+ about the degree to which the dust is aligned with the magnetic field,
+ which in turn can tell us about the strength of the magnetic field 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Chandrasekhar1953,Crutcher2012"
+key "Davis1951,Chandrasekhar1953,Crutcher2012"
 
 \end_inset
 
@@ -205,8 +198,8 @@ key "Chandrasekhar1953,Crutcher2012"
 
 \begin_layout Standard
 The alignment of molecules and their interaction with the ambient magnetic
- field can cause that molecule's transitions to be linearly polarized by
- a few percent through the so-called Goldreich-Kylafis effect 
+ field can cause their transitions to be linearly polarized by a few percent
+ through the so-called Goldreich-Kylafis effect 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Goldreich1981"
@@ -214,12 +207,12 @@ key "Goldreich1981"
 \end_inset
 
 .
- As with dust, the PA associated with the linear polarization in the spectral
- line can be measured and used to infer properties of the magnetic field
- through a dispersion analysis 
+ As with dust, the PA associated with the LP in the spectral line can be
+ measured and used to infer properties of the magnetic field through a dispersio
+n analysis 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Chandrasekhar1953,Crutcher2012"
+key "Davis1951,Chandrasekhar1953,Crutcher2012"
 
 \end_inset
 
@@ -228,8 +221,8 @@ key "Chandrasekhar1953,Crutcher2012"
 \end_layout
 
 \begin_layout Standard
-For molecular lines circular polarization is usually ignored, largely because
- of difficulty in its measurement and its assumed irrelevance.
+For molecular lines circular polarization (CP) is usually ignored, largely
+ because of difficulty in its measurement and its assumed irrelevance.
  However, a significant amount of unexpected circular polarization was reported
  by 
 \begin_inset CommandInset citation
@@ -238,33 +231,42 @@ key "Houde2013"
 
 \end_inset
 
- in a rotational transition of CO using the Caltech Submillimeter Observatory
- (CSO), a common tracer through LP of magnetic fields 
+ in CO 
+\begin_inset Formula $(J=2\rightarrow1)$
+\end_inset
+
+, a common tracer through LP of magnetic fields 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Crutcher2012"
 
 \end_inset
 
-.
- The presence of circular polarization in a molecular transition can be
- explained with Zeeman splitting for some molecules/transitions possessing
- a significant magnetic moment (e.g., CN), but CO is highly insensitive to
- the Zeeman effect.
+, using FSPPol 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Hezareh2010"
+
+\end_inset
+
+ at the Caltech Submillimeter Observatory (CSO).
+ The presence of CP in a molecular transition can be explained with Zeeman
+ splitting for some molecules/transitions possessing a significant magnetic
+ moment (e.g., CN), but CO is highly insensitive to the Zeeman effect.
  In addition, the observed Stokes 
 \begin_inset Formula $V$
 \end_inset
 
  profile in Orion KL was positive and symmetric, which is also unexpected
- since Zeeman splitting usually gives rise to an approximately antisymmetric
+ since Zeeman splitting often gives rise to an approximately antisymmetric
  Stokes 
 \begin_inset Formula $V$
 \end_inset
 
  profile.
- To explain this detection a model was proposed whereby linearly polarized
- light is converted to circularly polarized light through anisotropic resonant
- scattering (ARS) 
+ To explain this detection a model was proposed whereby background LP radiation
+ is converted to CP radiation through anisotropic resonant scattering (ARS)
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Houde2013,Houde2014"
@@ -279,7 +281,7 @@ key "Hezareh2013"
 
 \end_inset
 
- where the measured CP flux of CO lines (
+, where the measured CP flux of CO lines (
 \begin_inset Formula $J=2\rightarrow1$
 \end_inset
 
@@ -331,8 +333,7 @@ reference "sec:Observations"
 \end_inset
 
  presents archival observations of four objects made with the SMA on Mauna
- Kea and makes the case that these circular polarization detections are
- real and physical.
+ Kea and investigates the reliability of our CP detections.
  Section 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -342,7 +343,7 @@ reference "sec:Squint-Correction"
 
  will give in detail our scheme for correcting a spurious source of CP that
  arises with the SMA.
- Finally in Section 
+ Finally, in Section 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Discussion"
@@ -350,7 +351,7 @@ reference "sec:Discussion"
 \end_inset
 
  we will highlight the significance of these CP detections and summarize
- relevant research.
+ their implications.
 \end_layout
 
 \begin_layout Section
@@ -364,30 +365,24 @@ name "sec:Measurement-with-Radio"
 
 \end_inset
 
-The measurement of circular polarization is challenging to calibrate, especially
- when using radio interferometers like the SMA or ALMA.
- The SMA polarimeters use a quarter-waveplate (QWP) usually to convert incident
- LP light to CP light to measure LP signals.
+The measurement of CP is challenging to calibrate, especially when using
+ radio interferometers like the SMA or ALMA.
+ The SMA polarimeters normally use a quarter-waveplate (QWP) to convert
+ incident LP light to CP light to measure LP signals through cross-correlations.
  While not its most common use, at the SMA, the QWP can work the other way
  to measure CP: incident CP is converted to LP and then measured by the
  receivers.
- ALMA on the other hand uses linear feeds and measures the linearly polarized
- light directly.
+ ALMA on the other hand uses linear feeds and measures the LP signals directly.
  While both types of feeds can be used to measure CP, the calibration process
  is different 
 \begin_inset CommandInset citation
-LatexCommand citet
+LatexCommand citep
 key "Sault1996"
 
 \end_inset
 
 .
- While ALMA does not yet support measuring Stokes 
-\begin_inset Formula $V$
-\end_inset
-
- reliably, the SMA has been used to take precise measurements of CP in Sgr
- A* 
+ The SMA has been used to take precise measurements of CP in Sgr A* 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Munoz2012"
@@ -396,8 +391,8 @@ key "Munoz2012"
 
 .
  For a discussion on measuring CP with radio interferometry and on design
- choices at the SMA (such as the choice of converting from linear- to circular-p
-olarization and vice-versa) see 
+ choices at the SMA (such as the choice of converting from LP-to-CP and
+ vice-versa) see 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Hamaker1996,Marrone2008"
@@ -414,12 +409,11 @@ Linear vs.
 
 \begin_layout Standard
 To illustrate briefly the differences between the two feed types consider
- the following: with an orthogonal circular polarization basis, the Stokes
- 
+ the following: with an orthogonal CP basis, the Stokes 
 \begin_inset Formula $V$
 \end_inset
 
- parameter for a beam of light is defined by 
+ parameter for a beam of radiation is defined by 
 \begin_inset Formula $V=\langle E_{L}^{2}\rangle-\langle E_{R}^{2}\rangle$
 \end_inset
 
@@ -432,7 +426,7 @@ To illustrate briefly the differences between the two feed types consider
 \end_inset
 
  are the left-CP and right-CP electric fields, respectively.
- With an orthogonal linear basis Stokes 
+ With an orthogonal LP basis Stokes 
 \begin_inset Formula $V$
 \end_inset
 
@@ -453,16 +447,16 @@ To illustrate briefly the differences between the two feed types consider
 \end_inset
 
  denotes the imaginary part.
- In the CP case we take the difference of two measured intensities while
- the linear feed case requires us to measure the phase of the electromagnetic
- wave.
+ In the CP basis case we take the difference of two measured intensities,
+ while the linear feed case requires us to measure the phase of the electromagne
+tic wave.
  
 \end_layout
 
 \begin_layout Standard
 Now, when the measurement is made with interferometry it is the visibilities
- – the correlated waveforms between a pair of antennas – that are measured.
- In the CP case the Stokes 
+ – the correlated waveforms between a pair of antennae – that are measured.
+ In the CP basis case the Stokes 
 \begin_inset Formula $V$
 \end_inset
 
@@ -518,7 +512,8 @@ key "Thompson2001"
 \end_inset
 
  of any calibration object must be measured as well.
- This is not possible with the SMA setup.
+ This is not possible with the SMA setup used for the observations discussed
+ here.
 \end_layout
 
 \begin_layout Section
@@ -547,7 +542,7 @@ We now describe spurious Stokes
 \end_layout
 
 \begin_layout Standard
-The archival data used was in all cases observed with the goal of measuring
+The archival data used were in all cases observed with the goal of measuring
  LP (i.e., the Stokes 
 \begin_inset Formula $Q$
 \end_inset
@@ -557,8 +552,8 @@ The archival data used was in all cases observed with the goal of measuring
 \end_inset
 
  parameters).
- On the SMA this is done with a quarter-waveplate placed in front of the
- linear receivers to convert incident CP (LP) to LP (CP).
+ As mentioned earlier on the SMA this is done with a QWP placed in front
+ of the LP receivers to convert incident CP (LP) to LP (CP).
  While this method suffers from the errors that arise when subtracting two
  large measurements from each other, when performing CP measurements, it
  avoids having to solve for the LP terms of calibration objects 
@@ -573,12 +568,11 @@ key "Marrone2008,Thompson2001"
 \end_layout
 
 \begin_layout Standard
-The output of an interferometer are the visibilities.
- A visibility is the cross-correlation between the voltage signals from
- a pair of antennas and can be written as 
+An output visibility consists of the cross-correlation between the voltage
+ signals from a pair of antennae and can be written as 
 \begin_inset Formula 
 \begin{equation}
-\mathcal{V}(u,v)=\frac{r}{A_{0}\Delta\nu}=\frac{\langle V_{a}(t)\star V_{b}(t)\rangle}{A_{0}\Delta\nu}
+\mathcal{V}(u,v)=\frac{\langle V_{a}(t)\star V_{b}(t)\rangle}{A_{0}\Delta\nu},
 \end{equation}
 
 \end_inset
@@ -587,16 +581,15 @@ where
 \begin_inset Formula $A_{0}$
 \end_inset
 
- is the collecting area of the antennas, 
+ is the collecting area of the antennae, 
 \begin_inset Formula $\Delta\nu$
 \end_inset
 
  is the bandwidth, and 
-\begin_inset Formula $r=\langle V_{a}(t)\star V_{b}(t)\rangle$
+\begin_inset Formula $\langle V_{a}(t)\star V_{b}(t)\rangle$
 \end_inset
 
- is the output of the correlator which is the time-averaged cross-correlation
- of voltage signals 
+ is the time-averaged cross-correlation of voltage signals 
 \begin_inset Formula $V_{a}(t)$
 \end_inset
 
@@ -621,8 +614,8 @@ where
 \begin_inset Formula $v$
 \end_inset
 
- are determined by the baseline separation of the two antennas.
- Thus a pair of antennas samples a single point of the visibility function
+ are determined by the baseline separation and orientation of the two antennae.
+ Thus a pair of antennae samples a single point of the visibility function
  
 \begin_inset Formula $\mathcal{V}(u,v)$
 \end_inset
@@ -667,7 +660,7 @@ key "Thompson2001"
  Thus we have 
 \begin_inset Formula 
 \begin{equation}
-\mathcal{V}(u,v)=\int\int e^{-iul}e^{-ivm}I(l,m)dldm.
+\mathcal{V}(u,v)=\int\int e^{-iul}e^{-ivm}I(l,\,m)dldm.
 \end{equation}
 
 \end_inset
@@ -676,16 +669,7 @@ key "Thompson2001"
 \end_layout
 
 \begin_layout Standard
-Obtaining Stokes 
-\begin_inset Formula $V$
-\end_inset
-
- from the visibilities measured with circular feeds is done as follows.
- 
-\end_layout
-
-\begin_layout Standard
-Given antennas 
+Given antennae 
 \begin_inset Formula $a$
 \end_inset
 
@@ -697,14 +681,14 @@ Given antennas
 \begin_inset Formula $V$
 \end_inset
 
- visibility in the circular feed case is given by
+ visibility in the circular feed case is given by 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Munoz2012"
 
 \end_inset
 
-:
+
 \begin_inset Formula 
 \begin{equation}
 \mathcal{V}_{V}\simeq\frac{1}{2}\Big\{\mathcal{V}_{RR}/(g_{Ra}g_{Rb}^{*})-\mathcal{V}_{LL}/(g_{La}g_{Lb}^{*})\Big\},\label{eq:CPV}
@@ -721,8 +705,8 @@ where
 \end_inset
 
  are the right-handed CP and left-handed CP visibilities, respectively,
- and are measured by orienting the quarter-waveplate that is placed in the
- beam of the antennas and correlating the antenna responses 
+ measured by appropriately orienting the QWP that is placed in the beam
+ of the antennae and correlating the antenna responses 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Marrone2008"
@@ -771,9 +755,9 @@ reference "fig:beforeafter"
 
 \end_inset
 
- for example.
+, for example.
  This offset likely arises because of slight differences in the index of
- refraction of the quarter-waveplate when it is rotated.
+ refraction of the QWP when it is rotated.
 \end_layout
 
 \begin_layout Standard
@@ -813,10 +797,10 @@ To see this, consider a map
  and the measured visibility of the shifted map becomes 
 \begin_inset Formula 
 \begin{eqnarray}
-\mathcal{V}'(u,v) & = & \int\int e^{-iul}e^{-ivm}I(l-l_{0},m-m_{0})dldm\nonumber \\
- & = & \int\int e^{-iu(\alpha+l_{0})}e^{-iv(\delta+m_{0})}I(\alpha,\delta)d\alpha d\delta\nonumber \\
- & = & e^{-iul_{0}}e^{-ivm_{0}}\int\int e^{-iu\alpha}e^{-iv\delta}I(\alpha,\delta)d\alpha d\delta\nonumber \\
- & = & e^{-iul_{0}}e^{-ivm_{0}}V(u,v)\equiv g_{\text{offset}}V(u,v)
+\mathcal{V}'(u,v) & = & \int\int e^{-iul}e^{-ivm}I(l-l_{0},m-m_{0})\,dl\,dm\nonumber \\
+ & = & \int\int e^{-iu(\alpha+l_{0})}e^{-iv(\delta+m_{0})}I(\alpha,\delta)\,d\alpha\,d\delta\nonumber \\
+ & = & e^{-iul_{0}}e^{-ivm_{0}}\int\int e^{-iu\alpha}e^{-iv\delta}I(\alpha,\delta)\,d\alpha\,d\delta\nonumber \\
+ & = & e^{-iul_{0}}e^{-ivm_{0}}\mathcal{V}(u,v)\equiv g_{\text{offset}}\mathcal{V}(u,v)
 \end{eqnarray}
 
 \end_inset
@@ -854,11 +838,11 @@ key "Sault1995"
 \end_layout
 
 \begin_layout Enumerate
-Observations are calibrated for gain and phase in the usual way using calibratio
-n observations of `good' sources (usually quasars like 3C84, 3C454, etc.)
- (See Miriad User Guide 
+The observations are calibrated for gain and phase in the usual way using
+ calibration observations of `good' sources (usually quasars like 3C84,
+ 3C454, etc.; see Miriad User Guide 
 \begin_inset CommandInset citation
-LatexCommand citet
+LatexCommand citep
 key "Sault2008"
 
 \end_inset
@@ -867,7 +851,7 @@ key "Sault2008"
 \end_layout
 
 \begin_layout Enumerate
-Visibilities are split into line-free continuum data and line data.
+The visibilities are split into line-free continuum and line data.
  These are then mapped and used to obtain CLEAN models.
 \end_layout
 
@@ -904,7 +888,7 @@ R
 \begin_inset Formula $\mathcal{V}_{ij}$
 \end_inset
 
- of antennas 
+ of antennae 
 \begin_inset Formula $i$
 \end_inset
 
@@ -938,12 +922,12 @@ key "Sault2008,Schwab1980"
 .
  The model visibilities used are those found earlier.
  Note the subscripts here denote a specific antenna and not the polarization
- as before.
+ state as before.
  
 \end_layout
 
 \begin_layout Enumerate
-The gains found from the continuum 
+The gain found from the continuum 
 \emph on
 LL
 \emph default
@@ -988,19 +972,18 @@ reference "fig:beforeafter"
 
 \end_inset
 
- shows maps before and after this correction is applied for the continuum
- in Orion KL around 345GHz.
- We see that before correction there are four large peaks of Stokes 
+ shows maps before- and after- correction maps for the continuum in Orion
+ KL around 345GHz.
+ We see that before correction there are large peaks of Stokes 
 \begin_inset Formula $V$
 \end_inset
 
-, and that the two positive peaks have a negative peak close by.
+, and that the three positive peaks have a negative peak close by.
  After the correction, though there are still noisy Stokes 
 \begin_inset Formula $V$
 \end_inset
 
- signals throughout the image, the four peaks from before have completely
- disappeared.
+ signals throughout the image, the pairs of peaks have completely disappeared.
 \end_layout
 
 \begin_layout Standard
@@ -1061,9 +1044,8 @@ Map of the continuum around 345GHz in Orion KL before (top) and after (bottom)
 \begin_inset Formula $V$
 \end_inset
 
- peaks in the uncorrected map.
+ peaks in the uncorrected map (circled in orange).
  These largely disappear after correction.
- The contour scales on both maps are identical.
  Red Stokes 
 \begin_inset Formula $I$
 \end_inset
@@ -1120,15 +1102,15 @@ key "Munoz2012"
 \end_layout
 
 \begin_layout Standard
-The four objects we present here are Orion KL, NGC7538, IRAS2A in NGC1333
- and IRC+10216.
+The four objects we present here are Orion KL, NGC7538, NGC1333 IRAS2A and
+ IRC+10216.
  The first three are well-known star-formation regions, while IRC+10216
  is an evolved carbon star.
  We find significant Stokes 
 \begin_inset Formula $V$
 \end_inset
 
- signals in all objects except for NGC1333.
+ signals in all objects except for NGC1333 IRAS2A.
  Table 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1153,7 +1135,7 @@ status open
 <column alignment="left" valignment="top" width="19col%">
 <column alignment="left" valignment="top" width="33col%">
 <column alignment="right" valignment="top" width="20col%">
-<column alignment="right" valignment="top" width="18col%">
+<column alignment="right" valignment="top" width="25col%">
 <row>
 <cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
@@ -1161,6 +1143,7 @@ status open
 \begin_layout Plain Layout
 
 \series bold
+\size footnotesize
 Object
 \end_layout
 
@@ -1172,6 +1155,7 @@ Object
 \begin_layout Plain Layout
 
 \series bold
+\size footnotesize
 Coordinates (J2000)
 \end_layout
 
@@ -1183,7 +1167,8 @@ Coordinates (J2000)
 \begin_layout Plain Layout
 
 \series bold
-Array Configuration
+\size footnotesize
+Array
 \end_layout
 
 \end_inset
@@ -1194,7 +1179,9 @@ Array Configuration
 \begin_layout Plain Layout
 
 \series bold
-Date Observed
+\size footnotesize
+Obs.
+ Date
 \end_layout
 
 \end_inset
@@ -1310,7 +1297,7 @@ Compact
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="right" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1471,7 +1458,7 @@ Summary of Archival Observations Used
 \end_layout
 
 \begin_layout Standard
-The visibility data are corrected for beam squint, as explained in Section
+The visibility data were corrected for beam squint, as explained in Section
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1551,15 +1538,15 @@ reference "fig:beforeafterspec"
 \end_inset
 
  can also be found in the average spectrum obtained from all the visibility
- data, though the significance is 3-5
+ data, though SNR is of 3-5
 \begin_inset Formula $\sigma$
 \end_inset
 
- in that case compared to approximately 6-10
+ significant in that case compared to approximately 6-10
 \begin_inset Formula $\sigma$
 \end_inset
 
- when the spectra is taken from the inverted maps.
+ when the spectrum is taken at the peak of the inverted maps.
  The presence of a Stokes 
 \begin_inset Formula $V$
 \end_inset
@@ -1584,15 +1571,23 @@ reference "fig:beforeafterspec"
 \end_layout
 
 \begin_layout Standard
-In Orion KL the lines of CO (
+In Orion KL (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:results"
+
+\end_inset
+
+) the lines of CO (
 \begin_inset Formula $J=3\rightarrow2$
 \end_inset
 
- at 345.8GHz) and SiO (
+ at 345.8 GHz) and SiO (
 \begin_inset Formula $J=8\rightarrow7$
 \end_inset
 
- at 347.3GHz) are both bright (a peak Stokes 
+ at 347.3 GHz) are both bright (a peak Stokes 
 \begin_inset Formula $I$
 \end_inset
 
@@ -1619,11 +1614,26 @@ reference "fig:SiO"
 \end_inset
 
  signal is purely negative.
- 
+ These lines (and others) are listed in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:sumresults"
+
+\end_inset
+
+ with their frequencies.
 \end_layout
 
 \begin_layout Standard
-In IRC+10216 we again see Stokes 
+In IRC+10216 (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:results"
+
+\end_inset
+
+) we again see Stokes 
 \begin_inset Formula $V$
 \end_inset
 
@@ -1648,18 +1658,19 @@ CN (
 \end_inset
 
 ).
- These lines and their frequencies are listed in Table 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "tab:sumresults"
-
-\end_inset
-
-.
+ 
 \end_layout
 
 \begin_layout Standard
-In NGC7538 the Stokes 
+In NGC7538 (Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:iras2a"
+
+\end_inset
+
+) the Stokes 
 \begin_inset Formula $V$
 \end_inset
 
@@ -1667,8 +1678,7 @@ In NGC7538 the Stokes
 \begin_inset Formula $J=3\rightarrow2$
 \end_inset
 
-) at 345.8 GHz decreased in intensity after correction but is still extremely
- prominent.
+) at 345.8 GHz decreased in intensity after correction but is still prominent.
  There was also a very strong Stokes 
 \begin_inset Formula $V$
 \end_inset
@@ -1689,7 +1699,7 @@ reference "fig:iras2a"
 
 \end_inset
 
- shows no detection in NGC1333, with only a weak detection of CO in Stokes
+ shows no detection in NGC1333, with only a clear detection of CO in Stokes
  
 \begin_inset Formula $I$
 \end_inset
@@ -1703,7 +1713,8 @@ As mentioned previously, when assessing the Stokes
 \end_inset
 
  detections we consult the map for obvious pairs of positive/negative peaks
- that would indicate beam offset and therefore a false Stokes 
+ that would indicate beam offset and therefore a potentially false Stokes
+ 
 \begin_inset Formula $V$
 \end_inset
 
@@ -1734,9 +1745,8 @@ reference "fig:beforeafter"
 
 \end_inset
 
- shows what `squint peaks' look like (we know these peaks are from squint
- because they disappear after correction) and the pairs tend to resemble
- each other in shape.
+ shows a typical appearance for squint signals which disappear after correction,
+ and the pairs tend to resemble each other in shape.
  The pair of peaks around our chosen peak in NGC7538 however have distinct
  shapes.
  The worst case here is that the signal is entirely squint but on the other
@@ -1917,6 +1927,22 @@ imstat
 wide true
 sideways false
 status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{-1cm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -2623,7 +2649,7 @@ Summary of corrected Stokes
 \end_inset
 
  signals found.
- The beam size is determined by the configuration of the antennas array.
+ The beam size is determined by the configuration of the antennae array.
  An intensity for the peak of the Stokes 
 \begin_inset Formula $V$
 \end_inset
@@ -3478,6 +3504,18 @@ Crutcher, R.
 \begin_layout References
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
+label "Davis(1951)"
+key "Davis1951"
+
+\end_inset
+
+Davis, L., Jr.
+ 1951, PhRv, 81, 890
+\end_layout
+
+\begin_layout References
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
 label "Goldreich \\& Kylafis(1981)"
 key "Goldreich1981"
 
@@ -3515,6 +3553,18 @@ Hamaker, J.
  J.
  1996 A&A Suppl.
  Ser., 117, 137-147
+\end_layout
+
+\begin_layout References
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "Hezareh et al.(2010)"
+key "Hezareh2010"
+
+\end_inset
+
+Hezareh, T., & Houde, M.
+ 2010, PASP, 122, 786
 \end_layout
 
 \begin_layout References
