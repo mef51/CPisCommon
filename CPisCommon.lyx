@@ -165,9 +165,8 @@ name "sec:Introduction"
 Understanding the role of magnetic fields in star-forming regions allows
  us to test ideas about free-fall collapse and support mechanisms in molecular
  clouds, filling in details about the star formation process.
- Since we can only measure the radiation from star-forming regions astronomers
- use polarimetry to infer the magnitude and orientation of the magnetic
- field.
+ By measuring the radiation from star-forming regions astronomers use polarimetr
+y to infer the magnitude and orientation of the magnetic field.
  The Davis-Chandrasekhar-Fermi (DCF) 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -221,8 +220,8 @@ key "Davis1951,Chandrasekhar1953,Crutcher2012"
 \end_layout
 
 \begin_layout Standard
-For molecular lines circular polarization (CP) is usually ignored, largely
- because of difficulty in its measurement and its assumed irrelevance.
+For molecular lines non-Zeeman circular polarization (CP) is usually ignored,
+ largely because of difficulty in its measurement and its assumed irrelevance.
  However, a significant amount of unexpected circular polarization was reported
  by 
 \begin_inset CommandInset citation
@@ -291,12 +290,12 @@ key "Hezareh2013"
 
 ) were `re-inserted' into the measured LP flux to account for the LP-to-CP
  conversion and its effect on the PA.
- They found that the PAs obtained from different CO transitions only agreed
- with each other and those obtained from dust polarimetry after the CP flux
- was accounted for.
+ They found that the PAs obtained from the different CO transitions only
+ agreed with each other and those obtained from dust polarimetry after the
+ CP flux was accounted for.
  If ARS is common to other objects then using LP in CO as a tracer of the
  magnetic field will introduce a systematic error unless the CP of CO lines
- are also measured.
+ is also measured.
  
 \end_layout
 
@@ -382,7 +381,8 @@ key "Sault1996"
 \end_inset
 
 .
- The SMA has been used to take precise measurements of CP in Sgr A* 
+ Despite the calibration challenges the SMA has been used to take precise
+ measurements of CP in Sgr A* 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Munoz2012"
@@ -414,7 +414,7 @@ To illustrate briefly the differences between the two feed types consider
 \end_inset
 
  parameter for a beam of radiation is defined by 
-\begin_inset Formula $V=\langle E_{L}^{2}\rangle-\langle E_{R}^{2}\rangle$
+\begin_inset Formula $V\propto\langle E_{L}^{2}\rangle-\langle E_{R}^{2}\rangle$
 \end_inset
 
 , where 
@@ -431,10 +431,10 @@ To illustrate briefly the differences between the two feed types consider
 \end_inset
 
  is defined by 
-\begin_inset Formula $V=-2\text{Im}(E_{x}E_{y}^{*})$
+\begin_inset Formula $V\propto-2\text{Im}(E_{x}E_{y}^{*})$
 \end_inset
 
- where 
+, where 
 \begin_inset Formula $E_{x}$
 \end_inset
 
@@ -660,7 +660,7 @@ key "Thompson2001"
  Thus we have 
 \begin_inset Formula 
 \begin{equation}
-\mathcal{V}(u,v)=\int\int e^{-iul}e^{-ivm}I(l,\,m)dldm.
+\mathcal{V}(u,v)=\int\int e^{-iul}e^{-ivm}I(l,\,m)\,dldm.
 \end{equation}
 
 \end_inset
@@ -756,8 +756,8 @@ reference "fig:beforeafter"
 \end_inset
 
 , for example.
- This offset likely arises because of slight differences in the index of
- refraction of the QWP when it is rotated.
+ The cause of this offset is uncertain, but possibly arises due to slight
+ differences in the index of refraction of the QWP when it is rotated.
 \end_layout
 
 \begin_layout Standard
@@ -765,11 +765,7 @@ To correct this offset we first note that since the visibilities are the
  Fourier transform of the intensity map, an offset in image space results
  in a complex factor in visibility space that can be absorbed into the gain
  coefficients.
- 
-\end_layout
-
-\begin_layout Standard
-To see this, consider a map 
+ To see this, consider a map 
 \begin_inset Formula $I(l,m)$
 \end_inset
 
@@ -800,7 +796,8 @@ To see this, consider a map
 \mathcal{V}'(u,v) & = & \int\int e^{-iul}e^{-ivm}I(l-l_{0},m-m_{0})\,dl\,dm\nonumber \\
  & = & \int\int e^{-iu(\alpha+l_{0})}e^{-iv(\delta+m_{0})}I(\alpha,\delta)\,d\alpha\,d\delta\nonumber \\
  & = & e^{-iul_{0}}e^{-ivm_{0}}\int\int e^{-iu\alpha}e^{-iv\delta}I(\alpha,\delta)\,d\alpha\,d\delta\nonumber \\
- & = & e^{-iul_{0}}e^{-ivm_{0}}\mathcal{V}(u,v)\equiv g_{\text{offset}}\mathcal{V}(u,v)
+ & = & e^{-iul_{0}}e^{-ivm_{0}}\mathcal{V}(u,v)\nonumber \\
+ & \equiv & g_{\text{offset}}\mathcal{V}(u,v),
 \end{eqnarray}
 
 \end_inset
@@ -839,8 +836,8 @@ key "Sault1995"
 
 \begin_layout Enumerate
 The observations are calibrated for gain and phase in the usual way using
- calibration observations of `good' sources (usually quasars like 3C84,
- 3C454, etc.; see Miriad User Guide 
+ observations of known sources (usually quasars like 3C84, 3C454, etc.; see
+ Miriad User Guide 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Sault2008"
@@ -978,12 +975,13 @@ reference "fig:beforeafter"
 \begin_inset Formula $V$
 \end_inset
 
-, and that the three positive peaks have a negative peak close by.
+, and that the three (identified) positive peaks have a negative peak close
+ by.
  After the correction, though there are still noisy Stokes 
 \begin_inset Formula $V$
 \end_inset
 
- signals throughout the image, the pairs of peaks have completely disappeared.
+ signals throughout the image, the pairs of peaks have disappeared.
 \end_layout
 
 \begin_layout Standard
@@ -1040,11 +1038,11 @@ Map of the continuum around 345GHz in Orion KL before (top) and after (bottom)
 
 .
  Dashed lines denote negative values, solid lines denote positive values.
- Note the multiple pairs of positive and negative Stokes 
+ Note the three pairs of positive and negative Stokes 
 \begin_inset Formula $V$
 \end_inset
 
- peaks in the uncorrected map (circled in orange).
+ peaks in the uncorrected map (identified and circled in orange).
  These largely disappear after correction.
  Red Stokes 
 \begin_inset Formula $I$
@@ -1094,9 +1092,9 @@ key "Munoz2012"
 \end_inset
 
  to measure circular polarization in Sgr A*.
- Because the archival observations were not taken with measurements of circular
- polarization in mind the SNR is often low, and we had to average velocity
- channels to increase it at the cost of spectral resolution.
+ Because the archival observations were not taken with measurements of CP
+ in mind the SNR is often low, and we had to average velocity channels to
+ increase it at the cost of spectral resolution.
  This generally increases the SNR from 3-4 to 6-10.
  
 \end_layout
@@ -1104,8 +1102,8 @@ key "Munoz2012"
 \begin_layout Standard
 The four objects we present here are Orion KL, NGC7538, NGC1333 IRAS2A and
  IRC+10216.
- The first three are well-known star-formation regions, while IRC+10216
- is an evolved carbon star.
+ The first three are well-known star-forming regions, while IRC+10216 is
+ an evolved carbon star.
  We find significant Stokes 
 \begin_inset Formula $V$
 \end_inset
@@ -1641,7 +1639,7 @@ reference "fig:results"
 \begin_inset Formula $J=3\rightarrow2$
 \end_inset
 
-) but also several signals in CS (
+) but also in CS (
 \begin_inset Formula $J=7\rightarrow6$
 \end_inset
 
@@ -1679,7 +1677,7 @@ reference "fig:iras2a"
 \end_inset
 
 ) at 345.8 GHz decreased in intensity after correction but is still prominent.
- There was also a very strong Stokes 
+ There was also initially a very strong Stokes 
 \begin_inset Formula $V$
 \end_inset
 
@@ -1687,7 +1685,7 @@ reference "fig:iras2a"
 \begin_inset Formula $_{2}$
 \end_inset
 
-CO at 346.6 GHz but it completely disappeared after correction.
+CO at 346.6 GHz that completely disappeared after correction.
  
 \end_layout
 
@@ -2625,7 +2623,7 @@ CO (
 \begin_inset Text
 
 \begin_layout Plain Layout
-None
+-
 \end_layout
 
 \end_inset
@@ -2703,14 +2701,14 @@ reference "sec:Observations"
 
 \end_inset
 
- in support for the soundness of these detections.
- We then discuss earlier detections of CP and summarize how ARS can explain
- the detections presented in this work.
+ in support for the soundness of these detections, and then discuss earlier
+ detections of CP and summarize how ARS can explain the detections presented
+ in this work.
 \end_layout
 
 \begin_layout Standard
-Firstly, we take the average of all the visibility data and note that the
- peak Stokes 
+Firstly, we take the average of all the visibility data (not shown) and
+ note that the peak Stokes 
 \begin_inset Formula $V$
 \end_inset
 
@@ -2737,7 +2735,8 @@ Firstly, we take the average of all the visibility data and note that the
 \end_inset
 
 .
- This is true in Orion KL, where CO (
+ This is true in the average visibilities (not shown) of Orion KL, where
+ CO (
 \begin_inset Formula $J=3\rightarrow2$
 \end_inset
 
@@ -2829,8 +2828,8 @@ We also note that for Orion KL the shapes of the Stokes
 \end_inset
 
  signals vary across the frequency band and interpret this to mean that
- the signals are not instrumental in nature, assuming that any instrumental
- mechanism for producing spurious Stokes 
+ the signals are likely not instrumental in nature, assuming that any instrument
+al mechanism for producing spurious Stokes 
 \begin_inset Formula $V$
 \end_inset
 
@@ -2847,9 +2846,8 @@ reference "fig:SiO"
 \end_inset
 
  in CO and SiO.
- The SiO signal is purely negative (indicating only left-circular polarization)
- but the CO signal is antisymmetric, indicating the presence of both LCP
- and RCP.
+ The SiO signal is purely negative (indicating only LCP) but the CO signal
+ is antisymmetric, indicating the presence of both LCP and RCP.
  This has a physical explanation using the ARS model in terms of blue-shifted
  and red-shifted scattering populations that will be considered in Section
  
@@ -2870,7 +2868,7 @@ reference "subsec:ARS"
 
 \begin_layout Standard
 In the case of IRC+10216, an evolved carbon star with an extended envelope,
- we note that the peak of Stokes 
+ the peak of Stokes 
 \begin_inset Formula $V$
 \end_inset
 
@@ -2893,17 +2891,14 @@ reference "fig:results"
 \begin_inset Formula $I$
 \end_inset
 
- emission, and were concerned that the Stokes 
-\begin_inset Formula $V$
-\end_inset
-
- peak was not even on the object.
- From single-dish CO 
+ emission, which at first glance seems to point to an erroneous detection.
+ However the real size of the CO envelope around IRC+10216 is much larger
+ than seen here, as can be seen from single-dish CO 
 \begin_inset Formula $(J=2\rightarrow1$
 \end_inset
 
-) observations of the shell around IRC+10216 we find the radius of the CO
- shell to be 50
+) observations of the shell around IRC+10216 where the radius is around
+ 50
 \begin_inset Quotes erd
 \end_inset
 
@@ -2915,12 +2910,7 @@ key "Cernicharo2015"
 
 \end_inset
 
-, indicating that the Stokes 
-\begin_inset Formula $V$
-\end_inset
-
- signal is indeed on the object.
- 
+.
 \end_layout
 
 \begin_layout Standard
@@ -2963,7 +2953,14 @@ reference "fig:SiO"
 \begin_inset Formula $I$
 \end_inset
 
- emission is large and extended.
+ emission is large and extended 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Hull2014"
+
+\end_inset
+
+.
  If the Stokes 
 \begin_inset Formula $V$
 \end_inset
@@ -2987,8 +2984,7 @@ reference "fig:SiO"
 \begin_inset Formula $I$
 \end_inset
 
- could then appear to have negative values.
- The smaller Stokes 
+ could then appear to have negative values, while the weaker Stokes 
 \begin_inset Formula $I$
 \end_inset
 
@@ -3000,24 +2996,59 @@ reference "fig:SiO"
 \end_layout
 
 \begin_layout Standard
-Finally we checked and confirmed that there were no Stokes 
+Finally, we checked and confirmed that there were no Stokes 
 \begin_inset Formula $V$
 \end_inset
 
- signals in the continuum larger than those found in molecular lines like
+ signals in the continuum comparable to those found in molecular lines like
  CO and SiO.
- If the detected CP originated from instrumental artifacts then we would
- detect CP at similar levels in the continuum, but this is not seen.
- The level of CP found in molecular transitions is always higher than the
- level of CP in the continuum for the observations presented here.
+ In the continuum, 
+\begin_inset Formula $V/I$
+\end_inset
+
+ was found to be 
+\begin_inset Formula $<$
+\end_inset
+
+1% for Orion KL and IRC+10216 and 
+\begin_inset Formula $<$
+\end_inset
+
+4% in NGC7538.
+ If the detected Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ originated from instrumental artifacts (other than 
+\begin_inset Formula $I$
+\end_inset
+
+ leakage) then we would expect to detect Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ at similar levels in the continuum, but this is not seen.
+ The level of Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ found in molecular transitions is always higher than the level of Stokes
+ 
+\begin_inset Formula $V$
+\end_inset
+
+ in the continuum for the observations presented here, and no significant
+ Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ is found in the continuum.
 \end_layout
 
 \begin_layout Standard
 We therefore feel confident that the CP reported here, although perhaps
  suffering from some level of instrumental contamination, is real and originates
  from within these objects.
- It is important to improve the measurement and calibration of CP for future
- studies of magnetic fields using polarimetry.
 \end_layout
 
 \begin_layout Subsection
@@ -3290,7 +3321,8 @@ This implies that in the chosen basis Stokes
 \begin_inset Formula $V$
 \end_inset
 
-.
+, i.
+ e., more generally, LP is converted to CP.
  A calculation of the phase shift 
 \begin_inset Formula $\phi$
 \end_inset
@@ -3329,8 +3361,31 @@ Now, given a conversion from
 \begin_inset Formula $(J=3\rightarrow2)$
 \end_inset
 
-) will be rotated in a systematic way that changes the dispersion of the
- PAs, as seen in 
+) will be rotated according to 
+\begin_inset Formula 
+\begin{equation}
+\tan(2\chi)=\cos(\phi)\tan(2\chi_{0}),
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\chi_{0}$
+\end_inset
+
+ is the PA of the incident radiation and 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is the incurred phase shift as before 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "eq. 10 of"
+key "Houde2014"
+
+\end_inset
+
+, changing the dispersion of the PAs, as seen in 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Hezareh2013"
@@ -3347,7 +3402,7 @@ key "Hezareh2013"
 Because the DCF method relies on the observed dispersion of PAs using LP,
  any such studies using molecular lines must also include corresponding
  CP measurements to account for the polarization conversion effect and determine
- the needed orientation of the PAs 
+ the correct orientation of the PAs 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Hezareh2013,Chandrasekhar1953,Hildebrand2009,Houde2009"
@@ -3369,7 +3424,7 @@ name "sec:Conclusion"
 \end_inset
 
 We analyzed polarimetric observations from the SMA archive of Orion KL,
- IRC+10216, NGC7538 and NGC1333 to search for CP signals.
+ IRC+10216, NGC7538 and NGC1333 IRAS2A to search for CP signals.
  The data were corrected for squint, a source of spurious Stokes 
 \begin_inset Formula $V$
 \end_inset
@@ -3417,13 +3472,18 @@ CN (
 \end_inset
 
 )).
- We measured relatively important levels of CP ranging from 6%-30% probably
+ We measured relatively important levels of CP ranging from 6%-30%, probably
  due to the interferometric spatial filtering of large scale emission.
+ No significant Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ was found in the continuum of any of the objects.
 \end_layout
 
 \begin_layout Standard
 Theories that explain the presence of non-Zeeman CP in molecular spectral
- lines rely on the conversion of background LP.
+ lines rely on the conversion of background LP to CP.
  The detections in multiple lines and objects presented here indicate that
  such an effect is likely widespread.
  Since the conversion of LP-to-CP modifies the observed dispersion of PAs,
@@ -3693,6 +3753,37 @@ apj
 \end_inset
 
 , 795, 27
+\end_layout
+
+\begin_layout References
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "Hull et al.(2014)"
+key "Hull2014"
+
+\end_inset
+
+Hull, C.
+ L.
+ H., Plambeck, R.
+ L., Kwon, W., Bower, G.
+ C., Carpenter, J.
+ M., Crutcher, R.
+ M., et al.
+ 2014, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+apj
+\end_layout
+
+\end_inset
+
+ Suppl., 213, 13
 \end_layout
 
 \begin_layout References
