@@ -327,21 +327,21 @@ ry, focusing specifically on circular polarization (CP).
  Section 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "sec:Observations"
-
-\end_inset
-
- presents archival observations of four objects made with the SMA on Mauna
- Kea and investigates the reliability of our CP detections.
- Section 
-\begin_inset CommandInset ref
-LatexCommand ref
 reference "sec:Squint-Correction"
 
 \end_inset
 
  will give in detail our scheme for correcting a spurious source of CP that
  arises with the SMA.
+ Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Observations"
+
+\end_inset
+
+ presents archival observations of four objects made with the SMA on Mauna
+ Kea and investigates the reliability of our CP detections.
  Finally, in Section 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -366,12 +366,14 @@ name "sec:Measurement-with-Radio"
 
 The measurement of CP is challenging to calibrate, especially when using
  radio interferometers like the SMA or ALMA.
- The SMA polarimeters normally use a quarter-waveplate (QWP) to convert
- incident LP light to CP light to measure LP signals through cross-correlations.
- While not its most common use, at the SMA, the QWP can work the other way
+ The SMA, which has linear feeds, uses a quarter-waveplate (QWP) in the
+ path of the antenna beam to convert incident LP light to CP light to measure
+ LP signals before sending them to the correlator.
+ While not its most common use at the SMA the QWP can work the other way
  to measure CP: incident CP is converted to LP and then measured by the
  receivers.
- ALMA on the other hand uses linear feeds and measures the LP signals directly.
+ On the other hand, ALMA which also has linear feeds does not use a QWP
+ and measures LP signals directly.
  While both types of feeds can be used to measure CP, the calibration process
  is different 
 \begin_inset CommandInset citation
@@ -568,8 +570,9 @@ key "Marrone2008,Thompson2001"
 \end_layout
 
 \begin_layout Standard
-An output visibility consists of the cross-correlation between the voltage
- signals from a pair of antennae and can be written as 
+The output of the interferometer is the visibility, which consists of the
+ cross-correlation between the voltage signals from a pair of antennae and
+ can be written as 
 \begin_inset Formula 
 \begin{equation}
 \mathcal{V}(u,v)=\frac{\langle V_{a}(t)\star V_{b}(t)\rangle}{A_{0}\Delta\nu},
@@ -660,7 +663,7 @@ key "Thompson2001"
  Thus we have 
 \begin_inset Formula 
 \begin{equation}
-\mathcal{V}(u,v)=\int\int e^{-iul}e^{-ivm}I(l,\,m)\,dldm.
+\mathcal{V}(u,v)=\int\int e^{-iul}e^{-ivm}I(l,\,m)\,dldm.\label{eq:FT}
 \end{equation}
 
 \end_inset
@@ -684,7 +687,7 @@ Given antennae
  visibility in the circular feed case is given by 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Munoz2012"
+key "Thompson2001,Munoz2012"
 
 \end_inset
 
@@ -762,9 +765,16 @@ reference "fig:beforeafter"
 
 \begin_layout Standard
 To correct this offset we first note that since the visibilities are the
- Fourier transform of the intensity map, an offset in image space results
- in a complex factor in visibility space that can be absorbed into the gain
- coefficients.
+ Fourier transform of the intensity map (eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:FT"
+
+\end_inset
+
+), an offset in image space results in a complex factor in visibility space
+ that can be absorbed into the gain coefficients.
  To see this, consider a map 
 \begin_inset Formula $I(l,m)$
 \end_inset
@@ -1048,7 +1058,7 @@ Map of the continuum around 345GHz in Orion KL before (top) and after (bottom)
 \begin_inset Formula $I$
 \end_inset
 
- contours are at 15%, 35%, 55%, 75% and 95% of the peak intensity.
+ contours are at 15%, 50%, and 95% of the peak intensity.
  Blue Stokes 
 \begin_inset Formula $V$
 \end_inset
@@ -1585,12 +1595,12 @@ reference "fig:results"
 \begin_inset Formula $J=8\rightarrow7$
 \end_inset
 
- at 347.3 GHz) are both bright (a peak Stokes 
+ at 347.3 GHz) are both bright (average visibilities show a peak Stokes 
 \begin_inset Formula $I$
 \end_inset
 
- of around 20 Jy/beam and 55 Jy/beam respectively; not shown) and both show
- Stokes 
+ of around 20 Jy/beam and 55 Jy/beam respectively) and both show Stokes
+ 
 \begin_inset Formula $V$
 \end_inset
 
@@ -1607,7 +1617,7 @@ reference "fig:SiO"
 
 \end_inset
 
- shows the peak SiO Stokes 
+ shows that the peak SiO Stokes 
 \begin_inset Formula $V$
 \end_inset
 
@@ -2721,7 +2731,11 @@ Firstly, we take the average of all the visibility data (not shown) and
 \begin_inset Formula $I$
 \end_inset
 
- at 347.25GHz does not indicate a corresponding peak in Stokes 
+ at 347.25GHz (SiO (
+\begin_inset Formula $J=8\rightarrow7)$
+\end_inset
+
+) does not indicate a corresponding peak in Stokes 
 \begin_inset Formula $V$
 \end_inset
 
@@ -2734,9 +2748,21 @@ Firstly, we take the average of all the visibility data (not shown) and
 \begin_inset Formula $V$
 \end_inset
 
-.
- This is true in the average visibilities (not shown) of Orion KL, where
- CO (
+, however excluding the longest baselines from the averaging does cause
+ the Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ signals to follow Stokes 
+\begin_inset Formula $I$
+\end_inset
+
+, pointing to some instrumental CP in the shortest baselines.
+ 
+\end_layout
+
+\begin_layout Standard
+In the average visibilities (not shown) of Orion KL, where CO (
 \begin_inset Formula $J=3\rightarrow2$
 \end_inset
 
@@ -2993,6 +3019,34 @@ key "Hull2014"
 \end_inset
 
  observed.
+\end_layout
+
+\begin_layout Standard
+Since the Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ features shown in the maps of Orion KL and IRC+10216 are compact we made
+ maps excluding the shortest baselines which have instrumental CP as shown
+ from the averaging of the visibilities, and included only the longest baselines.
+ If they are real, we expect the compact features to remain in these maps
+ since the longest baselines have the highest resolution.
+ We saw that the Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ peak remains in the maps of IRC+10216 after excluding more than half of
+ the baselines as expected, however, the signal in Orion KL appears to disappear
+ after excluding the shortest half of the baseline distances.
+ This may indicate that the peak shown in Orion KL in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:results"
+
+\end_inset
+
+ is instrumental however we include it due to the notable features of its
+ spectra.
 \end_layout
 
 \begin_layout Standard
