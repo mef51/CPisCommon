@@ -206,6 +206,7 @@ key "Goldreich1981"
 \end_inset
 
 .
+ ***All the detections of GK here***.
  As with dust, the PA associated with the LP in the spectral line can be
  measured and used to infer properties of the magnetic field through a dispersio
 n analysis 
@@ -1114,6 +1115,25 @@ The four objects we present here are Orion KL, NGC7538, NGC1333 IRAS2A and
  IRC+10216.
  The first three are well-known star-forming regions, while IRC+10216 is
  an evolved carbon star.
+ The data for Orion KL were previously used for a dust polarization study
+ in 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Tang2010"
+
+\end_inset
+
+, and the data for IRC+10216 was previously used for spectral line polarimetry
+ in 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Girart2012"
+
+\end_inset
+
+.
+ The archival data for NGC1333 IRAS2A and NGC7538 used here have not been
+ published before as far as we are aware.
  We find significant Stokes 
 \begin_inset Formula $V$
 \end_inset
@@ -3640,6 +3660,34 @@ Davis, L., Jr.
 \begin_layout References
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
+label "Girart et al.(2012)"
+key "Girart2012"
+
+\end_inset
+
+Girart, J.
+ M., Patel, N., Vlemmings, W.
+ H.
+ T., & Rao, R.
+ 2012, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+apj
+\end_layout
+
+\end_inset
+
+, 751, L20.
+\end_layout
+
+\begin_layout References
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
 label "Goldreich \\& Kylafis(1981)"
 key "Goldreich1981"
 
@@ -3953,6 +4001,34 @@ Schwab, F.
  R.
  1980, Proc.
  SPIE 0231, Intl Optical Computing Conf I
+\end_layout
+
+\begin_layout References
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "Tang et al.(2010)"
+key "Tang2010"
+
+\end_inset
+
+Tang, Y.-W., Ho, P.
+ T.
+ P., Koch, P.
+ M., & Rao, R.
+ 2010, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+apj
+\end_layout
+
+\end_inset
+
+, 717, 1262.
 \end_layout
 
 \begin_layout References
