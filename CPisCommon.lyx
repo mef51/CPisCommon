@@ -198,7 +198,7 @@ key "Davis1951,Chandrasekhar1953,Crutcher2012"
 \begin_layout Standard
 The alignment of molecules and their interaction with the ambient magnetic
  field can cause their transitions to be linearly polarized by a few percent
- through the so-called Goldreich-Kylafis effect 
+ through the so-called Goldreich-Kylafis (GK) effect 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Goldreich1981"
@@ -206,7 +206,47 @@ key "Goldreich1981"
 \end_inset
 
 .
- ***All the detections of GK here***.
+ LP due to the GK effect was first detected in CS (
+\begin_inset Formula $J=2\rightarrow1)$
+\end_inset
+
+ and HCN 
+\begin_inset Formula $(J=1\rightarrow0$
+\end_inset
+
+) in IRC+10216 and CRL 2688 by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Glenn1997"
+
+\end_inset
+
+ and later in CO (
+\begin_inset Formula $J=3\rightarrow2$
+\end_inset
+
+) and (
+\begin_inset Formula $J=2\rightarrow1)$
+\end_inset
+
+ by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Greaves1999"
+
+\end_inset
+
+.
+ Shortly after, LP from the GK effect was detected interferometrically for
+ the first time and used to map the direction of the magnetic field in NGC1333
+ IRAS4A 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Girart1999"
+
+\end_inset
+
+.
  As with dust, the PA associated with the LP in the spectral line can be
  measured and used to infer properties of the magnetic field through a dispersio
 n analysis 
@@ -217,12 +257,25 @@ key "Davis1951,Chandrasekhar1953,Crutcher2012"
 \end_inset
 
 .
- 
+ Observations of DR 21(OH) of LP in CO 
+\begin_inset Formula $(J=2\rightarrow1)$
+\end_inset
+
+ were compared with simultaneous dust continuum polarization measurements
+ to assess the accuracy in using the GK effect to probe the magnetic field,
+ finding that the two maps were well correlated 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Lai2003,Cortes2005"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-For molecular lines non-Zeeman circular polarization (CP) is usually ignored,
- largely because of difficulty in its measurement and its assumed irrelevance.
+For molecular lines circular polarization (CP) is usually ignored, largely
+ because of difficulty in its measurement and its assumed irrelevance.
  However, a significant amount of unexpected circular polarization was reported
  by 
 \begin_inset CommandInset citation
@@ -1123,7 +1176,7 @@ key "Tang2010"
 
 \end_inset
 
-, and the data for IRC+10216 was previously used for spectral line polarimetry
+, and the data for IRC+10216 were previously used for spectral line polarimetry
  in 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -3605,6 +3658,35 @@ apj
 \begin_layout References
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
+label "Cortes et al.(2005)"
+key "Cortes2005"
+
+\end_inset
+
+Cortes, P.
+ C., Crutcher, R.
+ M.
+ & Watson, W.
+ D.
+ 2005, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+apj
+\end_layout
+
+\end_inset
+
+, 628, 780.
+\end_layout
+
+\begin_layout References
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
 label "Cotton et al.(2011)"
 key "Cotton2011"
 
@@ -3660,6 +3742,34 @@ Davis, L., Jr.
 \begin_layout References
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
+label "Girart et al.(1999)"
+key "Girart1999"
+
+\end_inset
+
+Girart, J.
+ M., Crutcher, R.
+ M.
+ & Rao, R.
+ 1999, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+apj
+\end_layout
+
+\end_inset
+
+, 525, L109.
+\end_layout
+
+\begin_layout References
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
 label "Girart et al.(2012)"
 key "Girart2012"
 
@@ -3688,6 +3798,33 @@ apj
 \begin_layout References
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
+label "Glenn et al.(1997)"
+key "Glenn1997"
+
+\end_inset
+
+Glenn, J., Walker, C.
+ K., Bieging, J.
+ H., et al.
+ 1997, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+apj
+\end_layout
+
+\end_inset
+
+, 487, L89.
+\end_layout
+
+\begin_layout References
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
 label "Goldreich \\& Kylafis(1981)"
 key "Goldreich1981"
 
@@ -3709,6 +3846,33 @@ apj
 \end_inset
 
 , 243, L75-L78
+\end_layout
+
+\begin_layout References
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "Greaves et al.(1999)"
+key "Greaves1999"
+
+\end_inset
+
+Greaves, J.
+ S., Holland, W.
+ S., Friberg, P., et al.
+ 1999, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+apj
+\end_layout
+
+\end_inset
+
+, 512, L139.
 \end_layout
 
 \begin_layout References
@@ -3942,6 +4106,34 @@ Marrone D.
  & Rao R.
  2008, Proc.
  SPIE 7020, 70202B
+\end_layout
+
+\begin_layout References
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "Lai et al.(2003)"
+key "Lai2003"
+
+\end_inset
+
+Lai, S.-P., Girart, J.
+ M.
+ & Crutcher, R.
+ M.
+ 2003, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+apj
+\end_layout
+
+\end_inset
+
+, 598, 392.
 \end_layout
 
 \begin_layout References
