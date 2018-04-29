@@ -3123,6 +3123,44 @@ reference "fig:results"
 \end_layout
 
 \begin_layout Standard
+Since the instrumental polarization is found at the phase center the level
+ of instrumental CP is in general greater the further the peak is from the
+ center of the map.
+ The peaks shown for Orion KL and NGC7538 (Figures 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:results"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:iras2a"
+
+\end_inset
+
+) are further than 10
+\begin_inset Quotes erd
+\end_inset
+
+ from the center, meaning the likelihood of instrumental contamination is
+ high.
+ ***Discuss behaviour of peak 
+\begin_inset Formula $V$
+\end_inset
+
+ position for the spectra shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:beforeafterspec"
+
+\end_inset
+
+.***
+\end_layout
+
+\begin_layout Standard
 Finally, we checked and confirmed that there were no Stokes 
 \begin_inset Formula $V$
 \end_inset
@@ -3173,9 +3211,9 @@ Finally, we checked and confirmed that there were no Stokes
 \end_layout
 
 \begin_layout Standard
-We therefore feel confident that the CP reported here, although perhaps
- suffering from some level of instrumental contamination, is real and originates
- from within these objects.
+We feel confident that the CP reported here, although perhaps suffering
+ from some level of instrumental contamination, is real and originates from
+ within these objects.
 \end_layout
 
 \begin_layout Subsection
