@@ -1979,6 +1979,15 @@ imstat
 \end_inset
 
  and 0.17 Jy/beam, for Orion KL and IRC+10216, respectively.
+ The distance of the peak to the phase center is 15
+\begin_inset Quotes erd
+\end_inset
+
+ and 6
+\begin_inset Quotes erd
+\end_inset
+
+, respectively.
  Dark red contours are Stokes 
 \begin_inset Formula $I$
 \end_inset
@@ -2109,6 +2118,11 @@ reference "fig:results"
 \end_inset
 
  Jy/beam, respectively.
+ The distance of the peak to the phase center is 13
+\begin_inset Quotes erd
+\end_inset
+
+ for NGC7538.
 \end_layout
 
 \end_inset
@@ -2190,6 +2204,8 @@ maxfit
 \end_inset
 
  signal decreases in all cases after squint correction.
+ The location of the peak varies: sometimes it moves closer to the phase
+ center after correction, sometimes further away.
 \end_layout
 
 \end_inset
@@ -3123,9 +3139,9 @@ reference "fig:results"
 \end_layout
 
 \begin_layout Standard
-Since the instrumental polarization is found at the phase center the level
- of instrumental CP is in general greater the further the peak is from the
- center of the map.
+The level of instrumental CP is in general greater the further the peak
+ is from the center of the map since the instrumental polarization is found
+ at the phase center.
  The peaks shown for Orion KL and NGC7538 (Figures 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -3140,24 +3156,8 @@ reference "fig:iras2a"
 
 \end_inset
 
-) are further than 10
-\begin_inset Quotes erd
-\end_inset
-
- from the center, meaning the likelihood of instrumental contamination is
- high.
- ***Discuss behaviour of peak 
-\begin_inset Formula $V$
-\end_inset
-
- position for the spectra shown in Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:beforeafterspec"
-
-\end_inset
-
-.***
+) are several FWHMs of the beam away from the center, meaning the level
+ of instrumental contamination in those peaks is likely higher.
 \end_layout
 
 \begin_layout Standard
