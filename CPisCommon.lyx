@@ -171,7 +171,7 @@ Understanding the role of magnetic fields in star-forming regions allows
  clouds, filling in details about the star formation process.
  By measuring the radiation from star-forming regions astronomers use polarimetr
 y to infer the magnitude and orientation of the magnetic field.
- The Davis-Chandrasekhar-Fermi (DCF) 
+ The Davis-Chandrasekhar-Fermi (DCF) method 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Davis1951,Chandrasekhar1953"
@@ -261,13 +261,13 @@ key "Davis1951,Chandrasekhar1953,Crutcher2012"
 \end_inset
 
 .
- Observations of DR 21(OH) of LP in CO 
+ Observations in DR 21(OH) of LP in CO 
 \begin_inset Formula $(J=2\rightarrow1)$
 \end_inset
 
  were compared with simultaneous dust continuum polarization measurements
- to assess the accuracy in using the GK effect to probe the magnetic field,
- finding that the two maps were well correlated 
+ to assess the accuracy in using the GK effect to probe the magnetic field
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Lai2003,Cortes2005"
@@ -349,8 +349,8 @@ key "Hezareh2013"
 ) were `re-inserted' into the measured LP flux to account for the LP-to-CP
  conversion and its effect on the PA.
  They found that the PAs obtained from the different CO transitions only
- agreed with each other and those obtained from dust polarimetry after the
- CP flux was accounted for.
+ agreed with each other and with those obtained from dust polarimetry after
+ the CP flux was accounted for.
  If ARS is common to other objects then using LP in CO as a tracer of the
  magnetic field will introduce a systematic error unless the CP of CO lines
  is also measured.
@@ -442,7 +442,7 @@ key "Sault1996"
 
 .
  Despite the calibration challenges the SMA has been used to take precise
- measurements of CP in Sgr A* 
+ measurements of CP from dust continuum in Sgr A* 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Munoz2012"
@@ -455,7 +455,14 @@ key "Munoz2012"
  vice-versa) see 
 \begin_inset CommandInset citation
 LatexCommand citet
-key "Hamaker1996,Marrone2008"
+key "Hamaker1996"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Marrone2008"
 
 \end_inset
 
@@ -524,7 +531,7 @@ Now, when the measurement is made with interferometry it is the visibilities
 \begin_inset Formula $\mathcal{V}_{\text{V}}\propto\text{\mathcal{V}}_{RR}-\text{\mathcal{V}}_{LL}$
 \end_inset
 
- where 
+, where 
 \begin_inset Formula $\text{\mathcal{V}}_{RR}$
 \end_inset
 
@@ -532,7 +539,7 @@ Now, when the measurement is made with interferometry it is the visibilities
 \begin_inset Formula $\text{\mathcal{V}}_{LL}$
 \end_inset
 
- are the visibilities obtained from correlating two antenna measuring right-CP
+ are the visibilities obtained from correlating two antennae measuring right-CP
  and left-CP, respectively (see eq.
  
 \begin_inset CommandInset ref
@@ -592,7 +599,7 @@ We now describe spurious Stokes
 \end_inset
 
  signals that can arise during observations such as those presented here
- and our scheme for correcting it.
+ and our scheme for correcting them.
  This instrumental Stokes 
 \begin_inset Formula $V$
 \end_inset
@@ -658,7 +665,7 @@ where
 \begin_inset Formula $V_{b}(t)$
 \end_inset
 
- from antenna 
+ from antennae 
 \begin_inset Formula $a$
 \end_inset
 
@@ -721,7 +728,7 @@ key "Thompson2001"
  Thus we have 
 \begin_inset Formula 
 \begin{equation}
-\mathcal{V}(u,v)=\int\int e^{-iul}e^{-ivm}I(l,\,m)\,dldm.\label{eq:FT}
+\mathcal{V}(u,v)=\int\int e^{-iul}e^{-ivm}I(l,\,m)\,dl\,dm.\label{eq:FT}
 \end{equation}
 
 \end_inset
@@ -767,7 +774,7 @@ where
 
  are the right-handed CP and left-handed CP visibilities, respectively,
  measured by appropriately orienting the QWP that is placed in the beam
- of the antennae and correlating the antenna responses 
+ of the antennae and correlating their responses 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Marrone2008"
@@ -980,7 +987,7 @@ RR
  
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Sault2008,Schwab1980"
+key "Schwab1980,Sault2008"
 
 \end_inset
 
@@ -1159,7 +1166,7 @@ key "Munoz2012"
 
 \end_inset
 
- to measure circular polarization in Sgr A*.
+ to measure circular polarization from dust continuum in Sgr A*.
  Because the archival observations were not taken with measurements of CP
  in mind the SNR is often low, and we had to average velocity channels to
  increase it at the cost of spectral resolution.
@@ -1676,7 +1683,7 @@ reference "fig:results"
 \begin_inset Formula $I$
 \end_inset
 
- of around 20 Jy/beam and 55 Jy/beam respectively) and both show Stokes
+ of around 20 Jy/beam and 55 Jy/beam, respectively) and both show Stokes
  
 \begin_inset Formula $V$
 \end_inset
@@ -2104,7 +2111,8 @@ reference "fig:results"
 \begin_inset Formula $V$
 \end_inset
 
- signal is detected in NGC7538, probably because the object is too dim.
+ signal is detected in NGC1333 IRAS2A, probably because the object is too
+ dim.
  Contours are the same levels as in Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2197,8 +2205,8 @@ Stokes
 \family typewriter
 maxfit
 \family default
- is used on the CO map for each respective object to obtain the location
- in the image where the Stokes 
+ is used on the CO map for each object to obtain the location in the image
+ where the Stokes 
 \begin_inset Formula $V$
 \end_inset
 
@@ -2855,7 +2863,7 @@ Firstly, we take the average of all the visibility data (not shown) and
 \end_layout
 
 \begin_layout Standard
-In the average visibilities (not shown) of Orion KL, where CO (
+In the average visibilities (not shown) of Orion KL CO (
 \begin_inset Formula $J=3\rightarrow2$
 \end_inset
 
@@ -2863,11 +2871,11 @@ In the average visibilities (not shown) of Orion KL, where CO (
 \begin_inset Formula $J=8\rightarrow7$
 \end_inset
 
-) are the strongest lines, and the SiO (
+) are the strongest lines, with the SiO (
 \begin_inset Formula $J=8\rightarrow7$
 \end_inset
 
-) line is stronger.
+) line the stronger.
  Therefore, if the Stokes 
 \begin_inset Formula $V$
 \end_inset
@@ -2930,7 +2938,7 @@ CN
 \begin_inset Formula $I$
 \end_inset
 
- intensity (stronger 
+ intensity (i.e., stronger 
 \begin_inset Formula $I$
 \end_inset
 
@@ -3012,12 +3020,11 @@ reference "fig:results"
 
  emission, which at first glance seems to point to an erroneous detection.
  However the real size of the CO envelope around IRC+10216 is much larger
- than seen here, as can be seen from single-dish CO 
+ than seen here, as can be verified from single-dish CO 
 \begin_inset Formula $(J=2\rightarrow1$
 \end_inset
 
-) observations of the shell around IRC+10216 where the radius is around
- 50
+) observations showing a circumstellar shell with a radius of about 50
 \begin_inset Quotes erd
 \end_inset
 
@@ -3060,7 +3067,7 @@ reference "fig:SiO"
 
 \end_inset
 
-, as well as the high levels of CP that range from 6% to 30%.
+, as well as the high levels of CP ranging from 6% to 30%.
  The largest resolvable scale by an interferomter is determined by the length
  of the shortest baseline, meaning that large scale emission can be filtered
  out by the interferometer.
@@ -3120,7 +3127,7 @@ Since the Stokes
 \end_inset
 
  features shown in the maps of Orion KL and IRC+10216 are compact we made
- maps excluding the shortest baselines which have instrumental CP as shown
+ maps excluding the shortest baselines, which have instrumental CP as shown
  from the averaging of the visibilities, and included only the longest baselines.
  If they are real, we expect the compact features to remain in these maps
  since the longest baselines have the highest resolution.
@@ -3138,8 +3145,7 @@ reference "fig:results"
 
 \end_inset
 
- is instrumental however we include it due to the notable features of its
- spectra.
+ is instrumental.
 \end_layout
 
 \begin_layout Standard
@@ -3179,7 +3185,7 @@ Finally, we checked and confirmed that there were no Stokes
 \begin_inset Formula $<$
 \end_inset
 
-1% for Orion KL and IRC+10216 and 
+1% for Orion KL and IRC+10216, and 
 \begin_inset Formula $<$
 \end_inset
 
@@ -3279,7 +3285,8 @@ CO
 \begin_inset Formula $(J=3\rightarrow2)$
 \end_inset
 
- at 345.8 GHz (except for in NGC1333 where the CO line is relatively weak).
+ at 345.8 GHz (except for in NGC1333 IRAS2A where the CO line is relatively
+ weak).
  This is consistent with the original 2013 detection.
 \end_layout
 
@@ -3490,8 +3497,7 @@ This implies that in the chosen basis Stokes
 \begin_inset Formula $V$
 \end_inset
 
-, i.
- e., more generally, LP is converted to CP.
+, i.e., more generally, LP is converted to CP.
  A calculation of the phase shift 
 \begin_inset Formula $\phi$
 \end_inset
@@ -4097,6 +4103,20 @@ apj
 \begin_layout References
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
+label "Hunter(2007)"
+key "Hunter2007"
+
+\end_inset
+
+Hunter, J.
+ D.
+ 2007, Matplotlib: A 2D Graphics Environment, Computing in Science & Engineering
+, 9, 3, 90-95
+\end_layout
+
+\begin_layout References
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
 label "Mu\\~{n}oz et al.(2012)"
 key "Munoz2012"
 
@@ -4278,19 +4298,6 @@ Thompson, A.
  M., & Swenson Jr, G.
  W.
  2001, Interferometry and synthesis in radio astronomy (John Wiley & Sons)
-\end_layout
-
-\begin_layout References
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-label "J. P. Vallée(2011)"
-key "Vallee2011"
-
-\end_inset
-
-Vallée, J.
- P.
- 2011, New Astronomy Reviews 55, 23–90
 \end_layout
 
 \end_body
