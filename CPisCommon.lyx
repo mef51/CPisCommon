@@ -1871,7 +1871,7 @@ vspace{-1cm}
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename figures/Orion KL.map.spec.co3-2peakv.pdf
+	filename figures/OrionKL.map.spec.co3-2peakv.pdf
 	lyxscale 70
 	scale 35
 
@@ -2239,7 +2239,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename figures/Orion KL.map.spec.sio8-7peakv.pdf
+	filename figures/OrionKL.map.spec.sio8-7peakv.pdf
 	lyxscale 70
 	scale 37
 	BoundingBox 50bp 0bp 740bp 612bp
@@ -3674,7 +3674,7 @@ key "Cernicharo2015"
 
 \end_inset
 
-Cernicharo, J., Marcelino, N., Agúndez M., & Guéllin, M.
+Cernicharo, J., Marcelino, N., Agúndez M., Guéllin, M.
  2015 A&A, 575, A91
 \end_layout
 
@@ -3686,7 +3686,7 @@ key "Chandrasekhar1953"
 
 \end_inset
 
-Chandrasekhar, S., & Fermi, E.
+Chandrasekhar, S., Fermi, E.
  1953 
 \begin_inset ERT
 status open
@@ -3713,8 +3713,7 @@ key "Cortes2005"
 
 Cortes, P.
  C., Crutcher, R.
- M.
- & Watson, W.
+ M., Watson, W.
  D.
  2005, 
 \begin_inset ERT
@@ -3741,7 +3740,7 @@ key "Cotton2011"
 \end_inset
 
 Cotton, W.
- D., Ragland, S., & Danchi, W.
+ D., Ragland, S., Danchi, W.
  C.
  2011, 
 \begin_inset ERT
@@ -3797,8 +3796,7 @@ key "Girart1999"
 
 Girart, J.
  M., Crutcher, R.
- M.
- & Rao, R.
+ M., Rao, R.
  1999, 
 \begin_inset ERT
 status open
@@ -3826,7 +3824,7 @@ key "Girart2012"
 Girart, J.
  M., Patel, N., Vlemmings, W.
  H.
- T., & Rao, R.
+ T., Rao, R.
  2012, 
 \begin_inset ERT
 status open
@@ -3933,7 +3931,7 @@ key "Hamaker1996"
 
 Hamaker, J.
  P., Bregman, J.
- D., & Sault, R.
+ D., Sault, R.
  J.
  1996 A&A Suppl.
  Ser., 117, 137-147
@@ -4003,7 +4001,7 @@ key "Houde2009"
 
 Houde, M., Vaillancourt, J.
  E., Hildebrand, R.
- H., Chitsazzadeh, S., & Kirby, L., 2009 
+ H., Chitsazzadeh, S., Kirby, L., 2009 
 \begin_inset ERT
 status open
 
@@ -4027,7 +4025,7 @@ key "Houde2013"
 
 \end_inset
 
-Houde, M., Hezareh, T., Jones, S., & Rajabi, F.
+Houde, M., Hezareh, T., Jones, S., Rajabi, F.
  2013 
 \begin_inset ERT
 status open
@@ -4138,7 +4136,7 @@ status open
 oz, D.
  J., Marrone, D.
  P., Moran, J.
- M., & Rao, R.
+ M., Rao, R.
  2012 
 \begin_inset ERT
 status open
@@ -4164,8 +4162,7 @@ key "Marrone2008"
 \end_inset
 
 Marrone D.
- P.
- & Rao R.
+ P., Rao R.
  2008, Proc.
  SPIE 7020, 70202B
 \end_layout
@@ -4179,8 +4176,7 @@ key "Lai2003"
 \end_inset
 
 Lai, S.-P., Girart, J.
- M.
- & Crutcher, R.
+ M., Crutcher, R.
  M.
  2003, 
 \begin_inset ERT
@@ -4209,7 +4205,7 @@ key "Sault1995"
 Sault, R.
  J., Teuben, P.
  J.
- & Wright M.
+ Wright, M.
  C.
  H.
  1995 ADASS IV, ASP Conference Series, 77, 433-436
@@ -4225,7 +4221,8 @@ key "Sault1996"
 
 Sault, R.
  J., Hamaker, J.
- P., & Bregman, J., D.
+ P., Bregman, J.
+ D.
  1996 A&A Suppl.
  Ser., 117, 149-159
 \end_layout
@@ -4268,7 +4265,7 @@ key "Tang2010"
 Tang, Y.-W., Ho, P.
  T.
  P., Koch, P.
- M., & Rao, R.
+ M., Rao, R.
  2010, 
 \begin_inset ERT
 status open
@@ -4295,7 +4292,7 @@ key "Thompson2001"
 
 Thompson, A.
  R., Moran, J.
- M., & Swenson Jr, G.
+ M., Swenson Jr, G.
  W.
  2001, Interferometry and synthesis in radio astronomy (John Wiley & Sons)
 \end_layout
