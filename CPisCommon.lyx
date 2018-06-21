@@ -7,6 +7,7 @@
 \textclass aastex6
 \begin_preamble
 
+\renewcommand{\lyxadded}[3]{{\color{olive}\uline{#3}}}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -67,11 +68,12 @@
 \papercolumns 2
 \papersides 1
 \paperpagestyle default
-\tracking_changes false
-\output_changes false
+\tracking_changes true
+\output_changes true
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\author 404807697 "mohammed,,,"
 \end_header
 
 \begin_body
@@ -90,11 +92,11 @@ Mohammed Afif Chamma
 \end_inset
 
 , Josep Miquel Girart
-\begin_inset Formula $^{2}$
+\begin_inset Formula $^{2,3}$
 \end_inset
 
  and Ramprasad Rao
-\begin_inset Formula $^{3}$
+\begin_inset Formula $^{4}$
 \end_inset
 
 
@@ -114,10 +116,24 @@ Department of Physics and Astronomy, The University of Western Ontario,
 
 Institut de Ciències de l'Espai (IEEC-CSIC), Can Magrans, S/N, E-08193 Cerdanyol
 a del Vallès, Catalonia, Spain
+\change_inserted 404807697 1529605135
+
 \end_layout
 
 \begin_layout Affiliation
+
+\change_inserted 404807697 1529605181
 \begin_inset Formula $^{3}$
+\end_inset
+
+Institut d'Estudis Espacials de Catalunya (IEEC), E-08034, Barcelona, Catalonia
+ 
+\change_unchanged
+
+\end_layout
+
+\begin_layout Affiliation
+\begin_inset Formula $^{4}$
 \end_inset
 
 Submillimeter Array, Academia Sinica Institute of Astronomy and Astrophysics,
@@ -361,17 +377,25 @@ key "Hezareh2013"
 The main goal of this paper is to find further evidence of CP in more objects
  and molecular lines through a search of archival data of the Submillimeter
  Array (SMA
+\change_deleted 404807697 1529605084
+
 \begin_inset Foot
 status collapsed
 
 \begin_layout Plain Layout
+
+\change_deleted 404807697 1529605027
 The Submillimeter Array is a joint project between the Smithsonian Astrophysical
  Observatory and the Academia Sinica Institute of Astronomy and Astrophysics
  and is funded by the Smithsonian Institution and the Academia Sinica.
+\change_unchanged
+
 \end_layout
 
 \end_inset
 
+
+\change_unchanged
 ).
  In Section 
 \begin_inset CommandInset ref
@@ -481,18 +505,30 @@ To illustrate briefly the differences between the two feed types consider
 \end_inset
 
  parameter for a beam of radiation is defined by 
-\begin_inset Formula $V\propto\langle E_{L}^{2}\rangle-\langle E_{R}^{2}\rangle$
+\begin_inset Formula $V\propto\langle E_{R}^{2}\rangle-\langle E_{L}^{2}\rangle$
 \end_inset
 
 , where 
-\begin_inset Formula $E_{L}$
-\end_inset
-
- and 
 \begin_inset Formula $E_{R}$
 \end_inset
 
- are the left-CP and right-CP electric fields, respectively.
+ and 
+\begin_inset Formula $E_{L}$
+\end_inset
+
+ are the 
+\change_deleted 404807697 1529605325
+left
+\change_inserted 404807697 1529605326
+right
+\change_unchanged
+-CP and 
+\change_deleted 404807697 1529605329
+right
+\change_inserted 404807697 1529605329
+left
+\change_unchanged
+-CP electric fields, respectively.
  With an orthogonal LP basis Stokes 
 \begin_inset Formula $V$
 \end_inset
@@ -581,6 +617,47 @@ key "Thompson2001"
  of any calibration object must be measured as well.
  This is not possible with the SMA setup used for the observations discussed
  here.
+\change_inserted 404807697 1529606974
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 404807697 1529607790
+The SMA uses observations of a bright point source over a large range of
+ parallactic angles to distinguish between source and instrumental polarization
+ and determine the polarization leakage terms.
+ Determining these leakage terms is crucial for accurate Stokes 
+\begin_inset Formula $Q$
+\end_inset
+
+ and 
+\begin_inset Formula $U$
+\end_inset
+
+ measurements, however Stokes 
+\begin_inset Formula $I$
+\end_inset
+
+ and 
+\begin_inset Formula $V$
+\end_inset
+
+ are independent of the leakage terms to first-order 
+\change_unchanged
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Thompson2001,Marrone2008,Munoz2012"
+
+\end_inset
+
+
+\change_inserted 404807697 1529607601
+.
+
+\change_unchanged
+ 
 \end_layout
 
 \begin_layout Section
@@ -734,6 +811,18 @@ key "Thompson2001"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 404807697 1529612348
+In practice the true source intensity 
+\begin_inset Formula $I(l,m)$
+\end_inset
+
+ is convolved with the instrumental response to a point source, called the
+ instrumental beam, and a deconvolution step is necessary to obtain the
+ true map.
 \end_layout
 
 \begin_layout Standard
@@ -924,7 +1013,18 @@ key "Sault2008"
 
 \begin_layout Enumerate
 The visibilities are split into line-free continuum and line data.
- These are then mapped and used to obtain CLEAN models.
+ These are then mapped and used to obtain CLEAN models
+\change_inserted 404807697 1529611396
+ (using the `clean' algorithm)
+\change_unchanged
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Sault2008"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Enumerate
@@ -1031,9 +1131,55 @@ RL
 \emph on
 LR
 \emph default
-) are recombined and inverted to produce corrected maps.
+) are recombined and inverted to produce corrected
+\change_inserted 404807697 1529612639
+ and cleaned
+\change_unchanged
+ maps.
  Spectra can be obtained either from the corrected visibilities or the maps.
  
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 404807697 1529613317
+Note that in the deconvolution steps (steps 2 and 5) the same instrumental
+ beam is used for all polarizations.
+ This is due to the behaviour of 
+\emph on
+Miriad
+\emph default
+'s 
+\family typewriter
+invert
+\family default
+, which produces a single instrumental beam corresponding to all image planes
+ and Stokes parameters 
+\change_unchanged
+
+\begin_inset CommandInset citation
+LatexCommand citep
+before "sec. 13.4 of"
+key "Sault2008"
+
+\end_inset
+
+
+\change_inserted 404807697 1529613366
+.
+ We checked that the instrumental response to different polarizations was
+ similar by inverting the 
+\begin_inset Formula $LL$
+\end_inset
+
+- and 
+\begin_inset Formula $RR$
+\end_inset
+
+-handed visibilities separately from one other and finding that the instrumental
+ beams for both polarizations to be almost identical.
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -1158,8 +1304,13 @@ name "sec:Observations"
 \end_inset
 
 We collected radio interferometric polarimetry observations from the Submillimet
-er Array (SMA) archive that had been measured using the circular feeds,
- a similar setup to that used by 
+er Array (SMA) archive that had been measured using the 
+\change_deleted 404807697 1529613747
+circular feeds
+\change_inserted 404807697 1529613756
+linear-to-circular QWP equipment
+\change_unchanged
+, a similar setup to that used by 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Munoz2012"
@@ -1226,7 +1377,7 @@ status open
 <features booktabs="true" tabularvalignment="middle">
 <column alignment="left" valignment="top" width="19col%">
 <column alignment="left" valignment="top" width="33col%">
-<column alignment="right" valignment="top" width="20col%">
+<column alignment="right" valignment="top" width="15col%">
 <column alignment="right" valignment="top" width="25col%">
 <row>
 <cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
@@ -1320,7 +1471,7 @@ Dec -05
 
 \end_inset
 </cell>
-<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1380,7 +1531,7 @@ Dec +61
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1440,7 +1591,7 @@ Dec +13
 
 \end_inset
 </cell>
-<cell alignment="right" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1500,7 +1651,7 @@ Dec +31
 
 \end_inset
 </cell>
-<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3664,6 +3815,20 @@ Theories that explain the presence of non-Zeeman CP in molecular spectral
  Since the conversion of LP-to-CP modifies the observed dispersion of PAs,
  it is necessary to obtain precise measurements of CP along with LP for
  corresponding studies of the magnetic field in the interstellar medium.
+\change_inserted 404807697 1529604903
+
+\end_layout
+
+\begin_layout Acknowledgements
+
+\change_inserted 404807697 1529605064
+The Submillimeter Array is a joint project between the Smithsonian Astrophysical
+ Observatory and the Academia Sinica Institute of Astronomy and Astrophysics
+ and is funded by the Smithsonian Institution and the Academia Sinica.
+ J.M.G is supported by the MINECO (Spain) AYA2014-57369-C3 and AYA2017-84390-C2
+ grants.
+\change_unchanged
+
 \end_layout
 
 \begin_layout References
