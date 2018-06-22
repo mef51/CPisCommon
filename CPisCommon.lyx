@@ -226,7 +226,17 @@ key "Goldreich1981"
 \end_inset
 
 .
- LP due to the GK effect was first detected in CS (
+ 
+\change_inserted 404807697 1529699996
+The GK effect can occur when a molecule with even weak Zeeman splitting
+ is in a medium with some anisotropy and the splitting frequency is greater
+ than the collisional rate and other misaligning processes.
+ This causes a population imbalance in the levels of the split lines that
+ results in a net LP aligned either perpendicular or parallel to the magnetic
+ field.
+ 
+\change_unchanged
+LP due to the GK effect was first detected in CS (
 \begin_inset Formula $J=2\rightarrow1)$
 \end_inset
 
@@ -456,8 +466,13 @@ The measurement of CP is challenging to calibrate, especially when using
  receivers.
  On the other hand, ALMA which also has linear feeds does not use a QWP
  and measures LP signals directly.
- While both types of feeds can be used to measure CP, the calibration process
- is different 
+ While both 
+\change_deleted 404807697 1529691766
+types of feeds 
+\change_inserted 404807697 1529691774
+measurement techniques 
+\change_unchanged
+can be used to measure CP, the calibration process is different 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Sault1996"
@@ -474,7 +489,54 @@ key "Munoz2012"
 \end_inset
 
 .
- For a discussion on measuring CP with radio interferometry and on design
+ 
+\change_inserted 404807697 1529691145
+Additionally, the VLBA, equipped with circular feeds, has been used to take
+ full Stokes 
+\begin_inset Formula $I$
+\end_inset
+
+, 
+\begin_inset Formula $Q$
+\end_inset
+
+, 
+\begin_inset Formula $U$
+\end_inset
+
+, and 
+\begin_inset Formula $V$
+\end_inset
+
+ measurements of SiO masers at 43.1 and 42.8 GHz
+\change_unchanged
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Cotton2011"
+
+\end_inset
+
+
+\change_inserted 404807697 1529691037
+.
+ In that work a correction for spurious CP analogous to the correction detailed
+ in Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Squint-Correction"
+
+\end_inset
+
+ is performed for accurate calibration of Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+For a discussion on measuring CP with radio interferometry and on design
  choices at the SMA (such as the choice of converting from LP-to-CP and
  vice-versa) see 
 \begin_inset CommandInset citation
@@ -3483,6 +3545,70 @@ key "Hezareh2013"
 .
  This result clearly establishes a conversion from linear to circular polarizati
 on.
+\change_inserted 404807697 1529691635
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 404807697 1529693875
+The detections of CP in SiO (
+\begin_inset Formula $\nu=1$
+\end_inset
+
+ and 
+\begin_inset Formula $\nu=2$
+\end_inset
+
+, 
+\begin_inset Formula $J=1\rightarrow0$
+\end_inset
+
+) masers at 43.1 and 42.8 GHz respectively were observed to have line profile
+ shapes inconsistent with the Zeeman effect 
+\change_unchanged
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Cotton2011"
+
+\end_inset
+
+
+\change_inserted 404807697 1529693357
+.
+ However, an attempt to explain the Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+ shapes with a non-Zeeman mechanism put forward by 
+\change_unchanged
+
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Wiebe1998"
+
+\end_inset
+
+
+\change_inserted 404807697 1529693806
+ failed
+\change_unchanged
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Cotton2011"
+
+\end_inset
+
+
+\change_inserted 404807697 1529693806
+.
+ We note that the SiO maser observations underwent a similar self-calibration-ba
+sed process to correct for beam squint as the observations presented here.
+ 
+\change_unchanged
+
 \end_layout
 
 \begin_layout Subsection
@@ -3528,7 +3654,11 @@ key "Houde2014"
 
 \end_inset
 
- considered observations of Stokes 
+ considered 
+\change_inserted 404807697 1529691907
+the 
+\change_unchanged
+observations of Stokes 
 \begin_inset Formula $V$
 \end_inset
 
@@ -4444,7 +4574,7 @@ apj
 
 \end_inset
 
-, 717, 1262.
+, 717, 1262
 \end_layout
 
 \begin_layout References
@@ -4460,6 +4590,33 @@ Thompson, A.
  M., Swenson Jr, G.
  W.
  2001, Interferometry and synthesis in radio astronomy (John Wiley & Sons)
+\end_layout
+
+\begin_layout References
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "Wiebe \\& Watson(1998)"
+key "Wiebe1998"
+
+\end_inset
+
+Wiebe, D.
+ S., Watson, W.
+ D.
+ 1998, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+apj
+\end_layout
+
+\end_inset
+
+, 503:L71-L74
 \end_layout
 
 \end_body
