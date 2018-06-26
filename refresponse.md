@@ -12,5 +12,7 @@ We are grateful to the referee for the helpful recommendations and comments.
 
 6. replaced the offending line concerning the SMA feeds with your suggestion.
 
+8. The first paragraph of 5.2 now explains the physical basis for ARS
+
 
 

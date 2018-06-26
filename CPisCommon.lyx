@@ -227,13 +227,13 @@ key "Goldreich1981"
 
 .
  
-\change_inserted 404807697 1529699996
+\change_inserted 404807697 1529962773
 The GK effect can occur when a molecule with even weak Zeeman splitting
  is in a medium with some anisotropy and the splitting frequency is greater
  than the collisional rate and other misaligning processes.
- This causes a population imbalance in the levels of the split lines that
- results in a net LP aligned either perpendicular or parallel to the magnetic
- field.
+ These conditions can cause a population imbalance in the levels of the
+ split lines that results in a net LP aligned either perpendicular or parallel
+ to the plane-of-the-sky component of the magnetic field.
  
 \change_unchanged
 LP due to the GK effect was first detected in CS (
@@ -3629,8 +3629,41 @@ key "Houde2013"
 
 \end_inset
 
- to explain the presence of CP in the transitions of CO, but initially failed
- to explain the observed symmetric 
+ to explain the presence of CP in the transitions of CO
+\change_deleted 404807697 1529960014
+,
+\change_inserted 404807697 1529960014
+.
+
+\change_unchanged
+ 
+\change_inserted 404807697 1529961799
+ARS is a second-order interaction between radiation and matter in the presence
+ of a magnetic field.
+ Incident radiation with photon states that are polarized 
+\begin_inset Formula $\parallel$
+\end_inset
+
+ and 
+\begin_inset Formula $\perp$
+\end_inset
+
+ to the magnetic field can scatter off a molecule and incur a small phase
+ shift between the photon states.
+ The phase shift incurred after propagating and scattering off many molecules
+ results in the appearance of CP in the scattered radiation.
+\change_deleted 404807697 1529960012
+but
+\change_inserted 404807697 1529961182
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 404807697 1529961104
+While this mechanism could reproduce the level of CP observed in CO it
+\change_unchanged
+ initially failed to explain the observed symmetric 
 \begin_inset Quotes eld
 \end_inset
 
@@ -3669,9 +3702,13 @@ key "Cotton2011"
 
 \end_inset
 
- and showed that different profile shapes detected are readily explained
- through ARS off populations of foreground molecules located slightly outside
- of the velocity range of the line.
+ and showed that 
+\change_inserted 404807697 1529959968
+the 
+\change_unchanged
+different profile shapes detected are readily explained through ARS off
+ populations of foreground molecules located slightly outside of the velocity
+ range of the line.
  For example, a blue-shifted scattering population of molecules could result
  in a negative 
 \begin_inset Quotes eld
@@ -3718,8 +3755,18 @@ reference "fig:results"
 \end_layout
 
 \begin_layout Standard
-The basic principle of ARS can be illustrated by considering background
- LP radiation oriented at some angle 
+The 
+\change_deleted 404807697 1529961281
+basic principle 
+\change_inserted 404807697 1529961286
+conversion of LP to CP 
+\change_deleted 404807697 1529961287
+of
+\change_inserted 404807697 1529961323
+due to
+\change_unchanged
+ ARS can be illustrated by considering background LP radiation oriented
+ at some angle 
 \begin_inset Formula $\theta$
 \end_inset
 
