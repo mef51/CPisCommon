@@ -1,5 +1,7 @@
 We are grateful to the referee for the helpful recommendations and comments.
 
+0. most figure labels are larger
+
 1. Added a little explanation of GK in the intro
 
 2. While there seem to be several VLA and VLBA observations of CP I believe the most relevant work is that by Cotton etal. 2011 using the VLBA. The VLBA is equipped with off-axis circular feeds and they used a very similar squint correction as the one we detail. I added a paragraph to the ends of Section 2 and Section 5.1 to highlight this. Other relevant observations (like Hezareh etal. 2013) used linear feeds.
@@ -12,7 +14,11 @@ We are grateful to the referee for the helpful recommendations and comments.
 
 6. replaced the offending line concerning the SMA feeds with your suggestion.
 
+7. purple --> blue in figures
+
 8. The first paragraph of 5.2 now explains the physical basis for ARS
+
+9. added acknowledgements section
 
 
 
