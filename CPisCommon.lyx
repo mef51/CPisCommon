@@ -68,12 +68,13 @@
 \papercolumns 2
 \papersides 1
 \paperpagestyle default
-\tracking_changes true
+\tracking_changes false
 \output_changes true
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
 \author 404807697 "mohammed,,,"
+\author 1844228653 "mohammed"
 \end_header
 
 \begin_body
@@ -4004,6 +4005,35 @@ The Submillimeter Array is a joint project between the Smithsonian Astrophysical
  and is funded by the Smithsonian Institution and the Academia Sinica.
  J.M.G is supported by the MINECO (Spain) AYA2014-57369-C3 and AYA2017-84390-C2
  grants.
+\change_inserted 1844228653 1530376438
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 1844228653 1530376600
+Reduction scripts are available at 
+\change_unchanged
+
+\begin_inset CommandInset href
+LatexCommand href
+name "github.com/mef51/SMAData"
+target "http://github.com/mef51/SMAData"
+
+\end_inset
+
+
+\change_inserted 1844228653 1530376600
+.
+ A Python wrapper for 
+\emph on
+Miriad
+\emph default
+ including the squint correction script is available at github.com/mef51/smautils.
 \change_unchanged
 
 \end_layout
