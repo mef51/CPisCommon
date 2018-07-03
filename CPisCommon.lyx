@@ -33,6 +33,16 @@
 \paperfontsize 10
 \spacing single
 \use_hyperref false
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\pdf_quoted_options "unicode=true"
 \papersize letterpaper
 \use_geometry false
 \use_package amsmath 1
@@ -68,7 +78,7 @@
 \papercolumns 2
 \papersides 1
 \paperpagestyle default
-\tracking_changes false
+\tracking_changes true
 \output_changes true
 \html_math_output 0
 \html_css_as_file 0
@@ -143,6 +153,12 @@ Submillimeter Array, Academia Sinica Institute of Astronomy and Astrophysics,
 \end_layout
 
 \begin_layout Abstract
+
+\change_inserted 404807697 1530638545
+Accurately measuring the magnetic field in the ISM is essential for understandin
+g star formation processes.
+ 
+\change_unchanged
 We searched archival data of the Submillimeter Array (SMA) for evidence
  of circular polarization in common molecular tracers, most notably CO.
  This circular polarization possibly arises from anisotropic resonant scattering
@@ -156,9 +172,15 @@ We searched archival data of the Submillimeter Array (SMA) for evidence
 CN and CO) and Orion KL (in CO and SiO) at high enough levels to suggest
  that the presence of circular polarization in these spectral lines is common
  for such objects.
- This would imply that an important piece of information has been neglected
- when studying magnetic fields through linear polarization from molecular
- spectral lines in the interstellar medium.
+ This 
+\change_deleted 404807697 1530638508
+would imply 
+\change_inserted 404807697 1530638509
+implies 
+\change_unchanged
+that an important piece of information has been neglected when studying
+ magnetic fields through linear polarization from molecular spectral lines
+ in the interstellar medium.
 \end_layout
 
 \begin_layout Standard
@@ -228,13 +250,13 @@ key "Goldreich1981"
 
 .
  
-\change_inserted 404807697 1529962773
+\change_inserted 404807697 1530383918
 The GK effect can occur when a molecule with even weak Zeeman splitting
  is in a medium with some anisotropy and the splitting frequency is greater
- than the collisional rate and other misaligning processes.
- These conditions can cause a population imbalance in the levels of the
- split lines that results in a net LP aligned either perpendicular or parallel
- to the plane-of-the-sky component of the magnetic field.
+ than the collisional rate and other radiative processes.
+ These conditions can cause a population imbalance in the magnetic sublevels
+ that results in a net LP aligned either perpendicular or parallel to the
+ plane-of-the-sky component of the magnetic field.
  
 \change_unchanged
 LP due to the GK effect was first detected in CS (
@@ -1195,8 +1217,8 @@ RL
 LR
 \emph default
 ) are recombined and inverted to produce corrected
-\change_inserted 404807697 1529612639
- and cleaned
+\change_inserted 404807697 1530383972
+ and CLEANed
 \change_unchanged
  maps.
  Spectra can be obtained either from the corrected visibilities or the maps.
@@ -3552,7 +3574,7 @@ on.
 
 \begin_layout Standard
 
-\change_inserted 404807697 1529693875
+\change_inserted 404807697 1530384005
 The detections of CP in SiO (
 \begin_inset Formula $\nu=1$
 \end_inset
@@ -3565,8 +3587,8 @@ The detections of CP in SiO (
 \begin_inset Formula $J=1\rightarrow0$
 \end_inset
 
-) masers at 43.1 and 42.8 GHz respectively were observed to have line profile
- shapes inconsistent with the Zeeman effect 
+) masers at 43.1 and 42.8 GHz, respectively, were observed to have line profiles
+ inconsistent with the Zeeman effect 
 \change_unchanged
 
 \begin_inset CommandInset citation
@@ -3576,9 +3598,9 @@ key "Cotton2011"
 \end_inset
 
 
-\change_inserted 404807697 1529693357
+\change_inserted 404807697 1530384333
 .
- However, an attempt to explain the Stokes 
+ An attempt to explain the Stokes 
 \begin_inset Formula $V$
 \end_inset
 
@@ -3592,8 +3614,8 @@ key "Wiebe1998"
 \end_inset
 
 
-\change_inserted 404807697 1529693806
- failed
+\change_inserted 404807697 1530384378
+ could not account for the high levels of CP observed
 \change_unchanged
  
 \begin_inset CommandInset citation
@@ -3603,10 +3625,11 @@ key "Cotton2011"
 \end_inset
 
 
-\change_inserted 404807697 1529693806
+\change_inserted 404807697 1530384453
 .
- We note that the SiO maser observations underwent a similar self-calibration-ba
-sed process to correct for beam squint as the observations presented here.
+ We note that these SiO maser observations underwent a similar self-calibration
+ based process to correct for beam squint as the observations presented
+ here.
  
 \change_unchanged
 
@@ -3638,10 +3661,10 @@ key "Houde2013"
 
 \change_unchanged
  
-\change_inserted 404807697 1529961799
-ARS is a second-order interaction between radiation and matter in the presence
- of a magnetic field.
- Incident radiation with photon states that are polarized 
+\change_inserted 404807697 1530384606
+ARS rests on a second-order interaction between radiation and matter in
+ the presence of a magnetic field.
+ Incident radiation with photon states polarized 
 \begin_inset Formula $\parallel$
 \end_inset
 
@@ -3649,8 +3672,8 @@ ARS is a second-order interaction between radiation and matter in the presence
 \begin_inset Formula $\perp$
 \end_inset
 
- to the magnetic field can scatter off a molecule and incur a small phase
- shift between the photon states.
+ to the magnetic field can scatter slightly differently off a molecule and
+ incur a small phase shift between the photon states.
  The phase shift incurred after propagating and scattering off many molecules
  results in the appearance of CP in the scattered radiation.
 \change_deleted 404807697 1529960012
@@ -4019,21 +4042,47 @@ The Submillimeter Array is a joint project between the Smithsonian Astrophysical
 Reduction scripts are available at 
 \change_unchanged
 
-\begin_inset CommandInset href
-LatexCommand href
-name "github.com/mef51/SMAData"
-target "http://github.com/mef51/SMAData"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+url{http://github.com/mef51/SMAData}
+\end_layout
+
+\end_inset
+
+.
+
+\change_inserted 1844228653 1530376600
+ A Python wrapper for 
+\emph on
+Miriad
+\emph default
+ including the squint correction script
+\change_inserted 404807697 1530381967
+ used
+\change_inserted 1844228653 1530376600
+ is available at 
+\change_unchanged
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+url{http://github.com/mef51/smautils}
+\end_layout
 
 \end_inset
 
 
 \change_inserted 1844228653 1530376600
 .
- A Python wrapper for 
-\emph on
-Miriad
-\emph default
- including the squint correction script is available at github.com/mef51/smautils.
 \change_unchanged
 
 \end_layout
