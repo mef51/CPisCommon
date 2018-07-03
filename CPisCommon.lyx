@@ -154,33 +154,77 @@ Submillimeter Array, Academia Sinica Institute of Astronomy and Astrophysics,
 
 \begin_layout Abstract
 
-\change_inserted 404807697 1530638545
+\change_inserted 404807697 1530639409
 Accurately measuring the magnetic field in the ISM is essential for understandin
-g star formation processes.
+g star-formation processes.
  
 \change_unchanged
 We searched archival data of the Submillimeter Array (SMA) for evidence
  of circular polarization in common molecular tracers, most notably CO.
  This circular polarization possibly arises from anisotropic resonant scattering
-, which would imply that some background linearly polarized flux is being
- converted to circular polarization.
- We find circular polarization in NGC7538 (in CO), IRC+10216 (in CS, SiS,
- H
+, which would imply that some background linearly polarized 
+\change_deleted 404807697 1530645850
+flux
+\change_inserted 404807697 1530645851
+radiation
+\change_unchanged
+ is being converted to circular polarization.
+ We find circular polarization in 
+\change_inserted 404807697 1530650156
+the star-forming regions 
+\change_unchanged
+NGC7538 (in CO)
+\change_deleted 404807697 1530650191
+,
+\change_inserted 404807697 1530650192
+ and
+\change_unchanged
+ 
+\change_inserted 404807697 1530650396
+Orion KL (in CO and SiO), as well as in the carbon star 
+\change_unchanged
+IRC+10216 (in CS, SiS, H
 \begin_inset Formula $^{13}$
 \end_inset
 
-CN and CO) and Orion KL (in CO and SiO) at high enough levels to suggest
- that the presence of circular polarization in these spectral lines is common
- for such objects.
+CN and CO)
+\change_deleted 404807697 1530650317
+ and Orion KL (in CO and SiO)
+\change_unchanged
+ at high enough levels to suggest that the presence of circular polarization
+ in these spectral lines is common for such objects.
  This 
 \change_deleted 404807697 1530638508
 would imply 
 \change_inserted 404807697 1530638509
 implies 
 \change_unchanged
-that an important piece of information has been neglected when studying
- magnetic fields through linear polarization from molecular spectral lines
- in the interstellar medium.
+that 
+\change_inserted 404807697 1530650598
+measuring circular polarization is necessary 
+\change_deleted 404807697 1530650609
+an important piece of information has been neglected 
+\change_unchanged
+when studying magnetic fields through 
+\change_inserted 404807697 1530650644
+the 
+\change_unchanged
+linear polarization 
+\change_deleted 404807697 1530650646
+from 
+\change_inserted 404807697 1530650647
+of 
+\change_unchanged
+molecular spectral lines in the interstellar medium.
+
+\change_inserted 404807697 1530644067
+ We also provide a simple Python wrapper for the 
+\emph on
+Miriad
+\emph default
+ data reduction package.
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
