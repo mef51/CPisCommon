@@ -26,12 +26,12 @@ and only the more interested reader would need to look up the original
 GK paper."
 
 Response: Added the following explanation of GK in the introduction:
-The GK effect can occur when a molecule
-with even weak Zeeman splitting is in a medium with
-some anisotropy and the splitting frequency is greater
-than the collisional rate and other misaligning processes.
+The GK effect can occur for molecular lines
+with even weak Zeeman splitting when the radiation
+field is anisotropic and the splitting frequency is greater
+than the collisional rate and other radiative processes.
 These conditions can cause a population imbalance in
-the levels of the split lines that results in a net LP aligned
+the magnetic sublevels that results in a net LP aligned
 either perpendicular or parallel to the plane-of-the-sky
 component of the magnetic field.
 

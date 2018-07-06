@@ -125,8 +125,13 @@ Department of Physics and Astronomy, The University of Western Ontario,
 \begin_inset Formula $^{2}$
 \end_inset
 
-Institut de Ciències de l'Espai (IEEC-CSIC), Can Magrans, S/N, E-08193 Cerdanyol
-a del Vallès, Catalonia, Spain
+Institut de Ciències de l'Espai (
+\change_deleted 404807697 1530832775
+IEEC-CSIC
+\change_inserted 404807697 1530832783
+ICE, CSIC
+\change_unchanged
+), Can Magrans, S/N, E-08193 Cerdanyola del Vallès, Catalonia, Spain
 \change_inserted 404807697 1529605135
 
 \end_layout
@@ -200,8 +205,8 @@ would imply
 implies 
 \change_unchanged
 that 
-\change_inserted 404807697 1530650598
-measuring circular polarization is necessary 
+\change_inserted 404807697 1530836196
+measuring circular polarization is important 
 \change_deleted 404807697 1530650609
 an important piece of information has been neglected 
 \change_unchanged
@@ -294,10 +299,10 @@ key "Goldreich1981"
 
 .
  
-\change_inserted 404807697 1530383918
-The GK effect can occur when a molecule with even weak Zeeman splitting
- is in a medium with some anisotropy and the splitting frequency is greater
- than the collisional rate and other radiative processes.
+\change_inserted 404807697 1530835698
+The GK effect can occur for molecular lines with even weak Zeeman splitting
+ when the radiation field is anisotropic and the splitting frequency is
+ greater than the collisional rate and other radiative processes.
  These conditions can cause a population imbalance in the magnetic sublevels
  that results in a net LP aligned either perpendicular or parallel to the
  plane-of-the-sky component of the magnetic field.
@@ -1141,10 +1146,28 @@ key "Sault2008"
 \end_layout
 
 \begin_layout Enumerate
-The visibilities are split into line-free continuum and line data.
- These are then mapped and used to obtain CLEAN models
-\change_inserted 404807697 1529611396
- (using the `clean' algorithm)
+The visibilities are split into line-free continuum and line data
+\change_deleted 404807697 1530835489
+.
+ These 
+\change_inserted 404807697 1530835493
+ that 
+\change_unchanged
+are then mapped
+\change_deleted 404807697 1530835618
+ and used
+\change_unchanged
+ to obtain 
+\change_deleted 404807697 1530835525
+CLEAN 
+\change_unchanged
+models
+\change_inserted 404807697 1530833030
+ using the `
+\family typewriter
+clean
+\family default
+' algorithm
 \change_unchanged
  
 \begin_inset CommandInset citation
@@ -2227,7 +2250,17 @@ maxfit
 \end_inset
 
  signal at 345.8GHz is maximum, and a spectrum is obtained through that point.
- The cross on the map denotes the location of that peak.
+ The cross on the map denotes the location of 
+\change_deleted 404807697 1530835167
+that
+\change_inserted 404807697 1530835171
+the Stokes 
+\begin_inset Formula $V$
+\end_inset
+
+
+\change_unchanged
+ peak.
  The red line is Stokes 
 \begin_inset Formula $I$
 \end_inset
@@ -3642,13 +3675,15 @@ key "Cotton2011"
 \end_inset
 
 
-\change_inserted 404807697 1530384333
+\change_inserted 404807697 1530833500
 .
  An attempt to explain the Stokes 
 \begin_inset Formula $V$
 \end_inset
 
- shapes with a non-Zeeman mechanism put forward by 
+ shapes with a non-Zeeman mechanism involving the anisotropic pumping of
+ the masers and a varying magnetic field along the line of sight put forward
+ by 
 \change_unchanged
 
 \begin_inset CommandInset citation
