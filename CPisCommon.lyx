@@ -301,8 +301,12 @@ key "Goldreich1981"
  
 \change_inserted 404807697 1530835698
 The GK effect can occur for molecular lines with even weak Zeeman splitting
- when the radiation field is anisotropic and the splitting frequency is
- greater than the collisional rate and other radiative processes.
+ when the radiation field 
+\change_inserted 1844228653 1531250073
+(for example) 
+\change_inserted 404807697 1530835698
+is anisotropic and the splitting frequency is greater than the collisional
+ rate and other radiative processes.
  These conditions can cause a population imbalance in the magnetic sublevels
  that results in a net LP aligned either perpendicular or parallel to the
  plane-of-the-sky component of the magnetic field.
@@ -668,7 +672,7 @@ left
 \end_inset
 
  is defined by 
-\begin_inset Formula $V\propto-2\text{Im}(E_{x}E_{y}^{*})$
+\begin_inset Formula $V\propto-2\,\text{Im}(E_{x}E_{y}^{*})$
 \end_inset
 
 , where 
@@ -1933,11 +1937,21 @@ reference "fig:beforeafterspec"
 \end_inset
 
  can also be found in the average spectrum obtained from all the visibility
- data, though SNR is of 3-5
+ data, though 
+\change_inserted 1844228653 1531250357
+the 
+\change_unchanged
+SNR is of 3-5
 \begin_inset Formula $\sigma$
 \end_inset
 
- significant in that case compared to approximately 6-10
+ significan
+\change_deleted 1844228653 1531250360
+t
+\change_inserted 1844228653 1531250360
+ce
+\change_unchanged
+ in that case compared to approximately 6-10
 \begin_inset Formula $\sigma$
 \end_inset
 
@@ -4105,7 +4119,13 @@ Theories that explain the presence of non-Zeeman CP in molecular spectral
 The Submillimeter Array is a joint project between the Smithsonian Astrophysical
  Observatory and the Academia Sinica Institute of Astronomy and Astrophysics
  and is funded by the Smithsonian Institution and the Academia Sinica.
- J.M.G is supported by the MINECO (Spain) AYA2014-57369-C3 and AYA2017-84390-C2
+ 
+\change_inserted 1844228653 1531250437
+M.H.
+ is supported by the NSERC Discovery Grant program.
+ 
+\change_inserted 404807697 1529605064
+J.M.G is supported by the MINECO (Spain) AYA2014-57369-C3 and AYA2017-84390-C2
  grants.
 \change_inserted 1844228653 1530376438
 
