@@ -4,10 +4,14 @@
 \usepackage{ae,aecompl}
 \usepackage[T1]{fontenc}
 \usepackage[latin9]{inputenc}
+\usepackage{xcolor}
+\usepackage{pdfcolmk}
 \usepackage{array}
 \usepackage{booktabs}
 \usepackage{amstext}
 \usepackage{graphicx}
+\PassOptionsToPackage{normalem}{ulem}
+\usepackage{ulem}
 
 \makeatletter
 
@@ -20,6 +24,16 @@
 %% A simple dot to overcome graphicx limitations
 \newcommand{\lyxdot}{.}
 
+\providecolor{lyxadded}{rgb}{0,0,1}
+\providecolor{lyxdeleted}{rgb}{1,0,0}
+%% Change tracking with ulem
+\DeclareRobustCommand{\lyxadded}[3]{{\color{lyxadded}{}#3}}
+\DeclareRobustCommand{\lyxdeleted}[3]{{\color{lyxdeleted}\lyxsout{#3}}}
+\DeclareRobustCommand{\lyxsout}[1]{\ifx\\#1\else\sout{#1}\fi}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+
+\renewcommand{\lyxadded}[3]{{\color{olive}\uline{#3}}}
 
 \makeatother
 
@@ -29,30 +43,36 @@
 \title{Non-Zeeman Circular Polarization of Molecular Spectral Lines in the
 ISM}
 
-\author{Mohammed Afif Chamma$^{1}$, Martin Houde$^{1}$, Josep Miquel Girart$^{2}$
-and Ramprasad Rao$^{3}$}
+\author{Mohammed Afif Chamma$^{1}$, Martin Houde$^{1}$, Josep Miquel Girart$^{2,3}$
+and Ramprasad Rao$^{4}$}
 
 \affil{$^{1}$Department of Physics and Astronomy, The University of Western
 Ontario, London, ON, N6A 3K7, Canada}
 
-\affil{$^{2}$Institut de Ciències de l'Espai (IEEC-CSIC), Can Magrans,
+\affil{$^{2}$Institut de Ciències de l'Espai (ICE, CSIC), Can Magrans,
 S/N, E-08193 Cerdanyola del Vallès, Catalonia, Spain}
 
-\affil{$^{3}$Submillimeter Array, Academia Sinica Institute of Astronomy
+\affil{$^{3}$Institut d'Estudis Espacials de Catalunya (IEEC), E-08034,
+Barcelona, Catalonia }
+
+\affil{$^{4}$Submillimeter Array, Academia Sinica Institute of Astronomy
 and Astrophysics, 645 N. Aohoku Place, Hilo, HI 96720, USA}
 \begin{abstract}
-We searched archival data of the Submillimeter Array (SMA) for evidence
-of circular polarization in common molecular tracers, most notably
-CO. This circular polarization possibly arises from anisotropic resonant
-scattering, which would imply that some background linearly polarized
-flux is being converted to circular polarization. We find circular
-polarization in NGC7538 (in CO), IRC+10216 (in CS, SiS, H$^{13}$CN
-and CO) and Orion KL (in CO and SiO) at high enough levels to suggest
-that the presence of circular polarization in these spectral lines
-is common for such objects. This would imply that an important piece
-of information has been neglected when studying magnetic fields through
-linear polarization from molecular spectral lines in the interstellar
-medium.
+Accurately measuring the magnetic field in the ISM is essential for
+understanding star-formation processes. We searched archival data
+of the Submillimeter Array (SMA) for evidence of circular polarization
+in common molecular tracers, most notably CO. This circular polarization
+possibly arises from anisotropic resonant scattering, which would
+imply that some background linearly polarized radiation is being converted
+to circular polarization. We find circular polarization in the star-forming
+regions NGC7538 (in CO) and Orion KL (in CO and SiO), as well as in
+the carbon star IRC+10216 (in CS, SiS, H$^{13}$CN and CO) at high
+enough levels to suggest that the presence of circular polarization
+in these spectral lines is common for such objects. This implies that
+measuring circular polarization is important when studying magnetic
+fields through the linear polarization of molecular spectral lines
+in the interstellar medium. We also provide a simple Python wrapper
+for the \emph{Miriad} data reduction package.
 \end{abstract}
 %
 
@@ -81,7 +101,13 @@ the magnetic field \citep{Davis1951,Chandrasekhar1953,Crutcher2012}.
 The alignment of molecules and their interaction with the ambient
 magnetic field can cause their transitions to be linearly polarized
 by a few percent through the so-called Goldreich-Kylafis (GK) effect
-\citep{Goldreich1981}. LP due to the GK effect was first detected
+\citep{Goldreich1981}. The GK effect can occur for molecular lines
+with even weak Zeeman splitting when the radiation field (for example)
+is anisotropic and the splitting frequency is greater than the collisional
+rate and other radiative processes. These conditions can cause a population
+imbalance in the magnetic sublevels that results in a net LP aligned
+either perpendicular or parallel to the plane-of-the-sky component
+of the magnetic field. LP due to the GK effect was first detected
 in CS ($J=2\rightarrow1)$ and HCN $(J=1\rightarrow0$) in IRC+10216
 and CRL 2688 by \citet{Glenn1997} and later in CO ($J=3\rightarrow2$)
 and ($J=2\rightarrow1)$ by \citet{Greaves1999}. Shortly after, LP
@@ -121,18 +147,16 @@ CP of CO lines is also measured.
 
 The main goal of this paper is to find further evidence of CP in more
 objects and molecular lines through a search of archival data of the
-Submillimeter Array (SMA\footnote{The Submillimeter Array is a joint project between the Smithsonian
-Astrophysical Observatory and the Academia Sinica Institute of Astronomy
-and Astrophysics and is funded by the Smithsonian Institution and
-the Academia Sinica.}). In Section \ref{sec:Measurement-with-Radio} we discuss the issues
-that arise when doing polarimetry with radio interferometry, focusing
-specifically on circular polarization (CP). Section \ref{sec:Squint-Correction}
-will give in detail our scheme for correcting a spurious source of
-CP that arises with the SMA. Section \ref{sec:Observations} presents
-archival observations of four objects made with the SMA on Mauna Kea
-and investigates the reliability of our CP detections. Finally, in
-Section \ref{sec:Discussion} we will highlight the significance of
-these CP detections and summarize their implications.
+Submillimeter Array (SMA). In Section \ref{sec:Measurement-with-Radio}
+we discuss the issues that arise when doing polarimetry with radio
+interferometry, focusing specifically on circular polarization (CP).
+Section \ref{sec:Squint-Correction} will give in detail our scheme
+for correcting a spurious source of CP that arises with the SMA. Section
+\ref{sec:Observations} presents archival observations of four objects
+made with the SMA on Mauna Kea and investigates the reliability of
+our CP detections. Finally, in Section \ref{sec:Discussion} we will
+highlight the significance of these CP detections and summarize their
+implications.
 
 \section{Measurement of CP with Radio Interferometry}
 
@@ -144,23 +168,29 @@ to CP light to measure LP signals before sending them to the correlator.
 While not its most common use at the SMA the QWP can work the other
 way to measure CP: incident CP is converted to LP and then measured
 by the receivers. On the other hand, ALMA which also has linear feeds
-does not use a QWP and measures LP signals directly. While both types
-of feeds can be used to measure CP, the calibration process is different
+does not use a QWP and measures LP signals directly. While both measurement
+techniques can be used to measure CP, the calibration process is different
 \citep{Sault1996}. Despite the calibration challenges the SMA has
 been used to take precise measurements of CP from dust continuum in
-Sgr A{*} \citep{Munoz2012}. For a discussion on measuring CP with
-radio interferometry and on design choices at the SMA (such as the
-choice of converting from LP-to-CP and vice-versa) see \citet{Hamaker1996}
-and \citet{Marrone2008}.
+Sgr A{*} \citep{Munoz2012}. Additionally, the VLBA, equipped with
+circular feeds, has been used to take full Stokes $I$, $Q$, $U$,
+and $V$ measurements of SiO masers at 43.1 and 42.8 GHz \citep{Cotton2011}.
+In that work a correction for spurious CP analogous to the correction
+detailed in Section \ref{sec:Squint-Correction} is performed for
+accurate calibration of Stokes $V$.
+
+For a discussion on measuring CP with radio interferometry and on
+design choices at the SMA (such as the choice of converting from LP-to-CP
+and vice-versa) see \citet{Hamaker1996} and \citet{Marrone2008}.
 
 \subsection{Linear vs. Circular Feeds}
 
 To illustrate briefly the differences between the two feed types consider
 the following: with an orthogonal CP basis, the Stokes $V$ parameter
-for a beam of radiation is defined by $V\propto\langle E_{L}^{2}\rangle-\langle E_{R}^{2}\rangle$,
-where $E_{L}$ and $E_{R}$ are the left-CP and right-CP electric
+for a beam of radiation is defined by $V\propto\langle E_{R}^{2}\rangle-\langle E_{L}^{2}\rangle$,
+where $E_{R}$ and $E_{L}$ are the right-CP and left-CP electric
 fields, respectively. With an orthogonal LP basis Stokes $V$ is defined
-by $V\propto-2\text{Im}(E_{x}E_{y}^{*})$, where $E_{x}$ and $E_{y}$
+by $V\propto-2\,\text{Im}(E_{x}E_{y}^{*})$, where $E_{x}$ and $E_{y}$
 are the LP fields, and $\text{Im}()$ denotes the imaginary part.
 In the CP basis case we take the difference of two measured intensities,
 while the linear feed case requires us to measure the phase of the
@@ -178,6 +208,13 @@ the Stokes $Q$ and $U$ visibilities \citep[see Section 4.1 of][]{Thompson2001}.
 This means the Stokes $Q$ and $U$ of any calibration object must
 be measured as well. This is not possible with the SMA setup used
 for the observations discussed here.
+
+The SMA uses observations of a bright point source over a large range
+of parallactic angles to distinguish between source and instrumental
+polarization and determine the polarization leakage terms. Determining
+these leakage terms is crucial for accurate Stokes $Q$ and $U$ measurements,
+however Stokes $I$ and $V$ are independent of the leakage terms
+to first-order \citep{Thompson2001,Marrone2008,Munoz2012}. 
 
 \section{Squint Correction}
 
@@ -217,6 +254,10 @@ Thus we have
 \begin{equation}
 \mathcal{V}(u,v)=\int\int e^{-iul}e^{-ivm}I(l,\,m)\,dl\,dm.\label{eq:FT}
 \end{equation}
+
+In practice the true source intensity $I(l,m)$ is convolved with
+the instrumental response to a point source, called the instrumental
+beam, and a deconvolution step is necessary to obtain the true map.
 
 Given antennae $a$ and $b$, the Stokes $V$ visibility in the circular
 feed case is given by \citep{Thompson2001,Munoz2012}
@@ -262,8 +303,9 @@ independently of each other. Specifically the process is:
 \item The observations are calibrated for gain and phase in the usual way
 using observations of known sources (usually quasars like 3C84, 3C454,
 etc.; see Miriad User Guide \citep{Sault2008}).
-\item The visibilities are split into line-free continuum and line data.
-These are then mapped and used to obtain CLEAN models.
+\item The visibilities are split into line-free continuum and line data
+that are then mapped to obtain models using the `\texttt{clean}' algorithm
+\citep{Sault2008}.
 \item The separate continuum and line data are further split into \emph{LL}
 and \emph{RR} visibilities. \emph{Miriad'}s \texttt{selfcal} is used
 on the continuum data to solve for the gain coefficients of each antenna
@@ -278,9 +320,19 @@ here denote a specific antenna and not the polarization state as before.
 the line \emph{LL} data, and similarly for the \emph{RR} continuum
 and line data.
 \item The different visibilities (\emph{LL}, \emph{RR}, \emph{RL}, \emph{LR})
-are recombined and inverted to produce corrected maps. Spectra can
-be obtained either from the corrected visibilities or the maps. 
+are recombined and inverted to produce corrected and CLEANed maps.
+Spectra can be obtained either from the corrected visibilities or
+the maps. 
 \end{enumerate}
+Note that in the deconvolution steps (steps 2 and 5) the same instrumental
+beam is used for all polarizations. This is due to the behaviour of
+\emph{Miriad}'s \texttt{invert}, which produces a single instrumental
+beam corresponding to all image planes and Stokes parameters \citep[sec. 13.4 of][]{Sault2008}.
+We checked that the instrumental response to different polarizations
+was similar by inverting the $LL$- and $RR$-handed visibilities
+separately from one other and finding that the instrumental beams
+for both polarizations to be almost identical.
+
 Figure \ref{fig:beforeafter} shows maps before- and after- correction
 maps for the continuum in Orion KL around 345GHz. We see that before
 correction there are large peaks of Stokes $V$, and that the three
@@ -310,12 +362,13 @@ the peak intensity. Blue Stokes $V$ contours are at -8, -7, -6, -5,
 
 \label{sec:Observations}We collected radio interferometric polarimetry
 observations from the Submillimeter Array (SMA) archive that had been
-measured using the circular feeds, a similar setup to that used by
-\citet{Munoz2012} to measure circular polarization from dust continuum
-in Sgr A{*}. Because the archival observations were not taken with
-measurements of CP in mind the SNR is often low, and we had to average
-velocity channels to increase it at the cost of spectral resolution.
-This generally increases the SNR from 3-4 to 6-10. 
+measured using the linear-to-circular QWP equipment, a similar setup
+to that used by \citet{Munoz2012} to measure circular polarization
+from dust continuum in Sgr A{*}. Because the archival observations
+were not taken with measurements of CP in mind the SNR is often low,
+and we had to average velocity channels to increase it at the cost
+of spectral resolution. This generally increases the SNR from 3-4
+to 6-10. 
 
 The four objects we present here are Orion KL, NGC7538, NGC1333 IRAS2A
 and IRC+10216. The first three are well-known star-forming regions,
@@ -330,7 +383,7 @@ a summary of the objects presented and related information.
 
 \begin{table}
 \begin{centering}
-\begin{tabular}{>{\raggedright}p{0.19\columnwidth}>{\raggedright}p{0.33\columnwidth}>{\raggedleft}p{0.2\columnwidth}>{\raggedleft}p{0.25\columnwidth}}
+\begin{tabular}{>{\raggedright}p{0.19\columnwidth}>{\raggedright}p{0.33\columnwidth}>{\raggedleft}p{0.15\columnwidth}>{\raggedleft}p{0.25\columnwidth}}
 \toprule 
 \textbf{\footnotesize{}Object} & \textbf{\footnotesize{}Coordinates (J2000)} & \textbf{\footnotesize{}Array} & \textbf{\footnotesize{}Obs. Date}\tabularnewline
 \midrule
@@ -366,14 +419,15 @@ $(J=3\rightarrow2)$ Stokes $V$ signal on the corresponding maps
 are shown in Figure \ref{fig:beforeafterspec}. Notice in all cases
 the Stokes $V$ signal decreases after squint correction. Stokes $V$
 can also be found in the average spectrum obtained from all the visibility
-data, though SNR is of 3-5$\sigma$ significant in that case compared
-to approximately 6-10$\sigma$ when the spectrum is taken at the peak
-of the inverted maps. The presence of a Stokes $V$ signal in the
-visibilities indicates the detections are not simply the result of
-the inversion process that creates the maps. That is, the Stokes $V$
-signals are not due to sidelobes that appear when calculating the
-inverse Fourier transform of the visibilities. As can be seen in the
-maps, in general the peaks of Stokes $I$ and Stokes $V$ do not coincide.
+data, though the SNR is of 3-5$\sigma$ significance in that case
+compared to approximately 6-10$\sigma$ when the spectrum is taken
+at the peak of the inverted maps. The presence of a Stokes $V$ signal
+in the visibilities indicates the detections are not simply the result
+of the inversion process that creates the maps. That is, the Stokes
+$V$ signals are not due to sidelobes that appear when calculating
+the inverse Fourier transform of the visibilities. As can be seen
+in the maps, in general the peaks of Stokes $I$ and Stokes $V$ do
+not coincide.
 
 In Orion KL (Fig. \ref{fig:results}) the lines of CO ($J=3\rightarrow2$
 at 345.8 GHz) and SiO ($J=8\rightarrow7$ at 347.3 GHz) are both bright
@@ -426,17 +480,17 @@ line (345.8GHz) for Orion KL (top) and IRC+10216 (bottom). \textbf{\emph{Spectra
 \emph{Miriad}'s \texttt{maxfit} is used on the CO map to obtain the
 location on the image where the Stokes $V$ signal at 345.8GHz is
 maximum, and a spectrum is obtained through that point. The cross
-on the map denotes the location of that peak. The red line is Stokes
-$I$ and the blue is Stokes $V$.\textbf{\emph{ Maps}}\textbf{:} Blue
-contours are Stokes $V$ and are shown at the -4, -3, -2, 2, 3, 4$\sigma$
-levels. The RMS error for each Stokes $V$ map is found using \emph{Miriad'}s
-\texttt{imstat} command: $\sigma=0.30$ and 0.17 Jy/beam, for Orion
-KL and IRC+10216, respectively. The distance of the peak to the phase
-center is 15'' and 6'', respectively. Dark red contours are Stokes
-$I$ and the levels are 15\%, 30\%, 45\%, 60\%, 85\% and 95\% of the
-maximum. The value in the top left is the central frequency in GHz
-of the mapped signal, integrated over a narrow bandwidth of $\sim$2
-MHz. }
+on the map denotes the location of the Stokes $V$ peak. The red line
+is Stokes $I$ and the blue is Stokes $V$.\textbf{\emph{ Maps}}\textbf{:}
+Blue contours are Stokes $V$ and are shown at the -4, -3, -2, 2,
+3, 4$\sigma$ levels. The RMS error for each Stokes $V$ map is found
+using \emph{Miriad'}s \texttt{imstat} command: $\sigma=0.30$ and
+0.17 Jy/beam, for Orion KL and IRC+10216, respectively. The distance
+of the peak to the phase center is 15'' and 6'', respectively. Dark
+red contours are Stokes $I$ and the levels are 15\%, 30\%, 45\%,
+60\%, 85\% and 95\% of the maximum. The value in the top left is the
+central frequency in GHz of the mapped signal, integrated over a narrow
+bandwidth of $\sim$2 MHz. }
 \end{figure*}
 
 \begin{figure*}
@@ -480,7 +534,6 @@ further away.}
 at 347.3 GHz) transition in Orion KL. Note there is also a strong
 Stokes $V$ signal in the CO $(J=3\rightarrow2$ at 345.8 GHz) transition
 here. The SiO signal is purely negative but the CO signal is antisymmetric.}
-
 \end{figure}
 
 \begin{table}
@@ -655,26 +708,46 @@ well with each other, as well as with the dust map \citep[Fig. 9 of][]{Hezareh20
 This result clearly establishes a conversion from linear to circular
 polarization.
 
+The detections of CP in SiO ($\nu=1$ and $\nu=2$, $J=1\rightarrow0$)
+masers at 43.1 and 42.8 GHz, respectively, were observed to have line
+profiles inconsistent with the Zeeman effect \citep{Cotton2011}.
+An attempt to explain the Stokes $V$ shapes with a non-Zeeman mechanism
+involving the anisotropic pumping of the masers and a varying magnetic
+field along the line of sight put forward by \citet{Wiebe1998} could
+not account for the high levels of CP observed \citep{Cotton2011}.
+We note that these SiO maser observations underwent a similar self-calibration
+based process to correct for beam squint as the observations presented
+here. 
+
 \subsection{Anisotropic Resonant Scattering}
 
 \label{subsec:ARS}ARS was the mechanism first proposed by \citet{Houde2013}
-to explain the presence of CP in the transitions of CO, but initially
-failed to explain the observed symmetric ``$\cap$''-shaped Stokes
-$V$ profile. In a follow up paper \citet{Houde2014} considered observations
-of Stokes $V$ in SiO masers \citep{Cotton2011} and showed that different
-profile shapes detected are readily explained through ARS off populations
-of foreground molecules located slightly outside of the velocity range
-of the line. For example, a blue-shifted scattering population of
-molecules could result in a negative ``$\cup$''-shaped profile
-while a red-shifted population in a positive ``$\cap$''-shaped
-profile. The presence of both a blue- and red-shifted population would
-cause an antisymmetric ``S''-shaped profile (like the one seen in
-the top left panel of Figure \ref{fig:results}).
+to explain the presence of CP in the transitions of CO. ARS rests
+on a second-order interaction between radiation and matter in the
+presence of a magnetic field. Incident radiation with photon states
+polarized $\parallel$ and $\perp$ to the magnetic field can scatter
+slightly differently off a molecule and incur a small phase shift
+between the photon states. The phase shift incurred after propagating
+and scattering off many molecules results in the appearance of CP
+in the scattered radiation.
 
-The basic principle of ARS can be illustrated by considering background
-LP radiation oriented at some angle $\theta$ to the foreground magnetic
-field. The incident and scattered radiation can be written in terms
-of the \emph{n}-photon states as \citep{Houde2013}
+While this mechanism could reproduce the level of CP observed in CO
+it initially failed to explain the observed symmetric ``$\cap$''-shaped
+Stokes $V$ profile. In a follow up paper \citet{Houde2014} considered
+the observations of Stokes $V$ in SiO masers \citep{Cotton2011}
+and showed that the different profile shapes detected are readily
+explained through ARS off populations of foreground molecules located
+slightly outside of the velocity range of the line. For example, a
+blue-shifted scattering population of molecules could result in a
+negative ``$\cup$''-shaped profile while a red-shifted population
+in a positive ``$\cap$''-shaped profile. The presence of both a
+blue- and red-shifted population would cause an antisymmetric ``S''-shaped
+profile (like the one seen in the top left panel of Figure \ref{fig:results}).
+
+The conversion of LP to CP due to ARS can be illustrated by considering
+background LP radiation oriented at some angle $\theta$ to the foreground
+magnetic field. The incident and scattered radiation can be written
+in terms of the \emph{n}-photon states as \citep{Houde2013}
 \begin{eqnarray}
 |\psi\rangle & = & \alpha|n_{||}\rangle+\beta|n_{\perp}\rangle\\
 |\psi'\rangle & \simeq & \alpha e^{i\phi}|n_{||}\rangle+\beta|n_{\perp}\rangle,
@@ -737,6 +810,19 @@ effect is likely widespread. Since the conversion of LP-to-CP modifies
 the observed dispersion of PAs, it is necessary to obtain precise
 measurements of CP along with LP for corresponding studies of the
 magnetic field in the interstellar medium.
+
+\acknowledgements{The Submillimeter Array is a joint project between the Smithsonian
+Astrophysical Observatory and the Academia Sinica Institute of Astronomy
+and Astrophysics and is funded by the Smithsonian Institution and
+the Academia Sinica. M.H. is supported by the Natural Science and
+Engineering Research Council of Canada Discovery Grant RGPIN-2016-04460.
+J.M.G is supported by the MINECO (Spain) AYA2014-57369-C3 and AYA2017-84390-C2
+grants.\\
+}
+
+Reduction scripts are available at \url{http://github.com/mef51/SMAData}.
+A Python wrapper for \emph{Miriad} including the squint correction
+script used is available at \url{http://github.com/mef51/smautils}.
 \begin{thebibliography}{Chandrasekhar \& Fermi(1953)}
 \bibitem[Cernicharo et al.(2015)]{Cernicharo2015}Cernicharo, J.,
 Marcelino, N., Agúndez M., Guéllin, M. 2015 A\&A, 575, A91
@@ -822,11 +908,14 @@ P., Bregman, J. D. 1996 A\&A Suppl. Ser., 117, 149-159
 0231, Intl Optical Computing Conf I
 
 \bibitem[Tang et al.(2010)]{Tang2010}Tang, Y.-W., Ho, P. T. P., Koch,
-P. M., Rao, R. 2010, \apj, 717, 1262.
+P. M., Rao, R. 2010, \apj, 717, 1262
 
 \bibitem[Thompson et al.(2001)]{Thompson2001}Thompson, A. R., Moran,
 J. M., Swenson Jr, G. W. 2001, Interferometry and synthesis in radio
 astronomy (John Wiley \& Sons)
+
+\bibitem[Wiebe \& Watson(1998)]{Wiebe1998}Wiebe, D. S., Watson, W.
+D. 1998, \apj, 503:L71-L74
 \end{thebibliography}
 
 \end{document}
