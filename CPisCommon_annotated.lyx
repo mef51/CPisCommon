@@ -83,6 +83,8 @@
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\author 404807697 "mohammed,,,"
+\author 1844228653 "mohammed"
 \end_header
 
 \begin_body
@@ -123,16 +125,27 @@ Department of Physics and Astronomy, The University of Western Ontario,
 \begin_inset Formula $^{2}$
 \end_inset
 
-Institut de Ciències de l'Espai (ICE, CSIC), Can Magrans, S/N, E-08193 Cerdanyol
-a del Vallès, Catalonia, Spain
+Institut de Ciències de l'Espai (
+\change_deleted 404807697 1530832775
+IEEC-CSIC
+\change_inserted 404807697 1530832783
+ICE, CSIC
+\change_unchanged
+), Can Magrans, S/N, E-08193 Cerdanyola del Vallès, Catalonia, Spain
+\change_inserted 404807697 1529605135
+
 \end_layout
 
 \begin_layout Affiliation
+
+\change_inserted 404807697 1529605181
 \begin_inset Formula $^{3}$
 \end_inset
 
 Institut d'Estudis Espacials de Catalunya (IEEC), E-08034, Barcelona, Catalonia
  
+\change_unchanged
+
 \end_layout
 
 \begin_layout Affiliation
@@ -145,29 +158,78 @@ Submillimeter Array, Academia Sinica Institute of Astronomy and Astrophysics,
 \end_layout
 
 \begin_layout Abstract
+
+\change_inserted 404807697 1530639409
 Accurately measuring the magnetic field in the ISM is essential for understandin
 g star-formation processes.
- We searched archival data of the Submillimeter Array (SMA) for evidence
+ 
+\change_unchanged
+We searched archival data of the Submillimeter Array (SMA) for evidence
  of circular polarization in common molecular tracers, most notably CO.
  This circular polarization possibly arises from anisotropic resonant scattering
-, which would imply that some background linearly polarized radiation is
- being converted to circular polarization.
- We find circular polarization in the star-forming regions NGC7538 (in CO)
- and Orion KL (in CO and SiO), as well as in the carbon star IRC+10216 (in
- CS, SiS, H
+, which would imply that some background linearly polarized 
+\change_deleted 404807697 1530645850
+flux
+\change_inserted 404807697 1530645851
+radiation
+\change_unchanged
+ is being converted to circular polarization.
+ We find circular polarization in 
+\change_inserted 404807697 1530650156
+the star-forming regions 
+\change_unchanged
+NGC7538 (in CO)
+\change_deleted 404807697 1530650191
+,
+\change_inserted 404807697 1530650192
+ and
+\change_unchanged
+ 
+\change_inserted 404807697 1530650396
+Orion KL (in CO and SiO), as well as in the carbon star 
+\change_unchanged
+IRC+10216 (in CS, SiS, H
 \begin_inset Formula $^{13}$
 \end_inset
 
-CN and CO) at high enough levels to suggest that the presence of circular
- polarization in these spectral lines is common for such objects.
- This implies that measuring circular polarization is important when studying
- magnetic fields through the linear polarization of molecular spectral lines
- in the interstellar medium.
+CN and CO)
+\change_deleted 404807697 1530650317
+ and Orion KL (in CO and SiO)
+\change_unchanged
+ at high enough levels to suggest that the presence of circular polarization
+ in these spectral lines is common for such objects.
+ This 
+\change_deleted 404807697 1530638508
+would imply 
+\change_inserted 404807697 1530638509
+implies 
+\change_unchanged
+that 
+\change_inserted 404807697 1530836196
+measuring circular polarization is important 
+\change_deleted 404807697 1530650609
+an important piece of information has been neglected 
+\change_unchanged
+when studying magnetic fields through 
+\change_inserted 404807697 1530650644
+the 
+\change_unchanged
+linear polarization 
+\change_deleted 404807697 1530650646
+from 
+\change_inserted 404807697 1530650647
+of 
+\change_unchanged
+molecular spectral lines in the interstellar medium.
+
+\change_inserted 404807697 1530644067
  We also provide a simple Python wrapper for the 
 \emph on
 Miriad
 \emph default
  data reduction package.
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -236,13 +298,21 @@ key "Goldreich1981"
 \end_inset
 
 .
- The GK effect can occur for molecular lines with even weak Zeeman splitting
- when the radiation field (for example) is anisotropic and the splitting
- frequency is greater than the collisional rate and other radiative processes.
+ 
+\change_inserted 404807697 1530835698
+The GK effect can occur for molecular lines with even weak Zeeman splitting
+ when the radiation field 
+\change_inserted 1844228653 1531250073
+(for example) 
+\change_inserted 404807697 1530835698
+is anisotropic and the splitting frequency is greater than the collisional
+ rate and other radiative processes.
  These conditions can cause a population imbalance in the magnetic sublevels
  that results in a net LP aligned either perpendicular or parallel to the
  plane-of-the-sky component of the magnetic field.
- LP due to the GK effect was first detected in CS (
+ 
+\change_unchanged
+LP due to the GK effect was first detected in CS (
 \begin_inset Formula $J=2\rightarrow1)$
 \end_inset
 
@@ -392,7 +462,27 @@ key "Hezareh2013"
 \begin_layout Standard
 The main goal of this paper is to find further evidence of CP in more objects
  and molecular lines through a search of archival data of the Submillimeter
- Array (SMA).
+ Array (SMA
+\change_deleted 404807697 1529605084
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_deleted 404807697 1529605027
+The Submillimeter Array is a joint project between the Smithsonian Astrophysical
+ Observatory and the Academia Sinica Institute of Astronomy and Astrophysics
+ and is funded by the Smithsonian Institution and the Academia Sinica.
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+).
  In Section 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -452,8 +542,13 @@ The measurement of CP is challenging to calibrate, especially when using
  receivers.
  On the other hand, ALMA which also has linear feeds does not use a QWP
  and measures LP signals directly.
- While both measurement techniques can be used to measure CP, the calibration
- process is different 
+ While both 
+\change_deleted 404807697 1529691766
+types of feeds 
+\change_inserted 404807697 1529691774
+measurement techniques 
+\change_unchanged
+can be used to measure CP, the calibration process is different 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Sault1996"
@@ -470,8 +565,10 @@ key "Munoz2012"
 \end_inset
 
 .
- Additionally, the VLBA, equipped with circular feeds, has been used to
- take full Stokes 
+ 
+\change_inserted 404807697 1529691145
+Additionally, the VLBA, equipped with circular feeds, has been used to take
+ full Stokes 
 \begin_inset Formula $I$
 \end_inset
 
@@ -487,13 +584,17 @@ key "Munoz2012"
 \begin_inset Formula $V$
 \end_inset
 
- measurements of SiO masers at 43.1 and 42.8 GHz 
+ measurements of SiO masers at 43.1 and 42.8 GHz
+\change_unchanged
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Cotton2011"
 
 \end_inset
 
+
+\change_inserted 404807697 1529691037
 .
  In that work a correction for spurious CP analogous to the correction detailed
  in Section 
@@ -553,7 +654,19 @@ To illustrate briefly the differences between the two feed types consider
 \begin_inset Formula $E_{L}$
 \end_inset
 
- are the right-CP and left-CP electric fields, respectively.
+ are the 
+\change_deleted 404807697 1529605325
+left
+\change_inserted 404807697 1529605326
+right
+\change_unchanged
+-CP and 
+\change_deleted 404807697 1529605329
+right
+\change_inserted 404807697 1529605329
+left
+\change_unchanged
+-CP electric fields, respectively.
  With an orthogonal LP basis Stokes 
 \begin_inset Formula $V$
 \end_inset
@@ -642,9 +755,13 @@ key "Thompson2001"
  of any calibration object must be measured as well.
  This is not possible with the SMA setup used for the observations discussed
  here.
+\change_inserted 404807697 1529606974
+
 \end_layout
 
 \begin_layout Standard
+
+\change_inserted 404807697 1529607790
 The SMA uses observations of a bright point source over a large range of
  parallactic angles to distinguish between source and instrumental polarization
  and determine the polarization leakage terms.
@@ -665,13 +782,19 @@ The SMA uses observations of a bright point source over a large range of
 \end_inset
 
  are independent of the leakage terms to first-order 
+\change_unchanged
+
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Thompson2001,Marrone2008,Munoz2012"
 
 \end_inset
 
+
+\change_inserted 404807697 1529607601
 .
+
+\change_unchanged
  
 \end_layout
 
@@ -829,6 +952,8 @@ key "Thompson2001"
 \end_layout
 
 \begin_layout Standard
+
+\change_inserted 404807697 1529612348
 In practice the true source intensity 
 \begin_inset Formula $I(l,m)$
 \end_inset
@@ -1025,12 +1150,30 @@ key "Sault2008"
 \end_layout
 
 \begin_layout Enumerate
-The visibilities are split into line-free continuum and line data that are
- then mapped to obtain models using the `
+The visibilities are split into line-free continuum and line data
+\change_deleted 404807697 1530835489
+.
+ These 
+\change_inserted 404807697 1530835493
+ that 
+\change_unchanged
+are then mapped
+\change_deleted 404807697 1530835618
+ and used
+\change_unchanged
+ to obtain 
+\change_deleted 404807697 1530835525
+CLEAN 
+\change_unchanged
+models
+\change_inserted 404807697 1530833030
+ using the `
 \family typewriter
 clean
 \family default
-' algorithm 
+' algorithm
+\change_unchanged
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Sault2008"
@@ -1144,12 +1287,18 @@ RL
 \emph on
 LR
 \emph default
-) are recombined and inverted to produce corrected and CLEANed maps.
+) are recombined and inverted to produce corrected
+\change_inserted 404807697 1530383972
+ and CLEANed
+\change_unchanged
+ maps.
  Spectra can be obtained either from the corrected visibilities or the maps.
  
 \end_layout
 
 \begin_layout Standard
+
+\change_inserted 404807697 1529613317
 Note that in the deconvolution steps (steps 2 and 5) the same instrumental
  beam is used for all polarizations.
  This is due to the behaviour of 
@@ -1162,6 +1311,8 @@ invert
 \family default
 , which produces a single instrumental beam corresponding to all image planes
  and Stokes parameters 
+\change_unchanged
+
 \begin_inset CommandInset citation
 LatexCommand citep
 before "sec. 13.4 of"
@@ -1169,6 +1320,8 @@ key "Sault2008"
 
 \end_inset
 
+
+\change_inserted 404807697 1529613366
 .
  We checked that the instrumental response to different polarizations was
  similar by inverting the 
@@ -1181,6 +1334,8 @@ key "Sault2008"
 
 -handed visibilities separately from one other and finding that the instrumental
  beams for both polarizations to be almost identical.
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -1305,8 +1460,13 @@ name "sec:Observations"
 \end_inset
 
 We collected radio interferometric polarimetry observations from the Submillimet
-er Array (SMA) archive that had been measured using the linear-to-circular
- QWP equipment, a similar setup to that used by 
+er Array (SMA) archive that had been measured using the 
+\change_deleted 404807697 1529613747
+circular feeds
+\change_inserted 404807697 1529613756
+linear-to-circular QWP equipment
+\change_unchanged
+, a similar setup to that used by 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Munoz2012"
@@ -1777,11 +1937,21 @@ reference "fig:beforeafterspec"
 \end_inset
 
  can also be found in the average spectrum obtained from all the visibility
- data, though the SNR is of 3-5
+ data, though 
+\change_inserted 1844228653 1531250357
+the 
+\change_unchanged
+SNR is of 3-5
 \begin_inset Formula $\sigma$
 \end_inset
 
- significance in that case compared to approximately 6-10
+ significan
+\change_deleted 1844228653 1531250360
+t
+\change_inserted 1844228653 1531250360
+ce
+\change_unchanged
+ in that case compared to approximately 6-10
 \begin_inset Formula $\sigma$
 \end_inset
 
@@ -2094,10 +2264,16 @@ maxfit
 \end_inset
 
  signal at 345.8GHz is maximum, and a spectrum is obtained through that point.
- The cross on the map denotes the location of the Stokes 
+ The cross on the map denotes the location of 
+\change_deleted 404807697 1530835167
+that
+\change_inserted 404807697 1530835171
+the Stokes 
 \begin_inset Formula $V$
 \end_inset
 
+
+\change_unchanged
  peak.
  The red line is Stokes 
 \begin_inset Formula $I$
@@ -2434,6 +2610,10 @@ Peak Stokes
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -3479,9 +3659,13 @@ key "Hezareh2013"
 .
  This result clearly establishes a conversion from linear to circular polarizati
 on.
+\change_inserted 404807697 1529691635
+
 \end_layout
 
 \begin_layout Standard
+
+\change_inserted 404807697 1530384005
 The detections of CP in SiO (
 \begin_inset Formula $\nu=1$
 \end_inset
@@ -3496,12 +3680,16 @@ The detections of CP in SiO (
 
 ) masers at 43.1 and 42.8 GHz, respectively, were observed to have line profiles
  inconsistent with the Zeeman effect 
+\change_unchanged
+
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Cotton2011"
 
 \end_inset
 
+
+\change_inserted 404807697 1530833500
 .
  An attempt to explain the Stokes 
 \begin_inset Formula $V$
@@ -3510,24 +3698,34 @@ key "Cotton2011"
  shapes with a non-Zeeman mechanism involving the anisotropic pumping of
  the masers and a varying magnetic field along the line of sight put forward
  by 
+\change_unchanged
+
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Wiebe1998"
 
 \end_inset
 
- could not account for the high levels of CP observed 
+
+\change_inserted 404807697 1530384378
+ could not account for the high levels of CP observed
+\change_unchanged
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Cotton2011"
 
 \end_inset
 
+
+\change_inserted 404807697 1530384453
 .
  We note that these SiO maser observations underwent a similar self-calibration
  based process to correct for beam squint as the observations presented
  here.
  
+\change_unchanged
+
 \end_layout
 
 \begin_layout Subsection
@@ -3548,8 +3746,16 @@ key "Houde2013"
 
 \end_inset
 
- to explain the presence of CP in the transitions of CO.
- ARS rests on a second-order interaction between radiation and matter in
+ to explain the presence of CP in the transitions of CO
+\change_deleted 404807697 1529960014
+,
+\change_inserted 404807697 1529960014
+.
+
+\change_unchanged
+ 
+\change_inserted 404807697 1530384606
+ARS rests on a second-order interaction between radiation and matter in
  the presence of a magnetic field.
  Incident radiation with photon states polarized 
 \begin_inset Formula $\parallel$
@@ -3563,11 +3769,18 @@ key "Houde2013"
  incur a small phase shift between the photon states.
  The phase shift incurred after propagating and scattering off many molecules
  results in the appearance of CP in the scattered radiation.
+\change_deleted 404807697 1529960012
+but
+\change_inserted 404807697 1529961182
+
 \end_layout
 
 \begin_layout Standard
-While this mechanism could reproduce the level of CP observed in CO it initially
- failed to explain the observed symmetric 
+
+\change_inserted 404807697 1529961104
+While this mechanism could reproduce the level of CP observed in CO it
+\change_unchanged
+ initially failed to explain the observed symmetric 
 \begin_inset Quotes eld
 \end_inset
 
@@ -3591,7 +3804,11 @@ key "Houde2014"
 
 \end_inset
 
- considered the observations of Stokes 
+ considered 
+\change_inserted 404807697 1529691907
+the 
+\change_unchanged
+observations of Stokes 
 \begin_inset Formula $V$
 \end_inset
 
@@ -3602,9 +3819,13 @@ key "Cotton2011"
 
 \end_inset
 
- and showed that the different profile shapes detected are readily explained
- through ARS off populations of foreground molecules located slightly outside
- of the velocity range of the line.
+ and showed that 
+\change_inserted 404807697 1529959968
+the 
+\change_unchanged
+different profile shapes detected are readily explained through ARS off
+ populations of foreground molecules located slightly outside of the velocity
+ range of the line.
  For example, a blue-shifted scattering population of molecules could result
  in a negative 
 \begin_inset Quotes eld
@@ -3651,8 +3872,18 @@ reference "fig:results"
 \end_layout
 
 \begin_layout Standard
-The conversion of LP to CP due to ARS can be illustrated by considering
- background LP radiation oriented at some angle 
+The 
+\change_deleted 404807697 1529961281
+basic principle 
+\change_inserted 404807697 1529961286
+conversion of LP to CP 
+\change_deleted 404807697 1529961287
+of
+\change_inserted 404807697 1529961323
+due to
+\change_unchanged
+ ARS can be illustrated by considering background LP radiation oriented
+ at some angle 
 \begin_inset Formula $\theta$
 \end_inset
 
@@ -3878,17 +4109,27 @@ Theories that explain the presence of non-Zeeman CP in molecular spectral
  Since the conversion of LP-to-CP modifies the observed dispersion of PAs,
  it is necessary to obtain precise measurements of CP along with LP for
  corresponding studies of the magnetic field in the interstellar medium.
+\change_inserted 404807697 1529604903
+
 \end_layout
 
 \begin_layout Acknowledgements
+
+\change_inserted 404807697 1529605064
 The Submillimeter Array is a joint project between the Smithsonian Astrophysical
  Observatory and the Academia Sinica Institute of Astronomy and Astrophysics
  and is funded by the Smithsonian Institution and the Academia Sinica.
- M.H.
+
+\change_inserted 1844228653 1531250437
+ 
+\change_inserted 404807697 1531320175
+M.H.
  is supported by the Natural Science and Engineering Research Council of
  Canada Discovery Grant RGPIN-2016-04460.
  J.M.G is supported by the MINECO (Spain) AYA2014-57369-C3 and AYA2017-84390-C2
  grants.
+\change_inserted 1844228653 1530376438
+
 \begin_inset Newline newline
 \end_inset
 
@@ -3896,7 +4137,11 @@ The Submillimeter Array is a joint project between the Smithsonian Astrophysical
 \end_layout
 
 \begin_layout Standard
+
+\change_inserted 1844228653 1530376600
 Reduction scripts are available at 
+\change_unchanged
+
 \begin_inset ERT
 status open
 
@@ -3910,11 +4155,19 @@ url{http://github.com/mef51/SMAData}
 \end_inset
 
 .
+
+\change_inserted 1844228653 1530376600
  A Python wrapper for 
 \emph on
 Miriad
 \emph default
- including the squint correction script used is available at 
+ including the squint correction script
+\change_inserted 404807697 1530381967
+ used
+\change_inserted 1844228653 1530376600
+ is available at 
+\change_unchanged
+
 \begin_inset ERT
 status open
 
@@ -3927,7 +4180,11 @@ url{http://github.com/mef51/smautils}
 
 \end_inset
 
+
+\change_inserted 1844228653 1530376600
 .
+\change_unchanged
+
 \end_layout
 
 \begin_layout References
