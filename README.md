@@ -1,0 +1,6 @@
+# Non-Zeeman circular polarization of molecular spectral lines in the ISM
+
+Mohammed Afif Chamma, Martin Houde, Josep Miquel Girart, and Ramprasad Rao    
+Ref: [arXiv](https://arxiv.org/abs/1808.00211), [MNRAS](https://academic.oup.com/mnras/article/480/3/3123/5064241)
+
+Accurately measuring the magnetic field in the ISM is essential for understanding star formation processes. We searched archival data of the Submillimeter Array for evidence of circular polarization in common molecular tracers, most notably CO. This circular polarization possibly arises from anisotropic resonant scattering, which would imply that some background linearly polarized radiation is being converted to circular polarization. We find circular polarization in the star-forming regions NGC 7538 (in CO) and Orion KL (in CO and SiO) as well as in the carbon star IRC+10216 (in CS, SiS, H13CN, and CO) at high enough levels to suggest that the presence of circular polarization in these spectral lines is common for such objects. This implies that measuring circular polarization is important when studying magnetic fields through the linear polarization of molecular spectral lines in the interstellar medium. We also provide a simple PYTHON wrapper for the MIRIAD data reduction package.
