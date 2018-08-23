@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.16)  1 AUG 2018 00:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.16)  1 AUG 2018 00:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -629,22 +629,21 @@ LaTeX Font Info:    Try loading font information for T1+aett on input line 312.
 (/usr/share/texlive/texmf-dist/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 ) [3]
-<maps/orkl.cnt.uncorr.pdf, id=166, 549.05125pt x 548.0475pt>
-File: maps/orkl.cnt.uncorr.pdf Graphic file (type pdf)
+<orkl.cnt.uncorr.pdf, id=166, 549.05125pt x 548.0475pt>
+File: orkl.cnt.uncorr.pdf Graphic file (type pdf)
 
-<use maps/orkl.cnt.uncorr.pdf>
-Package pdftex.def Info: maps/orkl.cnt.uncorr.pdf used on input line 350.
+<use orkl.cnt.uncorr.pdf>
+Package pdftex.def Info: orkl.cnt.uncorr.pdf used on input line 350.
 (pdftex.def)             Requested size: 549.04991pt x 548.04616pt.
 
 Overfull \hbox (4.35257pt too wide) in paragraph at lines 350--351
  [][] 
  []
 
-<maps/orkl.cnt.corr.pdf, id=167, 549.05125pt x 548.0475pt>
-File: maps/orkl.cnt.corr.pdf Graphic file (type pdf)
-
-<use maps/orkl.cnt.corr.pdf>
-Package pdftex.def Info: maps/orkl.cnt.corr.pdf used on input line 353.
+<orkl.cnt.corr.pdf, id=167, 549.05125pt x 548.0475pt>
+File: orkl.cnt.corr.pdf Graphic file (type pdf)
+ <use orkl.cnt.corr.pdf>
+Package pdftex.def Info: orkl.cnt.corr.pdf used on input line 353.
 (pdftex.def)             Requested size: 549.04991pt x 548.04616pt.
 
 Overfull \hbox (4.35257pt too wide) in paragraph at lines 353--354
@@ -661,7 +660,7 @@ Overfull \hbox (20.6182pt too wide) in paragraph at lines 391--409
  []$[]$ 
  []
 
-[4 <./maps/orkl.cnt.uncorr.pdf> <./maps/orkl.cnt.corr.pdf>]
+[4 <./orkl.cnt.uncorr.pdf> <./orkl.cnt.corr.pdf>]
 
 LaTeX Warning: A float is stuck (cannot be placed) on input line 419.
 
@@ -671,78 +670,79 @@ LaTeX Warning: A float is stuck (cannot be placed) on input line 419.
 
 Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
 
-<figures/OrionKL.map.spec.co3-2peakv.pdf, id=212, 794.97pt x 614.295pt>
-File: figures/OrionKL.map.spec.co3-2peakv.pdf Graphic file (type pdf)
+<OrionKL.map.spec.co3-2peakv.pdf, id=212, 794.97pt x 614.295pt>
+File: OrionKL.map.spec.co3-2peakv.pdf Graphic file (type pdf)
 
-<use figures/OrionKL.map.spec.co3-2peakv.pdf>
-Package pdftex.def Info: figures/OrionKL.map.spec.co3-2peakv.pdf used on input 
-line 478.
+<use OrionKL.map.spec.co3-2peakv.pdf>
+Package pdftex.def Info: OrionKL.map.spec.co3-2peakv.pdf used on input line 478
+.
 (pdftex.def)             Requested size: 278.24367pt x 215.00647pt.
 
-<maps/orkl_080106.co3-2.full.plane3.pdf, id=213, 549.05125pt x 548.0475pt>
-File: maps/orkl_080106.co3-2.full.plane3.pdf Graphic file (type pdf)
+<orkl_080106.co3-2.full.plane3.pdf, id=213, 549.05125pt x 548.0475pt>
+File: orkl_080106.co3-2.full.plane3.pdf Graphic file (type pdf)
 
-<use maps/orkl_080106.co3-2.full.plane3.pdf>
-Package pdftex.def Info: maps/orkl_080106.co3-2.full.plane3.pdf used on input l
-ine 478.
+<use orkl_080106.co3-2.full.plane3.pdf>
+Package pdftex.def Info: orkl_080106.co3-2.full.plane3.pdf used on input line 4
+78.
 (pdftex.def)             Requested size: 203.14578pt x 202.7744pt.
 
-<figures/IRC+10216.map.spec.co3-2peakv.pdf, id=214, 794.97pt x 614.295pt>
-File: figures/IRC+10216.map.spec.co3-2peakv.pdf Graphic file (type pdf)
+<IRC+10216.map.spec.co3-2peakv.pdf, id=214, 794.97pt x 614.295pt>
+File: IRC+10216.map.spec.co3-2peakv.pdf Graphic file (type pdf)
 
-<use figures/IRC+10216.map.spec.co3-2peakv.pdf>
-Package pdftex.def Info: figures/IRC+10216.map.spec.co3-2peakv.pdf used on inpu
-t line 481.
+<use IRC+10216.map.spec.co3-2peakv.pdf>
+Package pdftex.def Info: IRC+10216.map.spec.co3-2peakv.pdf used on input line 4
+81.
 (pdftex.def)             Requested size: 278.24367pt x 215.00647pt.
 
-<maps/irc+10216.co3-2.full.plane7.pdf, id=215, 549.05125pt x 548.0475pt>
-File: maps/irc+10216.co3-2.full.plane7.pdf Graphic file (type pdf)
+<irc+10216.co3-2.full.plane7.pdf, id=215, 549.05125pt x 548.0475pt>
+File: irc+10216.co3-2.full.plane7.pdf Graphic file (type pdf)
 
-<use maps/irc+10216.co3-2.full.plane7.pdf>
-Package pdftex.def Info: maps/irc+10216.co3-2.full.plane7.pdf used on input lin
-e 481.
+<use irc+10216.co3-2.full.plane7.pdf>
+Package pdftex.def Info: irc+10216.co3-2.full.plane7.pdf used on input line 481
+.
 (pdftex.def)             Requested size: 549.04991pt x 548.04616pt.
 
-<figures/NGC7538.map.spec.co3-2peakv.notfull.pdf, id=216, 794.97pt x 614.295pt>
-File: figures/NGC7538.map.spec.co3-2peakv.notfull.pdf Graphic file (type pdf)
-<use figures/NGC7538.map.spec.co3-2peakv.notfull.pdf>
-Package pdftex.def Info: figures/NGC7538.map.spec.co3-2peakv.notfull.pdf used o
-n input line 504.
+<NGC7538.map.spec.co3-2peakv.notfull.pdf, id=216, 794.97pt x 614.295pt>
+File: NGC7538.map.spec.co3-2peakv.notfull.pdf Graphic file (type pdf)
+
+<use NGC7538.map.spec.co3-2peakv.notfull.pdf>
+Package pdftex.def Info: NGC7538.map.spec.co3-2peakv.notfull.pdf used on input 
+line 504.
 (pdftex.def)             Requested size: 278.24367pt x 215.00647pt.
 
-<maps/NGC7538S-s4.co3-2.full.plane38.pdf, id=217, 549.05125pt x 548.0475pt>
-File: maps/NGC7538S-s4.co3-2.full.plane38.pdf Graphic file (type pdf)
+<NGC7538S-s4.co3-2.full.plane38.pdf, id=217, 549.05125pt x 548.0475pt>
+File: NGC7538S-s4.co3-2.full.plane38.pdf Graphic file (type pdf)
 
-<use maps/NGC7538S-s4.co3-2.full.plane38.pdf>
-Package pdftex.def Info: maps/NGC7538S-s4.co3-2.full.plane38.pdf used on input 
-line 504.
+<use NGC7538S-s4.co3-2.full.plane38.pdf>
+Package pdftex.def Info: NGC7538S-s4.co3-2.full.plane38.pdf used on input line 
+504.
 (pdftex.def)             Requested size: 203.14578pt x 202.7744pt.
 
-<figures/IRAS2a.map.spec.co3-2peakv.pdf, id=218, 794.97pt x 614.295pt>
-File: figures/IRAS2a.map.spec.co3-2peakv.pdf Graphic file (type pdf)
+<IRAS2a.map.spec.co3-2peakv.pdf, id=218, 794.97pt x 614.295pt>
+File: IRAS2a.map.spec.co3-2peakv.pdf Graphic file (type pdf)
 
-<use figures/IRAS2a.map.spec.co3-2peakv.pdf>
-Package pdftex.def Info: figures/IRAS2a.map.spec.co3-2peakv.pdf used on input l
-ine 507.
+<use IRAS2a.map.spec.co3-2peakv.pdf>
+Package pdftex.def Info: IRAS2a.map.spec.co3-2peakv.pdf used on input line 507.
+
 (pdftex.def)             Requested size: 278.24367pt x 215.00647pt.
 
-<maps/iras2a.aver.co3-2.pdf, id=219, 549.05125pt x 548.0475pt>
-File: maps/iras2a.aver.co3-2.pdf Graphic file (type pdf)
+<iras2a.aver.co3-2.pdf, id=219, 549.05125pt x 548.0475pt>
+File: iras2a.aver.co3-2.pdf Graphic file (type pdf)
 
-<use maps/iras2a.aver.co3-2.pdf>
-Package pdftex.def Info: maps/iras2a.aver.co3-2.pdf used on input line 507.
+<use iras2a.aver.co3-2.pdf>
+Package pdftex.def Info: iras2a.aver.co3-2.pdf used on input line 507.
 (pdftex.def)             Requested size: 549.04991pt x 548.04616pt.
 
 
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 522.
 
-<figures/stokesv.map.spec.co3-2peakv.pdf, id=224, 614.295pt x 794.97pt>
-File: figures/stokesv.map.spec.co3-2peakv.pdf Graphic file (type pdf)
+<stokesv.map.spec.co3-2peakv.pdf, id=224, 614.295pt x 794.97pt>
+File: stokesv.map.spec.co3-2peakv.pdf Graphic file (type pdf)
 
-<use figures/stokesv.map.spec.co3-2peakv.pdf>
-Package pdftex.def Info: figures/stokesv.map.spec.co3-2peakv.pdf used on input 
-line 522.
+<use stokesv.map.spec.co3-2peakv.pdf>
+Package pdftex.def Info: stokesv.map.spec.co3-2peakv.pdf used on input line 522
+.
 (pdftex.def)             Requested size: 491.43787pt x 667.27861pt.
 
 
@@ -752,12 +752,12 @@ LaTeX Warning: Float too large for page by 27.19928pt on input line 532.
 Package pdftex.def Warning: Option `bb' does not make sense,
 (pdftex.def)                using `viewport' instead on input line 536.
 
-<figures/OrionKL.map.spec.sio8-7peakv.pdf, id=226, 794.97pt x 614.295pt>
-File: figures/OrionKL.map.spec.sio8-7peakv.pdf Graphic file (type pdf)
+<OrionKL.map.spec.sio8-7peakv.pdf, id=226, 794.97pt x 614.295pt>
+File: OrionKL.map.spec.sio8-7peakv.pdf Graphic file (type pdf)
 
-<use figures/OrionKL.map.spec.sio8-7peakv.pdf>
-Package pdftex.def Info: figures/OrionKL.map.spec.sio8-7peakv.pdf used on input
- line 536.
+<use OrionKL.map.spec.sio8-7peakv.pdf>
+Package pdftex.def Info: OrionKL.map.spec.sio8-7peakv.pdf used on input line 53
+6.
 (pdftex.def)             Requested size: 256.25336pt x 227.28558pt.
 
 Overfull \hbox (13.98683pt too wide) in paragraph at lines 536--537
@@ -794,19 +794,18 @@ Overfull \hbox (1.42145pt too wide) in paragraph at lines 561--561
  []|\T1/aer/m/n/9 345.34|
  []
 
-[5] [6 <./figures/OrionKL.map.spec.co3-2peakv.pdf> <./maps/orkl_080106.co3-2.fu
-ll.plane3.pdf> <./figures/IRC+10216.map.spec.co3-2peakv.pdf
+[5] [6 <./OrionKL.map.spec.co3-2peakv.pdf> <./orkl_080106.co3-2.full.plane3.pdf
+> <./IRC+10216.map.spec.co3-2peakv.pdf
 
-pdfTeX warning: pdflatex (file ./figures/IRC+10216.map.spec.co3-2peakv.pdf): PD
-F inclusion: multiple pdfs with page group included in a single page
-> <./maps/irc+10216.co3-2.full.plane7.pdf>] [7 <./figures/NGC7538.map.spec.co3-
-2peakv.notfull.pdf> <./maps/NGC7538S-s4.co3-2.full.plane38.pdf> <./figures/IRAS
-2a.map.spec.co3-2peakv.pdf
+pdfTeX warning: pdflatex (file ./IRC+10216.map.spec.co3-2peakv.pdf): PDF inclus
+ion: multiple pdfs with page group included in a single page
+> <./irc+10216.co3-2.full.plane7.pdf>] [7 <./NGC7538.map.spec.co3-2peakv.notful
+l.pdf> <./NGC7538S-s4.co3-2.full.plane38.pdf> <./IRAS2a.map.spec.co3-2peakv.pdf
 
-pdfTeX warning: pdflatex (file ./figures/IRAS2a.map.spec.co3-2peakv.pdf): PDF i
-nclusion: multiple pdfs with page group included in a single page
-> <./maps/iras2a.aver.co3-2.pdf>] [8 <./figures/stokesv.map.spec.co3-2peakv.pdf
->]
+
+pdfTeX warning: pdflatex (file ./IRAS2a.map.spec.co3-2peakv.pdf): PDF inclusion
+: multiple pdfs with page group included in a single page
+> <./iras2a.aver.co3-2.pdf>] [8 <./stokesv.map.spec.co3-2peakv.pdf>]
 
 LaTeX Warning: A float is stuck (cannot be placed) on input line 651.
 
@@ -816,7 +815,7 @@ LaTeX Warning: A float is stuck (cannot be placed) on input line 651.
 
 Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
 
-[9 <./figures/OrionKL.map.spec.sio8-7peakv.pdf>]
+[9 <./OrionKL.map.spec.sio8-7peakv.pdf>]
 Underfull \hbox (badness 2293) in paragraph at lines 797--810
 \T1/aer/m/n/10 archive of Orion KL, IRC+10216, NGC7538 and
  []
@@ -834,13 +833,13 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 926.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 926.
  ) 
 Here is how much of TeX's memory you used:
- 9879 strings out of 494953
- 137795 string characters out of 6180976
+ 9877 strings out of 494953
+ 137470 string characters out of 6180976
  281296 words of memory out of 5000000
  12888 multiletter control sequences out of 15000+600000
  45393 words of font info for 98 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 36i,14n,37p,278b,417s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,14n,37p,271b,417s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texl
@@ -863,7 +862,7 @@ s/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1
 nts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.
 pfb>
-Output written on CPisCommon.pdf (11 pages, 1229850 bytes).
+Output written on CPisCommon.pdf (11 pages, 1229756 bytes).
 PDF statistics:
  829 PDF objects out of 1000 (max. 8388607)
  437 compressed objects within 5 object streams
